@@ -1,0 +1,12 @@
+version: '3'
+services:
+  mongo:
+    image: mongo:latest
+    container_name: apurate-mongo
+    restart: always
+    ports:
+     - "${MONGO_PORT}:27017"
+    volumes:
+      - ./data:/data/db
+    
+
