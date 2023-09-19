@@ -19,7 +19,7 @@ const userLogin = async (req, res) => {
         res.status(500).json({ message: "Server error" });
     }
 };
-
+// TODO : create token on login
 const createUser = async (req, res) => {
     try {
         const { username, password, institution, aula, proffesor } = req.body;
