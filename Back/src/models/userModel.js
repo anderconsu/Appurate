@@ -4,6 +4,7 @@ const UserSchema = new connection.Schema({
     email: {
         type: String,
         required: true,
+        unique: true
     },
     password: {
         type: String,
@@ -13,7 +14,7 @@ const UserSchema = new connection.Schema({
         type: String,
         required: true,
     }
-});
+}, {strict: false});
 
 const User = connection.model("User", UserSchema);
 
