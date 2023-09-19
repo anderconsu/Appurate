@@ -1,12 +1,12 @@
 import { Router } from "express";
-import userController from "../controllers/userController.js";
-
+import userLogin from "../controllers/userController.js";
+import findMetrics from "../controllers/dataController.js";
 const apiRouter = Router();
 apiRouter.get("/", (req, res) => {
     res.status(200).send("From here after there are api routes");
 });
 
-apiRouter.post("/", async (req, res) => {
+apiRouter.post("/login", async (req, res) => {
     userController.userLogin(req, res);
 });
 
