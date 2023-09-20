@@ -1,5 +1,6 @@
 import userModel from "../models/userModel.js";
 import bcrypt from "bcrypt";
+import jwt from "jasonwebtoken";
 
 const userLogin = async (req, res) => {
     try {
@@ -9,7 +10,16 @@ const userLogin = async (req, res) => {
             throw new Error("User or password not corrrect");
         } else {
             if (await bcrypt.compare(password, user.password)) {
-                res.status(200).send("User logged");
+                const userWithoutPassword = {
+                    username: user.username,
+                    id: user._id,
+                };
+                const token = jwt.sign(
+                    { username: user.username, id: user._id },
+                    process.env.SECRET_KEY,
+                    { expiresIn: "24h" }
+                );
+                res.status(200).json({ user: userWithoutPassword, token });
             } else {
                 throw new Error("User or password not corrrect");
             }
