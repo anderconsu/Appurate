@@ -8,8 +8,10 @@ userRouter.get("/", (req, res) => {
 });
 
 userRouter.post("/register", async (req, res) => {
-    console.log(req.body);
     createUser(req, res);
+});
+userRouter.post("/login", async (req, res) => {
+    userLogin(req, res);
 });
 
 export default userRouter;
