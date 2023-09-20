@@ -34,18 +34,35 @@ const userLogin = async (req, res) => {
 };
 const createUser = async (req, res) => {
     try {
-        const { username, password, institution, aula, proffesor } = req.body;
+        const {
+            username,
+            password,
+            institution,
+            aula,
+            proffesor,
+            email,
+            phone,
+        } = req.body;
         if (
             !username ||
             !password ||
             !institution ||
             !aula ||
             !proffesor ||
-            !email
+            !email ||
+            !phone
         ) {
             throw new Error("All fields are required");
         }
-        console.log(username, password, institution, aula, proffesor, email);
+        console.log(
+            username,
+            password,
+            institution,
+            aula,
+            proffesor,
+            email,
+            phone
+        );
         const user = await userModel.findOne({ username });
         if (user) {
             throw new Error("User already exists");
@@ -60,6 +77,7 @@ const createUser = async (req, res) => {
                 aula,
                 proffesor,
                 email,
+                phone,
             });
             await newUser.save();
             res.status(200).send("User created");
