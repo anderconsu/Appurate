@@ -1,6 +1,6 @@
 version: '3'
 services:
-  mongo:
+  apurate-mongo:
     image: mongo:latest
     container_name: apurate-mongo
     restart: always

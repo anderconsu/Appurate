@@ -1,13 +1,15 @@
 import { Router } from "express";
-import userLogin from "../controllers/userController.js";
+import { userLogin, createUser } from "../controllers/userController.js";
 
-const apiRouter = Router();
-apiRouter.get("/", (req, res) => {
-    res.status(200).send("From here after there are api routes");
+const userRouter = Router();
+
+userRouter.get("/", (req, res) => {
+    res.status(200).send("From here after there are user routes");
 });
 
-apiRouter.post("/login", async (req, res) => {
-    userController.userLogin(req, res);
+userRouter.post("/register", async (req, res) => {
+    console.log(req.body);
+    createUser(req, res);
 });
 
-export default apiRouter;
+export default userRouter;
