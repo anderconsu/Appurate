@@ -1,17 +1,19 @@
 import { useState } from 'react';
 import './login.css';
 
+
 const Login = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState(null);
+  const hostUrl = import.meta.env.VITE_BACKEND_URL
 
   const handleLogin = async (e) => {
     e.preventDefault();
 
   //falta hacer la ruta login
     try {
-      const response = await fetch('/login', {
+      const response = await fetch(`${hostUrl}/user/login`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
