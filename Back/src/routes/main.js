@@ -1,13 +1,12 @@
 import {Router} from "express";
 const router = Router();
 
+import apiRouter from "./apiRouter.js";
+
 router.get("/check", (req, res) => {
     console.log("check");
-    res.status(200).send();
+    res.status(200).send("check");
 });
-
-
-
-
+router.use("/api", apiRouter);
 
 export default router
