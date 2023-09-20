@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import './forminicio.css';
+import './login.css';
 
-const FormInicio = () => {
+const Login = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState(null);
@@ -69,4 +69,4 @@ const FormInicio = () => {
   );
 };
 
-export default FormInicio;
+export default Login;
