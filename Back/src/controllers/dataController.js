@@ -1,6 +1,6 @@
 import metricModel from "../models/metricModel.js";
 
-const findMetrics = async (req, res) => {
+const findMetricsFromLocation = async (req, res) => {
     try {
         const { location } = req.body;
         const metrics = await metricModel.find(
