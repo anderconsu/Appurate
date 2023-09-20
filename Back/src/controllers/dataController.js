@@ -20,4 +20,4 @@ const findMetricsFromLocation = async (req, res) => {
     }
 };
 
-export default findMetrics;
+export default { findMetricsFromLocation };
