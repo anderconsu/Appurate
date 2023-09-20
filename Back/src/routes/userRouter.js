@@ -1,6 +1,5 @@
 import { Router } from "express";
-
-import { findMetricsFromLocation } from "../controllers/dataController.js";
+import userLogin from "../controllers/userController.js";
 
 const apiRouter = Router();
 apiRouter.get("/", (req, res) => {
