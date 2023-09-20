@@ -1,12 +1,17 @@
 import './App.css'
-import FormInicio from './components/formularioinicio/forminicio'
+import About from './components/sobrenosotros/about'
+// import FormInicio from './components/formularioinicio/forminicio'
+// import Unete from './components/unete/unete'
+
 
 function App() {
   
 
   return (
     <>
-      <FormInicio />
+      {/* <FormInicio /> */}
+      {/* <Unete /> */}
+      <About />
     </>
   )
 }
