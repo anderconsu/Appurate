@@ -11,7 +11,7 @@ const MetricSchema = new connection.Schema(
             required: true,
         },
         prediction: {
-            type: Boolean,
+            type: Number,
             required: false,
         },
         institution: {

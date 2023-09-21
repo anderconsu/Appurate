@@ -11,7 +11,7 @@ const getModelData = async (data) => {
         if (response.ok) {
             let result = await response.json();
             console.log(result);
-            return result;
+            return result.prediction;
         } else {
             return "error";
         }
