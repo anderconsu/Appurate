@@ -28,7 +28,7 @@ def predecir_niños():
     input_data_niños = [[ph, oxigeno, conductividad, turbidez]]
     prediction_niños = modelo_niños.predict(input_data_niños)
 
-    return jsonify({'prediction_lab': float(prediction_niños[0])})
+    return jsonify(int(prediction_niños[0]))
 
 modelo_lab = pickle.load(open('models/modelo_laboratorio.pkl', 'rb'))
 @app.route('/prediccion_laboratorio', methods=['POST'])
