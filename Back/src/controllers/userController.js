@@ -23,6 +23,7 @@ const userLogin = async (req, res) => {
                     { expiresIn: "24h" }
                 );
                 res.status(200).json({ user: userWithoutPassword, token });
+                console.log(`El usuario ${user.username} ha iniciado sesión`);
             } else {
                 throw new Error("User or password not corrrect");
             }
