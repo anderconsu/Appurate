@@ -26,8 +26,14 @@ const Login = () => {
                 const user = data.user;
                 localStorage.setItem("token", token);
                 localStorage.setItem("user", user);
+                localStorage.setItem("institution", data.institution);
+                localStorage.setItem("aula", data.aula);
+                localStorage.setItem("proffesor", data.proffesor);
+                localStorage.setItem("email", data.email);
+                localStorage.setItem("phone", data.phone);
+
                 console.log("Sesión iniciada");
-                redirect();
+                
             } else {
                 setError("Usuario o contraseña incorrectos");
             }
