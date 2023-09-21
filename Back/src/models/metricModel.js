@@ -1,28 +1,31 @@
 import connection from "../db/mongoose.js";
 
-const MetricSchema = new connection.Schema({
-    location: {
-        type: String,
-        required: true,
+const MetricSchema = new connection.Schema(
+    {
+        location: {
+            type: String,
+            required: true,
+        },
+        properties: {
+            type: Object,
+            required: true,
+        },
+        prediction: {
+            type: Boolean,
+            required: false,
+        },
+        institution: {
+            type: String,
+            required: true,
+        },
+        date: {
+            type: Date,
+            required: true,
+            default: Date.now,
+        },
     },
-    properties: {
-        type: Object,
-        required: true,
-    },
-    prediction: {
-        type: Object,
-        required: false,
-    },
-    institution: {
-        type: String,
-        required: true,
-    },
-    date: {
-        type: Date,
-        required: true,
-        default: Date.now,
-    }
-}, {strict: false});
+    { strict: false }
+);
 
 const Metric = connection.model("Metric", MetricSchema);
 
