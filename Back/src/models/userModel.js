@@ -27,6 +27,10 @@ const UserSchema = new connection.Schema(
             type: String,
             required: true,
         },
+        phone: {
+            type: Number,
+            required: true,
+        },
     },
     { strict: false }
 );

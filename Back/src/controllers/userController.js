@@ -12,6 +12,13 @@ const userLogin = async (req, res) => {
         if (!user) {
             throw new Error("User or password not corrrect");
         } else {
+            const {
+                institution,
+                aula,
+                proffesor,
+                email,
+                phone,
+            } = user;
             if (await bcrypt.compare(password, user.password)) {
                 const userWithoutPassword = {
                     username: user.username,
@@ -22,7 +29,9 @@ const userLogin = async (req, res) => {
                     process.env.SECRET_KEY,
                     { expiresIn: "24h" }
                 );
-                res.status(200).json({ user: userWithoutPassword, token });
+                console.log(institution, aula, proffesor, email, phone);
+                res.status(200).json({ user: userWithoutPassword, token, institution, aula, proffesor, email, phone });
+                console.log(`El usuario ${user.username} ha iniciado sesión`);
             } else {
                 throw new Error("User or password not corrrect");
             }

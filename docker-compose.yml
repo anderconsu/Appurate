@@ -8,5 +8,12 @@ services:
      - "${MONGO_PORT}:27017"
     volumes:
       - ./data:/data/db
+  api:
+    build: ./Predict
+    container_name: api_data
+    ports:
+      - 5000:5000
+    volumes:
+      - ./Predict:/app
     
 

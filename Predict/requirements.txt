@@ -1,0 +1,7 @@
+Flask
+flask-cors
+pandas
+scikit-learn
+scipy
+matplotlib
+plotly

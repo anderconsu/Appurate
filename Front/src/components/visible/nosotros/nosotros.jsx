@@ -1,6 +1,6 @@
-import './about.css'
+import './nosotros.css'
 
-const About = () => {
+const Nosotros = () => {
   return (
     <div className="aboutGeneral">
 
@@ -46,4 +46,4 @@ const About = () => {
   )
 }
 
-export default About
+export default Nosotros
