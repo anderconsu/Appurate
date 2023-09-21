@@ -14,8 +14,10 @@
     "bcrypt": "^5.1.1",
     "dotenv": "^16.3.1",
     "jsonwebtoken": "^9.0.2",
+    "leaflet": "^1.9.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-leaflet": "^4.2.1",
     "react-router-dom": "^6.16.0"
   },
   "devDependencies": {
