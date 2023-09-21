@@ -1,5 +1,6 @@
 const getModelData = async (data) => {
     console.log(data);
+    console.log("host de modelo", process.env.MODEL_HOST);
     try {
         let response = await fetch(
             `${process.env.MODEL_HOST}/prediccion_niños`,
@@ -13,8 +14,8 @@ const getModelData = async (data) => {
         );
         if (response.ok) {
             let result = await response.json();
-            console.log(result);
-            return result.prediction;
+            console.log("resultado", result);
+            return result;
         } else {
             return "error";
         }

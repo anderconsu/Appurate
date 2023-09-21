@@ -3,6 +3,7 @@ import getModelData from "./modeldata.js";
 
 const addMetrics = async (req, res) => {
     const { location, properties, institution } = req.body;
+    console.log(properties);
     if (!properties) {
         res.status(400).json({ message: "No properties" });
     } else {
