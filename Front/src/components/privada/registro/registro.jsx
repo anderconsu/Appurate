@@ -2,7 +2,7 @@ import { /*React*/ useState } from "react";
 import "./registro.css";
 
 const Registro = () => {
-    const [location, setLocation] = useState("");
+    const [location, setLocation] = useState("test");
     const [pH, setpH] = useState("");
     const [oxigeno, setOxigeno] = useState("");
     const [conductividad, setConductividad] = useState("");
@@ -13,8 +13,8 @@ const Registro = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-    const institution = localStorage.getItem("institution");
-    const aula = localStorage.getItem("aula");
+        const institution = localStorage.getItem("institution");
+        const aula = localStorage.getItem("aula");
 
         try {
             const response = await fetch(`${hostUrl}/api/prediction`, {
@@ -26,7 +26,6 @@ const Registro = () => {
                     location,
                     aula,
                     institution,
-
                     properties: {
                         pH: parseFloat(pH),
                         Oxigeno: parseFloat(oxigeno),
@@ -68,12 +67,12 @@ const Registro = () => {
 
                 {/* localización */}
                 <div className="campo">
-                    <label htmlFor="01" className="01">01.</label>
+                    <label htmlFor="01" className="01">
+                        01.
+                    </label>
                     <label htmlFor="location">Localización:</label>
 
-                    <div className="mapaRegistro">
-                            AQUÍ VA EL MAPA
-                    </div>
+                    <div className="mapaRegistro">AQUÍ VA EL MAPA</div>
 
                     {/* <select
                         id="location"
@@ -112,8 +111,6 @@ const Registro = () => {
                 </div> */}
 
                 <div className="formularioMuestras">
-                    
-
                     {/* oxígeno (mg/l) */}
                     <div className="campo">
                         <label htmlFor="oxigeno">Oxígeno (mg/l):</label>
