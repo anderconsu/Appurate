@@ -1,12 +1,17 @@
-import { useState } from "react";
+import { useState, useContext, useEffect } from "react";
 import "./login.css";
+import PageContext from "../../../context/pageContext";
+
 
 const Login = () => {
+    const { page, setPage } = useContext(PageContext);
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
     const [error, setError] = useState(null);
     const hostUrl = import.meta.env.VITE_BACKEND_URL;
-
+    useEffect(() => {
+        setPage("login");
+    }, []);
     const handleLogin = async (e) => {
         e.preventDefault();
 
