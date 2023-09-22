@@ -8,6 +8,7 @@ import coordenadas from "./coordenadas";
 const Mapa = () => {
     const hostUrl = import.meta.env.VITE_BACKEND_URL;
     const [data, setData] = useState([]);
+    const [cleanData, setCleanData] = useState({});
     const [count, setCount] = useState(0);
 
     const getData = async () => {
@@ -24,8 +25,41 @@ const Mapa = () => {
         }
     };
 
+    const getDataFromName = async () => {
+        try {
+            const datosLimpios = {};
+            for (let i = 0; i < coordenadas.length; i++) {
+                const response = await fetch(`${hostUrl}/api/namemetrics`, {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify({
+                        name: coordenadas[i].name,
+                    }),
+                });
+                if (response.status === 200) {
+                    let datos = await response.json();
+                    console.log("datos recibidos", datos);
+                    datosLimpios[datos.name] = datos;
+                } else {
+                    console.log("not found");
+                }
+            }
+            console.log("datos limpios", datosLimpios);
+            setCleanData(datosLimpios);
+        } catch (err) {
+            console.log(err);
+        }
+    };
+
     useEffect(() => {
-        getData();
+        async function fetchData() {
+            await getData();
+            await getDataFromName();
+        }
+
+        fetchData();
     }, []);
     return (
         <>
@@ -44,55 +78,46 @@ const Mapa = () => {
                         <Marker key={index} position={coordenada.coord}>
                             <Popup>
                                 {coordenada.name}
-                                {data.map((item) => {
-                                    {
-                                        console.log("location", item.location);
-                                        console.log(
-                                            "coordenada",
-                                            coordenada.coord
-                                        );
-                                    }
-                                    if (
-                                        item.location[0] ==
-                                            coordenada.coord[0] &&
-                                        item.location[1] == coordenada.coord[1]
-                                    ) {
-                                        {
-                                            console.log("TRUE");
-                                        }
-                                        return (
-                                            <div key={item.id}>
-                                                {" "}
-                                                {/* Remember to add a unique key to each mapped element */}
-                                                <p>pH: {item.properties.pH}</p>
-                                                <p>
-                                                    Temperatura:{" "}
-                                                    {
-                                                        item.properties
-                                                            .Temperatura
-                                                    }
-                                                </p>
-                                                <p>
-                                                    Conductividad:{" "}
-                                                    {
-                                                        item.properties
-                                                            .Conductividad
-                                                    }
-                                                </p>
-                                                <p>
-                                                    Oxigeno:{" "}
-                                                    {item.properties.Oxigeno}
-                                                </p>
-                                                {item.prediction === 1 ? (
-                                                    <p>El baño es seguro</p>
-                                                ) : (
-                                                    <p>El baño no es seguro</p>
-                                                )}
-                                            </div>
-                                        );
-                                    }
-                                    return null; // Make sure to return null for non-matching items to avoid rendering issues
-                                })}
+                                {cleanData[coordenada.name] ? (
+                                    <>
+                                        <p>
+                                            pH:{" "}
+                                            {
+                                                cleanData[coordenada.name]
+                                                    .properties.pH
+                                            }
+                                        </p>
+                                        <p>
+                                            Temperatura:{" "}
+                                            {
+                                                cleanData[coordenada.name]
+                                                    .properties.Temperatura
+                                            }
+                                        </p>
+                                        <p>
+                                            Oxigeno:{" "}
+                                            {
+                                                cleanData[coordenada.name]
+                                                    .properties.Oxigeno
+                                            }
+                                        </p>
+                                        <p>
+                                            Conductividad:{" "}
+                                            {
+                                                cleanData[coordenada.name]
+                                                    .properties.Conductividad
+                                            }
+                                        </p>
+                                        {cleanData[coordenada.name]
+                                            .prediction === 1 ? (
+                                            <p>Se puede bañar</p>
+                                        ) : (
+                                            <p>No se puede bañar</p>
+                                        )}
+                                    </>
+                                ) : (
+                                    <p>No se han encontrado datos</p>
+                                )}
                             </Popup>
                         </Marker>
                     ))}

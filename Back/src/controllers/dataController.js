@@ -69,10 +69,11 @@ const findMetricsFromName = async (req, res) => {
     try {
         const { name } = req.body;
         const metrics = await metricModel.findOne({ name });
-        if (metrics.length === 0) {
+        if (!metrics) {
             res.status(404).json({ message: "No metrics found" });
+        } else {
+            res.status(200).json(metrics);
         }
-        res.status(200).json(metrics);
     } catch (err) {
         console.log(err);
         res.status(500).json({ message: "Server error" });
