@@ -3,7 +3,6 @@ import "./registro.css";
 
 const Registro = () => {
     const [location, setLocation] = useState("");
-    const [institution, setInstitution] = useState("");
     const [pH, setpH] = useState("");
     const [oxigeno, setOxigeno] = useState("");
     const [conductividad, setConductividad] = useState("");
@@ -14,6 +13,9 @@ const Registro = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
+    const institution = localStorage.getItem("institution");
+    const aula = localStorage.getItem("aula");
+
         try {
             const response = await fetch(`${hostUrl}/api/prediction`, {
                 method: "POST",
@@ -22,7 +24,9 @@ const Registro = () => {
                 },
                 body: JSON.stringify({
                     location,
+                    aula,
                     institution,
+
                     properties: {
                         pH: parseFloat(pH),
                         Oxigeno: parseFloat(oxigeno),
@@ -58,7 +62,7 @@ const Registro = () => {
     return (
         <div className="registroGeneral">
             <form onSubmit={handleSubmit} className="formularioMuestra">
-                <h2>Formulario de Muestras</h2>
+                <h2>REGISTRA LOS DATOS DE LA MUESTRA</h2>
 
                 {error && <p className="error-message">{error}</p>}
 
@@ -66,11 +70,12 @@ const Registro = () => {
                 <div className="campo">
                     <label htmlFor="01" className="01">01.</label>
                     <label htmlFor="location">Localización:</label>
-                    
-                    <div className="mapaRegistro">
 
+                    <div className="mapaRegistro">
+                            AQUÍ VA EL MAPA
                     </div>
-                    <select
+
+                    {/* <select
                         id="location"
                         name="location"
                         value={location}
@@ -83,11 +88,11 @@ const Registro = () => {
                         <option value="Punto 1">Punto 1 - Ría de Bilbao</option>
                         <option value="Punto 2">Punto 2 - Ría de Bilbao</option>
                         <option value="Punto 3">Punto 3 - Ría de Bilbao</option>
-                    </select>
+                    </select> */}
                 </div>
 
                 {/* institución */}
-                <div className="campo">
+                {/* <div className="campo">
                     <label htmlFor="institution">Institución:</label>
                     <select
                         id="institution"
@@ -102,68 +107,72 @@ const Registro = () => {
                         <option value="Institución 1">Institución 1</option>
                         <option value="Institución 2">Institución 2</option>
                         <option value="Institución 3">Institución 3</option>
-                        {/* Add options for institutions here */}
+                       
                     </select>
+                </div> */}
+
+                <div className="formularioMuestras">
+                    
+
+                    {/* oxígeno (mg/l) */}
+                    <div className="campo">
+                        <label htmlFor="oxigeno">Oxígeno (mg/l):</label>
+                        <input
+                            type="text"
+                            step="0.01"
+                            id="oxigeno"
+                            name="oxigeno"
+                            value={oxigeno}
+                            onChange={(e) => setOxigeno(e.target.value)}
+                            required
+                        />
+                    </div>
+
+                    {/* conductividad */}
+                    <div className="campo">
+                        <label htmlFor="conductividad">Conductividad:</label>
+                        <input
+                            type="text"
+                            step="0.01"
+                            id="conductividad"
+                            name="conductividad"
+                            value={conductividad}
+                            onChange={(e) => setConductividad(e.target.value)}
+                            required
+                        />
+                    </div>
+
+                    {/* temperatura */}
+                    <div className="campo">
+                        <label htmlFor="temperatura">Temperatura:</label>
+                        <input
+                            type="text"
+                            step="0.01"
+                            id="temperatura"
+                            name="temperatura"
+                            value={temperatura}
+                            onChange={(e) => setTemperatura(e.target.value)}
+                            required
+                        />
+                    </div>
+
+                    {/* el pH */}
+                    <div className="campo">
+                        <label htmlFor="pH">pH:</label>
+                        <input
+                            type="text"
+                            step="0.01"
+                            id="pH"
+                            name="pH"
+                            value={pH}
+                            onChange={(e) => setpH(e.target.value)}
+                            required
+                        />
+                    </div>
                 </div>
 
-                {/* el pH */}
-                <div className="campo">
-                    <label htmlFor="pH">pH:</label>
-                    <input
-                        type="text"
-                        step="0.01"
-                        id="pH"
-                        name="pH"
-                        value={pH}
-                        onChange={(e) => setpH(e.target.value)}
-                        required
-                    />
-                </div>
-
-                {/* oxígeno (mg/l) */}
-                <div className="campo">
-                    <label htmlFor="oxigeno">Oxígeno (mg/l):</label>
-                    <input
-                        type="text"
-                        step="0.01"
-                        id="oxigeno"
-                        name="oxigeno"
-                        value={oxigeno}
-                        onChange={(e) => setOxigeno(e.target.value)}
-                        required
-                    />
-                </div>
-
-                {/* conductividad */}
-                <div className="campo">
-                    <label htmlFor="conductividad">Conductividad:</label>
-                    <input
-                        type="text"
-                        step="0.01"
-                        id="conductividad"
-                        name="conductividad"
-                        value={conductividad}
-                        onChange={(e) => setConductividad(e.target.value)}
-                        required
-                    />
-                </div>
-
-                {/* temperatura */}
-                <div className="campo">
-                    <label htmlFor="temperatura">Temperatura:</label>
-                    <input
-                        type="text"
-                        step="0.01"
-                        id="temperatura"
-                        name="temperatura"
-                        value={temperatura}
-                        onChange={(e) => setTemperatura(e.target.value)}
-                        required
-                    />
-                </div>
-
-                <div className="campo">
-                    <button type="submit">Enviar Muestra</button>
+                <div className="button">
+                    <button type="submit">Enviar</button>
                 </div>
             </form>
         </div>

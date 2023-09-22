@@ -2,7 +2,8 @@ import metricModel from "../models/metricModel.js";
 import getModelData from "./modeldata.js";
 
 const addMetrics = async (req, res) => {
-    const { location, properties, institution } = req.body;
+    const { location, properties, institution, aula } = req.body;
+    console.log(location, properties, institution, aula);
     console.log(properties);
     if (!properties) {
         res.status(400).json({ message: "No properties" });
@@ -19,6 +20,7 @@ const addMetrics = async (req, res) => {
                         properties,
                         prediction,
                         institution,
+                        aula
                     });
                     await newMetric.save();
                     res.status(200).json(newMetric);
