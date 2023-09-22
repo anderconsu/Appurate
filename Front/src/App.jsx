@@ -5,6 +5,7 @@ import './App.css'
 // import Unete from './components/visible/unete/unete'
 // import Admin from './components/admin/admin'
 import Header from './components/header/header'
+import Footer from './components/footer/footer'
 // import Mapa from './components/visible/mapa/mapa'
 
 
@@ -24,6 +25,7 @@ function App() {
       <div>
         <Outlet />
       </div>
+      <Footer />
       </div>
       {/* <Mapa /> */}
     </>

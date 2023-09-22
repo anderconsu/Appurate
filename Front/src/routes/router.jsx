@@ -13,6 +13,7 @@ import Registro from "../components/privada/registro/registro.jsx";
 import Recursos from "../components/privada/recursos/recursos.jsx";
 // import Header from "../components/header/header.jsx";
 import Home from "../components/visible/home/home.jsx";
+import Footer from "../components/footer/footer.jsx";
 
 
 const Router = createBrowserRouter([
@@ -64,6 +65,10 @@ const Router = createBrowserRouter([
             {
                 path:"/",
                 element:<Home/>
+            },
+            {
+                path:"/footer",
+                element:<Footer/>
             }
         ]         
     }
