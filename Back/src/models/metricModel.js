@@ -2,8 +2,12 @@ import connection from "../db/mongoose.js";
 
 const MetricSchema = new connection.Schema(
     {
-        location: {
+        name: {
             type: String,
+            required: true,
+        },
+        location: {
+            type: Array,
             required: true,
         },
         properties: {

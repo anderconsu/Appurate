@@ -3,7 +3,7 @@ import getModelData from "./modeldata.js";
 
 const addMetrics = async (req, res) => {
     try {
-        const { location, properties, institution, aula } = req.body;
+        const { name, location, properties, institution, aula } = req.body;
         console.log(
             "location: ",
             location,
@@ -14,7 +14,7 @@ const addMetrics = async (req, res) => {
             "aula: ",
             aula
         );
-        if (!location || !properties || !institution || !aula) {
+        if (!name || !location || !properties || !institution || !aula) {
             throw new Error("ALL FIELDS ARE REQUIRED");
         }
         if (!properties) {
@@ -28,6 +28,7 @@ const addMetrics = async (req, res) => {
                 } else {
                     try {
                         const newMetric = new metricModel({
+                            name,
                             location,
                             properties,
                             prediction,
@@ -55,7 +56,24 @@ const findMetricsFromLocation = async (req, res) => {
     try {
         const { location } = req.body;
         const metrics = await metricModel.find({ location });
+        if (metrics.length === 0) {
+            res.status(404).json({ message: "No metrics found" });
+        }
         res.status(200).json(metrics);
+    } catch (err) {
+        console.log(err);
+        res.status(500).json({ message: "Server error" });
+    }
+};
+const findMetricsFromName = async (req, res) => {
+    try {
+        const { name } = req.body;
+        const metrics = await metricModel.findOne({ name });
+        if (!metrics) {
+            res.status(404).json({ message: "No metrics found" });
+        } else {
+            res.status(200).json(metrics);
+        }
     } catch (err) {
         console.log(err);
         res.status(500).json({ message: "Server error" });
@@ -86,5 +104,6 @@ export {
     getMetrics,
     getMetricsfromInstitution,
     findMetricsFromLocation,
+    findMetricsFromName,
     addMetrics,
 };
