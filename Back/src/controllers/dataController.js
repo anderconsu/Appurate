@@ -53,4 +53,14 @@ const findMetricsFromLocation = async (req, res) => {
     }
 };
 
-export { findMetricsFromLocation, addMetrics };
+const getMetrics = async (req, res) => {
+    try {
+        const metrics = await metricModel.find();
+        res.status(200).json(metrics);
+    } catch (err) {
+        console.log(err);
+        res.status(500).json({ message: "Server error" });
+    }
+};
+
+export { getMetrics, findMetricsFromLocation, addMetrics };
