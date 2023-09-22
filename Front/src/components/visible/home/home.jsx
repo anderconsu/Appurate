@@ -1,5 +1,7 @@
 import React from 'react'
 import './home.css';
+import Mapa from '../mapa/mapa';
+
 
 const Home = () => {
   return (
@@ -18,7 +20,7 @@ const Home = () => {
 
     <div>
     <p>En este mapa interactivo puedes conocer sobre la calidad del agua en la Ría de Bilbao.</p>
-    <mapa/>
+    <Mapa/>
     {/* Aquí va el mapa */}
     <br /><br />
     </div>

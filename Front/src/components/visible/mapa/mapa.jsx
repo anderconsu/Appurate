@@ -64,7 +64,7 @@ const Mapa = () => {
     return (
         <>
             <div>
-                <h1>ESTO ES UN MAPA</h1>
+                
                 <MapContainer
                     center={[43.294125, -2.974312]}
                     zoom={13}
