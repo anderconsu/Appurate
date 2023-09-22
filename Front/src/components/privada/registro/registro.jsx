@@ -2,7 +2,10 @@ import { /*React*/ useState } from "react";
 import "./registro.css";
 
 const Registro = () => {
-    const [location, setLocation] = useState("test");
+    const [location, setLocation] = useState([43.25437, -2.922241]);
+    const [name, setName] = useState(
+        "Muelle de Ibeni, Colegio Maestro García Rivero"
+    );
     const [pH, setpH] = useState("");
     const [oxigeno, setOxigeno] = useState("");
     const [conductividad, setConductividad] = useState("");
@@ -23,6 +26,7 @@ const Registro = () => {
                     "Content-Type": "application/json",
                 },
                 body: JSON.stringify({
+                    name,
                     location,
                     aula,
                     institution,

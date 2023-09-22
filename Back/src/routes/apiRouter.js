@@ -2,6 +2,7 @@ import { Router } from "express";
 
 import {
     findMetricsFromLocation,
+    findMetricsFromName,
     addMetrics,
     getMetrics,
     getMetricsfromInstitution,
@@ -24,6 +25,10 @@ apiRouter.get("/metrics", async (req, res) => {
 apiRouter.post("/locationmetrics", async (req, res) => {
     console.log("location metrics requested");
     findMetricsFromLocation(req, res);
+});
+apiRouter.post("/namemetrics", async (req, res) => {
+    console.log("namemetrics requested");
+    findMetricsFromName(req, res);
 });
 apiRouter.post("/institutionmetrics", async (req, res) => {
     console.log("institution metrics requested");

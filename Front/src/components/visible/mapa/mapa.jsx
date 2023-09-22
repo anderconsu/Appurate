@@ -14,9 +14,10 @@ const Mapa = () => {
             const response = await fetch(`${hostUrl}/api/metrics`, {
                 method: "GET",
             });
-            let datos = await response.json();
-            setData(datos);
-            console.log(data);
+            if (response.ok) {
+                let datos = await response.json();
+                setData(datos);
+            }
         } catch (err) {
             console.log(err);
         }
@@ -43,7 +44,21 @@ const Mapa = () => {
                             <Popup>
                                 {coordenada.name}
                                 {data.map((item) => {
-                                    if (item.location === coordenada.coord) {
+                                    {
+                                        console.log("location", item.location);
+                                        console.log(
+                                            "coordenada",
+                                            coordenada.coord
+                                        );
+                                    }
+                                    if (
+                                        item.location[0] ==
+                                            coordenada.coord[0] &&
+                                        item.location[1] == coordenada.coord[1]
+                                    ) {
+                                        {
+                                            console.log("TRUE");
+                                        }
                                         return (
                                             <div key={item.id}>
                                                 {" "}
