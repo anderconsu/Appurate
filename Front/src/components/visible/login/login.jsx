@@ -44,42 +44,48 @@ const Login = () => {
     };
 
     return (
-        
-        <div className="a-right">
-            <h3>Entra en tu cuenta</h3><br /><br />
-            <p>Si todavía no formas parte del proyecto únete al proyecto.</p><p>¡Quiero formar parte!</p>
-            <form className="infoForm authForm" onSubmit={handleLogin}>
-                
+        <>
+        <div className="a">
+            <div className="a-right">
+                <h2>Entra en tu cuenta</h2><br /><br />
+                <p>Si todavía no formas parte del proyecto únete al proyecto.</p><p className="azul_claro">¡Quiero formar parte!</p>
+                <form className="infoForm authForm" onSubmit={handleLogin}>
+                    
 
-                {error && <p className="error-message">{error}</p>}
+                    {error && <p className="error-message">{error}</p>}
 
-                <div>
-                    <input
-                        type="text"
-                        className="infoInput"
-                        name="username"
-                        placeholder="Usuario"
-                        onChange={(e) => setUsername(e.target.value)}
-                        value={username}
-                    />
-                </div>
+                    <div>
+                        <input
+                            type="text"
+                            className="infoInput"
+                            name="username"
+                            placeholder="Usuario"
+                            onChange={(e) => setUsername(e.target.value)}
+                            value={username}
+                        />
+                    </div>
 
-                <div>
-                    <input
-                        type="password"
-                        className="infoInput"
-                        name="password"
-                        placeholder="Contraseña"
-                        onChange={(e) => setPassword(e.target.value)}
-                        value={password}
-                    />
-                </div>
+                    <div>
+                        <input
+                            type="password"
+                            className="infoInput"
+                            name="password"
+                            placeholder="Contraseña"
+                            onChange={(e) => setPassword(e.target.value)}
+                            value={password}
+                        />
+                    </div>
 
-                <button className="button infoButton" type="submit">
-                    Iniciar sesión
-                </button>
-            </form>
+                    <button className="boton1" type="submit">
+                        Iniciar sesión
+                    </button>
+                </form>
+            </div>
+            <div>
+                <img src="./static/login/mundo2.png" alt="mundo" className="mundo"/>
+            </div>
         </div>
+        </>
     );
 };
 

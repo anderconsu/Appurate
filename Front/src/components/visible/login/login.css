@@ -1,15 +1,20 @@
+a {
+  display: flex;
+  flex-direction: column;
+}
 
 .a-right {
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
     align-items: center;
     min-height: 100vh;
-    background-color: #0077b6; 
+    background-color: var(--blanco); 
     padding: 20px;
     box-sizing: border-box;
   }
   
   .infoForm {
+    
     background-color: #ffffff; 
     padding: 20px;
     border-radius: 10px;
@@ -45,7 +50,7 @@
   }
   
 
-  .infoButton {
+  /* .infoButton {
     background-color: #48CAD9;
     color: #022859; 
     padding: 10px 20px;
@@ -54,11 +59,11 @@
     cursor: pointer;
     font-size: 16px;
     transition: background-color 0.3s ease;
-  }
+  } */
   
-  .infoButton:hover {
+  /* .infoButton:hover {
     background-color: #005f91; 
-  }
+  } */
   
 
   /* hacer un fetch al backend para que compruebe si el login es correcto */
