@@ -64,7 +64,12 @@ const Registro = () => {
 
                 {/* localización */}
                 <div className="campo">
+                    <label htmlFor="01" className="01">01.</label>
                     <label htmlFor="location">Localización:</label>
+                    
+                    <div className="mapaRegistro">
+
+                    </div>
                     <select
                         id="location"
                         name="location"
