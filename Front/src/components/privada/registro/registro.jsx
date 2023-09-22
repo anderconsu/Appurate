@@ -67,7 +67,7 @@ const Registro = () => {
                 {error && <p className="error-message">{error}</p>}
 
                 {/* localización */}
-                <div className="campo">
+                <div className="localizacion">
                     <label htmlFor="01" className="01">01.</label>
                     <label htmlFor="location">Localización:</label>
 
@@ -111,9 +111,9 @@ const Registro = () => {
                     </select>
                 </div> */}
 
-                <div className="formularioMuestras">
-                    
 
+                <div className="muestras">
+                    
                     {/* oxígeno (mg/l) */}
                     <div className="campo">
                         <label htmlFor="oxigeno">Oxígeno (mg/l):</label>
@@ -169,12 +169,13 @@ const Registro = () => {
                             required
                         />
                     </div>
+                <div className="buttonContainer">
+                    <button className="button" type="submit">Enviar</button>
+                </div>
                 </div>
 
-                <div className="button">
-                    <button type="submit">Enviar</button>
-                </div>
             </form>
+            <img src="Front/public/images/5bf990fe70c1eab345a4eb6a92c31669.png" alt="" />
         </div>
     );
 };
