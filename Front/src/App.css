@@ -1,5 +1,52 @@
+:root {
+  --azul_celeste: #48CAD9;
+  --azul_oscuro: #022859;
+  --negro: #020305;
+  --gris: #D9D9D9;
+  --blanco: #ffffff;
+}
 
+.boton1 {
+  align-items: center;
+  background-color: var(--azul_celeste);
+  border-radius: 20px;
+  border-color: var(--azul_celeste);
+  display: flex;
+  gap: 10px;
+  height: 55px;
+  justify-content: center;
+  overflow: hidden;
+  padding: 26px 54px;
+  position: relative;
+}
 
+.boton2 {
+  align-items: center;
+  background-color: var(--blanco);
+  border-radius: 20px;
+  border-color: var(--azul_celeste);
+  display: flex;
+  gap: 10px;
+  height: 55px;
+  justify-content: center;
+  overflow: hidden;
+  padding: 26px 54px;
+  position: relative;
+}
+
+.boton3 {
+  align-items: center;
+  background-color: var(--blanco);
+  /* border-radius: 20px; */
+  border-color: var(--blanco);
+  display: flex;
+  gap: 10px;
+  height: 55px;
+  justify-content: center;
+  overflow: hidden;
+  padding: 26px 54px;
+  position: relative;
+}
 
 
 

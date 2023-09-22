@@ -20,10 +20,15 @@
   }
   
   h3 {
-    color: #0077b6; 
+    color: #022859; 
     font-size: 24px;
   }
   
+  p {
+    color: #022859; 
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
   
   .infoInput {
     width: 100%;
@@ -41,8 +46,8 @@
   
 
   .infoButton {
-    background-color: #0077b6;
-    color: #ffffff; 
+    background-color: #48CAD9;
+    color: #022859; 
     padding: 10px 20px;
     border: none;
     border-radius: 5px;

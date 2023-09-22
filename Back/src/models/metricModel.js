@@ -18,6 +18,10 @@ const MetricSchema = new connection.Schema(
             type: String,
             required: true,
         },
+        aula: {
+            type: String,
+            required: true,
+        },
         date: {
             type: Date,
             required: true,

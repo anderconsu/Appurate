@@ -59,7 +59,7 @@ const FichaVisualizacion = () => {
       <p>pH: {data.pH}</p>
       <p>Oxígeno (mg/l): {data.oxigeno}</p>
       <p>Conductividad: {data.conductividad}</p>
-      <p>Turbidez: {data.turbidez}</p>
+      <p>Temperatura: {data.Temperatura}</p>
     </div>
   );
 };

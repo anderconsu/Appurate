@@ -44,9 +44,12 @@ const Login = () => {
     };
 
     return (
+        
         <div className="a-right">
+            <h3>Entra en tu cuenta</h3><br /><br />
+            <p>Si todavía no formas parte del proyecto únete al proyecto.</p><p>¡Quiero formar parte!</p>
             <form className="infoForm authForm" onSubmit={handleLogin}>
-                <h3>Iniciar sesión</h3>
+                
 
                 {error && <p className="error-message">{error}</p>}
 

@@ -1,9 +1,16 @@
-// import React from 'react'
+import React from 'react'
 
 const Header = () => {
   return (
-    <h1 className="header">ESTO ES HEADER</h1>
-  )
-}
+    <header className="header">
+      <img src="./static/logo.png" alt="Mi Logo" className="logo" />
 
-export default Header
+      <button className="boton3">Sobre Nosotros</button>
+      <button className="boton2">¡Únete!</button>
+      <button className="boton1">Entrar</button>
+     
+    </header>
+  );
+};
+
+export default Header;
