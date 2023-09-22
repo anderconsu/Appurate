@@ -36,16 +36,7 @@ const addMetrics = async (req, res) => {
 const findMetricsFromLocation = async (req, res) => {
     try {
         const { location } = req.body;
-        const metrics = await metricModel.find(
-            { location },
-            (error, results) => {
-                if (error) {
-                    console.error(error);
-                } else {
-                    console.log(results);
-                }
-            }
-        );
+        const metrics = await metricModel.find({ location });
         res.status(200).json(metrics);
     } catch (err) {
         console.log(err);
@@ -62,5 +53,20 @@ const getMetrics = async (req, res) => {
         res.status(500).json({ message: "Server error" });
     }
 };
+const getMetricsfromInstitution = async (req, res) => {
+    const { institution, aula } = req.body;
+    try {
+        const metrics = await metricModel.find({ institution, aula });
+        res.status(200).json(metrics);
+    } catch (err) {
+        console.log(err);
+        res.status(500).json({ message: "Server error" });
+    }
+};
 
-export { getMetrics, findMetricsFromLocation, addMetrics };
+export {
+    getMetrics,
+    getMetricsfromInstitution,
+    findMetricsFromLocation,
+    addMetrics,
+};

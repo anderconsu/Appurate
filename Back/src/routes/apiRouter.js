@@ -4,6 +4,7 @@ import {
     findMetricsFromLocation,
     addMetrics,
     getMetrics,
+    getMetricsfromInstitution,
 } from "../controllers/dataController.js";
 
 const apiRouter = Router();
@@ -22,6 +23,10 @@ apiRouter.get("/metrics", async (req, res) => {
 });
 apiRouter.post("/locationmetrics", async (req, res) => {
     console.log("location metrics requested");
-    getMetrics(req, res);
+    findMetricsFromLocation(req, res);
+});
+apiRouter.post("/institutionmetrics", async (req, res) => {
+    console.log("institution metrics requested");
+    getMetricsfromInstitution(req, res);
 });
 export default apiRouter;
