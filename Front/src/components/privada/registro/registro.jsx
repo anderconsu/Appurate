@@ -67,7 +67,7 @@ const Registro = () => {
 
                 {/* localización */}
                 <div className="localizacion">
-                    <label htmlFor="01" className="01">01.</label>
+                    <label htmlFor="01" className="01">01.</label></div>
                 <div className="campo">
                     <label htmlFor="01" className="01">
                         01.
