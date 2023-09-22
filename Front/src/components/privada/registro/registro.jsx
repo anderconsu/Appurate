@@ -7,7 +7,7 @@ const Registro = () => {
     const [pH, setpH] = useState("");
     const [oxigeno, setOxigeno] = useState("");
     const [conductividad, setConductividad] = useState("");
-    const [turbidez, setTurbidez] = useState("");
+    const [temperatura, setTemperatura] = useState("");
     const [error, setError] = useState(null);
     const hostUrl = import.meta.env.VITE_BACKEND_URL;
 
@@ -27,7 +27,7 @@ const Registro = () => {
                         pH: parseFloat(pH),
                         Oxigeno: parseFloat(oxigeno),
                         Conductividad: parseFloat(conductividad),
-                        Turbidez: parseFloat(turbidez),
+                        Temperatura: parseFloat(temperatura),
                     },
                 }),
             });
@@ -38,7 +38,7 @@ const Registro = () => {
                 setpH("");
                 setOxigeno("");
                 setConductividad("");
-                setTurbidez("");
+                setTemperatura("");
             } else {
                 setError("Error al enviar los datos de muestra");
             }
@@ -53,7 +53,7 @@ const Registro = () => {
     console.log("pH:", pH);
     console.log("Oxígeno (mg/l):", oxigeno);
     console.log("Conductividad:", conductividad);
-    console.log("Turbidez:", turbidez);
+    console.log("Temperatura:", temperatura);
 
     return (
         <div className="registroGeneral">
@@ -143,16 +143,16 @@ const Registro = () => {
                     />
                 </div>
 
-                {/* turbidez */}
+                {/* temperatura */}
                 <div className="campo">
-                    <label htmlFor="turbidez">Turbidez:</label>
+                    <label htmlFor="temperatura">Temperatura:</label>
                     <input
                         type="text"
                         step="0.01"
-                        id="turbidez"
-                        name="turbidez"
-                        value={turbidez}
-                        onChange={(e) => setTurbidez(e.target.value)}
+                        id="temperatura"
+                        name="temperatura"
+                        value={temperatura}
+                        onChange={(e) => setTemperatura(e.target.value)}
                         required
                     />
                 </div>

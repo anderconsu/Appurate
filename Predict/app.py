@@ -23,12 +23,13 @@ def predecir_niños():
     ph = float(data['pH'])
     oxigeno = float(data['Oxigeno'])
     conductividad = float(data['Conductividad'])
-    turbidez = float(data['Turbidez'])
+    temperatura = float(data['Temperatura'])
 
-    input_data_niños = [[ph, oxigeno, conductividad, turbidez]]
+    input_data_niños = [[ph, oxigeno, conductividad, temperatura]]
     prediction_niños = modelo_niños.predict(input_data_niños)
 
     return jsonify(int(prediction_niños[0]))
+    
 
 modelo_lab = pickle.load(open('models/modelo_laboratorio.pkl', 'rb'))
 @app.route('/prediccion_laboratorio', methods=['POST'])
@@ -38,6 +39,7 @@ def predecir_laboratorio():
     ph = float(data['pH'])
     oxigeno = float(data['Oxigeno'])
     conductividad = float(data['Conductividad'])
+    temperatura = float(data['Temperatura'])
     turbidez = float(data['Turbidez'])
     amonio = float(data['Amonio'])
     fosfatos = float(data['Fosfatos'])
@@ -46,11 +48,11 @@ def predecir_laboratorio():
     e_coli = float(data['E coli'])
     enterococos = float(data['Enterococos'])
 
-    input_data_lab = [[ph, oxigeno, conductividad, turbidez, amonio, fosfatos, nitratos, carbono, e_coli, enterococos]]
+    input_data_lab = [[ph, oxigeno, conductividad, temperatura, turbidez, amonio, fosfatos, nitratos, carbono, e_coli, enterococos]]
     prediction_lab = modelo_lab.predict(input_data_lab)
 
-    return jsonify({'prediction_lab': float(prediction_lab[0])})
 
+    return jsonify({'El agua es': float(prediction_lab[0])})
 
 
 if __name__ == '__main__':
