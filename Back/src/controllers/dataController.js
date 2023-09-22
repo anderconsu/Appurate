@@ -68,7 +68,7 @@ const findMetricsFromLocation = async (req, res) => {
 const findMetricsFromName = async (req, res) => {
     try {
         const { name } = req.body;
-        const metrics = await metricModel.find({ name });
+        const metrics = await metricModel.findOne({ name });
         if (metrics.length === 0) {
             res.status(404).json({ message: "No metrics found" });
         }

@@ -8,6 +8,7 @@ import coordenadas from "./coordenadas";
 const Mapa = () => {
     const hostUrl = import.meta.env.VITE_BACKEND_URL;
     const [data, setData] = useState([]);
+    const [count, setCount] = useState(0);
 
     const getData = async () => {
         try {
