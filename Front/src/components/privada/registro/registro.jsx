@@ -1,5 +1,6 @@
 import { /*React*/ useState } from "react";
 import "./registro.css";
+import MapaRegister from "../../visible/mapa/mapaRegister";
 
 
 
@@ -14,6 +15,7 @@ const Registro = () => {
     const [temperatura, setTemperatura] = useState("");
     const [error, setError] = useState(null);
     const hostUrl = import.meta.env.VITE_BACKEND_URL;
+    
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -72,17 +74,16 @@ const Registro = () => {
                 {error && <p className="error-message">{error}</p>}
 
                 {/* localización */}
+                
                 <div className="localizacion">
-                    <label htmlFor="01" className="01">01.</label></div>
-                <div className="campo">
                     <label htmlFor="01" className="01">
                         01.
                     </label>
                     <label htmlFor="location">Localización:</label>
 
-                    <div className="mapaRegistro">AQUÍ VA EL MAPA</div>
-
-
+                    <div className="mapa">
+                        <MapaRegister />
+                    </div>
                 </div>
 
 
