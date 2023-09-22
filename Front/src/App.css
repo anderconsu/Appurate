@@ -1,3 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+
 :root {
   --azul_celeste: #48CAD9;
   --azul_oscuro: #022859;
@@ -9,11 +20,12 @@
 .boton1 {
   align-items: center;
   background-color: var(--azul_celeste);
-  border-radius: 20px;
+  border-radius: 10px;
   border-color: var(--azul_celeste);
   display: flex;
   gap: 10px;
-  height: 55px;
+  width: 15px;
+  height: 12px;
   justify-content: center;
   overflow: hidden;
   padding: 26px 54px;
@@ -23,10 +35,11 @@
 .boton2 {
   align-items: center;
   background-color: var(--blanco);
-  border-radius: 20px;
+  border-radius: 10px;
   border-color: var(--azul_celeste);
   display: flex;
   gap: 10px;
+  width: 15px;
   height: 55px;
   justify-content: center;
   overflow: hidden;
@@ -37,10 +50,11 @@
 .boton3 {
   align-items: center;
   background-color: var(--blanco);
-  /* border-radius: 20px; */
+  border-radius: 2px;
   border-color: var(--blanco);
   display: flex;
   gap: 10px;
+  width: 15px;
   height: 55px;
   justify-content: center;
   overflow: hidden;

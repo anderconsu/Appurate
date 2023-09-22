@@ -1,5 +1,8 @@
 import { /*React*/ useState } from "react";
 import "./registro.css";
+import MapaRegister from "../../visible/mapa/mapaRegister";
+
+
 
 const Registro = () => {
     const [location, setLocation] = useState([43.25437, -2.922241]);
@@ -12,6 +15,7 @@ const Registro = () => {
     const [temperatura, setTemperatura] = useState("");
     const [error, setError] = useState(null);
     const hostUrl = import.meta.env.VITE_BACKEND_URL;
+    
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -70,57 +74,24 @@ const Registro = () => {
                 {error && <p className="error-message">{error}</p>}
 
                 {/* localización */}
+                
                 <div className="localizacion">
-                    <label htmlFor="01" className="01">01.</label></div>
-                <div className="campo">
                     <label htmlFor="01" className="01">
                         01.
                     </label>
                     <label htmlFor="location">Localización:</label>
 
-                    <div className="mapaRegistro">AQUÍ VA EL MAPA</div>
-
-                    {/* <select
-                        id="location"
-                        name="location"
-                        value={location}
-                        onChange={(e) => setLocation(e.target.value)}
-                        required
-                    >
-                        <option value="" disabled>
-                            Seleccione una localización
-                        </option>
-                        <option value="Punto 1">Punto 1 - Ría de Bilbao</option>
-                        <option value="Punto 2">Punto 2 - Ría de Bilbao</option>
-                        <option value="Punto 3">Punto 3 - Ría de Bilbao</option>
-                    </select> */}
+                    <div className="mapa">
+                        <MapaRegister />
+                    </div>
                 </div>
-
-                {/* institución */}
-                {/* <div className="campo">
-                    <label htmlFor="institution">Institución:</label>
-                    <select
-                        id="institution"
-                        name="institution"
-                        value={institution}
-                        onChange={(e) => setInstitution(e.target.value)}
-                        required
-                    >
-                        <option value="" disabled>
-                            Seleccione una institución
-                        </option>
-                        <option value="Institución 1">Institución 1</option>
-                        <option value="Institución 2">Institución 2</option>
-                        <option value="Institución 3">Institución 3</option>
-                       
-                    </select>
-                </div> */}
 
 
                 <div className="muestras">
-                    
+
                     {/* oxígeno (mg/l) */}
-                    <div className="campo">
+                    <div className="oxigeno">
+                        <label htmlFor="02" className="02">02.</label>
                         <label htmlFor="oxigeno">Oxígeno (mg/l):</label>
                         <input
                             type="text"
@@ -134,7 +105,8 @@ const Registro = () => {
                     </div>
 
                     {/* conductividad */}
-                    <div className="campo">
+                    <div className="conductividad">
+                        <label htmlFor="03" className="03">03.</label>
                         <label htmlFor="conductividad">Conductividad:</label>
                         <input
                             type="text"
@@ -148,7 +120,8 @@ const Registro = () => {
                     </div>
 
                     {/* temperatura */}
-                    <div className="campo">
+                    <div className="temperatura">
+                        <label htmlFor="04" className="04">04.</label>
                         <label htmlFor="temperatura">Temperatura:</label>
                         <input
                             type="text"
@@ -162,21 +135,22 @@ const Registro = () => {
                     </div>
 
                     {/* el pH */}
-                    <div className="campo">
+                    <div className="ph">
+                        <label htmlFor="05" className="05">05.</label>
                         <label htmlFor="pH">pH:</label>
                         <input
                             type="text"
                             step="0.01"
-                            id="pH"
+                            id="ph"
                             name="pH"
                             value={pH}
                             onChange={(e) => setpH(e.target.value)}
                             required
                         />
                     </div>
-                <div className="buttonContainer">
-                    <button className="button" type="submit">Enviar</button>
-                </div>
+                    <div className="buttonContainer">
+                        <button className="button" type="submit">Enviar</button>
+                    </div>
                 </div>
 
             </form>
