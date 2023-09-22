@@ -5,7 +5,7 @@ import "leaflet/dist/leaflet.css";
 import "./mapa.css";
 
 import coordenadas from "./coordenadas";
-const Mapa = () => {
+const MapaRegister = () => {
     const hostUrl = import.meta.env.VITE_BACKEND_URL;
     const [data, setData] = useState([]);
     const [cleanData, setCleanData] = useState({});
@@ -64,7 +64,6 @@ const Mapa = () => {
     return (
         <>
             <div>
-                
                 <MapContainer
                     center={[43.294125, -2.974312]}
                     zoom={13}
@@ -127,4 +126,4 @@ const Mapa = () => {
     );
 };
 
-export default Mapa;
+export default MapaRegister;
