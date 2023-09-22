@@ -20,4 +20,8 @@ apiRouter.get("/metrics", async (req, res) => {
     console.log("metrics requested");
     getMetrics(req, res);
 });
+apiRouter.post("/locationmetrics", async (req, res) => {
+    console.log("location metrics requested");
+    getMetrics(req, res);
+});
 export default apiRouter;
