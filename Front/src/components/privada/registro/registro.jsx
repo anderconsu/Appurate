@@ -1,21 +1,21 @@
 import { /*React*/ useState } from "react";
 import "./registro.css";
-import MapaRegister from "../../visible/mapa/mapaRegister";
 
-
+// MAP
+import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import "leaflet/dist/leaflet.css";
+import "../../visible/mapa/mapa.css";
+import coordenadas from "../../visible/mapa/coordenadas.js";
 
 const Registro = () => {
-    const [location, setLocation] = useState([43.25437, -2.922241]);
-    const [name, setName] = useState(
-        "Muelle de Ibeni, Colegio Maestro García Rivero"
-    );
+    const [location, setLocation] = useState([]);
+    const [name, setName] = useState("");
     const [pH, setpH] = useState("");
     const [oxigeno, setOxigeno] = useState("");
     const [conductividad, setConductividad] = useState("");
     const [temperatura, setTemperatura] = useState("");
     const [error, setError] = useState(null);
     const hostUrl = import.meta.env.VITE_BACKEND_URL;
-    
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -57,16 +57,16 @@ const Registro = () => {
             console.error(error);
             setError("Error, inténtalo más tarde");
         }
+        console.log("Datos de la muestra enviados:");
+        console.log("Localización:", location);
+        console.log("pH:", pH);
+        console.log("Oxígeno (mg/l):", oxigeno);
+        console.log("Conductividad:", conductividad);
+        console.log("Temperatura:", temperatura);
     };
 
-    console.log("Datos de la muestra enviados:");
-    console.log("Localización:", location);
-    console.log("pH:", pH);
-    console.log("Oxígeno (mg/l):", oxigeno);
-    console.log("Conductividad:", conductividad);
-    console.log("Temperatura:", temperatura);
-
     return (
+        <>
         <div className="registroGeneral">
             <form onSubmit={handleSubmit} className="formularioMuestra">
                 <h2>REGISTRA LOS DATOS DE LA MUESTRA</h2>
@@ -74,7 +74,7 @@ const Registro = () => {
                 {error && <p className="error-message">{error}</p>}
 
                 {/* localización */}
-                
+
                 <div className="localizacion">
                    
                    <div className="locationHeader">
@@ -86,13 +86,34 @@ const Registro = () => {
                    </div>
 
                     <div className="mapa">
-                        <MapaRegister />
+                        <MapContainer
+                            center={[43.294125, -2.974312]}
+                            zoom={13}
+                            scrollWheelZoom={true}
+                        >
+                            <TileLayer
+                                attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                            />
+                            {coordenadas.map((coordenada, index) => (
+                                <Marker
+                                    key={index}
+                                    position={coordenada.coord}
+                                    eventHandlers={{
+                                        click: () => {
+                                            setName(coordenada.name);
+                                            setLocation(coordenada.coord);
+                                        },
+                                    }}
+                                >
+                                    <Popup>{coordenada.name}</Popup>
+                                </Marker>
+                            ))}
+                        </MapContainer>
                     </div>
                 </div>
 
-
                 <div className="muestras">
-
                     {/* oxígeno (mg/l) */}
                     <div className="oxigeno">
                         <label htmlFor="02" className="dos">02.</label>
@@ -153,13 +174,21 @@ const Registro = () => {
                         />
                     </div>
                     <div className="buttonContainer">
-                        <button className="button" type="submit">Enviar</button>
+                        <button className="button" type="submit">
+                            Enviar
+                        </button>
                     </div>
                 </div>
-
             </form>
-            <img src="Front/public/images/5bf990fe70c1eab345a4eb6a92c31669.png" alt="" />
+            <img
+                src="Front/public/images/5bf990fe70c1eab345a4eb6a92c31669.png"
+                alt=""
+            />
         </div>
+        <div>
+        <img src="./static/registro/pipeta.png" alt="pipeta" className="pipeta"/>
+        </div>
+        </>
     );
 };
 
