@@ -80,21 +80,6 @@ const Mapa = () => {
                                 {cleanData[coordenada.name] ? (
                                     <>
                                         <p>
-                                            pH:{" "}
-                                            {
-                                                cleanData[coordenada.name]
-                                                    .properties.pH
-                                            }
-                                        </p>
-                                        <p>
-                                            Temperatura:{" "}
-                                            {
-                                                cleanData[coordenada.name]
-                                                    .properties.Temperatura
-                                            }
-                                            {" °C"}
-                                        </p>
-                                        <p>
                                             Oxigeno:{" "}
                                             {
                                                 cleanData[coordenada.name]
@@ -109,6 +94,21 @@ const Mapa = () => {
                                                     .properties.Conductividad
                                             }
                                             {" µS/cm"}
+                                        </p>
+                                        <p>
+                                            Temperatura:{" "}
+                                            {
+                                                cleanData[coordenada.name]
+                                                    .properties.Temperatura
+                                            }
+                                            {" °C"}
+                                        </p>
+                                        <p>
+                                            pH:{" "}
+                                            {
+                                                cleanData[coordenada.name]
+                                                    .properties.pH
+                                            }
                                         </p>
                                         {cleanData[coordenada.name]
                                             .prediction === 1 ? (

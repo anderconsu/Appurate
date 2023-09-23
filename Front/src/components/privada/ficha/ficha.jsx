@@ -73,12 +73,12 @@ const FichaVisualizacion = () => {
                         <p>Aula: {data.aula}</p>
                         <p>Fecha: {data.date}</p>
                         <p>Localización: {data.name}</p>
-                        <p>pH: {data.properties.pH}</p>
                         <p>Oxígeno: {data.properties.Oxigeno} mg/l</p>
                         <p>
                             Conductividad: {data.properties.Conductividad} µS/cm
                         </p>
                         <p>Temperatura: {data.properties.Temperatura} °C</p>
+                        <p>pH: {data.properties.pH}</p>
                     </div>
                 ))}
             </div>
