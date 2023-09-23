@@ -10,13 +10,19 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100%; /* El 100% del ancho del contenedor de localización */
-    height: 100%; /* El 100% de la altura del contenedor de localización */
+    width: 100%; 
+    height: 100%; 
+    border-radius: 20px;
+    background-color: #EEE;
 }
 
 .mapa {
-    width: 100%; /* El 100% del ancho del contenedor de localizacion */
-    height: 100%; /* El 100% de la altura del contenedor de localizacion */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    
+    
 }
 
 .muestras {
