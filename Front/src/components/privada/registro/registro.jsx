@@ -1,5 +1,6 @@
-import { /*React*/ useState } from "react";
+import { /*React*/ useEffect, useState } from "react";
 import "./registro.css";
+import PageContext from "../../../context/pageContext";
 
 // MAP
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
@@ -8,6 +9,7 @@ import "../../visible/mapa/mapa.css";
 import coordenadas from "../../visible/mapa/coordenadas.js";
 
 const Registro = () => {
+    const { page, setPage } = useContext(PageContext);
     const [location, setLocation] = useState([]);
     const [name, setName] = useState("");
     const [pH, setpH] = useState("");
@@ -17,6 +19,9 @@ const Registro = () => {
     const [error, setError] = useState(null);
     const hostUrl = import.meta.env.VITE_BACKEND_URL;
 
+    useEffect(() => {
+        setPage("registro");
+    }, []);
     const handleSubmit = async (e) => {
         e.preventDefault();
 

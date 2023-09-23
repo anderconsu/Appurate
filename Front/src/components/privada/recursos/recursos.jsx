@@ -1,9 +1,13 @@
 // import React from 'react'
-
+import { useContext, useEffect } from "react";
+import PageContext from "../../../context/pageContext";
 const Recursos = () => {
-  return (
- <h1 className="recursos">ESTO ES RECURSOS</h1>
-  )
-}
+    const { page, setPage } = useContext(PageContext);
 
-export default Recursos
+    useEffect(() => {
+        setPage("recursos");
+    }, []);
+    return <h1 className="recursos">ESTO ES RECURSOS</h1>;
+};
+
+export default Recursos;

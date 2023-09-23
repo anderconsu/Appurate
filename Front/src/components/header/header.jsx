@@ -20,8 +20,18 @@ const Header = () => {
 
             {!noCargues.includes(page) ? (
                 <>
-                    <button className="boton3">Sobre Nosotros</button>
-                    <button className="boton2">¡Únete!</button>
+                    <button
+                        className="boton3"
+                        onClick={() => navigate("/nosotros")}
+                    >
+                        Sobre Nosotros
+                    </button>
+                    <button
+                        className="boton2"
+                        onClick={() => navigate("/unete")}
+                    >
+                        ¡Únete!
+                    </button>
                     <button
                         className="boton1"
                         onClick={() => navigate("/login")}

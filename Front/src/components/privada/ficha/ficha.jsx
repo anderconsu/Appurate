@@ -1,11 +1,17 @@
 // import React from 'react'
 import { useState, useEffect } from "react";
+import PageContext from "../../../context/pageContext";
 
 const FichaVisualizacion = () => {
     const [data, setData] = useState({});
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
+    const [page, setPage] = useContext(PageContext);
     const hostUrl = import.meta.env.VITE_BACKEND_URL;
+
+    useEffect(() => {
+        setPage("ficha");
+    }, []);
 
     useEffect(() => {
         const fetchData = async () => {
