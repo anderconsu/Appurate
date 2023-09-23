@@ -76,10 +76,14 @@ const Registro = () => {
                 {/* localización */}
                 
                 <div className="localizacion">
-                    <label htmlFor="01" className="01">
+                   
+                   <div className="locationHeader">
+                    <label htmlFor="01" className="uno">
                         01.
                     </label>
                     <label htmlFor="location">Localización:</label>
+
+                   </div>
 
                     <div className="mapa">
                         <MapaRegister />
@@ -91,7 +95,7 @@ const Registro = () => {
 
                     {/* oxígeno (mg/l) */}
                     <div className="oxigeno">
-                        <label htmlFor="02" className="02">02.</label>
+                        <label htmlFor="02" className="dos">02.</label>
                         <label htmlFor="oxigeno">Oxígeno (mg/l):</label>
                         <input
                             type="text"
@@ -106,7 +110,7 @@ const Registro = () => {
 
                     {/* conductividad */}
                     <div className="conductividad">
-                        <label htmlFor="03" className="03">03.</label>
+                        <label htmlFor="03" className="tres">03.</label>
                         <label htmlFor="conductividad">Conductividad:</label>
                         <input
                             type="text"
@@ -121,7 +125,7 @@ const Registro = () => {
 
                     {/* temperatura */}
                     <div className="temperatura">
-                        <label htmlFor="04" className="04">04.</label>
+                        <label htmlFor="04" className="cuatro">04.</label>
                         <label htmlFor="temperatura">Temperatura:</label>
                         <input
                             type="text"
@@ -136,7 +140,7 @@ const Registro = () => {
 
                     {/* el pH */}
                     <div className="ph">
-                        <label htmlFor="05" className="05">05.</label>
+                        <label htmlFor="05" className="cinco">05.</label>
                         <label htmlFor="pH">pH:</label>
                         <input
                             type="text"

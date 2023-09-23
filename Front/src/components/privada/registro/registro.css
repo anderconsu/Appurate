@@ -16,6 +16,12 @@
     background-color: #EEE;
 }
 
+.locationHeader {
+    display: flex;
+    flex-direction: row;
+
+}
+
 .mapa {
     display: flex;
     flex-direction: row;
