@@ -18,9 +18,17 @@
 
 .locationHeader {
     display: flex;
+    gap: 90px;
+    padding-left: 15px;
     flex-direction: row;
+    color: #022859;
+    background: #EEE;
+    border-radius: 20px;
+    font-size: 12px;
+    padding-top: 10px;
 
 }
+
 
 .mapa {
     display: flex;
@@ -40,7 +48,6 @@
     border-radius: 20px;
     justify-content: space-between;
     font-size: 12px;
-
 }
 
 .oxigeno {
@@ -126,4 +133,9 @@
     font-size: 90%;
     padding: 2px;
     
+}
+
+.uno, .dos, .tres, .cuatro, .cinco {
+    color: var(--azul_celeste);
+    font-size: 120%;
 }

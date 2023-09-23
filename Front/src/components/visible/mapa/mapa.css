@@ -1,5 +1,4 @@
 .leaflet-container {
-<<<<<<< HEAD
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -8,9 +7,4 @@
     height: 35vh;
     border-radius: 20px;
     margin: 10px;
-
-=======
-    height: 500px;
-    width: 100%;
->>>>>>> dev
 }
