@@ -25,6 +25,24 @@ const Landing = () => {
           </div>
       </div>
    </div>
+
+   <div className='muestreo'>
+
+     <h2>MUESTREO Y ANÁLISIS DE MUESTRAS</h2>
+     <p>¿Qué vamos a analizar?</p>
+      <div>
+        <h3>01.</h3><h3>Conductividad</h3>
+        <p>Se mide para asegurarse de que haya suficiente oxígeno para que los organismos acuáticos respiren. Niveles bajos afectan negativamente a la vida acuática.</p>
+        <h3>02.</h3><h3>pH</h3>
+        <p>La medida de sales y minerales disueltos en el agua. Valores altos pueden indicar contaminantes o nutrientes en exceso, lo que afecta la calidad del agua.</p>
+        <h3>03.</h3><h3>Oxígeno</h3>
+        <p>Influye en la biología de especies acuáticas y en las reacciones químicas en el agua. Cambios en la temperatura pueden afectar la distribución y el crecimiento de organismos.</p>
+        <h3>04.</h3><h3>Temperatura</h3>
+        <p>Indica si el agua es ácida o alcalina. Importante para la supervivencia de muchos organismos acuáticos, ya que tienen rangos específicos de pH en los que pueden vivir.</p>
+      
+      
+      </div>
+   </div>
    </>
   )
 }
