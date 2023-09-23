@@ -94,7 +94,7 @@ const Registro = () => {
                                 scrollWheelZoom={true}
                             >
                                 <TileLayer
-                                    attribution="Gracias a todo el equipo de appúrate"
+                                    attribution="appúrate"
                                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                                 />
                                 {coordenadas.map((coordenada, index) => (
