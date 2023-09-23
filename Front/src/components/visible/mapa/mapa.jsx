@@ -80,7 +80,7 @@ const Mapa = () => {
                                 {cleanData[coordenada.name] ? (
                                     <>
                                         <p>
-                                            Oxigeno:{" "}
+                                            Oxígeno:{" "}
                                             {
                                                 cleanData[coordenada.name]
                                                     .properties.Oxigeno
@@ -113,12 +113,12 @@ const Mapa = () => {
                                         {cleanData[coordenada.name]
                                             .prediction === 1 ? (
                                             <p>
-                                                Analisis preeliminar: Se puede
+                                                Análisis preeliminar: Se puede
                                                 bañar
                                             </p>
                                         ) : (
                                             <p>
-                                                Analisis preeliminar: No se
+                                                Análisis preeliminar: No se
                                                 puede bañar
                                             </p>
                                         )}
