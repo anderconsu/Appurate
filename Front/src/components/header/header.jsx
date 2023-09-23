@@ -3,6 +3,8 @@ import { useContext } from "react";
 import PageContext from "../../context/pageContext";
 import { Link, useNavigate } from "react-router-dom";
 
+import "./header.scss";
+
 const noCargues = ["admin", "login"];
 
 const Header = () => {
@@ -11,15 +13,17 @@ const Header = () => {
     console.log(page);
     return (
         <header className="header">
-            <img
-                src="./static/logo.png"
-                alt="Mi Logo"
-                className="logo"
-                onClick={() => navigate("/")}
-            />
+            <picture className="logoContainer">
+                <img
+                    src="./static/logo.png"
+                    alt="Mi Logo"
+                    className="logo"
+                    onClick={() => navigate("/")}
+                />
+            </picture>
 
             {!noCargues.includes(page) ? (
-                <>
+                <div className="botonesHeader">
                     <button
                         className="boton3"
                         onClick={() => navigate("/nosotros")}
@@ -38,7 +42,7 @@ const Header = () => {
                     >
                         Entrar
                     </button>
-                </>
+                </div>
             ) : (
                 <></>
             )}

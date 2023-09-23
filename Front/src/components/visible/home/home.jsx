@@ -1,5 +1,5 @@
 import React, { useEffect, useContext } from "react";
-import "./home.css";
+import "./home.scss";
 import Mapa from "../mapa/mapa";
 
 import PageContext from "../../../context/pageContext";
@@ -9,9 +9,9 @@ const Home = () => {
         setPage("home");
     }, []);
     return (
-        <>
-            <div>
-                <div>
+        <main className="homeMain">
+            <div className="homeHeader">
+                <div className="homeHeaderText">
                     <h1 className="home">
                         SÉ EL CAMBIO QUE QUIERES VER EN EL MUNDO
                     </h1>
@@ -23,10 +23,9 @@ const Home = () => {
                         salud humana.
                     </p>
                     <button className="boton1">¡Únete!</button>
-                    <br />
-                    <br />
                 </div>
-                <div>
+
+                <div className="mundoimgContainer">
                     <img
                         src="./static/home/mundo.png"
                         alt="mundo"
@@ -35,15 +34,12 @@ const Home = () => {
                 </div>
             </div>
 
-            <div>
+            <div className="homeMapa">
                 <p>
                     En este mapa interactivo puedes conocer sobre la calidad del
                     agua en la Ría de Bilbao.
                 </p>
                 <Mapa />
-                {/* Aquí va el mapa */}
-                <br />
-                <br />
             </div>
 
             <div>
@@ -168,7 +164,7 @@ const Home = () => {
                     />
                 </div>
             </div>
-        </>
+        </main>
     );
 };
 

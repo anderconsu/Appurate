@@ -1,0 +1,22 @@
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+    & .logoContainer {
+        width: calc(40% - 1rem);
+        max-width: 15rem;
+        & img {
+            width: 100%;
+        }
+    }
+
+    & .botonesHeader {
+        width: calc(60% - 1rem);
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: flex-end;
+        gap: 1rem;
+    }
+}
