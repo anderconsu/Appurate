@@ -63,6 +63,7 @@ const FichaVisualizacion = () => {
                     <h2>Ficha de Visualización</h2>
                     <p>Institución: {data.institution}</p>
                     <p>Aula: {data.aula}</p>
+                    <p>Fecha: {data.date}</p>
                     <p>pH: {data.properties.pH}</p>
                     <p>Oxígeno (mg/l): {data.properties.Oxigeno}</p>
                     <p>Conductividad: {data.properties.Conductividad}</p>
