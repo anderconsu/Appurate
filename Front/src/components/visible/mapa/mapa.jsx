@@ -112,9 +112,15 @@ const Mapa = () => {
                                         </p>
                                         {cleanData[coordenada.name]
                                             .prediction === 1 ? (
-                                            <p>Se puede bañar</p>
+                                            <p>
+                                                Analisis preeliminar: Se puede
+                                                bañar
+                                            </p>
                                         ) : (
-                                            <p>No se puede bañar</p>
+                                            <p>
+                                                Analisis preeliminar: No se
+                                                puede bañar
+                                            </p>
                                         )}
                                     </>
                                 ) : (
