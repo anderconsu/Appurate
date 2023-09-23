@@ -1,4 +1,4 @@
-import { /*React*/ useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import "./registro.css";
 import PageContext from "../../../context/pageContext";
 
