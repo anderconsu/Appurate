@@ -89,6 +89,13 @@ const Home = () => {
                     <div className="homeHowAnalizar">
                         <h3>Analizar</h3>
                         <div className="homeHowAnalizarInfo">
+                            <div className="ninaimgContainer">
+                                <img
+                                    src="./static/home/nina2.png"
+                                    alt="niña"
+                                    className="nina2"
+                                />
+                            </div>
                             <p>
                                 Analiza los diferentes tipos de contaminantes
                                 que se encuentran comúnmente en el agua y cómo
@@ -97,13 +104,6 @@ const Home = () => {
                                 asociados con la calidad del agua y cómo puedes
                                 protegerte.
                             </p>
-                            <div className="ninaimgContainer">
-                                <img
-                                    src="./static/home/nina2.png"
-                                    alt="niña"
-                                    className="nina2"
-                                />
-                            </div>
                         </div>
                     </div>
                 </div>

@@ -73,14 +73,17 @@
                 display: flex;
                 justify-content: center;
                 flex-direction: row;
+                gap: 1rem;
 
                 & .ninaimgContainer {
                     width: 30%;
                     display: flex;
                     justify-content: center;
+
                     & img {
+                        margin: auto 0.1rem;
                         height: 100%;
-                        max-height: 10rem;
+                        max-height: 9rem;
                     }
                 }
                 & p {
@@ -124,6 +127,12 @@
         & .homeHow {
             margin: auto;
             width: 80%;
+            gap: 0rem;
+            & .homeHowRegistrar,
+            .homeHowVisualizar,
+            .homeHowAnalizar {
+                gap: 0;
+            }
         }
     }
 }
