@@ -64,7 +64,6 @@ const Mapa = () => {
     return (
         <>
             <div>
-                
                 <MapContainer
                     center={[43.294125, -2.974312]}
                     zoom={13}
@@ -93,6 +92,7 @@ const Mapa = () => {
                                                 cleanData[coordenada.name]
                                                     .properties.Temperatura
                                             }
+                                            {" °C"}
                                         </p>
                                         <p>
                                             Oxigeno:{" "}
@@ -100,6 +100,7 @@ const Mapa = () => {
                                                 cleanData[coordenada.name]
                                                     .properties.Oxigeno
                                             }
+                                            {" mg/l"}
                                         </p>
                                         <p>
                                             Conductividad:{" "}
@@ -107,6 +108,7 @@ const Mapa = () => {
                                                 cleanData[coordenada.name]
                                                     .properties.Conductividad
                                             }
+                                            {" µS/cm"}
                                         </p>
                                         {cleanData[coordenada.name]
                                             .prediction === 1 ? (

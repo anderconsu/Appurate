@@ -67,131 +67,148 @@ const Registro = () => {
 
     return (
         <>
-        <div className="registroGeneral">
-            <form onSubmit={handleSubmit} className="formularioMuestra">
-                <h2>REGISTRA LOS DATOS DE LA MUESTRA</h2>
+            <div className="registroGeneral">
+                <form onSubmit={handleSubmit} className="formularioMuestra">
+                    <h2>REGISTRA LOS DATOS DE LA MUESTRA</h2>
 
-                {error && <p className="error-message">{error}</p>}
+                    {error && <p className="error-message">{error}</p>}
 
-                {/* localización */}
+                    {/* localización */}
 
-                <div className="localizacion">
-                    <label htmlFor="01" className="01">
-                        01.
-                    </label>
-                    <label htmlFor="location">Localización:</label>
+                    <div className="localizacion">
+                        <label htmlFor="01" className="01">
+                            01.
+                        </label>
+                        <label htmlFor="location">Localización:</label>
 
-                    <div className="mapa">
-                        <MapContainer
-                            center={[43.294125, -2.974312]}
-                            zoom={13}
-                            scrollWheelZoom={true}
-                        >
-                            <TileLayer
-                                attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-                                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                        <div className="mapa">
+                            <MapContainer
+                                center={[43.294125, -2.974312]}
+                                zoom={13}
+                                scrollWheelZoom={true}
+                            >
+                                <TileLayer
+                                    attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                                    url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                                />
+                                {coordenadas.map((coordenada, index) => (
+                                    <Marker
+                                        key={index}
+                                        position={coordenada.coord}
+                                        eventHandlers={{
+                                            click: () => {
+                                                setName(coordenada.name);
+                                                setLocation(coordenada.coord);
+                                            },
+                                        }}
+                                    >
+                                        <Popup>{coordenada.name}</Popup>
+                                    </Marker>
+                                ))}
+                            </MapContainer>
+                        </div>
+                    </div>
+
+                    <div className="muestras">
+                        {/* oxígeno (mg/l) */}
+                        <div className="oxigeno">
+                            <label htmlFor="02" className="02">
+                                02.
+                            </label>
+                            <label htmlFor="oxigeno">Oxígeno (mg/l):</label>
+                            <input
+                                type="text"
+                                step="0.01"
+                                id="oxigeno"
+                                name="oxigeno"
+                                value={oxigeno}
+                                min={0}
+                                max={15}
+                                onChange={(e) => setOxigeno(e.target.value)}
+                                required
                             />
-                            {coordenadas.map((coordenada, index) => (
-                                <Marker
-                                    key={index}
-                                    position={coordenada.coord}
-                                    eventHandlers={{
-                                        click: () => {
-                                            setName(coordenada.name);
-                                            setLocation(coordenada.coord);
-                                        },
-                                    }}
-                                >
-                                    <Popup>{coordenada.name}</Popup>
-                                </Marker>
-                            ))}
-                        </MapContainer>
-                    </div>
-                </div>
+                        </div>
 
-                <div className="muestras">
-                    {/* oxígeno (mg/l) */}
-                    <div className="oxigeno">
-                        <label htmlFor="02" className="02">
-                            02.
-                        </label>
-                        <label htmlFor="oxigeno">Oxígeno (mg/l):</label>
-                        <input
-                            type="text"
-                            step="0.01"
-                            id="oxigeno"
-                            name="oxigeno"
-                            value={oxigeno}
-                            onChange={(e) => setOxigeno(e.target.value)}
-                            required
-                        />
-                    </div>
+                        {/* conductividad */}
+                        <div className="conductividad">
+                            <label htmlFor="03" className="03">
+                                03.
+                            </label>
+                            <label htmlFor="conductividad">
+                                Conductividad (µS/cm):
+                            </label>
+                            <input
+                                type="text"
+                                step="0.01"
+                                id="conductividad"
+                                name="conductividad"
+                                value={conductividad}
+                                min={0}
+                                onChange={(e) =>
+                                    setConductividad(e.target.value)
+                                }
+                                required
+                            />
+                        </div>
 
-                    {/* conductividad */}
-                    <div className="conductividad">
-                        <label htmlFor="03" className="03">
-                            03.
-                        </label>
-                        <label htmlFor="conductividad">Conductividad:</label>
-                        <input
-                            type="text"
-                            step="0.01"
-                            id="conductividad"
-                            name="conductividad"
-                            value={conductividad}
-                            onChange={(e) => setConductividad(e.target.value)}
-                            required
-                        />
-                    </div>
+                        {/* temperatura */}
+                        <div className="temperatura">
+                            <label htmlFor="04" className="04">
+                                04.
+                            </label>
+                            <label htmlFor="temperatura">
+                                Temperatura (°C):
+                            </label>
+                            <input
+                                type="text"
+                                step="0.01"
+                                id="temperatura"
+                                name="temperatura"
+                                value={temperatura}
+                                min={0}
+                                max={100}
+                                onChange={(e) => setTemperatura(e.target.value)}
+                                required
+                            />
+                        </div>
 
-                    {/* temperatura */}
-                    <div className="temperatura">
-                        <label htmlFor="04" className="04">
-                            04.
-                        </label>
-                        <label htmlFor="temperatura">Temperatura:</label>
-                        <input
-                            type="text"
-                            step="0.01"
-                            id="temperatura"
-                            name="temperatura"
-                            value={temperatura}
-                            onChange={(e) => setTemperatura(e.target.value)}
-                            required
-                        />
+                        {/* el pH */}
+                        <div className="ph">
+                            <label htmlFor="05" className="05">
+                                05.
+                            </label>
+                            <label htmlFor="pH">pH:</label>
+                            <input
+                                type="text"
+                                step="0.01"
+                                id="ph"
+                                name="pH"
+                                value={pH}
+                                min={1}
+                                max={14}
+                                onChange={(e) => setpH(e.target.value)}
+                                required
+                            />
+                        </div>
+                        <div className="buttonContainer">
+                            <button className="button" type="submit">
+                                Enviar
+                            </button>
+                        </div>
                     </div>
-
-                    {/* el pH */}
-                    <div className="ph">
-                        <label htmlFor="05" className="05">
-                            05.
-                        </label>
-                        <label htmlFor="pH">pH:</label>
-                        <input
-                            type="text"
-                            step="0.01"
-                            id="ph"
-                            name="pH"
-                            value={pH}
-                            onChange={(e) => setpH(e.target.value)}
-                            required
-                        />
-                    </div>
-                    <div className="buttonContainer">
-                        <button className="button" type="submit">
-                            Enviar
-                        </button>
-                    </div>
-                </div>
-            </form>
-            <img
-                src="Front/public/images/5bf990fe70c1eab345a4eb6a92c31669.png"
-                alt=""
-            />
-        </div>
-        <div>
-        <img src="./static/registro/pipeta.png" alt="pipeta" className="pipeta"/>
-        </div>
+                </form>
+                <img
+                    src="Front/public/images/5bf990fe70c1eab345a4eb6a92c31669.png"
+                    alt=""
+                />
+            </div>
+            <div>
+                <img
+                    src="./static/registro/pipeta.png"
+                    alt="pipeta"
+                    className="pipeta"
+                />
+            </div>
         </>
     );
 };
