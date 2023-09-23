@@ -68,18 +68,24 @@ const Registro = () => {
     return (
         <>
             <div className="registroGeneral">
-                <form onSubmit={handleSubmit} className="formularioMuestra">
                     <h2>REGISTRA LOS DATOS DE LA MUESTRA</h2>
+                <form onSubmit={handleSubmit} className="formularioMuestra">
 
                     {error && <p className="error-message">{error}</p>}
 
                     {/* localización */}
 
                     <div className="localizacion">
-                        <label htmlFor="01" className="01">
-                            01.
-                        </label>
-                        <label htmlFor="location">Localización:</label>
+                        <div className="locationHeader">
+                            <label htmlFor="01" className="uno">
+                                01.
+                            </label>
+                            <label htmlFor="location">Localización: </label>
+                            
+                            
+                            <div></div>
+
+                        </div>
 
                         <div className="mapa">
                             <MapContainer
@@ -112,7 +118,7 @@ const Registro = () => {
                     <div className="muestras">
                         {/* oxígeno (mg/l) */}
                         <div className="oxigeno">
-                            <label htmlFor="02" className="02">
+                            <label htmlFor="02" className="dos">
                                 02.
                             </label>
                             <label htmlFor="oxigeno">Oxígeno (mg/l):</label>
@@ -131,7 +137,7 @@ const Registro = () => {
 
                         {/* conductividad */}
                         <div className="conductividad">
-                            <label htmlFor="03" className="03">
+                            <label htmlFor="03" className="tres">
                                 03.
                             </label>
                             <label htmlFor="conductividad">
@@ -153,7 +159,7 @@ const Registro = () => {
 
                         {/* temperatura */}
                         <div className="temperatura">
-                            <label htmlFor="04" className="04">
+                            <label htmlFor="04" className="cuatro">
                                 04.
                             </label>
                             <label htmlFor="temperatura">
@@ -174,7 +180,7 @@ const Registro = () => {
 
                         {/* el pH */}
                         <div className="ph">
-                            <label htmlFor="05" className="05">
+                            <label htmlFor="05" className="cinco">
                                 05.
                             </label>
                             <label htmlFor="pH">pH:</label>
@@ -202,7 +208,7 @@ const Registro = () => {
                     alt=""
                 />
             </div>
-            <div>
+            <div className="pipetaContainer">
                 <img
                     src="./static/registro/pipeta.png"
                     alt="pipeta"

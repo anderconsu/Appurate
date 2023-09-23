@@ -1,4 +1,10 @@
 .leaflet-container {
-    height: 500px;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80vw;
+    height: 20vh;
+    border-radius: 20px;
+    margin: 10px;
 }

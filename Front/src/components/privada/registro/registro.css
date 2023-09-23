@@ -1,3 +1,21 @@
+/*versión móvil*/
+@media screen and (max-width: 767px) {
+
+.formularioMuestra {
+    background: #EEE;
+    border-radius: 20px;
+    padding: 0.5rem;
+    margin: 0.75rem;
+    color: #022859;
+}
+
+h2 {
+    text-align: center;
+    color: #022859;
+    font-size: 20px;
+}
+
+
 .registroGeneral {
     display: flex;
     box-sizing: border-box;
@@ -10,13 +28,33 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100%; /* El 100% del ancho del contenedor de localización */
-    height: 100%; /* El 100% de la altura del contenedor de localización */
+    width: 100%; 
+    height: 100%; 
+    border-radius: 20px;
+    background-color: #EEE;
 }
 
+.locationHeader {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3.2rem;
+    padding-left: 15px;
+    flex-direction: row;
+    color: #022859;
+    background: #EEE;
+    border-radius: 20px;
+    font-size: 12px;
+    padding-top: 10px;
+
+}
+
+
 .mapa {
-    width: 100%; /* El 100% del ancho del contenedor de localizacion */
-    height: 100%; /* El 100% de la altura del contenedor de localizacion */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    
 }
 
 .muestras {
@@ -28,10 +66,9 @@
     border-radius: 20px;
     justify-content: space-between;
     font-size: 12px;
-
 }
 
-.oxigeno {
+.oxigeno, .conductividad, .temperatura, .ph {
     display: flex;
     justify-content: space-between;
     color: #022859;
@@ -40,56 +77,12 @@
 
 }
 
-.conductividad {
-    display: flex;
-    justify-content: space-between;
-    color: #022859;
-    background: #EEE;
+#oxigeno, #conductividad, #temperatura, #ph {
     border-radius: 20px;
-
-}
-
-.temperatura {
-    display: flex;
-    justify-content: space-between;
-    color: #022859;
-    background: #EEE;
-    border-radius: 20px;
-}
-
-.ph {
-    display: flex;
-    justify-content: space-between;
-    color: #022859;
-    background: #EEE;
-    border-radius: 20px;
-}
-
-#oxigeno {
-    border-radius: 20px;
-    width: 15%;
+    width: 22%;
     height: 12px;
 }
 
-#conductividad {
-    border-radius: 20px;
-    width: 15%;
-    height: 12px;
-}
-
-#temperatura {
-    border-radius: 20px;
-    width: 15%;
-    height: 12px;
-}
-
-#ph {
-    border-radius: 20px;
-    width: 15%;
-    height: 12px;
-    outline: none;
-    box-shadow: none;
-}
 
 .buttonContainer {
     display: flex;
@@ -107,11 +100,43 @@
 
 .button {
     border-radius: 20px;
-    width: 18%;
-    height: 20px;
+    width: 25%;
+    height: 1.3rem;
     background-color: var(--azul_celeste);
     border-color: var(--azul_celeste);
     font-size: 90%;
     padding: 2px;
     
 }
+
+.uno, .dos, .tres, .cuatro, .cinco {
+    color: var(--azul_celeste);
+    font-size: 120%;
+}
+
+.pipetaContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    width: 100%;
+    height: 100%;
+    align-items: right;
+    margin-top: -2rem;
+}
+
+.pipeta {
+    width: 25%;
+    height: 25%;
+}
+
+.footer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+}
+
+}
+
+
+  
