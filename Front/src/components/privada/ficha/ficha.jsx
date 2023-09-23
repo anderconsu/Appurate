@@ -57,10 +57,14 @@ const FichaVisualizacion = () => {
     }
 
     return (
+        <>
+         <h2>VISUALIZA TUS RESULTADOS</h2>
+         <div>
+        <img src="./static/ficha/peliroja.png" alt="peliroja" className="peliroja"/>
+        </div>
         <div>
             {data.map((data, index) => (
                 <div className="ficha-visualizacion" key={index}>
-                    <h2>Ficha de Visualización</h2>
                     <p>Institución: {data.institution}</p>
                     <p>Aula: {data.aula}</p>
                     <p>Fecha: {data.date}</p>
@@ -71,6 +75,7 @@ const FichaVisualizacion = () => {
                 </div>
             ))}
         </div>
+        </>
     );
 };
 

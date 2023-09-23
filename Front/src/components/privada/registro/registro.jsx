@@ -67,6 +67,7 @@ const Registro = () => {
     console.log("Temperatura:", temperatura);
 
     return (
+        <>
         <div className="registroGeneral">
             <form onSubmit={handleSubmit} className="formularioMuestra">
                 <h2>REGISTRA LOS DATOS DE LA MUESTRA</h2>
@@ -156,6 +157,10 @@ const Registro = () => {
             </form>
             <img src="Front/public/images/5bf990fe70c1eab345a4eb6a92c31669.png" alt="" />
         </div>
+        <div>
+        <img src="./static/registro/pipeta.png" alt="pipeta" className="pipeta"/>
+        </div>
+        </>
     );
 };
 
