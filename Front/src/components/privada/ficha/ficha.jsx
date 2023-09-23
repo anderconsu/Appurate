@@ -33,7 +33,7 @@ const FichaVisualizacion = () => {
 
                 if (response.ok) {
                     const result = await response.json();
-                    setData(result);
+                    setData(result.reverse());
                 } else {
                     setError("Error al obtener los datos");
                 }
@@ -64,6 +64,7 @@ const FichaVisualizacion = () => {
                     <p>Institución: {data.institution}</p>
                     <p>Aula: {data.aula}</p>
                     <p>Fecha: {data.date}</p>
+                    <p>Localización: {data.name}</p>
                     <p>pH: {data.properties.pH}</p>
                     <p>Oxígeno (mg/l): {data.properties.Oxigeno}</p>
                     <p>Conductividad: {data.properties.Conductividad}</p>

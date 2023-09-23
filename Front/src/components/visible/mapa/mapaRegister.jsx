@@ -7,60 +7,11 @@ import "./mapa.css";
 import coordenadas from "./coordenadas";
 const MapaRegister = () => {
     const hostUrl = import.meta.env.VITE_BACKEND_URL;
-    const [data, setData] = useState([]);
-    const [cleanData, setCleanData] = useState({});
-    const [count, setCount] = useState(0);
-
-    const getData = async () => {
-        try {
-            const response = await fetch(`${hostUrl}/api/metrics`, {
-                method: "GET",
-            });
-            if (response.ok) {
-                let datos = await response.json();
-                setData(datos);
-            }
-        } catch (err) {
-            console.log(err);
-        }
-    };
-
-    const getDataFromName = async () => {
-        try {
-            const datosLimpios = {};
-            for (let i = 0; i < coordenadas.length; i++) {
-                const response = await fetch(`${hostUrl}/api/namemetrics`, {
-                    method: "POST",
-                    headers: {
-                        "Content-Type": "application/json",
-                    },
-                    body: JSON.stringify({
-                        name: coordenadas[i].name,
-                    }),
-                });
-                if (response.status === 200) {
-                    let datos = await response.json();
-                    console.log("datos recibidos", datos);
-                    datosLimpios[datos.name] = datos;
-                } else {
-                    console.log("not found");
-                }
-            }
-            console.log("datos limpios", datosLimpios);
-            setCleanData(datosLimpios);
-        } catch (err) {
-            console.log(err);
-        }
-    };
+    const [selected, setSelected] = useState("");
 
     useEffect(() => {
-        async function fetchData() {
-            await getData();
-            await getDataFromName();
-        }
-
-        fetchData();
-    }, []);
+        console.log(selected);
+    }, [selected]);
     return (
         <>
             <div>
@@ -74,50 +25,16 @@ const MapaRegister = () => {
                         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                     />
                     {coordenadas.map((coordenada, index) => (
-                        <Marker key={index} position={coordenada.coord}>
-                            <Popup>
-                                {coordenada.name}
-                                {cleanData[coordenada.name] ? (
-                                    <>
-                                        <p>
-                                            pH:{" "}
-                                            {
-                                                cleanData[coordenada.name]
-                                                    .properties.pH
-                                            }
-                                        </p>
-                                        <p>
-                                            Temperatura:{" "}
-                                            {
-                                                cleanData[coordenada.name]
-                                                    .properties.Temperatura
-                                            }
-                                        </p>
-                                        <p>
-                                            Oxigeno:{" "}
-                                            {
-                                                cleanData[coordenada.name]
-                                                    .properties.Oxigeno
-                                            }
-                                        </p>
-                                        <p>
-                                            Conductividad:{" "}
-                                            {
-                                                cleanData[coordenada.name]
-                                                    .properties.Conductividad
-                                            }
-                                        </p>
-                                        {cleanData[coordenada.name]
-                                            .prediction === 1 ? (
-                                            <p>Se puede bañar</p>
-                                        ) : (
-                                            <p>No se puede bañar</p>
-                                        )}
-                                    </>
-                                ) : (
-                                    <p>No se han encontrado datos</p>
-                                )}
-                            </Popup>
+                        <Marker
+                            key={index}
+                            position={coordenada.coord}
+                            eventHandlers={{
+                                click: () => {
+                                    setSelected(coordenada.name);
+                                },
+                            }}
+                        >
+                            <Popup>{coordenada.name}</Popup>
                         </Marker>
                     ))}
                 </MapContainer>
