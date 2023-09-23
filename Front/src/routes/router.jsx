@@ -10,68 +10,68 @@ import Admin from "../components/admin/admin.jsx";
 import Landing from "../components/privada/landing/landing.jsx";
 import Registro from "../components/privada/registro/registro.jsx";
 import Ficha from "../components/privada/ficha/ficha.jsx";
+import Ficha from "../components/privada/ficha/ficha.jsx";
 import Recursos from "../components/privada/recursos/recursos.jsx";
 // import Header from "../components/header/header.jsx";
 import Home from "../components/visible/home/home.jsx";
 import Footer from "../components/footer/footer.jsx";
 
-
 const Router = createBrowserRouter([
     {
         path: "/",
-        element:<Root />, 
+        element: <Root />,
         errorElement: <ErrorPage />,
         children: [
             {
-                path:"/mapa",
-                element: <Mapa />
+                path: "/mapa",
+                element: <Mapa />,
             },
             {
-                path:"/unete",
-                element: <Unete /> 
-            }, 
-            {
-                path:"/nosotros",
-                element: <Nosotros/>
+                path: "/unete",
+                element: <Unete />,
             },
             {
-                path:"/login",
-                element: <Login />
+                path: "/nosotros",
+                element: <Nosotros />,
             },
             {
-                path:"/admin",
-                element: <Admin/>
+                path: "/login",
+                element: <Login />,
             },
             {
-                path:"/landing",
-                element: <Landing />
+                path: "/admin",
+                element: <Admin />,
             },
             {
-                path:"/registro",
-                element:<Registro />
+                path: "/landing",
+                element: <Landing />,
             },
             {
-                path:"/ficha",
-                element:<Ficha/>
+                path: "/registro",
+                element: <Registro />,
             },
             {
-                path:"/recursos",
-                element:<Recursos/>
+                path: "/ficha",
+                element: <Ficha />,
+            },
+            {
+                path: "/recursos",
+                element: <Recursos />,
             },
             // {
             //     path:"/header",
             //     element:<Header/>
             // },
             {
-                path:"/",
-                element:<Home/>
+                path: "/",
+                element: <Home />,
             },
             {
-                path:"/footer",
-                element:<Footer/>
-            }
-        ]         
-    }
+                path: "/footer",
+                element: <Footer />,
+            },
+        ],
+    },
 ]);
 
 export default Router;
