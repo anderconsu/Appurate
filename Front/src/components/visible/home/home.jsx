@@ -49,54 +49,63 @@ const Home = () => {
                 <Mapa />
             </div>
 
-            <div>
-                <h2>¿COMO FUNCIONA?</h2>
-                <br />
-                <div>
-                    <img
-                        src="./static/home/nina1.png"
-                        alt="niña"
-                        className="nina1"
-                    />
-                    <img
-                        src="./static/home/nina3.png"
-                        alt="niña"
-                        className="nina3"
-                    />
+            <div className="homeHow">
+                <h2>¿CÓMO FUNCIONA?</h2>
+                <div className="homeHowRegistrar">
+                    <h3>Registrar</h3>
+                    <div className="homeHowRegistrarInfo">
+                        <div className="ninaimgContainer">
+                            <img
+                                src="./static/home/nina1.png"
+                                alt="niña"
+                                className="nina1"
+                            />
+                        </div>
+                        <p>
+                            Sál a la Ría y toma una muestra de agua en uno de
+                            los puntos indicados en el mapa. Realiza las pruebas
+                            para obtener los resultados de tu muestra y
+                            registralos dentro de la plataforma.{" "}
+                        </p>
+                    </div>
                 </div>
-                <div>
-                    <h3>Registrar:</h3>
-                    <p>
-                        Sál a la Ría y toma una muestra de agua en uno de los
-                        puntos indicados en el mapa. Realiza las pruebas para
-                        obtener los resultados de tu muestra y registralos
-                        dentro de la plataforma.{" "}
-                    </p>
-                    <br />
-                    <h3>Visualizar</h3>
-                    <p>
-                        Te mostraremos los datos recopilados en un formato fácil
-                        de entender, como gráficos y tablas. Así puedes
-                        comprender mejor cómo se encuentra la calidad del agua
-                        en el lugar donde tomaste la muestra.
-                    </p>
-                    <br />
-                    <h3>Analizar:</h3>
-                    <p>
-                        Analiza los diferentes tipos de contaminantes que se
-                        encuentran comúnmente en el agua y cómo afectan la salud
-                        humana. Con ayuda de estos datos podrás comprender mejor
-                        los riesgos asociados con la calidad del agua y cómo
-                        puedes protegerte.
-                    </p>
-                    <br />
-                </div>
-                <div>
-                    <img
-                        src="./static/home/nina2.png"
-                        alt="niña"
-                        className="nina2"
-                    />
+                <div className="homeHowVisualizar">
+                    <h3 className="visualizar">Visualizar</h3>
+                    <div className="homeHowVisualizarInfo">
+                        <p>
+                            Te mostraremos los datos recopilados en un formato
+                            fácil de entender, como gráficos y tablas. Así
+                            puedes comprender mejor cómo se encuentra la calidad
+                            del agua en el lugar donde tomaste la muestra.
+                        </p>
+                        <div className="ninaimgContainer">
+                            <img
+                                src="./static/home/nina3.png"
+                                alt="niña"
+                                className="nina3"
+                            />
+                        </div>
+                    </div>
+                    <div className="homeHowAnalizar">
+                        <h3>Analizar</h3>
+                        <div className="homeHowAnalizarInfo">
+                            <p>
+                                Analiza los diferentes tipos de contaminantes
+                                que se encuentran comúnmente en el agua y cómo
+                                afectan la salud humana. Con ayuda de estos
+                                datos podrás comprender mejor los riesgos
+                                asociados con la calidad del agua y cómo puedes
+                                protegerte.
+                            </p>
+                            <div className="ninaimgContainer">
+                                <img
+                                    src="./static/home/nina2.png"
+                                    alt="niña"
+                                    className="nina2"
+                                />
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
