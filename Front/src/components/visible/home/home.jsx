@@ -1,9 +1,11 @@
 import React, { useEffect, useContext } from "react";
 import "./home.scss";
 import Mapa from "../mapa/mapa";
+import { useNavigate } from "react-router-dom";
 
 import PageContext from "../../../context/pageContext";
 const Home = () => {
+    const navigate = useNavigate();
     const { page, setPage } = useContext(PageContext);
     useEffect(() => {
         setPage("home");
@@ -22,7 +24,12 @@ const Home = () => {
                         educativa sobre contaminantes comunes y cómo afectan la
                         salud humana.
                     </p>
-                    <button className="boton1">¡Únete!</button>
+                    <button
+                        className="boton1"
+                        onClick={() => navigate("/unete")}
+                    >
+                        ¡Únete!
+                    </button>
                 </div>
 
                 <div className="mundoimgContainer">
