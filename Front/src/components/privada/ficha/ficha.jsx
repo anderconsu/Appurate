@@ -1,7 +1,7 @@
 // import React from 'react'
 import { useState, useEffect } from 'react';
 
-import { hostUrl } from 'hostUrl';
+// import { hostUrl } from 'hostUrl';
 
 const FichaVisualizacion = () => {
   const [data, setData] = useState({});
