@@ -109,75 +109,92 @@ const Home = () => {
                 </div>
             </div>
 
-            <div>
-                <h2>CONOCE LA CALIDAD DEL AGUA EN BILBAO</h2>
-                <br />
-                <div>
-                    <div>
-                        <img
-                            src="./static/home/oxigeno.png"
-                            alt="oxigeno"
-                            className="oxigeno"
-                        />
-                        <h3>Oxigeno</h3>
-                        <p>
-                            Es un gas soluble en el agua, y su concentración
-                            varía en función de factores como la temperatura, la
-                            agitación del agua, la presencia de productores
-                            primarios (plantas), la materia orgánica, la
-                            salinidad, etc.
-                        </p>
-                        <br />
+            <div className="homeSpecs">
+                <h2 className="conoceCalidad">
+                    CONOCE LA CALIDAD DEL AGUA EN BILBAO
+                </h2>
+                <div className="caracteristicasImagen">
+                    <div className="cuatroCaracteristicas">
+                        <div className="caracteristica">
+                            <div className="propiedadImgContainer">
+                                <img
+                                    src="./static/home/oxigeno.png"
+                                    alt="oxigeno"
+                                    className="oxigeno"
+                                />
+                            </div>
+                            <div className="textAndtext">
+                                <h3>Oxigeno</h3>
+                                <p>
+                                    Es un gas soluble en el agua, y su
+                                    concentración varía en función de factores
+                                    como la temperatura, la agitación del agua,
+                                    la presencia de productores primarios
+                                    (plantas), la materia orgánica, la
+                                    salinidad, etc.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="caracteristica">
+                            <div className="propiedadImgContainer">
+                                <img
+                                    src="./static/home/ph.png"
+                                    alt="ph"
+                                    className="ph"
+                                />
+                            </div>
+                            <div className="textAndtext">
+                                <h3>pH</h3>
+                                <p>
+                                    Es la medida que indica cómo de ácida o
+                                    básica es una sustancia. Para conocer el pH
+                                    se miden los iones de hidrógeno
+                                </p>
+                            </div>
+                        </div>
+                        <div className="caracteristica">
+                            <div className="propiedadImgContainer">
+                                <img
+                                    src="./static/home/temperatura.png"
+                                    alt="temperatura"
+                                    className="temperatura"
+                                />
+                            </div>
+                            <div className="textAndtext">
+                                <h3>Temperatura</h3>
+                                <p>
+                                    La temperatura afecta la química del agua y
+                                    las funciones de los organismos acuáticos.{" "}
+                                </p>
+                            </div>
+                        </div>
+                        <div className="caracteristica">
+                            <div className="propiedadImgContainer">
+                                <img
+                                    src="./static/home/conductividad.png"
+                                    alt="conductividad"
+                                    className="conductividad"
+                                />
+                            </div>
+                            <div className="textAndtext">
+                                <h3>Conductividad</h3>
+                                <p>
+                                    La conductividad del agua también es un
+                                    factor importante para evaluar su calidad en
+                                    términos de salud agua potable segura suele
+                                    tener una conductividad eléctrica
+                                    relativamente baja.
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                    <div>
+                    <div className="ninoimgContainer">
                         <img
-                            src="./static/home/ph.png"
-                            alt="ph"
-                            className="ph"
+                            src="./static/home/nino.png"
+                            alt="niño"
+                            className="nino"
                         />
-                        <h3>pH</h3>
-                        <p>
-                            Es la medida que indica cómo de ácida o básica es
-                            una sustancia. Para conocer el pH se miden los iones
-                            de hidrógeno
-                        </p>
-                        <br />
                     </div>
-                    <div>
-                        <img
-                            src="./static/home/temperatura.png"
-                            alt="temperatura"
-                            className="temperatura"
-                        />
-                        <h3>Temperatura</h3>
-                        <p>
-                            La temperatura afecta la química del agua y las
-                            funciones de los organismos acuáticos.{" "}
-                        </p>
-                        <br />
-                    </div>
-                    <div>
-                        <img
-                            src="./static/home/conductividad.png"
-                            alt="conductividad"
-                            className="conductividad"
-                        />
-                        <h3>Conductividad</h3>
-                        <p>
-                            La conductividad del agua también es un factor
-                            importante para evaluar su calidad en términos de
-                            salud agua potable segura suele tener una
-                            conductividad eléctrica relativamente baja.
-                        </p>
-                        <br />
-                    </div>
-                </div>
-                <div>
-                    <img
-                        src="./static/home/nino.png"
-                        alt="niño"
-                        className="nino"
-                    />
                 </div>
             </div>
         </main>
