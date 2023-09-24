@@ -18,11 +18,11 @@ const Nosotros = () => {
                     <p>
                         Nuestra solución educativa tiene como objetivo empoderar
                         a los jóvenes para que aprendan, exploren y tomen
-                        conciencia sobre la calidad del agua en su ciudad.Los
+                        conciencia sobre la calidad del agua en su ciudad. Los
                         estudiantes podrán registrar datos de muestras de agua,
                         visualizarlos en un formato fácil de entender y acceder
                         a información educativa sobre contaminantes comunes y
-                        cómo afectan la salud humana.{" "}
+                        cómo afectan la salud humana.
                     </p>
                 </div>
                 <div className="superwomanimgContainer">
@@ -61,11 +61,17 @@ const Nosotros = () => {
                 <div className="tratandoText">
                     <h2>TRATANDO EL AGUA DE FORMA INTELIGENTE</h2>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Facilis ducimus obcaecati voluptatem voluptate, placeat
-                        facere cum maiores quo quibusdam officia temporibus
-                        dolorem a laudantium velit, odit autem ratione assumenda
-                        dolore.
+                        Nuestro objetivo es proporcionar información útil para
+                        la gestión sostenible del agua por parte de diferentes
+                        agentes, tanto públicos como privados y del tercer
+                        sector. Por medio de nuestra solución de monitorización
+                        de la calidad de agua en tiempo real podemos transformar
+                        datos del agua en información útil para la gestión
+                        sostenible del agua. Nuestro trabajo tiene un impacto
+                        positivo en el planeta, que permite una gestión más
+                        eficiente y sostenible del recurso hídrico a lo largo de
+                        todo su ciclo, ya sea dentro de instalaciones
+                        industriales o en un entorno urbano.
                     </p>
                 </div>
                 <div className="aquadataimgContainer">
