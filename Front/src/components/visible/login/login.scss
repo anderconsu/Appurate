@@ -5,6 +5,7 @@
   padding: 1rem;
   width: 100%;
   background-color: var(--blanco); 
+ 
 
   & .loginBody {
     // align-items: center;
@@ -42,13 +43,15 @@
     }
 
     & .loginForm {
-    
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
       background-color: #ffffff; 
       padding: 20px;
       border-radius: 10px;
       box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
       width: 100%;
-      max-width: 400px;
+      // max-width: 400px;
       text-align: center;
       gap: 1rem;
 
@@ -65,8 +68,69 @@
       & .loginInput::placeholder {
         color: #0077b6; 
       }
+
+      & .boton1 {
+        width: 25%;
+      }
+
+      & .loginContactanos {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: nowrap;
+      }
+
     }
   }
+  & .loginMundo2 {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    // border: 1px solid #0077b6;
+    & img {
+      
+      margin: auto;
+      width: 100%;
+    }
+    }
   
+}
+
+@media screen and (min-width: 768px) {
+  .loginMain {
+    
+    flex-direction: row;
+
+    & .loginBody {
+      width: 40%;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      // align-items: center;
+      justify-content: left;
+      border: #0077b6 solid 1px;
+      margin-left: 4rem;
+
+      & .loginForm {
+        width: 80%;
+      }
+    }
+
+    & .loginMundo2 {
+      display: flex;
+      align-content: flex-start;
+      margin: auto;
+      justify-content: left;
+      width: 50%;
+      // height: 100%;
+      border: 1px solid #0077b6;
+      
+      & img {
+        
+        margin-top: 0;
+        width: 80%;
+        border: #0077b6 solid 1px;
+      }
+    }
+    }
 }
 
