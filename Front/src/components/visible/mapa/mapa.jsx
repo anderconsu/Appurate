@@ -78,53 +78,71 @@ const Mapa = () => {
                         <Marker key={index} position={coordenada.coord}>
                             <Popup>
                                 <div className="mapPopup">
-                                    {coordenada.name}
                                     {cleanData[coordenada.name] ? (
-                                        <div className="popupProperties">
-                                            <p>
-                                                Oxígeno:{" "}
-                                                {
-                                                    cleanData[coordenada.name]
-                                                        .properties.Oxigeno
-                                                }
-                                                {" mg/l"}
+                                        <div className="results">
+                                            <p className="locatioNname">
+                                                {coordenada.name}
                                             </p>
-                                            <p>
-                                                Conductividad:{" "}
-                                                {
-                                                    cleanData[coordenada.name]
-                                                        .properties
-                                                        .Conductividad
-                                                }
-                                                {" µS/cm"}
-                                            </p>
-                                            <p>
-                                                Temperatura:{" "}
-                                                {
-                                                    cleanData[coordenada.name]
-                                                        .properties.Temperatura
-                                                }
-                                                {" °C"}
-                                            </p>
-                                            <p>
-                                                pH:{" "}
-                                                {
-                                                    cleanData[coordenada.name]
-                                                        .properties.pH
-                                                }
-                                            </p>
-                                            {cleanData[coordenada.name]
-                                                .prediction === 1 ? (
+                                            <div className="popupProperties">
                                                 <p>
-                                                    Análisis preeliminar: Se
-                                                    puede bañar
+                                                    Oxígeno:{" "}
+                                                    {
+                                                        cleanData[
+                                                            coordenada.name
+                                                        ].properties.Oxigeno
+                                                    }
+                                                    {" mg/l"}
                                                 </p>
-                                            ) : (
                                                 <p>
-                                                    Análisis preeliminar: No se
-                                                    puede bañar
+                                                    Conductividad:{" "}
+                                                    {
+                                                        cleanData[
+                                                            coordenada.name
+                                                        ].properties
+                                                            .Conductividad
+                                                    }
+                                                    {" µS/cm"}
                                                 </p>
-                                            )}
+                                                <p>
+                                                    Temperatura:{" "}
+                                                    {
+                                                        cleanData[
+                                                            coordenada.name
+                                                        ].properties.Temperatura
+                                                    }
+                                                    {" °C"}
+                                                </p>
+                                                <p>
+                                                    pH:{" "}
+                                                    {
+                                                        cleanData[
+                                                            coordenada.name
+                                                        ].properties.pH
+                                                    }
+                                                </p>
+                                                {cleanData[coordenada.name]
+                                                    .prediction === 1 ? (
+                                                    <p className="yes">
+                                                        Análisis preeliminar:
+                                                        Apto para el baño
+                                                    </p>
+                                                ) : (
+                                                    <p className="no">
+                                                        Análisis preeliminar: No
+                                                        apto para el baño
+                                                    </p>
+                                                )}
+                                            </div>
+                                            <div className="resultInstitution">
+                                                <p>
+                                                    Muestra tomada por :{" "}
+                                                    {
+                                                        cleanData[
+                                                            coordenada.name
+                                                        ].institution
+                                                    }
+                                                </p>
+                                            </div>
                                         </div>
                                     ) : (
                                         <p>No se han encontrado datos</p>
