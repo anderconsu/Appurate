@@ -1,13 +1,14 @@
 import { useState, useEffect, useContext } from "react";
 import PageContext from "../../../context/pageContext";
 import { useNavigate } from "react-router-dom";
+
 const FichaVisualizacion = () => {
     const [data, setData] = useState({});
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
     const { page, setPage } = useContext(PageContext);
-    const navigate = useNavigate();
     const hostUrl = import.meta.env.VITE_BACKEND_URL;
+    const navigate = useNavigate();
 
     const checkAuth = async () => {
         const token = localStorage.getItem("token");

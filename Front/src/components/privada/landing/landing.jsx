@@ -2,8 +2,43 @@
 import "./landing.css";
 import { useContext, useEffect } from "react";
 import PageContext from "../../../context/pageContext";
+import { useNavigate } from "react-router-dom";
 const Landing = () => {
     const { page, setPage } = useContext(PageContext);
+    const navigate = useNavigate();
+
+    const checkAuth = async () => {
+        const token = localStorage.getItem("token");
+        if (!token) {
+            navigate("/login");
+        }
+        try {
+            const auth = await fetch(`${hostUrl}/user/authCheck`, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    Authorization: `Bearer ${token}`,
+                },
+            });
+            if (auth.status === 200) {
+                return true;
+            } else {
+                navigate("/login");
+            }
+        } catch (error) {
+            console.error(error);
+            setError("Error, inténtalo más tarde");
+        }
+    };
+
+    useEffect(() => {
+        try {
+            checkAuth();
+        } catch (error) {
+            console.error("useEffect error", error);
+            setError("Error, inténtalo más tarde");
+        }
+    }, []);
 
     useEffect(() => {
         setPage("landing");
