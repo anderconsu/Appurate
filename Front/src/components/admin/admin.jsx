@@ -1,6 +1,6 @@
 import { useState, useEffect, useContext } from 'react';
 import PageContext from '../../context/pageContext';
-import './admin.css';
+import './admin.scss';
 
 
 const Admin = () => {
@@ -44,94 +44,111 @@ const Admin = () => {
   }
 
   return (
-    <div className="a-right">
-      <form className="infoForm authForm" onSubmit={handleAdmin}>
-        <h3>Registro de Aula</h3>
+    <>
+    <div className="adminMain">
+      <div className="adminBody">
+        <h2>Registro de Aula</h2>
+        <p>
+        Si todavía no formas parte del proyecto únete al proyecto.
+        </p>
+        <form className="adminForm" onSubmit={handleAdmin}>
+          
 
-        {error && <p className="error-message">{error}</p>}
+          {error && <p className="error-message">{error}</p>}
 
-        <div>
-          <input
-            type="text"
-            className="infoInput"
-            name="username"
-            placeholder="Usuario"
-            onChange={(e) => setUsername(e.target.value)}
-            value={username}
-          />
-        </div>
+          <div>
+            <input
+              type="text"
+              className="adminInput"
+              name="username"
+              placeholder="Usuario"
+              onChange={(e) => setUsername(e.target.value)}
+              value={username}
+            />
+          </div>
 
-        <div>
-          <input
-            type="password"
-            className="infoInput"
-            name="password"
-            placeholder="Contraseña"
-            onChange={(e) => setPassword(e.target.value)}
-            value={password}
-          />
-        </div>
+          <div>
+            <input
+              type="password"
+              className="adminInput"
+              name="password"
+              placeholder="Contraseña"
+              onChange={(e) => setPassword(e.target.value)}
+              value={password}
+            />
+          </div>
 
-        <div>
-          <input
-            type="text"
-            className="infoInput"
-            name="institution"
-            placeholder="Colegio"
-            onChange={(e) => setInstitution(e.target.value)}
-            value={institution}
-          />
-        </div>
+          <div>
+            <input
+              type="text"
+              className="adminInput"
+              name="institution"
+              placeholder="Colegio"
+              onChange={(e) => setInstitution(e.target.value)}
+              value={institution}
+            />
+          </div>
 
-        <div>
-          <input
-            type="text"
-            className="infoInput"
-            name="aula"
-            placeholder="Aula"
-            onChange={(e) => setAula(e.target.value)}
-            value={aula}
-          />
-        </div>
+          <div>
+            <input
+              type="text"
+              className="adminInput"
+              name="aula"
+              placeholder="Aula"
+              onChange={(e) => setAula(e.target.value)}
+              value={aula}
+            />
+          </div>
 
-        <div>
-          <input
-            type="text"
-            className="infoInput"
-            name="proffesor"
-            placeholder="Profesor"
-            onChange={(e) => setProffesor(e.target.value)}
-            value={proffesor}
-          />
-        </div>
+          <div>
+            <input
+              type="text"
+              className="adminInput"
+              name="proffesor"
+              placeholder="Profesor"
+              onChange={(e) => setProffesor(e.target.value)}
+              value={proffesor}
+            />
+          </div>
 
-        <div>
-          <input
-            type="text"
-            className="infoInput"
-            name="email"
-            placeholder="Email"
-            onChange={(e) => setEmail(e.target.value)}
-            value={email}
-          />
-        </div>
+          <div>
+            <input
+              type="text"
+              className="adminInput"
+              name="email"
+              placeholder="Email"
+              onChange={(e) => setEmail(e.target.value)}
+              value={email}
+            />
+          </div>
 
-        <div>
-          <input
-            type="number"
-            className="infoInput"
-            name="phone"
-            placeholder="Teléfono"
-            onChange={(e) => setPhone(e.target.value)}
-            value={phone}
-          />
-        </div>
+          <div>
+            <input
+              type="number"
+              className="adminInput"
+              name="phone"
+              placeholder="Teléfono"
+              onChange={(e) => setPhone(e.target.value)}
+              value={phone}
+            />
+          </div>
 
-        <button className="button infoButton" type="submit">
-          Registro
-        </button>
-      </form>
+          <button className="boton1" type="submit">
+            Registro
+          </button>
+        </form>
+      </div>
+
+      <div className="adminAstronauta">
+        <img
+            src="./static/admin/astronauta.png"
+            alt="astronauta"
+            className="astronauta"
+        />
+      </div>
+        
     </div>
+    </>
   );
 };
 
