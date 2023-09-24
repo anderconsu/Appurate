@@ -31,7 +31,7 @@ apiRouter.post("/namemetrics", async (req, res) => {
     console.log("namemetrics requested");
     findMetricsFromName(req, res);
 });
-apiRouter.post("/institutionmetrics", async (req, res) => {
+apiRouter.post("/institutionmetrics", authMiddleware, async (req, res) => {
     console.log("institution metrics requested");
     getMetricsfromInstitution(req, res);
 });
