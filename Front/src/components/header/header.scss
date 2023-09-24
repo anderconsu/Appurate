@@ -1,80 +1,22 @@
-@media screen and (max-width: 767px) {
-
-    .header {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
-        margin: 1rem;
-        & .logoContainer {
-            width: calc(40% - 1rem);
-            max-width: 15rem;
-            & img {
-                width: 180%;
-            }
-        }
-    
-        & .botonesHeader {
-            width: calc(60% - 1rem);
-            flex-wrap: wrap;
-            display: flex;
-            flex-direction: column;
-            width: 30%;
-            justify-content: flex-end;
-            gap: 1rem;
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+    & .logoContainer {
+        width: calc(40% - 1rem);
+        max-width: 15rem;
+        & img {
+            width: 100%;
         }
     }
-}
 
-@media screen and (min-width: 768px) {
-
-    .header {
-        display: flex;
+    & .botonesHeader {
+        width: calc(60% - 1rem);
         flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
-        margin: 1rem;
-        & .logoContainer {
-            width: calc(40% - 1rem);
-            max-width: 15rem;
-            & img {
-                width: 180%;
-            }
-        }
-    
-        & .botonesHeader {
-            width: calc(30% - 1rem);
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-end;
-            gap: 1rem;
-        }
-    }
-}
-
-
-@media screen and (min-width: 1024px) {
-
-    .header {
         display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        margin: 1rem;
-        & .logoContainer {
-            width: calc(40% - 1rem);
-            max-width: 15rem;
-            & img {
-                width: 180%;
-            }
-        }
-    
-        & .botonesHeader {
-            width: calc(40% - 1rem);
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-end;
-            gap: 1rem;
-        }
+        justify-content: flex-end;
+        gap: 1rem;
     }
 }
