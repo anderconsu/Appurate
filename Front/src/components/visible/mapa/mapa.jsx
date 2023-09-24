@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import "./mapa.css";
+import "./popup.scss";
 
 import coordenadas from "./coordenadas";
 const Mapa = () => {
@@ -76,56 +77,59 @@ const Mapa = () => {
                     {coordenadas.map((coordenada, index) => (
                         <Marker key={index} position={coordenada.coord}>
                             <Popup>
-                                {coordenada.name}
-                                {cleanData[coordenada.name] ? (
-                                    <>
-                                        <p>
-                                            Oxígeno:{" "}
-                                            {
-                                                cleanData[coordenada.name]
-                                                    .properties.Oxigeno
-                                            }
-                                            {" mg/l"}
-                                        </p>
-                                        <p>
-                                            Conductividad:{" "}
-                                            {
-                                                cleanData[coordenada.name]
-                                                    .properties.Conductividad
-                                            }
-                                            {" µS/cm"}
-                                        </p>
-                                        <p>
-                                            Temperatura:{" "}
-                                            {
-                                                cleanData[coordenada.name]
-                                                    .properties.Temperatura
-                                            }
-                                            {" °C"}
-                                        </p>
-                                        <p>
-                                            pH:{" "}
-                                            {
-                                                cleanData[coordenada.name]
-                                                    .properties.pH
-                                            }
-                                        </p>
-                                        {cleanData[coordenada.name]
-                                            .prediction === 1 ? (
+                                <div className="mapPopup">
+                                    {coordenada.name}
+                                    {cleanData[coordenada.name] ? (
+                                        <div className="popupProperties">
                                             <p>
-                                                Análisis preeliminar: Se puede
-                                                bañar
+                                                Oxígeno:{" "}
+                                                {
+                                                    cleanData[coordenada.name]
+                                                        .properties.Oxigeno
+                                                }
+                                                {" mg/l"}
                                             </p>
-                                        ) : (
                                             <p>
-                                                Análisis preeliminar: No se
-                                                puede bañar
+                                                Conductividad:{" "}
+                                                {
+                                                    cleanData[coordenada.name]
+                                                        .properties
+                                                        .Conductividad
+                                                }
+                                                {" µS/cm"}
                                             </p>
-                                        )}
-                                    </>
-                                ) : (
-                                    <p>No se han encontrado datos</p>
-                                )}
+                                            <p>
+                                                Temperatura:{" "}
+                                                {
+                                                    cleanData[coordenada.name]
+                                                        .properties.Temperatura
+                                                }
+                                                {" °C"}
+                                            </p>
+                                            <p>
+                                                pH:{" "}
+                                                {
+                                                    cleanData[coordenada.name]
+                                                        .properties.pH
+                                                }
+                                            </p>
+                                            {cleanData[coordenada.name]
+                                                .prediction === 1 ? (
+                                                <p>
+                                                    Análisis preeliminar: Se
+                                                    puede bañar
+                                                </p>
+                                            ) : (
+                                                <p>
+                                                    Análisis preeliminar: No se
+                                                    puede bañar
+                                                </p>
+                                            )}
+                                        </div>
+                                    ) : (
+                                        <p>No se han encontrado datos</p>
+                                    )}
+                                </div>
                             </Popup>
                         </Marker>
                     ))}

@@ -1,0 +1,16 @@
+.mapPopup {
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    justify-content: right;
+    text-align: left;
+
+    & .popupProperties {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        text-align: left;
+        justify-content: left;
+        border: 1px solid black;
+    }
+}
