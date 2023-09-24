@@ -1,8 +1,10 @@
-import { useState } from 'react';
+import { useState, useEffect, useContext } from 'react';
+import PageContext from '../../context/pageContext';
 import './admin.css';
 
 
 const Admin = () => {
+  const { page, setPage } = useContext(PageContext);
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [institution, setInstitution] = useState('');
@@ -11,7 +13,10 @@ const Admin = () => {
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
   const [error, setError] = useState(null);
-  const hostUrl = import.meta.env.VITE_BACKEND_URL
+  const hostUrl = import.meta.env.VITE_BACKEND_URL;
+  useEffect(() => {
+    setPage("admin");
+}, []);
 
   const handleAdmin = async (e) => {
     e.preventDefault();

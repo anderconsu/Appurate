@@ -1,14 +1,23 @@
-import { useState } from "react";
-import "./login.css";
+import { useState, useContext, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import "./login.scss";
+import PageContext from "../../../context/pageContext";
 
 const Login = () => {
+    const { page, setPage } = useContext(PageContext);
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
     const [error, setError] = useState(null);
     const hostUrl = import.meta.env.VITE_BACKEND_URL;
 
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        setPage("login");
+    }, []);
     const handleLogin = async (e) => {
         e.preventDefault();
+        setError(null);
 
         //falta hacer la ruta login
         try {
@@ -33,7 +42,7 @@ const Login = () => {
                 localStorage.setItem("phone", data.phone);
 
                 console.log("Sesión iniciada");
-                
+                navigate("/landing");
             } else {
                 setError("Usuario o contraseña incorrectos");
             }
@@ -44,42 +53,75 @@ const Login = () => {
     };
 
     return (
-        
-        <div className="a-right">
-            <h3>Entra en tu cuenta</h3><br /><br />
-            <p>Si todavía no formas parte del proyecto únete al proyecto.</p><p>¡Quiero formar parte!</p>
-            <form className="infoForm authForm" onSubmit={handleLogin}>
-                
+        <>
+            <div className="loginMain">
+                <div className="loginBody">
+                    <h2>Entra en tu cuenta</h2>
+                    <p>
+                        Si todavía no formas parte del proyecto únete al
+                        proyecto.
+                    </p>
+                    <p
+                        className="azul_claro"
+                        onClick={() => navigate("/unete")}
+                    >
+                        ¡Quiero formar parte!
+                    </p>
 
-                {error && <p className="error-message">{error}</p>}
+                    <form className="loginForm" onSubmit={handleLogin}>
+                        {error && <p className="error-message">{error}</p>}
 
-                <div>
-                    <input
-                        type="text"
-                        className="infoInput"
-                        name="username"
-                        placeholder="Usuario"
-                        onChange={(e) => setUsername(e.target.value)}
-                        value={username}
+                        <div>
+                            <input
+                                type="text"
+                                className="loginInput"
+                                name="username"
+                                placeholder="Usuario"
+                                onChange={(e) => setUsername(e.target.value)}
+                                value={username}
+                            />
+                        </div>
+
+                        <div>
+                            <input
+                                type="password"
+                                className="loginInput"
+                                name="password"
+                                placeholder="Contraseña"
+                                onChange={(e) => setPassword(e.target.value)}
+                                value={password}
+                            />
+                        </div>
+
+                        <button className="boton1" type="submit">
+                            Entrar
+                        </button>
+
+                        <div className="loginContactanos">
+                            <p className="loginMini">
+                                ¿Has olvidado la clave de acceso?
+                            </p>
+                            <p
+                                className="azul_claro loginMini"
+                                onClick={() =>
+                                    (window.location.href =
+                                        "mailto:appurate@gmail.com")
+                                }
+                            >
+                                Contáctanos
+                            </p>
+                        </div>
+                    </form>
+                </div>
+                <div className="loginMundo2">
+                    <img
+                        src="./static/login/mundo2.png"
+                        alt="mundo"
+                        className="mundo"
                     />
                 </div>
-
-                <div>
-                    <input
-                        type="password"
-                        className="infoInput"
-                        name="password"
-                        placeholder="Contraseña"
-                        onChange={(e) => setPassword(e.target.value)}
-                        value={password}
-                    />
-                </div>
-
-                <button className="button infoButton" type="submit">
-                    Iniciar sesión
-                </button>
-            </form>
-        </div>
+            </div>
+        </>
     );
 };
 

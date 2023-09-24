@@ -1,12 +1,12 @@
-.aboutGeneral {
+/* .aboutGeneral {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    background-color: #0077b6;
-}
+    background-color:var(--white);
+} */
 
-.mision {
+/* .mision {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -21,4 +21,4 @@
 .mision .misionCabecera {
     font-size: 0.5rem;
     font-weight: bold;
-}
+} */

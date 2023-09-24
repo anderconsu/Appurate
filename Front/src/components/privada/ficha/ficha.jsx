@@ -1,67 +1,129 @@
-// import React from 'react'
-import { useState, useEffect } from 'react';
-
-import { hostUrl } from 'hostUrl';
+import { useState, useEffect, useContext } from "react";
+import PageContext from "../../../context/pageContext";
+import { useNavigate } from "react-router-dom";
 
 const FichaVisualizacion = () => {
-  const [data, setData] = useState({});
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+    const [data, setData] = useState({});
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
+    const { page, setPage } = useContext(PageContext);
+    const hostUrl = import.meta.env.VITE_BACKEND_URL;
+    const navigate = useNavigate();
 
-  useEffect(() => {
-    
-    const fetchData = async () => {
-      const token = localStorage.getItem('token');
-      if (!token) {
-        return;
-      }
-      try {
-        const response = await fetch(`${hostUrl}/api/direccioni`, {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-            'Authorization': `Bearer ${token}`, 
-          },
-          body: JSON.stringify({
-            institution: "1",
-          }),
-        });
-
-        if (response.ok) {
-          const result = await response.json();
-          setData(result);
-        } else {
-          setError("Error al obtener los datos");
+    const checkAuth = async () => {
+        const token = localStorage.getItem("token");
+        if (!token) {
+            navigate("/login");
         }
-      } catch (error) {
-        console.error(error);
-        setError("Error, inténtalo más tarde");
-      } finally {
-        setLoading(false);
-      }
+        try {
+            const auth = await fetch(`${hostUrl}/user/authCheck`, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    Authorization: `Bearer ${token}`,
+                },
+            });
+            if (auth.status === 200) {
+                return true;
+            } else {
+                navigate("/login");
+            }
+        } catch (error) {
+            console.error(error);
+            setError("Error, inténtalo más tarde");
+        }
     };
 
-    fetchData();
-  }, []);
+    useEffect(() => {
+        try {
+            checkAuth();
+        } catch (error) {
+            console.error("useEffect error", error);
+            setError("Error, inténtalo más tarde");
+        }
+    }, []);
 
-  if (loading) {
-    return <p>Cargando...</p>;
-  }
+    useEffect(() => {
+        setPage("ficha");
+    }, []);
 
-  if (error) {
-    return <p>Error: {error}</p>;
-  }
+    useEffect(() => {
+        const fetchData = async () => {
+            const token = localStorage.getItem("token");
+            const aula = localStorage.getItem("aula");
+            const institution = localStorage.getItem("institution");
+            if (!token || !aula || !institution) {
+                return;
+            }
+            try {
+                const response = await fetch(
+                    `${hostUrl}/api/institutionmetrics`,
+                    {
+                        method: "POST",
+                        headers: {
+                            "Content-Type": "application/json",
+                            Authorization: `Bearer ${token}`,
+                        },
+                        body: JSON.stringify({
+                            institution: institution,
+                            aula: aula,
+                        }),
+                    }
+                );
 
-  return (
-    <div className="ficha-visualizacion">
-      <h2>Ficha de Visualización</h2>
-      <p>Institución: </p>
-      <p>pH: {data.pH}</p>
-      <p>Oxígeno (mg/l): {data.oxigeno}</p>
-      <p>Conductividad: {data.conductividad}</p>
-      <p>Temperatura: {data.Temperatura}</p>
-    </div>
-  );
+                if (response.ok) {
+                    const result = await response.json();
+                    setData(result.reverse());
+                } else {
+                    setError("Error al obtener los datos");
+                }
+            } catch (error) {
+                console.error(error);
+                setError("Error, inténtalo más tarde");
+            } finally {
+                setLoading(false);
+            }
+        };
+
+        fetchData();
+    }, []);
+
+    if (loading) {
+        return <p>Cargando...</p>;
+    }
+
+    if (error) {
+        return <p>Error: {error}</p>;
+    }
+
+    return (
+        <>
+            <h2>VISUALIZA TUS RESULTADOS</h2>
+            <div>
+                <img
+                    src="./static/ficha/peliroja.png"
+                    alt="peliroja"
+                    className="peliroja"
+                />
+            </div>
+            <div>
+                {data.map((data, index) => (
+                    <div className="ficha-visualizacion" key={index}>
+                        <p>Institución: {data.institution}</p>
+                        <p>Aula: {data.aula}</p>
+                        <p>Fecha: {data.date}</p>
+                        <p>Localización: {data.name}</p>
+                        <p>Oxígeno: {data.properties.Oxigeno} mg/l</p>
+                        <p>
+                            Conductividad: {data.properties.Conductividad} µS/cm
+                        </p>
+                        <p>Temperatura: {data.properties.Temperatura} °C</p>
+                        <p>pH: {data.properties.pH}</p>
+                    </div>
+                ))}
+            </div>
+        </>
+    );
 };
 
 export default FichaVisualizacion;

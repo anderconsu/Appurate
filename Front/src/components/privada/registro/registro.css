@@ -1,85 +1,137 @@
-.registroGeneral {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    box-sizing: border-box;
-}
-.formularioMuestra {
-    display: flex;
-    flex-direction: column;
+/* @media screen and (max-width: 767px) {
+    .formularioMuestra {
+        background: #eee;
+        border-radius: 20px;
+        padding: 0.5rem;
+        margin: 0.75rem;
+        color: #022859;
+    }
 
-}
+    h2 {
+        text-align: center;
+        color: #022859;
+        font-size: 20px;
+    }
 
+    .registroGeneral {
+        display: flex;
+        box-sizing: border-box;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 
+    .localizacion {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        background-color: #eee;
+    }
 
-.mapaRegistro {
-    
-}
+    .locationHeader {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3.2rem;
+        padding-left: 15px;
+        flex-direction: row;
+        color: #022859;
+        background: #eee;
+        border-radius: 20px;
+        font-size: 12px;
+        padding-top: 10px;
+    }
 
-.muestras {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    border: 1px solid #000;
-    gap: 10px;    
-}
+    .mapa {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
 
+    .muestras {
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+        color: #022859;
+        background: #eee;
+        border-radius: 20px;
+        justify-content: space-between;
+        font-size: 12px;
+    }
 
+    .oxigeno,
+    .conductividad,
+    .temperatura,
+    .ph {
+        display: flex;
+        justify-content: space-between;
+        color: #022859;
+        background: #eee;
+        border-radius: 20px;
+    }
 
-.campo {
-    display: flex;
-    border: 1px solid #00b3ff;
-    align-items: center;
-    justify-content: space-between;
-}
+    #oxigeno,
+    #conductividad,
+    #temperatura,
+    #ph {
+        border-radius: 20px;
+        width: 22%;
+        height: 12px;
+    }
 
-.campo label {
-    flex-basis: 30%;
-    
-    text-align: right;
-    
-    margin-right: 10px;
-    
-}
+    .buttonContainer {
+        display: flex;
+        flex-direction: row;
+        padding: 15px;
+        color: #022859;
+        background: #eee;
+        border-radius: 20px;
+        justify-content: flex-end;
+        font-size: 12px;
+        padding: 1px;
+        margin-top: 4px;
+    }
 
-.campo input {
-    border: 1px solid #ff0000;
-    width: 15%;
-    height: 12px;
+    .button {
+        border-radius: 20px;
+        width: 25%;
+        height: 1.3rem;
+        background-color: var(--azul_celeste);
+        border-color: var(--azul_celeste);
+        font-size: 90%;
+        padding: 2px;
+    }
 
-    
-}
+    .uno,
+    .dos,
+    .tres,
+    .cuatro,
+    .cinco {
+        color: var(--azul_celeste);
+        font-size: 120%;
+    }
 
-input {
+    .pipetaContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+        width: 100%;
+        height: 100%;
+        align-items: right;
+        margin-top: -2rem;
+    }
 
-    width: 15rem;
-    height: 12rem;
-    border-radius: 40px;
-    border: 1px solid #000;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    .pipeta {
+        width: 25%;
+        height: 25%;
+    }
 
-}
-
-
-.buttonContainer {
-    display: flex;
-    justify-content: right;
-    gap: 10px;
-    align-items: right;
-    padding-top: 10px;
-}
-
-.button {
-    border-radius: 40px;
-    background: var(--01, #48CAD9);
-    display: flex;
-    width: 15%;
-    height: 12px;
-    padding: 10px 10px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    flex-shrink: 0;
-}
+    .footer {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+} */
