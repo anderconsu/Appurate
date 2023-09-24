@@ -1,4 +1,5 @@
 import { Router } from "express";
+import authMiddleware from "../middleware/authMiddleware.js";
 
 import {
     findMetricsFromLocation,
@@ -13,7 +14,7 @@ apiRouter.get("/", (req, res) => {
     res.status(200).send("From here after there are api routes");
 });
 
-apiRouter.post("/prediction", async (req, res) => {
+apiRouter.post("/prediction", authMiddleware, async (req, res) => {
     console.log("prediction started");
     addMetrics(req, res);
 });

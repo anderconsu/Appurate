@@ -17,6 +17,8 @@ const Registro = () => {
     const [conductividad, setConductividad] = useState("");
     const [temperatura, setTemperatura] = useState("");
     const [error, setError] = useState(null);
+    const [message, setMessage] = useState("");
+
     const hostUrl = import.meta.env.VITE_BACKEND_URL;
 
     useEffect(() => {
@@ -24,15 +26,35 @@ const Registro = () => {
     }, []);
     const handleSubmit = async (e) => {
         e.preventDefault();
+        setError(null);
+        setMessage("");
 
         const institution = localStorage.getItem("institution");
         const aula = localStorage.getItem("aula");
-
+        if (!institution || !aula) {
+            setError("Sesión expirada, por favor vuelva a iniciar sesión");
+            return;
+        }
+        if (!location || !name) {
+            setError(
+                "Acuerdese de seleccionar una ubicación en el mapa antes de enviar el formulario."
+            );
+            return;
+        }
+        if (!pH || !oxigeno || !conductividad || !temperatura) {
+            setError("Todos los campos son obligatorios");
+            return;
+        }
+        if (!localStorage.getItem("token")) {
+            setError("Sesión expirada, por favor vuelva a iniciar sesión");
+            return;
+        }
         try {
             const response = await fetch(`${hostUrl}/api/prediction`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
+                    authorization: `Bearer ${localStorage.getItem("token")}`,
                 },
                 body: JSON.stringify({
                     name,
@@ -50,13 +72,25 @@ const Registro = () => {
 
             if (response.ok) {
                 console.log("Datos de muestra enviados con éxito");
+                setMessage("Los datos de la muestra han sido enviados");
                 setLocation("");
                 setpH("");
                 setOxigeno("");
                 setConductividad("");
                 setTemperatura("");
             } else {
-                setError("Error al enviar los datos de muestra");
+                let error = await response.json();
+                console.error(error);
+                if (response.status === 401) {
+                    setError(
+                        "Sesión expirada, por favor vuelva a iniciar sesión"
+                    );
+                }
+                if (error.message == "invalid token") {
+                    setError("Sesión no valida");
+                } else {
+                    setError("Error al enviar los datos de muestra");
+                }
             }
         } catch (error) {
             console.error(error);
@@ -73,9 +107,8 @@ const Registro = () => {
     return (
         <>
             <div className="registroGeneral">
-                    <h2>REGISTRA LOS DATOS DE LA MUESTRA</h2>
+                <h2>REGISTRA LOS DATOS DE LA MUESTRA</h2>
                 <form onSubmit={handleSubmit} className="formularioMuestra">
-
                     {error && <p className="error-message">{error}</p>}
 
                     {/* localización */}
@@ -86,10 +119,8 @@ const Registro = () => {
                                 01.
                             </label>
                             <label htmlFor="location">Localización: </label>
-                            
-                            
-                            <div></div>
 
+                            <div></div>
                         </div>
 
                         <div className="mapa">
@@ -206,6 +237,7 @@ const Registro = () => {
                                 Enviar
                             </button>
                         </div>
+                        {message && <p className="message">{message}</p>}
                     </div>
                 </form>
                 <img
