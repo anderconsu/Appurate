@@ -1,5 +1,5 @@
 // import React from 'react'
-import "./landing.css";
+import "./landing.scss";
 import { useContext, useEffect } from "react";
 import PageContext from "../../../context/pageContext";
 import { useNavigate } from "react-router-dom";
@@ -45,78 +45,86 @@ const Landing = () => {
     }, []);
     return (
         <>
-            <h3 className="landing">
-                ¡APRENDAMOS MÁS SOBRE NUESTRO ECOSISTEMA!
-            </h3>
-            <p>
-                Contaminación en la Ría de Bilbao y su Impacto en el Ecosistema
-            </p>
+            <div className="landingMain">
 
-            <div className="problema">
-                <h2>PROBLEMA</h2>
-                <p>La Ría de Bilbao se contamina con sustancias dañinas.</p>
-                <div>
-                    <h2>ORIGEN DE LA CONTAMINACIÓN</h2>
-                    <div className="industrias">
+                <div className="landingBienvenides">
+                    <h3 className="bienvenides">
+                    ¡BIENVENIDES A TODES!
+                    </h3>
+                    <p>
+                    Aquí encontrarás los pasos a seguir para usar nuestra app de registro y análisis de calidad del agua.
+                    </p>
+
+                    <div className="peli1">
                         <img
-                            src="./static/landing/industria.png"
-                            alt="industria"
-                            className="industria"
-                        />
-                        <p>
-                            Industrias y ciudades liberan desechos en el agua.
-                        </p>
-                    </div>
-                </div>
-                <div>
-                    <h2>IMPACTO</h2>
-                    <div className="impacto">
-                        <p>
-                            Pone en grave riesgo la vida acuática y el
-                            equilibrio del ecosistema.
-                        </p>
-                        <img
-                            src="./static/landing/mundoMano.png"
-                            alt="mundo manos"
-                            className="mundoMano"
+                            src="./static/landing/peli1.png"
+                            alt="peli1"
+                            className="peli1"
                         />
                     </div>
                 </div>
-            </div>
 
-            <div className="muestreo">
-                <h2>MUESTREO Y ANÁLISIS DE MUESTRAS</h2>
-                <p>¿Qué vamos a analizar?</p>
-                <div>
-                    <h3>01.</h3>
-                    <h3>Conductividad</h3>
-                    <p>
-                        Se mide para asegurarse de que haya suficiente oxígeno
-                        para que los organismos acuáticos respiren. Niveles
-                        bajos afectan negativamente a la vida acuática.
-                    </p>
-                    <h3>02.</h3>
-                    <h3>pH</h3>
-                    <p>
-                        La medida de sales y minerales disueltos en el agua.
-                        Valores altos pueden indicar contaminantes o nutrientes
-                        en exceso, lo que afecta la calidad del agua.
-                    </p>
-                    <h3>03.</h3>
-                    <h3>Oxígeno</h3>
-                    <p>
-                        Influye en la biología de especies acuáticas y en las
-                        reacciones químicas en el agua. Cambios en la
-                        temperatura pueden afectar la distribución y el
-                        crecimiento de organismos.
-                    </p>
-                    <h3>04.</h3>
-                    <h3>Temperatura</h3>
-                    <p>
-                        Indica si el agua es ácida o alcalina. Importante para
-                        la supervivencia de muchos organismos acuáticos, ya que
-                        tienen rangos específicos de pH en los que pueden vivir.
-                    </p>
+                <div className="landingMapa">
+                    <div className="mapa1">
+                        <img
+                            src="./static/landing/mapa.png"
+                            alt="mapa"
+                            className="mapa"
+                        />
+                    </div>
+                </div>
+
+                <div className="landingExplicacion">
+                    <div className="landingPrimero">
+                        <div className="peli2">
+                            <img
+                                src="./static/landing/peli2.png"
+                                alt="peli2"
+                                className="peli2"
+                            />
+                        </div>
+                        <div className="primero">
+                            <h3>Lo primero</h3>
+                            <p>que debes hacer es tomar una muestra de agua en una ubicación de tu interés dentro del mapa interactivo que puedes encontrar en la parte de arriba. Puedes usar un kit de prueba de calidad del agua que te proporcionaremos o usar tu propio método. 
+
+Una vez que tengas la muestra, debes introducir los datos relevantes en nuestra plataforma web accediendo a la página “Registrar info.” en el menú de la izquierda. Estos datos se almacenarán en nuestra base de datos y podrás acceder a ellos en cualquier momento. Pulsa el botón “Enviar” para terminar el registro de la información.</p>
+                        </div>
+                    </div>
+
+                    <div className="landingSegundo">
+                        <div className="segundo">
+                            <h3>Lo segundo...</h3>
+                            <p>que debes hacer es visualizar y analizar los datos que has introducido, para ello accede a la página “Visualizar info.” en el menú de la izquierda. 
+
+Nuestra plataforma web te ofrece herramientas de visualización que te permitirán ver los datos en forma de gráficos o tablas. 
+
+Estas herramientas te ayudarán a identificar patrones o tendencias en los datos y a comprender mejor la calidad del agua en tu ciudad</p>
+                        </div>
+                        <div className="peli3">
+                            <img
+                                src="./static/landing/peli3.png"
+                                alt="peli3"
+                                className="peli3"
+                            />
+                        </div>
+                    </div>
+
+                    <div className="landingTercero">
+                        <div className="peli4">
+                            <img
+                                src="./static/landing/peli4.png"
+                                alt="peli4"
+                                className="peli4"
+                            />
+                        </div>
+                        <div className="tercero">
+                            <h3>Lo tercero...</h3>
+                            <p>que debes hacer es explorar los “Recursos adicionales” que te ofrecemos. Nuestra plataforma web te proporciona recursos educativos, como videos, artículos y actividades prácticas, que te permitirán aprender más sobre el tema de la calidad del agua. 
+
+Estos recursos te explicarán los diferentes tipos de contaminantes que se encuentran comúnmente en el agua y cómo afectan la salud humana.</p>
+
+                        </div>
+                    </div>
                 </div>
             </div>
         </>

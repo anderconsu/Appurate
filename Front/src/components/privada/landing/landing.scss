@@ -1,0 +1,43 @@
+.landingMain {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 1rem;
+    width: 100%;
+    background-color: var(--blanco);
+
+    & .landingBienvenides {
+        display: flex;
+        flex-wrap: nowrap;
+        & .bienvenides {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            gap: 1rem;
+            width: 50%;
+            border-bottom: 2px solid #0077b6; 
+            
+        }
+        & .peli1 {
+            border-bottom: 2px solid #0077b6; 
+            width: 50%;
+        }
+    }
+    & .landingMapa {
+        
+    }
+    & .landingExplicacion{
+        
+    }
+ }
+
+
+
+
+
+
+    @media screen and (min-width: 768px) {
+      .landingMain {
+          
+      }
+    }
