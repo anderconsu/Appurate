@@ -1,6 +1,6 @@
 import { useState, useContext, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import "./login.css";
+import "./login.scss";
 import PageContext from "../../../context/pageContext";
 
 const Login = () => {
@@ -54,23 +54,21 @@ const Login = () => {
 
     return (
         <>
-            <div className="a">
-                <div className="a-right">
+            <div className="loginMain">
+                <div className="loginBody">
                     <h2>Entra en tu cuenta</h2>
-                    <br />
-                    <br />
                     <p>
                         Si todavía no formas parte del proyecto únete al
                         proyecto.
-                    </p>
-                    <p className="azul_claro">¡Quiero formar parte!</p>
-                    <form className="infoForm authForm" onSubmit={handleLogin}>
+                    </p><p className="azul_claro">¡Quiero formar parte!</p>
+                    
+                    <form className="loginForm" onSubmit={handleLogin}>
                         {error && <p className="error-message">{error}</p>}
 
                         <div>
                             <input
                                 type="text"
-                                className="infoInput"
+                                className="loginInput"
                                 name="username"
                                 placeholder="Usuario"
                                 onChange={(e) => setUsername(e.target.value)}
@@ -81,7 +79,7 @@ const Login = () => {
                         <div>
                             <input
                                 type="password"
-                                className="infoInput"
+                                className="loginInput"
                                 name="password"
                                 placeholder="Contraseña"
                                 onChange={(e) => setPassword(e.target.value)}
@@ -90,11 +88,17 @@ const Login = () => {
                         </div>
 
                         <button className="boton1" type="submit">
-                            Iniciar sesión
+                            Entrar
                         </button>
+                
+
+                        <div className="loginContactanos">
+                            <p className="loginMini">¿Has olvidado la clave de acceso?</p>
+                            <p className="azul_claro loginMini">Contáctanos</p>
+                        </div>
                     </form>
                 </div>
-                <div>
+                <div className="loginMundo2">
                     <img
                         src="./static/login/mundo2.png"
                         alt="mundo"
