@@ -1,0 +1,87 @@
+.aboutGeneral {
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 95%;
+    gap: 2rem;
+
+    & .ayudando,
+    .forma,
+    .tratando {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        & .ayudandoText,
+        .formaTexto,
+        .tratandoText {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            & h2 {
+                text-align: left;
+            }
+        }
+        & .superwomanimgContainer,
+        .morenitaimgContainer,
+        .aquadataimgContainer {
+            margin-top: 1rem;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: 10rem;
+            & img {
+                margin-right: 0;
+                height: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .aboutGeneral {
+        margin-top: 5rem;
+        gap: 5rem;
+
+        & .ayudando,
+        .forma,
+        .tratando {
+            flex-direction: row;
+            justify-content: center;
+            gap: 10rem;
+            & .ayudandoText,
+            .formaTexto,
+            .tratandoText {
+                justify-content: center;
+                width: 45%;
+                & h2 {
+                    font-size: 2rem;
+                    text-align: left;
+                }
+                & p {
+                    font-size: 1.5rem;
+                }
+            }
+            &.forma {
+                flex-direction: row-reverse;
+            }
+            & .superwomanimgContainer,
+            .morenitaimgContainer,
+            .aquadataimgContainer {
+                margin-top: 0rem;
+                display: flex;
+                justify-content: flex-end;
+                width: auto;
+                height: 20rem;
+                & img {
+                    margin-right: 0;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
