@@ -60,8 +60,14 @@ const Login = () => {
                     <p>
                         Si todavía no formas parte del proyecto únete al
                         proyecto.
-                    </p><p className="azul_claro">¡Quiero formar parte!</p>
-                    
+                    </p>
+                    <p
+                        className="azul_claro"
+                        onClick={() => navigate("/unete")}
+                    >
+                        ¡Quiero formar parte!
+                    </p>
+
                     <form className="loginForm" onSubmit={handleLogin}>
                         {error && <p className="error-message">{error}</p>}
 
@@ -90,11 +96,20 @@ const Login = () => {
                         <button className="boton1" type="submit">
                             Entrar
                         </button>
-                
 
                         <div className="loginContactanos">
-                            <p className="loginMini">¿Has olvidado la clave de acceso?</p>
-                            <p className="azul_claro loginMini">Contáctanos</p>
+                            <p className="loginMini">
+                                ¿Has olvidado la clave de acceso?
+                            </p>
+                            <p
+                                className="azul_claro loginMini"
+                                onClick={() =>
+                                    (window.location.href =
+                                        "mailto:appurate@gmail.com")
+                                }
+                            >
+                                Contáctanos
+                            </p>
                         </div>
                     </form>
                 </div>
