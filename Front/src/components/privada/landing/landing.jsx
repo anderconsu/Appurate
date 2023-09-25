@@ -57,35 +57,31 @@ const Landing = () => {
                         Aquí encontrarás los pasos a seguir para usar nuestra app de registro y análisis de calidad del agua.
                         </p>
                     </div>
+                    <img
+                        src="./static/landing/peli1.png"
+                        alt="peli1"
+                        className="peli1"
+                    />
                     
-                    <div className="peli1">
-                        <img
-                            src="./static/landing/peli1.png"
-                            alt="peli1"
-                            className="peli1"
-                        />
-                    </div>
                 </div>
+                <img
+                    src="./static/landing/mapa.png"
+                    alt="mapa"
+                    className="mapa"
+                />
 
-                <div className="landingMapa">
-                    <div className="mapa1">
-                        <img
-                            src="./static/landing/mapa.png"
-                            alt="mapa"
-                            className="mapa"
-                        />
-                    </div>
-                </div>
+                
+                
+               
+                  
 
                 <div className="landingExplicacion">
                     <div className="landingPrimero">
-                        <div className="peli2">
-                            <img
-                                src="./static/landing/peli2.png"
-                                alt="peli2"
-                                className="peli2"
-                            />
-                        </div>
+                        <img
+                            src="./static/landing/peli2.png"
+                            alt="peli2"
+                            className="peli2"
+                        />
                         <div className="primero">
                             <h3>Lo primero</h3>
                             <p>que debes hacer es tomar una muestra de agua en una ubicación de tu interés dentro del mapa interactivo que puedes encontrar en la parte de arriba. Puedes usar un kit de prueba de calidad del agua que te proporcionaremos o usar tu propio método. 
@@ -103,23 +99,21 @@ Nuestra plataforma web te ofrece herramientas de visualización que te permitir�
 
 Estas herramientas te ayudarán a identificar patrones o tendencias en los datos y a comprender mejor la calidad del agua en tu ciudad</p>
                         </div>
-                        <div className="peli3">
-                            <img
-                                src="./static/landing/peli3.png"
-                                alt="peli3"
-                                className="peli3"
-                            />
-                        </div>
+                        
+                        <img
+                            src="./static/landing/peli3.png"
+                            alt="peli3"
+                            className="peli3"
+                        />
+                        
                     </div>
 
                     <div className="landingTercero">
-                        <div className="peli4">
-                            <img
-                                src="./static/landing/peli4.png"
-                                alt="peli4"
-                                className="peli4"
-                            />
-                        </div>
+                        <img
+                            src="./static/landing/peli4.png"
+                            alt="peli4"
+                            className="peli4"
+                        />
                         <div className="tercero">
                             <h3>Lo tercero...</h3>
                             <p>que debes hacer es explorar los “Recursos adicionales” que te ofrecemos. Nuestra plataforma web te proporciona recursos educativos, como videos, artículos y actividades prácticas, que te permitirán aprender más sobre el tema de la calidad del agua. 

@@ -8,28 +8,90 @@
 
     & .landingBienvenides {
         display: flex;
-        flex-wrap: nowrap;
+        // flex-wrap: wrap;
+        flex-direction: column;
+
+        & .peli1 {
+            height: 0%;
+            width: 0%;
+            visibility: hidden;
+            display: flex;
+           
+        }
         
         & .landingBody {
-            width: 80%;
+            width: 60%;
             & .bienvenides {
                 display: flex;
                 
                 
             }
         }
-        
-        & .peli1 {
-            border-bottom: 2px solid #0077b6; 
-            width: 60%;
-            display: flex;
-            justify-content: center;
-        }
     }
     & .landingMapa {
-        
+        width: 80%;
+        margin: auto;
     }
-    & .landingExplicacion{
+    & .landingExplicacion {
+
+        & .landingPrimero {
+            display: flex;
+            flex-direction: row;
+            gap: 3rem;
+           
+            padding: 1rem;
+            width: 100%;
+            margin: auto;
+
+            & .primero {
+                border-radius: 20px;
+                border: 5px solid #48cad9;
+                width: 18%;
+            }
+
+            & .peli2 {
+                // width: auto;
+            }
+        }
+
+        & .landingSegundo {
+            display: flex;
+            flex-direction: row;
+            gap: 3rem;
+            padding: 1rem;
+            width: 100%;
+            margin: auto;
+
+            & .segundo {
+                border-radius: 20px;
+                border: 5px solid #48cad9;
+                width: 18%;
+            }
+
+            & .peli3 {
+                
+            }
+        }
+
+        & .landingTercero {
+            display: flex;
+            flex-direction: row;
+            gap: 3rem;
+            
+            padding: 1rem;
+            width: 100%;
+            margin: auto;
+
+            & .tercero {
+                border-radius: 20px;
+                border: 5px solid #48cad9;
+                width: 18%;
+            }
+
+            & .peli4 {
+                
+            }
+        }
         
     }
  }
@@ -40,7 +102,129 @@
 
 
     @media screen and (min-width: 768px) {
-      .landingMain {
-          
-      }
+        .landingMain {
+            display: flex;
+            flex-wrap: wrap;
+            // flex-direction: column;
+            padding: 1rem;
+            width: 100%;
+            background-color: var(--blanco);
+        
+            & .landingBienvenides {
+                display: flex;
+                flex-wrap: nowrap;
+                flex-direction: row;
+                margin: auto;
+                width:50%;
+                // border: 8px solid #48cad9;
+        
+                & .peli1 {
+                    // z-index: -1;
+                    
+                    // height: 100%;
+                    // clip-path: polygon;
+                    display: flex;
+                    visibility: visible;
+                    width: 30%;
+                    // margin-left: 0%;
+                    // border: 8px solid #48cad9;
+                   
+                }
+                
+                & .landingBody {
+                    width: 70%;
+                    // border: 8px solid #48cad9;
+                    & .bienvenides {
+                        display: flex;
+                        
+                        
+                        
+                    }
+                }
+                
+               
+            }
+            & .mapa {
+                border: 8px solid #48cad9;
+                // z-index: 0;
+                border-radius: 40px;
+                width: 50%;
+                display: flex;
+                margin: auto;
+                margin-top: -14rem;
+                    
+            }
+            & .landingExplicacion {
+        
+                & .landingPrimero {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    gap: 3rem;
+                   
+                    padding: 1rem;
+                    width: 100%;
+                    margin: auto;
+                    // margin-left: 2rem;
+        
+                    & .primero {
+                        border-radius: 20px;
+                        border: 5px solid #48cad9;
+                        width: 18%;
+                        padding: 1rem;
+                        
+                        
+                    }
+        
+                    & .peli2 {
+                        // width: auto;
+                    }
+                }
+        
+                & .landingSegundo {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    gap: 3rem;
+                    padding: 1rem;
+                    width: 100%;
+                    margin: auto;
+        
+                    & .segundo {
+                        border-radius: 20px;
+                        border: 5px solid #48cad9;
+                        width: 18%;
+                        padding: 1rem;
+                    }
+        
+                    & .peli3 {
+                        
+                    }
+                }
+        
+                & .landingTercero {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    gap: 3rem;
+                    
+                    padding: 1rem;
+                    width: 100%;
+                    margin: auto;
+        
+                    & .tercero {
+                        border-radius: 20px;
+                        border: 5px solid #48cad9;
+                        width: 18%;
+                        padding: 1rem;
+                    }
+
+                    & .peli4 {
+                        
+                    }
+                }
+                
+            }
+         }
     }
+    
