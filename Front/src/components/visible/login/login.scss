@@ -1,147 +1,138 @@
 .loginMain {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  padding: 1rem;
-  width: 100%;
-  background-color: var(--blanco); 
- 
-
-  & .loginBody {
-    // align-items: center;
-    // min-height: 100vh;
-    // background-color: var(--blanco); 
-    // padding: 20px;
-    // box-sizing: border-box;
-
-    width: 100%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    // justify-content: left;
-    // gap: 1rem;
-
-   
-    & h2 {
-      color: var(--azul_oscuro); 
-      font-size: 2rem;
-      text-align: left;
-      
-    }
-
-    & p {
-      color: #022859; 
-      font-size: 1rem;
-      margin-bottom: 20px;
-    }
-
-    & .azul_claro {
-      color: var(--azul_celeste); 
-    }
-
-    & .loginMini {
-      font-size: 0.7rem;
-    }
-
-    & .loginForm {
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: column;
-      background-color: #ffffff; 
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-      width: 100%;
-      // max-width: 400px;
-      text-align: center;
-      gap: 1rem;
-
-      & .loginInput {
-        width: 100%;
-        padding: 10px;
-        margin: 10px 0;
-        border: none;
-        border-bottom: 2px solid #0077b6; 
-        font-size: 16px;
-        outline: none;
-      }
-      
-      & .loginInput::placeholder {
-        color: #0077b6; 
-      }
-
-      & .boton1 {
-        width: 25%;
-      }
-
-      & .loginContactanos {
-        display: flex;
-        gap: 1rem;
-        flex-wrap: nowrap;
-      }
-
-    }
-  }
-  & .loginMundo2 {
-    margin: auto;
+    padding: 1rem;
     width: 100%;
-    height: 100%;
-    // border: 1px solid #0077b6;
-    & img {
-      
-      margin: auto;
-      width: 100%;
+    background-color: var(--blanco);
+
+    & .loginBody {
+        // align-items: center;
+        // min-height: 100vh;
+        // background-color: var(--blanco);
+        // padding: 20px;
+        // box-sizing: border-box;
+
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        // justify-content: left;
+        // gap: 1rem;
+
+        & h2 {
+            color: var(--azul_oscuro);
+            font-size: 2rem;
+            text-align: left;
+        }
+
+        & p {
+            color: #022859;
+            font-size: 1rem;
+            margin-bottom: 20px;
+        }
+
+        & .azul_claro {
+            color: var(--azul_celeste);
+        }
+
+        & .loginMini {
+            font-size: 0.7rem;
+        }
+
+        & .loginForm {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            // max-width: 400px;
+            text-align: center;
+            gap: 1rem;
+
+            & .loginInput {
+                width: 100%;
+                padding: 10px;
+                margin: 10px 0;
+                border: none;
+                border-bottom: 2px solid #0077b6;
+                font-size: 16px;
+                outline: none;
+            }
+
+            & .loginInput::placeholder {
+                color: #0077b6;
+            }
+
+            & .boton1 {
+                width: 25%;
+            }
+
+            & .loginContactanos {
+                display: flex;
+                gap: 1rem;
+                flex-wrap: nowrap;
+            }
+        }
     }
+    & .loginMundo2 {
+        margin: auto;
+        width: 100%;
+        height: 100%;
+        // border: 1px solid #0077b6;
+        & img {
+            margin: auto;
+            width: 100%;
+        }
     }
-  
 }
 
 @media screen and (min-width: 768px) {
-  .loginMain {
-    
-    flex-direction: row;
+    .loginMain {
+        flex-direction: row;
+        margin-top: 5rem;
 
-    & .loginBody {
-      width: 40%;
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: column;
-      // align-items: center;
-      justify-content: left;
-      border: #0077b6 solid 1px;
-      margin-left: 4rem;
+        & .loginBody {
+            width: 40%;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            // align-items: center;
+            justify-content: left;
+            margin: auto;
+            margin-left: 4rem;
 
-      & h2 {
-        margin-left: 3rem;
-      }
-      & p {
-        margin-left: 3rem;
-      }
-      & .loginForm {
-        width: 80%;
-        margin-left: 3rem;
-      }
-    }
+            & h2 {
+                margin-left: 3rem;
+            }
+            & p {
+                margin-left: 3rem;
+            }
+            & .loginForm {
+                width: 80%;
+                margin-left: 3rem;
+            }
+        }
 
-    & .loginMundo2 {
-      display: flex;
-      // align-items: flex-start;
-      // margin: auto;
-      // justify-content: center;
-      width: 50%;
-      // height: 100%;
-      border: 1px solid #0077b6;
-      
-      & img {
-        
-        margin-top: 0;
-        width: 80%;
-        border: #0077b6 solid 1px;
-        display: flex;
-        justify-content: left;
-        // align-items: flex-start;
-      }
-    }
+        & .loginMundo2 {
+            display: flex;
+            // align-items: flex-start;
+            // margin: auto;
+            justify-content: flex-start;
+            width: 50%;
+            // height: 100%;
+
+            & img {
+                margin-top: 0;
+                margin-left: 0;
+                width: 80%;
+                display: flex;
+                justify-content: flex-start;
+                // align-items: flex-start;
+            }
+        }
     }
 }
-
