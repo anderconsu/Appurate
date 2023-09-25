@@ -133,16 +133,17 @@
         justify-content: left;
         width: 50%;
         // height: 100%;
-        border: 1px solid #0077b6;
+        // border: 1px solid #0077b6;
         
         & img {
           
           margin-top: 0;
           width: 77%;
-          border: #0077b6 solid 1px;
+          // border: #0077b6 solid 1px;
           display: flex;
           align-items:flex-start;
           justify-content: left;
+          // margin-left: 0%;
           
         }
       }
