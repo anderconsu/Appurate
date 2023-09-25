@@ -7,7 +7,7 @@ import "./recursos.scss";
 const Recursos = () => {
     const { page, setPage } = useContext(PageContext);
     const navigate = useNavigate();
-   const hostUrl = import.meta.env.VITE_BACKEND_URL;
+    const hostUrl = import.meta.env.VITE_BACKEND_URL;
 
     const checkAuth = async () => {
         const token = localStorage.getItem("token");
@@ -53,9 +53,11 @@ const Recursos = () => {
                     Aquí encontrareis recursos adicionales que os ayudarán a
                     aprender más sobre el pro el proyecto.
                 </p>
+                <br />
 
                 <div className="recursosUtilizar">
                     <h2>¿QUÉ VAMOS A UTILIZAR?</h2>
+                    <br />
                     <div className="recursosAzul">
                         <div className="recursosMedidor">
                             <div className="recursosImgContainer">
@@ -65,7 +67,7 @@ const Recursos = () => {
                                     className="medidor"
                                 />
                             </div>
-                            <div>
+                            <div className="recursosTextContainer">
                                 <h3>Medidor de Oxígeno Disuelto</h3>
                                 <p>
                                     Este dispositivo mide la concentración de
@@ -77,7 +79,7 @@ const Recursos = () => {
                             </div>
                         </div>
                         <div className="recursosConductimetro">
-                            <div>
+                            <div className="recursosTextContainer">
                                 <h3>Conductímetro</h3>
                                 <p>
                                     Mide la conductividad eléctrica del agua, que es
@@ -102,7 +104,7 @@ const Recursos = () => {
                                     className="termometro"
                                 />
                             </div>
-                            <div>
+                            <div className="recursosTextContainer">
                                 <h3>Termómetro</h3>
                                 <p>
                                     Utilizado para medir la temperatura del agua en
@@ -113,7 +115,7 @@ const Recursos = () => {
                             </div>
                         </div>
                         <div className="recursosMedidor2">
-                            <div>
+                            <div className="recursosTextContainer">
                                 <h3>Medidor de pH</h3>
                                 <p>
                                     Mide el nivel de acidez o alcalinidad del agua
@@ -138,7 +140,7 @@ const Recursos = () => {
                                     className="espectro"
                                 />
                             </div>
-                            <div>
+                            <div className="recursosTextContainer">
                                 <h3>Espectrofotómetro</h3>
                                 <p>
                                     Este instrumento se usa para analizar la
@@ -154,19 +156,21 @@ const Recursos = () => {
                     </div>
                 </div>
 
-                {/* <div className="recursosUtilizar">
+                <div className="recursosUtilizarYT">
                     <h2>COMO TOMAR LAS MUESTRAS CON SEGURIDAD </h2>
+                    <br />
                     <div className="recursosYoutube">
-                        <iframe
-                            width="560"
-                            height="315"
-                            src={"https://youtu.be/OZQi3DLogqE?si=01TCnZGV9iJ2SyD6"}
-                            title="YouTube Video"
-                            frameborder="0"
-                            allowfullscreen
-                        ></iframe>
+                        <iframe 
+                        width="100%" 
+                        height="100%" 
+                        src="https://www.youtube.com/embed/OZQi3DLogqE?si=vblpwiGk-pxzuwzp" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                            
+                        </iframe>
                     </div>
-                </div> */}
+                </div>
             </div>
         </>
     );
