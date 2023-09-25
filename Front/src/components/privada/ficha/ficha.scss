@@ -1,0 +1,166 @@
+.resultadosMain {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+    gap: 1rem;
+    
+    & .tituloPeliroja {
+        display: flex;
+        justify-content: center;
+
+        & p {
+            font-size: 1rem;
+        }
+    }
+
+     & .pelirojaContainer {
+        display: flex;
+        flex-direction: row;
+        width: 20%;
+    }
+
+        & .peliroja {
+            width: 100%;
+        }
+
+
+    & .fichas {
+        margin: auto;
+        margin-top: -1rem;
+        width: 97%;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        & .ficha-visualizacion {
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            border: 3px solid rgb(0, 213, 255);
+            border-radius: 8px;
+            
+            
+            & div {
+                display: flex;
+                flex-direction: row;
+                gap: 1rem;
+                border-bottom: 2px solid rgb(0, 217, 255);
+                
+    
+                & .columnaUno {
+                    padding: 1rem;
+                    border-right: 2px solid rgb(0, 247, 255);
+                    width: 40%;
+                }
+    
+                & .columnaDos {
+                    margin: auto;
+                }
+    
+                & .top, .bottom {
+                    padding: 1rem;
+                    width: 40%;
+                    border-right: 2px solid rgb(0, 229, 255);
+                }
+
+            }
+            
+        }
+    }    
+    & .graficosMain {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 1rem;
+    }
+    
+}
+
+@media screen and (min-width: 768px) {
+    .resultadosMain {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        margin: 1rem;
+        
+        & .tituloPeliroja {
+            display: flex;
+            justify-content: center;
+        }
+    
+         & .pelirojaContainer {
+            display: flex;
+            flex-direction: row;
+            width: 15%;
+        }
+    
+            & .peliroja {
+                width: 100%;
+            }
+        & .fichas {
+            
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            margin: auto;
+            margin-top: -10rem;
+            gap: 1rem;
+    
+            & .ficha-visualizacion {
+                
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                background: white;
+                border-right: 4px solid rgb(0, 213, 255);
+                border-left: 4px solid rgb(0, 213, 255);
+                border-bottom: 3px solid rgb(0, 213, 255);
+                border-top: 4px solid rgb(0, 213, 255);;
+                border-radius: 8px;
+                margin: 1rem;
+                
+                
+                & div {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 1rem;
+                    border-bottom: px solid rgb(0, 213, 255);
+                    
+        
+                    & .columnaUno {
+                        padding: 1rem;
+                        border-right: 3px solid rgb(0, 213, 255);
+                        width: 40%;
+                    }
+        
+                    & .columnaDos {
+                        margin: auto;
+                    }
+        
+                    & .top, .bottom {
+                        padding: 1rem;
+                        width: 40%;
+                        border-right: 3px solid rgb(0, 213, 255);
+                        
+                    }
+                    
+                }
+            }    
+        }
+        & .graficosMain {
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            margin: auto;
+            gap: 1rem;
+
+            & img {
+                width: 50%;
+                margin: auto;
+            }
+        }
+    }
+}
