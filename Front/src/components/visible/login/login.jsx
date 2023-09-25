@@ -56,17 +56,19 @@ const Login = () => {
         <>
             <div className="loginMain">
                 <div className="loginBody">
-                    <h2>Entra en tu cuenta</h2>
-                    <p>
-                        Si todavía no formas parte del proyecto únete al
-                        proyecto.
-                    </p>
-                    <p
-                        className="azul_claro"
-                        onClick={() => navigate("/unete")}
-                    >
-                        ¡Quiero formar parte!
-                    </p>
+                    <h2>Entra en tu cuenta</h2><br />
+                    <div className="loginQuiero">
+                        <p>
+                            Si todavía no formas parte del proyecto, ¡Únete!
+                        </p>
+                        <p
+                            className="azul_claro"
+                            onClick={() => navigate("/unete")}
+                        >
+                            ¡Quiero formar parte!
+                        </p>
+                    </div>
+                 
 
                     <form className="loginForm" onSubmit={handleLogin}>
                         {error && <p className="error-message">{error}</p>}
@@ -92,25 +94,27 @@ const Login = () => {
                                 value={password}
                             />
                         </div>
+                        <div className="botonTexto">
+                            <button className="boton1" type="submit">
+                                Entrar
+                            </button>
 
-                        <button className="boton1" type="submit">
-                            Entrar
-                        </button>
-
-                        <div className="loginContactanos">
-                            <p className="loginMini">
-                                ¿Has olvidado la clave de acceso?
-                            </p>
-                            <p
-                                className="azul_claro loginMini"
-                                onClick={() =>
-                                    (window.location.href =
-                                        "mailto:appurate@gmail.com")
-                                }
-                            >
-                                Contáctanos
-                            </p>
+                            <div className="loginContactanos">
+                                <p className="loginMini">
+                                    ¿Has olvidado la clave de acceso?
+                                </p>
+                                <p
+                                    className="azul_claro loginMini"
+                                    onClick={() =>
+                                        (window.location.href =
+                                            "mailto:appurate@gmail.com")
+                                    }
+                                >
+                                    Contáctanos
+                                </p>
+                            </div>
                         </div>
+                        
                     </form>
                 </div>
                 <div className="loginMundo2">

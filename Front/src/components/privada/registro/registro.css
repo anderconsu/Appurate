@@ -1,4 +1,4 @@
-/* @media screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
     .formularioMuestra {
         background: #eee;
         border-radius: 20px;
@@ -60,6 +60,7 @@
         border-radius: 20px;
         justify-content: space-between;
         font-size: 12px;
+        gap: 10px;
     }
 
     .oxigeno,
@@ -79,7 +80,8 @@
     #ph {
         border-radius: 20px;
         width: 22%;
-        height: 12px;
+        height: 20px;
+        text-align: center;
     }
 
     .buttonContainer {
@@ -103,6 +105,8 @@
         border-color: var(--azul_celeste);
         font-size: 90%;
         padding: 2px;
+        font-weight: bold;
+        color: white;
     }
 
     .uno,
@@ -130,8 +134,165 @@
     }
 
     .footer {
-        position: relative;
         width: 100%;
         height: 100%;
     }
-} */
+}
+
+
+@media screen and (min-width: 768px) {
+    
+    .formularioMuestra {
+        display: flex;
+        justify-content: space-between;
+        background: #eee;
+        border-radius: 20px;
+        padding: auto;
+        margin: auto;
+        color: #022859;
+        
+    }
+
+    h2 {
+        text-align: center;
+        color: #022859;
+        font-size: 30px;
+    }
+
+    .registroGeneral {
+        display: flex;
+        box-sizing: border-box;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-right: 50px;
+        padding-left: 50px;
+
+    }
+
+    .localizacion {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 60%;
+        height: 60%;
+        border-radius: 20px;
+        background-color: #eee;
+    }
+
+    .locationHeader {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3.2rem;
+        padding-left: 15px;
+        flex-direction: row;
+        color: #022859;
+        background: #eee;
+        border-radius: 20px;
+        font-size: 20px;
+        padding-top: 10px;
+    }
+
+    .mapa {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .muestras {
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+        color: #022859;
+        background: #eee;
+        border-radius: 20px;
+        justify-content: space-between;
+        font-size: 20px;
+        gap: 10px;
+        margin-top: 60px;
+        margin-right: 5%;
+        text-align: center;
+    }
+
+    .oxigeno,
+    .conductividad,
+    .temperatura,
+    .ph {
+        display: flex;
+        justify-content: space-between;
+        color: #022859;
+        background: #eee;
+        border-radius: 20px;
+    }
+
+    #oxigeno,
+    #conductividad,
+    #temperatura,
+    #ph {
+        /* border-radius: 20px; */
+        width: 22%;
+        height: 55%;
+        text-align: center;
+        border-color: var(--azul_celeste);
+    }
+
+    .buttonContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+        color: #022859;
+        background: #eee;
+        border-radius: 20px;
+        justify-content: flex-end;
+        font-size: 18px;
+        padding: 1px;
+        margin-top: 4px;
+    }
+
+    .button {
+        border-radius: 20px;
+        width: 45%;
+        height: 8rem;
+        background-color: var(--azul_celeste);
+        border-color: var(--azul_celeste);
+        font-size: 90%;
+        padding: 2px;
+        font-weight: bold;
+        color: white;
+    }
+
+    .uno,
+    .dos,
+    .tres,
+    .cuatro,
+    .cinco {
+        color: var(--azul_celeste);
+    }
+
+    .pipetaContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+        width: 100%;
+        height: 100%;
+        align-items: right;
+        margin-top: -2rem;
+        padding-right: 580px;
+    }
+
+    .pipeta {
+        width: 10%;
+        height: 10%;
+    }
+
+    .footer {
+        width: 100%;
+        height: 100%;
+    }
+
+
+}
+
