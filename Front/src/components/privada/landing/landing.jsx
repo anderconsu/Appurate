@@ -61,25 +61,31 @@ const Landing = () => {
                             agua.
                         </p>
                     </div>
+                    <div className="peli1Container">
+                        <img
+                            src="./static/landing/peli1.png"
+                            alt="peli1"
+                            className="peli1"
+                        />
+                    </div>
+                </div>
+                <div className="landingMapaContainer">
                     <img
-                        src="./static/landing/peli1.png"
-                        alt="peli1"
-                        className="peli1"
+                        src="./static/landing/mapa.png"
+                        alt="mapa"
+                        className="mapa"
                     />
                 </div>
-                <img
-                    src="./static/landing/mapa.png"
-                    alt="mapa"
-                    className="mapa"
-                />
 
                 <div className="landingExplicacion">
                     <div className="landingPrimero">
-                        <img
-                            src="./static/landing/peli2.png"
-                            alt="peli2"
-                            className="peli2"
-                        />
+                        <div className="peli2Container">
+                            <img
+                                src="./static/landing/peli2.png"
+                                alt="peli2"
+                                className="peli2"
+                            />
+                        </div>
                         <div className="primero">
                             <h3>Lo primero</h3>
                             <p>
@@ -116,20 +122,23 @@ const Landing = () => {
                                 ciudad
                             </p>
                         </div>
-
-                        <img
-                            src="./static/landing/peli3.png"
-                            alt="peli3"
-                            className="peli3"
-                        />
+                        <div className="peli3Container">
+                            <img
+                                src="./static/landing/peli3.png"
+                                alt="peli3"
+                                className="peli3"
+                            />
+                        </div>
                     </div>
 
                     <div className="landingTercero">
-                        <img
-                            src="./static/landing/peli4.png"
-                            alt="peli4"
-                            className="peli4"
-                        />
+                        <div className="peli4Container">
+                            <img
+                                src="./static/landing/peli4.png"
+                                alt="peli4"
+                                className="peli4"
+                            />
+                        </div>
                         <div className="tercero">
                             <h3>Lo tercero...</h3>
                             <p>

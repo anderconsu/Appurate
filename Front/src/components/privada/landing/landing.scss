@@ -17,16 +17,19 @@
         display: flex;
         // flex-wrap: wrap;
         flex-direction: column;
-
-        & .peli1 {
-            height: 0%;
-            width: 0%;
-            visibility: hidden;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        & .peli1Container {
             display: flex;
+            & img {
+                margin-right: auto;
+                height: 0;
+            }
         }
 
         & .landingBody {
-            width: 60%;
+            width: 90%;
             & .bienvenides {
                 display: flex;
                 color: var(--azul_oscuro);
@@ -38,65 +41,59 @@
             }
         }
     }
-    & .landingMapa {
+    & .landingMapaContainer {
+        border: 8px solid #48cad9;
+        // z-index: 0;
+        border-radius: 40px;
         width: 80%;
+        display: flex;
         margin: auto;
+        & img {
+            width: 100%;
+        }
+    }
+    & .landingMapaContainer {
+        // z-index: 0;
+        border-radius: 40px;
+        width: 80%;
+        display: flex;
+        margin: auto;
+        & img {
+            width: 100%;
+        }
     }
     & .landingExplicacion {
-        & .landingPrimero {
+        width: 100%;
+        margin: auto;
+        & .landingPrimero,
+        .landingSegundo,
+        .landingTercero {
             display: flex;
             flex-direction: row;
-            gap: 3rem;
+            justify-content: center;
+            align-items: center;
+            gap: 0rem;
 
             padding: 1rem;
             width: 100%;
             margin: auto;
+            // margin-left: 2rem;
 
-            & .primero {
+            & .primero,
+            .segundo,
+            .tercero {
                 border-radius: 20px;
-                border: 5px solid #48cad9;
-                width: 18%;
+                width: 25%;
+                height: auto;
+                padding: 1rem;
+                color: var(--azul_oscuro);
             }
-
-            & .peli2 {
-                // width: auto;
-            }
-        }
-
-        & .landingSegundo {
-            display: flex;
-            flex-direction: row;
-            gap: 3rem;
-            padding: 1rem;
-            width: 100%;
-            margin: auto;
-
-            & .segundo {
-                border-radius: 20px;
-                border: 5px solid #48cad9;
-                width: 18%;
-            }
-
-            & .peli3 {
-            }
-        }
-
-        & .landingTercero {
-            display: flex;
-            flex-direction: row;
-            gap: 3rem;
-
-            padding: 1rem;
-            width: 100%;
-            margin: auto;
-
-            & .tercero {
-                border-radius: 20px;
-                border: 5px solid #48cad9;
-                width: 18%;
-            }
-
-            & .peli4 {
+            .peli2Container,
+            .peli3Container,
+            .peli4Container {
+                & img {
+                    height: 100%;
+                }
             }
         }
     }
@@ -123,25 +120,30 @@
             display: flex;
             flex-wrap: nowrap;
             flex-direction: row;
+            align-items: flex-start;
             margin: auto;
-            width: 50%;
+            width: 100%;
             // border: 8px solid #48cad9;
-
-            & .peli1 {
-                // z-index: -1;
-
-                // height: 100%;
-                // clip-path: polygon;
+            & .peli1Container {
                 display: flex;
-                visibility: visible;
-                width: 30%;
-                // margin-left: 0%;
-                // border: 8px solid #48cad9;
+                height: 50rem;
+                & .peli1 {
+                    // z-index: -1;
+
+                    // height: 100%;
+                    // clip-path: polygon;
+                    display: flex;
+                    visibility: visible;
+                    height: 100%;
+                    height: auto;
+                    // margin-left: 0%;
+                    // border: 8px solid #48cad9;
+                }
             }
 
             & .landingBody {
-                width: 70%;
                 // border: 8px solid #48cad9;
+                width: 50%;
                 & .bienvenides {
                     display: flex;
                     font-size: 2.5rem;
@@ -154,80 +156,49 @@
                 }
             }
         }
-        & .mapa {
-            border: 8px solid #48cad9;
+        & .landingMapaContainer {
             // z-index: 0;
             border-radius: 40px;
-            width: 50%;
+            width: 80%;
             display: flex;
             margin: auto;
-            margin-top: -17rem;
+            margin-top: -25rem;
+            & img {
+                width: 100%;
+            }
         }
         & .landingExplicacion {
-            & .landingPrimero {
+            width: 100%;
+            margin: auto;
+            & .landingPrimero,
+            .landingSegundo,
+            .landingTercero {
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
-                gap: 3rem;
+                align-items: center;
+                gap: 0rem;
 
                 padding: 1rem;
                 width: 100%;
                 margin: auto;
                 // margin-left: 2rem;
 
-                & .primero {
+                & .primero,
+                .segundo,
+                .tercero {
                     border-radius: 20px;
-                    border: 5px solid #48cad9;
-                    width: 18%;
+                    width: 25%;
+                    height: auto;
                     padding: 1rem;
                     color: var(--azul_oscuro);
                 }
-
-                & .peli2 {
-                    // width: auto;
-                }
-            }
-
-            & .landingSegundo {
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                gap: 3rem;
-                padding: 1rem;
-                width: 100%;
-                margin: auto;
-
-                & .segundo {
-                    border-radius: 20px;
-                    border: 5px solid #48cad9;
-                    width: 18%;
-                    padding: 1rem;
-                    color: var(--azul_oscuro);
-                }
-
-                & .peli3 {
-                }
-            }
-
-            & .landingTercero {
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                gap: 3rem;
-
-                padding: 1rem;
-                width: 100%;
-                margin: auto;
-
-                & .tercero {
-                    border-radius: 20px;
-                    border: 5px solid #48cad9;
-                    width: 18%;
-                    padding: 1rem;
-                    color: var(--azul_oscuro);
-                }
-
-                & .peli4 {
+                .peli2Container,
+                .peli3Container,
+                .peli4Container {
+                    & img {
+                        height: 100%;
+                    }
                 }
             }
         }
