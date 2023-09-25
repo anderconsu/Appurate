@@ -56,17 +56,20 @@ const Login = () => {
         <>
             <div className="loginMain">
                 <div className="loginBody">
-                    <h2>Entra en tu cuenta</h2>
-                    <p>
-                        Si todavía no formas parte del proyecto únete al
-                        proyecto.
-                    </p>
-                    <p
-                        className="azul_claro"
-                        onClick={() => navigate("/unete")}
-                    >
-                        ¡Quiero formar parte!
-                    </p>
+                    <h2>Entra en tu cuenta</h2><br />
+                    <div className="loginQuiero">
+                        <p>
+                            Si todavía no formas parte del proyecto únete al
+                            proyecto.
+                        </p>
+                        <p
+                            className="azul_claro"
+                            onClick={() => navigate("/unete")}
+                        >
+                            ¡Quiero formar parte!
+                        </p>
+                    </div>
+                 
 
                     <form className="loginForm" onSubmit={handleLogin}>
                         {error && <p className="error-message">{error}</p>}
