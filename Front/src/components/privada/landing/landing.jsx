@@ -6,6 +6,11 @@ import { useNavigate } from "react-router-dom";
 
 import Menu from "../menu/menu";
 
+// MAP
+import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import "leaflet/dist/leaflet.css";
+import "../../visible/mapa/mapa.css";
+import coordenadas from "../../visible/mapa/coordenadas.js";
 const Landing = () => {
     const { page, setPage } = useContext(PageContext);
     const navigate = useNavigate();
@@ -70,11 +75,21 @@ const Landing = () => {
                     </div>
                 </div>
                 <div className="landingMapaContainer">
-                    <img
-                        src="./static/landing/mapa.png"
-                        alt="mapa"
-                        className="mapa"
-                    />
+                    <MapContainer
+                        center={[43.294125, -2.974312]}
+                        zoom={13}
+                        scrollWheelZoom={true}
+                    >
+                        <TileLayer
+                            attribution="appúrate"
+                            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                        />
+                        {coordenadas.map((coordenada, index) => (
+                            <Marker key={index} position={coordenada.coord}>
+                                <Popup>{coordenada.name}</Popup>
+                            </Marker>
+                        ))}
+                    </MapContainer>
                 </div>
 
                 <div className="landingExplicacion">
