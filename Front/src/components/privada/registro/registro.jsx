@@ -195,7 +195,7 @@ const Registro = () => {
                             </label>
                             <label htmlFor="oxigeno">Oxígeno (mg/l):</label>
                             <input
-                                type="text"
+                                type="number"
                                 step="0.01"
                                 id="oxigeno"
                                 name="oxigeno"
@@ -216,7 +216,7 @@ const Registro = () => {
                                 Conductividad (µS/cm):
                             </label>
                             <input
-                                type="text"
+                                type="number"
                                 step="0.01"
                                 id="conductividad"
                                 name="conductividad"
@@ -238,7 +238,7 @@ const Registro = () => {
                                 Temperatura (°C):
                             </label>
                             <input
-                                type="text"
+                                type="number"
                                 step="0.01"
                                 id="temperatura"
                                 name="temperatura"
@@ -257,7 +257,7 @@ const Registro = () => {
                             </label>
                             <label htmlFor="pH">pH:</label>
                             <input
-                                type="text"
+                                type="number"
                                 step="0.01"
                                 id="ph"
                                 name="pH"
