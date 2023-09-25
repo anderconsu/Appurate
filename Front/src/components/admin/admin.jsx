@@ -47,10 +47,10 @@ const Admin = () => {
     <>
     <div className="adminMain">
       <div className="adminBody">
-        <h2>Registro de Aula</h2>
-        <p>
+        <h2>Registro de Aula</h2><br />
+        {/* <p>
         Si todavía no formas parte del proyecto únete al proyecto.
-        </p>
+        </p> */}
         <form className="adminForm" onSubmit={handleAdmin}>
           
 
@@ -141,9 +141,9 @@ const Admin = () => {
 
       <div className="adminAstronauta">
         <img
-            src="./static/admin/astronauta.png"
-            alt="astronauta"
-            className="astronauta"
+            src="./static/admin/admin.png"
+            alt="admin"
+            className="admin"
         />
       </div>
         

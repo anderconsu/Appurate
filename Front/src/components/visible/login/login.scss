@@ -53,6 +53,11 @@
             text-align: center;
             gap: 1rem;
 
+            & .botonTexto {
+              display: flex;
+              flex-wrap: nowrap;
+
+            }
             & .loginInput {
                 width: 100%;
                 padding: 10px;
@@ -73,8 +78,10 @@
 
             & .loginContactanos {
                 display: flex;
-                gap: 1rem;
-                flex-wrap: nowrap;
+                // gap: 1rem;
+                flex-wrap: wrap;
+                margin-left: 2rem;
+                
             }
         }
     }
@@ -114,6 +121,18 @@
             & .loginForm {
                 width: 80%;
                 margin-left: 3rem;
+
+              & .loginContactanos {
+                display: flex;
+                // gap: 1rem;
+                flex-direction: column;
+                justify-content: flex-start;
+                margin-left: 0%;
+                align-self: auto;
+                width: 100%;
+
+                
+            }
             }
         }
 
