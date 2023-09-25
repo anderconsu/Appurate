@@ -1,31 +1,60 @@
 .menu {
-    width: 95%;
+    width: 20%;
+    min-width: 15rem;
+    max-width: 25rem;
     display: flex;
     flex-direction: column;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     padding: 1rem;
+    gap: 2rem;
+
+    & a,
+    .logoutText {
+        text-decoration: none;
+
+        &:visited {
+            color: black;
+        }
+        &:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
 
     & .profile {
         display: flex;
-        flex-direction: column;
-
-        & .name {
-            font-size: 1rem;
-            font-weight: 550;
+        flex-direction: row;
+        gap: 1rem;
+        & .iconContainer {
+            display: flex;
+            justify-content: center;
+            width: 3rem;
+            & img {
+                width: 100%;
+                margin: auto;
+            }
         }
-
-        & .institution {
-            font-size: 0.8rem;
-            color: var(--azul_celeste);
+        & .nameContainer {
+            margin: auto 0;
+            & .name {
+                font-size: 1rem;
+                font-weight: 550;
+            }
+            & .institution {
+                font-size: 0.8rem;
+                color: var(--azul_celeste);
+            }
         }
     }
     & nav {
         display: flex;
         flex-direction: column;
+        gap: 1rem;
         & .navItem {
             display: flex;
             gap: 1rem;
+            padding: 0.7rem;
 
             & .iconContainer {
                 display: flex;
@@ -36,6 +65,20 @@
                     margin: auto;
                 }
             }
+        }
+    }
+
+    & .logout {
+        display: flex;
+        gap: 1rem;
+        margin-top: 1rem;
+        padding: 0.7rem;
+    }
+    & .selected {
+        background-color: var(--azul_oscuro);
+        border-radius: 1rem;
+        & a {
+            color: var(--blanco);
         }
     }
 }
