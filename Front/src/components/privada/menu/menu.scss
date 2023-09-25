@@ -23,5 +23,19 @@
     & nav {
         display: flex;
         flex-direction: column;
+        & .navItem {
+            display: flex;
+            gap: 1rem;
+
+            & .iconContainer {
+                display: flex;
+                justify-content: center;
+                width: 2rem;
+
+                & img {
+                    margin: auto;
+                }
+            }
+        }
     }
 }
