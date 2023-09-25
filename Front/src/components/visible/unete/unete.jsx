@@ -30,15 +30,15 @@ const Unete = () => {
         <>
             <div className="adminMain">
                 <div className="adminBody">
-                    <h2>Registro de Aula</h2>
-                    <p>
+                    <h2>¡Únete en este formulario!</h2><br />
+                    {/* <p>
                         Si todavía no formas parte del proyecto únete al
                         proyecto.
-                    </p>
+                    </p> */}
                     <form className="adminForm" onSubmit={handleUnete}>
                         {error && <p className="error-message">{error}</p>}
 
-                        <div>
+                        {/* <div>
                             <input
                                 type="text"
                                 className="adminInput"
@@ -47,9 +47,9 @@ const Unete = () => {
                                 onChange={(e) => setUsername(e.target.value)}
                                 value={username}
                             />
-                        </div>
+                        </div> */}
 
-                        <div>
+                        {/* <div>
                             <input
                                 type="password"
                                 className="adminInput"
@@ -58,7 +58,7 @@ const Unete = () => {
                                 onChange={(e) => setPassword(e.target.value)}
                                 value={password}
                             />
-                        </div>
+                        </div> */}
 
                         <div>
                             <input
@@ -124,7 +124,7 @@ const Unete = () => {
 
                 <div className="adminAstronauta">
                     <img
-                        src="./static/admin/unete.png"
+                        src="./static/unete/unete.png"
                         alt="unete"
                         className="unete"
                     />
