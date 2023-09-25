@@ -10,6 +10,7 @@
     flex-wrap: wrap;
     flex-direction: column;
     padding: 1rem;
+    gap: 2rem;
     width: 100%;
     background-color: var(--blanco);
 
@@ -44,7 +45,7 @@
     & .landingMapaContainer {
         border: 8px solid #48cad9;
         // z-index: 0;
-        border-radius: 40px;
+        border-radius: 1rem;
         width: 80%;
         display: flex;
         margin: auto;
@@ -52,48 +53,42 @@
             width: 100%;
         }
     }
-    & .landingMapaContainer {
-        // z-index: 0;
-        border-radius: 40px;
-        width: 80%;
-        display: flex;
-        margin: auto;
-        & img {
-            width: 100%;
-        }
-    }
+
     & .landingExplicacion {
         width: 100%;
         margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin: auto;
+        margin-bottom: 2rem;
         & .landingPrimero,
         .landingSegundo,
         .landingTercero {
             display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            gap: 0rem;
-
-            padding: 1rem;
-            width: 100%;
+            flex-direction: column;
             margin: auto;
             // margin-left: 2rem;
+            width: 100%;
+            height: auto;
 
             & .primero,
             .segundo,
             .tercero {
+                margin: auto;
                 border: 5px solid var(--azul_celeste);
                 border-radius: 20px;
-                width: 25%;
-                height: auto;
                 padding: 1rem;
                 color: var(--azul_oscuro);
             }
             .peli2Container,
             .peli3Container,
             .peli4Container {
+                width: 0;
+                height: 0;
                 & img {
-                    height: 100%;
+                    height: 0;
+                    width: 0;
                 }
             }
         }
@@ -159,7 +154,7 @@
         }
         & .landingMapaContainer {
             // z-index: 0;
-            border-radius: 40px;
+            border-radius: 1rem;
             width: 80%;
             display: flex;
             margin: auto;
@@ -176,20 +171,17 @@
             .landingTercero {
                 display: flex;
                 flex-direction: row;
-                justify-content: center;
-                align-items: center;
-                gap: 0rem;
-
                 padding: 1rem;
-                width: 100%;
                 margin: auto;
+                width: 50%;
                 // margin-left: 2rem;
 
                 & .primero,
                 .segundo,
                 .tercero {
                     border-radius: 20px;
-                    width: 25%;
+                    margin: auto;
+                    width: 100%;
                     height: auto;
                     padding: 1rem;
                     color: var(--azul_oscuro);
@@ -197,8 +189,13 @@
                 .peli2Container,
                 .peli3Container,
                 .peli4Container {
+                    height: 100%;
+                    width: auto;
+                    margin: auto;
                     & img {
                         height: 100%;
+                        width: auto;
+                        margin: auto;
                     }
                 }
             }
