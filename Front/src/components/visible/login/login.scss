@@ -125,9 +125,9 @@
 
     & .loginMundo2 {
       display: flex;
-      align-items: flex-start;
-      margin: auto;
-      justify-content: flex-start;
+      // align-items: flex-start;
+      // margin: auto;
+      // justify-content: center;
       width: 50%;
       // height: 100%;
       border: 1px solid #0077b6;
@@ -138,8 +138,8 @@
         width: 80%;
         border: #0077b6 solid 1px;
         display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
+        justify-content: left;
+        // align-items: flex-start;
       }
     }
     }

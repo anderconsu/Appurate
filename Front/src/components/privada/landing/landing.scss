@@ -9,18 +9,21 @@
     & .landingBienvenides {
         display: flex;
         flex-wrap: nowrap;
-        & .bienvenides {
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: column;
-            gap: 1rem;
-            width: 50%;
-            border-bottom: 2px solid #0077b6; 
-            
+        
+        & .landingBody {
+            width: 80%;
+            & .bienvenides {
+                display: flex;
+                
+                
+            }
         }
+        
         & .peli1 {
             border-bottom: 2px solid #0077b6; 
-            width: 50%;
+            width: 60%;
+            display: flex;
+            justify-content: center;
         }
     }
     & .landingMapa {

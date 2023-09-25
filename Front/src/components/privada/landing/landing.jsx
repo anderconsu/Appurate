@@ -48,13 +48,15 @@ const Landing = () => {
             <div className="landingMain">
 
                 <div className="landingBienvenides">
-                    <h3 className="bienvenides">
-                    ¡BIENVENIDES A TODES!
-                    </h3>
-                    <p>
-                    Aquí encontrarás los pasos a seguir para usar nuestra app de registro y análisis de calidad del agua.
-                    </p>
-
+                    <div className="landingBody">
+                        <h3 className="bienvenides">
+                        ¡BIENVENIDES A TODES!
+                        </h3>
+                        <p>
+                        Aquí encontrarás los pasos a seguir para usar nuestra app de registro y análisis de calidad del agua.
+                        </p>
+                    </div>
+                    
                     <div className="peli1">
                         <img
                             src="./static/landing/peli1.png"
