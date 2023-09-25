@@ -3,6 +3,7 @@ import { useContext, useEffect } from "react";
 import PageContext from "../../../context/pageContext";
 import { useNavigate } from "react-router-dom";
 import "./recursos.scss";
+import Menu from "../menu/menu";
 
 const Recursos = () => {
     const { page, setPage } = useContext(PageContext);
@@ -46,7 +47,8 @@ const Recursos = () => {
         setPage("recursos");
     }, []);
     return (
-        <>
+        <main className="paginaRecursos">
+            <Menu />
             <div className="recursosMain">
                 <h2 className="recursos">RECURSOS ADICIONALES</h2>
                 <p>
@@ -71,10 +73,10 @@ const Recursos = () => {
                                 <h3>Medidor de Oxígeno Disuelto</h3>
                                 <p>
                                     Este dispositivo mide la concentración de
-                                    oxígeno disuelto en el agua. Se sumerge en la
-                                    muestra y muestra la cantidad de oxígeno en
-                                    miligramos por litro (mg/L) o partes por millón
-                                    (ppm).
+                                    oxígeno disuelto en el agua. Se sumerge en
+                                    la muestra y muestra la cantidad de oxígeno
+                                    en miligramos por litro (mg/L) o partes por
+                                    millón (ppm).
                                 </p>
                             </div>
                         </div>
@@ -82,10 +84,11 @@ const Recursos = () => {
                             <div className="recursosTextContainer">
                                 <h3>Conductímetro</h3>
                                 <p>
-                                    Mide la conductividad eléctrica del agua, que es
-                                    una indicación de la cantidad de sales y
-                                    minerales disueltos en el agua. Los valores se
-                                    expresan en microsiemens por centímetro (µS/cm).
+                                    Mide la conductividad eléctrica del agua,
+                                    que es una indicación de la cantidad de
+                                    sales y minerales disueltos en el agua. Los
+                                    valores se expresan en microsiemens por
+                                    centímetro (µS/cm).
                                 </p>
                             </div>
                             <div className="recursosImgContainer">
@@ -107,8 +110,8 @@ const Recursos = () => {
                             <div className="recursosTextContainer">
                                 <h3>Termómetro</h3>
                                 <p>
-                                    Utilizado para medir la temperatura del agua en
-                                    grados Celsius (°C). La temperatura puede
+                                    Utilizado para medir la temperatura del agua
+                                    en grados Celsius (°C). La temperatura puede
                                     afectar a los organismos acuáticos y a la
                                     química del agua.
                                 </p>
@@ -118,10 +121,11 @@ const Recursos = () => {
                             <div className="recursosTextContainer">
                                 <h3>Medidor de pH</h3>
                                 <p>
-                                    Mide el nivel de acidez o alcalinidad del agua
-                                    en una escala de 0 a 14, donde 7 es neutro.
-                                    Valores por debajo de 7 indican acidez, y
-                                    valores por encima de 7 indican alcalinidad.
+                                    Mide el nivel de acidez o alcalinidad del
+                                    agua en una escala de 0 a 14, donde 7 es
+                                    neutro. Valores por debajo de 7 indican
+                                    acidez, y valores por encima de 7 indican
+                                    alcalinidad.
                                 </p>
                             </div>
                             <div className="recursosImgContainer">
@@ -144,12 +148,12 @@ const Recursos = () => {
                                 <h3>Espectrofotómetro</h3>
                                 <p>
                                     Este instrumento se usa para analizar la
-                                    concentración de sustancias específicas en el
-                                    agua, como nutrientes, metales pesados o
-                                    productos químicos tóxicos. Emite y mide la luz
-                                    absorbida por la muestra, lo que proporciona
-                                    información sobre la cantidad de la sustancia
-                                    presente.
+                                    concentración de sustancias específicas en
+                                    el agua, como nutrientes, metales pesados o
+                                    productos químicos tóxicos. Emite y mide la
+                                    luz absorbida por la muestra, lo que
+                                    proporciona información sobre la cantidad de
+                                    la sustancia presente.
                                 </p>
                             </div>
                         </div>
@@ -160,19 +164,19 @@ const Recursos = () => {
                     <h2>COMO TOMAR LAS MUESTRAS CON SEGURIDAD </h2>
                     <br />
                     <div className="recursosYoutube">
-                        <iframe 
-                        width="100%" 
-                        height="100%" 
-                        src="https://www.youtube.com/embed/OZQi3DLogqE?si=vblpwiGk-pxzuwzp" 
-                        title="YouTube video player" 
-                        frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
-                            
-                        </iframe>
+                        <iframe
+                            width="100%"
+                            height="100%"
+                            src="https://www.youtube.com/embed/OZQi3DLogqE?si=vblpwiGk-pxzuwzp"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen
+                        ></iframe>
                     </div>
                 </div>
             </div>
-        </>
+        </main>
     );
 };
 
