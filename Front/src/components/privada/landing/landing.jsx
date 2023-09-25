@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 const Landing = () => {
     const { page, setPage } = useContext(PageContext);
     const navigate = useNavigate();
+    const hostUrl = import.meta.env.VITE_BACKEND_URL
 
     const checkAuth = async () => {
         const token = localStorage.getItem("token");
