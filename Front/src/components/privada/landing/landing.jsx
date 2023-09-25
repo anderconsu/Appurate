@@ -50,10 +50,10 @@ const Landing = () => {
 
                 <div className="landingBienvenides">
                     <div className="landingBody">
-                        <h3 className="bienvenides">
+                        <h2 className="bienvenides">
                         ¡BIENVENIDES A TODES!
-                        </h3>
-                        <p>
+                        </h2><br />
+                        <p className="bienvenides2">
                         Aquí encontrarás los pasos a seguir para usar nuestra app de registro y análisis de calidad del agua.
                         </p>
                     </div>

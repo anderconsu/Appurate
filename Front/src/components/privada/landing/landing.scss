@@ -136,9 +136,13 @@
                     // border: 8px solid #48cad9;
                     & .bienvenides {
                         display: flex;
-                        
-                        
-                        
+                        font-size: 2.5rem;
+                    }
+
+                    & .bienvenides2 {
+                        font-size: 1.5rem;
+                        color: var(--azul_oscuro);
+                        width: 80%;
                     }
                 }
                 
@@ -151,7 +155,7 @@
                 width: 50%;
                 display: flex;
                 margin: auto;
-                margin-top: -14rem;
+                margin-top: -17rem;
                     
             }
             & .landingExplicacion {
@@ -172,6 +176,7 @@
                         border: 5px solid #48cad9;
                         width: 18%;
                         padding: 1rem;
+                        color: var(--azul_oscuro);
                         
                         
                     }
@@ -195,6 +200,7 @@
                         border: 5px solid #48cad9;
                         width: 18%;
                         padding: 1rem;
+                        color: var(--azul_oscuro);
                     }
         
                     & .peli3 {
@@ -217,6 +223,7 @@
                         border: 5px solid #48cad9;
                         width: 18%;
                         padding: 1rem;
+                        color: var(--azul_oscuro);
                     }
 
                     & .peli4 {
