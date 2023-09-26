@@ -26,7 +26,10 @@ const Login = () => {
                 headers: {
                     "Content-Type": "application/json",
                 },
-                body: JSON.stringify({ username, password }),
+                body: JSON.stringify({
+                    username: username.trim(),
+                    password: password.trim(),
+                }),
             });
 
             if (response.ok) {
@@ -79,7 +82,9 @@ const Login = () => {
                                 className="loginInput"
                                 name="username"
                                 placeholder="Usuario"
-                                onChange={(e) => setUsername(e.target.value)}
+                                onChange={(e) =>
+                                    setUsername(e.target.value.trim())
+                                }
                                 value={username}
                             />
                         </div>
@@ -90,7 +95,9 @@ const Login = () => {
                                 className="loginInput"
                                 name="password"
                                 placeholder="Contraseña"
-                                onChange={(e) => setPassword(e.target.value)}
+                                onChange={(e) =>
+                                    setPassword(e.target.value.trim())
+                                }
                                 value={password}
                             />
                         </div>
