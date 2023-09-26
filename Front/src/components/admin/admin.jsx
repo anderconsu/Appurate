@@ -22,6 +22,8 @@ const Admin = () => {
         e.preventDefault();
         setMessage("");
         setError(null);
+        const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+
         if (
             !username ||
             !password ||
@@ -34,6 +36,11 @@ const Admin = () => {
             setError("Todos los campos son obligatorios");
             return;
         }
+        if (!emailRegex.test(email)) {
+            setError("Email no valido");
+            return;
+        }
+
         try {
             const response = await fetch(`${hostUrl}/user/register`, {
                 method: "POST",
@@ -43,11 +50,11 @@ const Admin = () => {
                 body: JSON.stringify({
                     username,
                     password,
-                    institution,
-                    aula,
-                    proffesor,
-                    email,
-                    phone,
+                    institution: institution.trim(),
+                    aula: aula.trim(),
+                    proffesor: proffesor.trim(),
+                    email: email.trim(),
+                    phone: phone.trim(),
                 }),
             });
 
@@ -83,7 +90,9 @@ const Admin = () => {
                                 className="adminInput"
                                 name="username"
                                 placeholder="Usuario"
-                                onChange={(e) => setUsername(e.target.value)}
+                                onChange={(e) =>
+                                    setUsername(e.target.value.trim())
+                                }
                                 value={username}
                             />
                         </div>
@@ -94,7 +103,9 @@ const Admin = () => {
                                 className="adminInput"
                                 name="password"
                                 placeholder="Contraseña"
-                                onChange={(e) => setPassword(e.target.value)}
+                                onChange={(e) =>
+                                    setPassword(e.target.value.trim())
+                                }
                                 value={password}
                             />
                         </div>
