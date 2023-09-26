@@ -6,7 +6,7 @@ import "./ficha.scss";
 import Menu from "../menu/menu";
 
 const FichaVisualizacion = () => {
-    const [data, setData] = useState({});
+    const [data, setData] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
     const { page, setPage } = useContext(PageContext);
@@ -128,17 +128,25 @@ const FichaVisualizacion = () => {
                                 </p>
                             )}
                             {data &&
-                                data.map((data, index) => (
+                                data.map((item, index) => (
                                     <div
                                         className="ficha-visualizacion"
                                         key={index}
                                     >
                                         <div>
+                                            <p className="columnaUno p1">
+                                                Número de prueba:
+                                            </p>{" "}
+                                            <p className="columnaDos p2">
+                                                {data.length - index}
+                                            </p>
+                                        </div>
+                                        <div>
                                             <p className="top p1">
                                                 Institución:
                                             </p>{" "}
                                             <p className="columnaDos p2">
-                                                {data.institution}
+                                                {item.institution}
                                             </p>
                                         </div>
                                         <div>
@@ -146,7 +154,7 @@ const FichaVisualizacion = () => {
                                                 Aula:{" "}
                                             </p>{" "}
                                             <p className="columnaDos p2">
-                                                {data.aula}
+                                                {item.aula}
                                             </p>
                                         </div>
                                         <div>
@@ -155,7 +163,7 @@ const FichaVisualizacion = () => {
                                             </p>{" "}
                                             <p className="columnaDos p2">
                                                 {new Date(
-                                                    data.date
+                                                    item.date
                                                 ).toLocaleDateString("es-ES")}
                                             </p>
                                         </div>
@@ -164,7 +172,7 @@ const FichaVisualizacion = () => {
                                                 Localización:
                                             </p>{" "}
                                             <p className="columnaDos p2">
-                                                {data.name}
+                                                {item.name}
                                             </p>
                                         </div>
                                         <div>
@@ -172,7 +180,7 @@ const FichaVisualizacion = () => {
                                                 Oxígeno:
                                             </p>{" "}
                                             <p className="columnaDos p2">
-                                                {data.properties.Oxigeno}
+                                                {item.properties.Oxigeno}
                                             </p>
                                         </div>
                                         <div>
@@ -180,7 +188,7 @@ const FichaVisualizacion = () => {
                                                 Conductividad:
                                             </p>{" "}
                                             <p className="columnaDos p2">
-                                                {data.properties.Conductividad}
+                                                {item.properties.Conductividad}
                                             </p>
                                         </div>
                                         <div>
@@ -188,13 +196,13 @@ const FichaVisualizacion = () => {
                                                 Temperatura:
                                             </p>{" "}
                                             <p className="columnaDos p2">
-                                                {data.properties.Temperatura}
+                                                {item.properties.Temperatura}
                                             </p>
                                         </div>
                                         <div>
                                             <p className="bottom p1">pH:</p>{" "}
                                             <p className="columnaDos p2">
-                                                {data.properties.pH}
+                                                {item.properties.pH}
                                             </p>
                                         </div>
                                     </div>
