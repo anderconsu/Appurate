@@ -56,19 +56,17 @@ const Login = () => {
         <>
             <div className="loginMain">
                 <div className="loginBody">
-                    <h2>Entra en tu cuenta</h2><br />
+                    <h2>Entra en tu cuenta</h2>
+                    <br />
                     <div className="loginQuiero">
-                        <p>
-                            Si todavía no formas parte del proyecto, ¡Únete!
-                        </p>
+                        <p>Si todavía no formas parte del proyecto, ¡Únete!</p>
                         <p
-                            className="azul_claro"
+                            className="azul_claro subrayado"
                             onClick={() => navigate("/unete")}
                         >
                             ¡Quiero formar parte!
                         </p>
                     </div>
-                 
 
                     <form className="loginForm" onSubmit={handleLogin}>
                         {error && <p className="error-message">{error}</p>}
@@ -104,7 +102,7 @@ const Login = () => {
                                     ¿Has olvidado la clave de acceso?
                                 </p>
                                 <p
-                                    className="azul_claro loginMini"
+                                    className="azul_claro loginMini subrayado"
                                     onClick={() =>
                                         (window.location.href =
                                             "mailto:appurate@gmail.com")
@@ -114,7 +112,6 @@ const Login = () => {
                                 </p>
                             </div>
                         </div>
-                        
                     </form>
                 </div>
                 <div className="loginMundo2">

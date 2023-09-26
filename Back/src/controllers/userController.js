@@ -12,13 +12,7 @@ const userLogin = async (req, res) => {
         if (!user) {
             throw new Error("User or password not corrrect");
         } else {
-            const {
-                institution,
-                aula,
-                proffesor,
-                email,
-                phone,
-            } = user;
+            const { institution, aula, proffesor, email, phone } = user;
             if (await bcrypt.compare(password, user.password)) {
                 const userWithoutPassword = {
                     username: user.username,
@@ -30,7 +24,15 @@ const userLogin = async (req, res) => {
                     { expiresIn: "24h" }
                 );
                 console.log(institution, aula, proffesor, email, phone);
-                res.status(200).json({ user: userWithoutPassword, token, institution, aula, proffesor, email, phone });
+                res.status(200).json({
+                    user: userWithoutPassword,
+                    token,
+                    institution,
+                    aula,
+                    proffesor,
+                    email,
+                    phone,
+                });
                 console.log(`El usuario ${user.username} ha iniciado sesión`);
             } else {
                 throw new Error("User or password not corrrect");
@@ -74,7 +76,7 @@ const createUser = async (req, res) => {
         );
         const user = await userModel.findOne({ username });
         if (user) {
-            throw new Error("User already exists");
+            res.status(400).json({ message: "User already exists" });
         } else {
             console.log("el password es: ", password);
             const hashedPassword = await bcrypt.hash(password, 10);
@@ -93,7 +95,7 @@ const createUser = async (req, res) => {
         }
     } catch (err) {
         console.log(err);
-        res.status(500).json({ message: "Server error", err });
+        res.status(500).json({ message: "Server error", error: err });
     }
 };
 
