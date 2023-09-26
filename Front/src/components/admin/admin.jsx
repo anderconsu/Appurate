@@ -20,7 +20,20 @@ const Admin = () => {
 
     const handleAdmin = async (e) => {
         e.preventDefault();
-
+        setMessage("");
+        setError(null);
+        if (
+            !username ||
+            !password ||
+            !institution ||
+            !aula ||
+            !proffesor ||
+            !email ||
+            !phone
+        ) {
+            setError("Todos los campos son obligatorios");
+            return;
+        }
         try {
             const response = await fetch(`${hostUrl}/user/register`, {
                 method: "POST",
@@ -64,8 +77,6 @@ const Admin = () => {
         Si todavía no formas parte del proyecto únete al proyecto.
         </p> */}
                     <form className="adminForm" onSubmit={handleAdmin}>
-                        {error && <p className="error-message">{error}</p>}
-
                         <div>
                             <input
                                 type="text"
@@ -146,7 +157,10 @@ const Admin = () => {
                         <button className="boton1" type="submit">
                             Registro
                         </button>
-                        {message && <p className="message">{message}</p>}
+                        <div className="messages">
+                            {message && <p className="message">{message}</p>}
+                            {error && <p className="error-message">{error}</p>}
+                        </div>
                     </form>
                 </div>
 
