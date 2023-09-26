@@ -87,6 +87,7 @@ const Registro = () => {
             setError("Sesión expirada, por favor vuelva a iniciar sesión");
             return;
         }
+        setMessage("Enviando...");
         try {
             const response = await fetch(`${hostUrl}/api/prediction`, {
                 method: "POST",
@@ -117,6 +118,7 @@ const Registro = () => {
                 setConductividad("");
                 setTemperatura("");
             } else {
+                setMessage("");
                 let error = await response.json();
                 console.error(error);
                 if (response.status === 401) {
@@ -132,6 +134,7 @@ const Registro = () => {
             }
         } catch (error) {
             console.error(error);
+            setMessage("");
             setError("Error, inténtalo más tarde");
         }
         console.log("Datos de la muestra enviados:");
