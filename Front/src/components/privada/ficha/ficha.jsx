@@ -6,7 +6,7 @@ import "./ficha.scss";
 import Menu from "../menu/menu";
 
 const FichaVisualizacion = () => {
-    const [data, setData] = useState({});
+    const [data, setData] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
     const { page, setPage } = useContext(PageContext);
@@ -99,7 +99,7 @@ const FichaVisualizacion = () => {
                         VISUALIZA TUS RESULTADOS
                         <p className="p1">Última prueba registrada:</p>
                     </h2>
-
+    
                     <br />
                     <div className="pelirojaContainer">
                         <img
@@ -109,58 +109,62 @@ const FichaVisualizacion = () => {
                         />
                     </div>
                 </div>
-
+    
                 <div className="fichas">
                     {error && <p>Error : {error}</p>}
                     {loading ? (
                         <p>Cargando...</p>
                     ) : (
-                        data.map((data, index) => (
-                            <div className="ficha-visualizacion" key={index}>
-                                <div>
-                                    <p className="top p1">Institución:</p>{" "}
-                                    <p className="columnaDos p2">
-                                        {data.institution}
-                                    </p>
-                                </div>
-                                <div>
-                                    <p className="columnaUno p1">Aula: </p>{" "}
-                                    <p className="columnaDos p2">{data.aula}</p>
-                                </div>
-                                <div>
-                                    <p className="columnaUno p1">Fecha:</p>{" "}
-                                    <p className="columnaDos p2">
-                                        {new Date(data.date).toLocaleDateString(
-                                            "es-ES"
-                                        )}
-                                    </p>
-                                </div>
+                        data
+                            // .slice() 
+                            .reverse() 
+                            .map((dataItem, index) => (
+                                <div className="ficha-visualizacion" key={index}>
+                                    <div>
+                                        <p className="columnaUno p1">Número de prueba:</p>{" "}
+                                        <p className="columnaDos p2">{data.length - index}</p>
+                                        
+                                    </div>
+                                    <div>
+                                        <p className="columnaUno p1">Institución:</p>{" "}
+                                        <p className="columnaDos p2">{dataItem.institution}</p>
+                                    </div>
+                                    <div>
+                                        <p className="columnaUno p1">Aula: </p>{" "}
+                                        <p className="columnaDos p2">{dataItem.aula}</p>
+                                    </div>
+                                    <div>
+                                        <p className="columnaUno p1">Fecha:</p>{" "}
+                                        <p className="columnaDos p2">
+                                            {new Date(dataItem.date).toLocaleDateString("es-ES")}
+                                        </p>
+                                    </div>
                                 <div>
                                     <p className="columnaUno p1">Localización:</p>{" "}
-                                    <p className="columnaDos p2">{data.name}</p>
+                                    <p className="columnaDos p2">{dataItem.name}</p>
                                 </div>
                                 <div>
                                     <p className="columnaUno p1">Oxígeno:</p>{" "}
                                     <p className="columnaDos p2">
-                                        {data.properties.Oxigeno}
+                                        {dataItem.properties.Oxigeno}
                                     </p>
                                 </div>
                                 <div>
                                     <p className="columnaUno p2">Conductividad:</p>{" "}
                                     <p className="columnaDos p2">
-                                        {data.properties.Conductividad}
+                                        {dataItem.properties.Conductividad}
                                     </p>
                                 </div>
                                 <div>
                                     <p className="columnaUno p1">Temperatura:</p>{" "}
                                     <p className="columnaDos p2">
-                                        {data.properties.Temperatura}
+                                        {dataItem.properties.Temperatura}
                                     </p>
                                 </div>
                                 <div>
                                     <p className="bottom p1">pH:</p>{" "}
                                     <p className="columnaDos p2">
-                                        {data.properties.pH}
+                                        {dataItem.properties.pH}
                                     </p>
                                 </div>
                             </div>
@@ -169,7 +173,7 @@ const FichaVisualizacion = () => {
                 </div>
 
                 <h2 className="pruebasVS">
-                    PRUBAS EN CLASE VS. PRUEBAS LABORATORIO
+                    PRUEBAS EN CLASE VS. PRUEBAS LABORATORIO
                 </h2>
                 <div className="graficosMain">
                     <img
