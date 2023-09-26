@@ -6,6 +6,59 @@
     width: 95%;
     gap: 2rem;
 
+    & .nosotrosPatners {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        width: 100%;
+        
+
+        & .patners1 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            gap: 1rem;
+        }
+
+        & .patners2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            gap: 1rem;
+        }
+
+        & .patners3 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            gap: 1rem;
+
+           
+            
+        }
+
+
+        & h3 {
+            text-align: center;
+        }
+        
+    }
+
+    & .nosotrosEquipo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem
+    }
+
+    & h1 {
+        text-align: center;
+    }
+
     & .ayudando,
     .forma,
     .tratando {
@@ -46,6 +99,7 @@
     .aboutGeneral {
         margin-top: 5rem;
         gap: 5rem;
+
 
         & .ayudando,
         .forma,
