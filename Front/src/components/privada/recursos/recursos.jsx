@@ -51,7 +51,7 @@ const Recursos = () => {
             <Menu />
             <div className="recursosMain">
                 <h2 className="recursos">RECURSOS ADICIONALES</h2>
-                <p>
+                <p className="p1">
                     Aquí encontrareis recursos adicionales que os ayudarán a
                     aprender más sobre el pro el proyecto.
                 </p>
@@ -71,7 +71,7 @@ const Recursos = () => {
                             </div>
                             <div className="recursosTextContainer">
                                 <h3>Medidor de Oxígeno Disuelto</h3>
-                                <p>
+                                <p className="p2">
                                     Este dispositivo mide la concentración de
                                     oxígeno disuelto en el agua. Se sumerge en
                                     la muestra y muestra la cantidad de oxígeno
@@ -83,7 +83,7 @@ const Recursos = () => {
                         <div className="recursosConductimetro">
                             <div className="recursosTextContainer">
                                 <h3>Conductímetro</h3>
-                                <p>
+                                <p className="p2">
                                     Mide la conductividad eléctrica del agua,
                                     que es una indicación de la cantidad de
                                     sales y minerales disueltos en el agua. Los
@@ -109,7 +109,7 @@ const Recursos = () => {
                             </div>
                             <div className="recursosTextContainer">
                                 <h3>Termómetro</h3>
-                                <p>
+                                <p className="p2">
                                     Utilizado para medir la temperatura del agua
                                     en grados Celsius (°C). La temperatura puede
                                     afectar a los organismos acuáticos y a la
@@ -120,7 +120,7 @@ const Recursos = () => {
                         <div className="recursosMedidor2">
                             <div className="recursosTextContainer">
                                 <h3>Medidor de pH</h3>
-                                <p>
+                                <p className="p2">
                                     Mide el nivel de acidez o alcalinidad del
                                     agua en una escala de 0 a 14, donde 7 es
                                     neutro. Valores por debajo de 7 indican
@@ -146,7 +146,7 @@ const Recursos = () => {
                             </div>
                             <div className="recursosTextContainer">
                                 <h3>Espectrofotómetro</h3>
-                                <p>
+                                <p className="p2">
                                     Este instrumento se usa para analizar la
                                     concentración de sustancias específicas en
                                     el agua, como nutrientes, metales pesados o

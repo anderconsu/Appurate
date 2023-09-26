@@ -58,11 +58,11 @@ const Login = () => {
                 <div className="loginBody">
                     <h2>Entra en tu cuenta</h2><br />
                     <div className="loginQuiero">
-                        <p>
+                        <p className="p1">
                             Si todavía no formas parte del proyecto, ¡Únete!
                         </p>
                         <p
-                            className="azul_claro"
+                            className="azul_claro p1"
                             onClick={() => navigate("/unete")}
                         >
                             ¡Quiero formar parte!
@@ -100,11 +100,11 @@ const Login = () => {
                             </button>
 
                             <div className="loginContactanos">
-                                <p className="loginMini">
+                                <p className="loginMini p3">
                                     ¿Has olvidado la clave de acceso?
                                 </p>
                                 <p
-                                    className="azul_claro loginMini"
+                                    className="azul_claro loginMini p3"
                                     onClick={() =>
                                         (window.location.href =
                                             "mailto:appurate@gmail.com")
