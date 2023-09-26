@@ -132,7 +132,7 @@ const FichaVisualizacion = () => {
                             </div>
                             <div>
                                 <p className="columnaUno">Fecha:</p>{" "}
-                                <p className="columnaDos">{data.date}</p>
+                                <p className="columnaDos">{new Date(data.date).toLocaleDateString('es-ES')}</p>
                             </div>
                             <div>
                                 <p className="columnaUno">Localización:</p>{" "}
