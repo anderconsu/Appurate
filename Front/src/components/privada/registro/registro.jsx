@@ -273,7 +273,7 @@ const Registro = () => {
                                     id="ph"
                                     name="pH"
                                     value={pH}
-                                    min={1}
+                                    min={0}
                                     max={14}
                                     onChange={(e) => setpH(e.target.value)}
                                     required
