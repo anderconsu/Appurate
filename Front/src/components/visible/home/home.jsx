@@ -12,12 +12,12 @@ const Home = () => {
     }, []);
     return (
         <main className="homeMain">
+            <h1 className="home">
+                        SÉ EL CAMBIO QUE QUIERES VER EN EL MUNDO
+            </h1>
             <div className="homeHeader">
                 <div className="homeHeaderText">
-                    <h1 className="home">
-                        SÉ EL CAMBIO QUE QUIERES VER EN EL MUNDO
-                    </h1>
-                    <p>
+                    <p className="p1">
                         A través de esta webapp, los estudiantes podrán
                         registrar datos de muestras de agua, visualizarlos en un
                         formato fácil de entender y acceder a información
@@ -42,7 +42,7 @@ const Home = () => {
             </div>
 
             <div className="homeMapa">
-                <p>
+                <p className="p3">
                     En este mapa interactivo puedes conocer sobre la calidad del
                     agua en la Ría de Bilbao.
                 </p>
@@ -50,9 +50,9 @@ const Home = () => {
             </div>
 
             <div className="homeHow">
-                <h2>¿CÓMO FUNCIONA?</h2>
+                <h2 className="h2">¿CÓMO FUNCIONA?</h2>
                 <div className="homeHowRegistrar">
-                    <h3>Registrar</h3>
+                    <h3 className="h3">Registrar</h3>
                     <div className="homeHowRegistrarInfo">
                         <div className="ninaimgContainer">
                             <img
@@ -61,7 +61,7 @@ const Home = () => {
                                 className="nina1"
                             />
                         </div>
-                        <p>
+                        <p className="p2">
                             Sál a la Ría y toma una muestra de agua en uno de
                             los puntos indicados en el mapa. Realiza las pruebas
                             para obtener los resultados de tu muestra y
@@ -70,9 +70,9 @@ const Home = () => {
                     </div>
                 </div>
                 <div className="homeHowVisualizar">
-                    <h3 className="visualizar">Visualizar</h3>
+                    <h3 className="visualizar h3">Visualizar</h3>
                     <div className="homeHowVisualizarInfo">
-                        <p>
+                        <p className="p2">
                             Te mostraremos los datos recopilados en un formato
                             fácil de entender, como gráficos y tablas. Así
                             puedes comprender mejor cómo se encuentra la calidad
