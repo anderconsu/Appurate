@@ -18,43 +18,46 @@ body {
 }
 
 h1 {
-  font-size: 1.7rem;
-  color: var(--azul_oscuro);
+    font-size: 1.7rem;
+    color: var(--azul_oscuro);
 }
 
 h2 {
-  font-size: 1.6rem;
-  color: var(--azul_oscuro);
+    font-size: 1.6rem;
+    color: var(--azul_oscuro);
 }
 
 h3 {
-  font-size: 1.4rem;
-  color: var(--azul_oscuro);
+    font-size: 1.4rem;
+    color: var(--azul_oscuro);
 }
 
 .p1 {
-  font-size: 1rem;
-  color: var(--azul_oscuro);
+    font-size: 1rem;
+    color: var(--azul_oscuro);
 }
 
 .p2 {
-  font-size: 0.8rem;
-  color: var(--azul_oscuro);
-
+    font-size: 0.8rem;
+    color: var(--azul_oscuro);
 }
 
 .p3 {
-  font-size: 0.7rem;
-  color: var(--azul_oscuro);
+    font-size: 0.7rem;
+    color: var(--azul_oscuro);
 }
-
 
 button {
     border-radius: 10px;
     font-size: 1rem;
     padding: 0.2rem 0.7rem;
     max-height: 1.5rem;
+    transition: 0.5s;
 }
+button:hover {
+    scale: 1.1;
+}
+
 .boton1 {
     background-color: var(--azul_celeste);
     border-color: var(--azul_celeste);
@@ -71,36 +74,35 @@ button {
 }
 
 @media screen and (min-width: 768px) {
-h1 {
-    font-size: 2.8rem;
-    color: var(--azul_oscuro);
-}
+    h1 {
+        font-size: 2.8rem;
+        color: var(--azul_oscuro);
+    }
 
-h2 {
-    font-size: 1.8rem;
-    color: var(--azul_oscuro);
-}
+    h2 {
+        font-size: 1.8rem;
+        color: var(--azul_oscuro);
+    }
 
-h3 {
-    font-size: 1.3rem;
-    color: var(--azul_oscuro);
-}
+    h3 {
+        font-size: 1.3rem;
+        color: var(--azul_oscuro);
+    }
 
-.p1 {
-    font-size: 1.2rem;
-    color: var(--azul_oscuro);
-}
+    .p1 {
+        font-size: 1.2rem;
+        color: var(--azul_oscuro);
+    }
 
-.p2 {
-    font-size: 1rem;
-    color: var(--azul_oscuro);
-  
-}
+    .p2 {
+        font-size: 1rem;
+        color: var(--azul_oscuro);
+    }
 
-.p3 {
-    font-size: 0.8rem;
-    color: var(--azul_oscuro);
-}
+    .p3 {
+        font-size: 0.8rem;
+        color: var(--azul_oscuro);
+    }
     .boton1 {
         align-items: center;
         background-color: var(--azul_celeste);
@@ -146,4 +148,3 @@ h3 {
         position: relative;
     }
 }
-
