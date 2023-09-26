@@ -83,9 +83,9 @@ const Nosotros = () => {
                     />
                 </div>
             </div>
-            <div className="nosotrosPatners">
+            <div className="nosotrosPartners">
+                <h3>Partners Redes industriales</h3>
                 <div className="patners1">
-                    <h3>Partners  Redes industriales</h3>
                     <div className="1imgContainer">
                         <img
                             src="./static/nosotros/1.png"
@@ -94,23 +94,23 @@ const Nosotros = () => {
                         />
                     </div>
                     <div className="2imgContainer">
-                    <img
-                        src="./static/nosotros/2.png"
-                        alt="2"
-                        className="2"
-                    />
+                        <img
+                            src="./static/nosotros/2.png"
+                            alt="2"
+                            className="2"
+                        />
                     </div>
                     <div className="3imgContainer">
-                    <img
-                        src="./static/nosotros/3.png"
-                        alt="3"
-                        className="3"
-                    />
+                        <img
+                            src="./static/nosotros/3.png"
+                            alt="3"
+                            className="3"
+                        />
                     </div>
                 </div>
 
+                <h3>Partners Redes cientifícos</h3>
                 <div className="patners2">
-                    <h3>Partners  Redes cientifícos</h3>
                     <div className="4imgContainer">
                         <img
                             src="./static/nosotros/4.png"
@@ -119,23 +119,23 @@ const Nosotros = () => {
                         />
                     </div>
                     <div className="5imgContainer">
-                    <img
-                        src="./static/nosotros/5.png"
-                        alt="5"
-                        className="5"
-                    />
+                        <img
+                            src="./static/nosotros/5.png"
+                            alt="5"
+                            className="5"
+                        />
                     </div>
                     <div className="6imgContainer">
-                    <img
-                        src="./static/nosotros/6.png"
-                        alt="6"
-                        className="6"
-                    />
+                        <img
+                            src="./static/nosotros/6.png"
+                            alt="6"
+                            className="6"
+                        />
                     </div>
                 </div>
 
+                <h3>Partners Territorio Bizkaia</h3>
                 <div className="patners3">
-                    <h3>Partners Territorio Bizkaia</h3>
                     <div className="7imgContainer">
                         <img
                             src="./static/nosotros/7.png"
@@ -144,36 +144,34 @@ const Nosotros = () => {
                         />
                     </div>
                     <div className="8imgContainer">
-                    <img
-                        src="./static/nosotros/8.png"
-                        alt="8"
-                        className="8"
-                    />
+                        <img
+                            src="./static/nosotros/8.png"
+                            alt="8"
+                            className="8"
+                        />
                     </div>
                     <div className="9imgContainer">
-                    <img
-                        src="./static/nosotros/9.png"
-                        alt="9"
-                        className="9"
-                    />
+                        <img
+                            src="./static/nosotros/9.png"
+                            alt="9"
+                            className="9"
+                        />
                     </div>
                     <div className="10imgContainer">
-                    <img
-                        src="./static/nosotros/10.png"
-                        alt="10"
-                        className="10"
-                    />
+                        <img
+                            src="./static/nosotros/10.png"
+                            alt="10"
+                            className="10"
+                        />
                     </div>
                     <div className="11imgContainer">
-                    <img
-                        src="./static/nosotros/11.png"
-                        alt="11"
-                        className="11"
-                    />
+                        <img
+                            src="./static/nosotros/11.png"
+                            alt="11"
+                            className="11"
+                        />
                     </div>
                 </div>
-
-
             </div>
             <div className="nosotrosEquipo">
                 <h3>Equipo "Bewater's" (Data, UX-UI y FullStack)</h3>
@@ -183,7 +181,14 @@ const Nosotros = () => {
                         alt="grupo"
                         className="grupo"
                     />
-                    </div>
+                </div>
+                <div className="bbkBootcampContainer">
+                    <img
+                        src="./static/nosotros/logoBootcamp.png"
+                        alt="bbkBootcamp"
+                        className="bbkBootcamp"
+                    />
+                </div>
             </div>
 
             {/* <div className="mision">
