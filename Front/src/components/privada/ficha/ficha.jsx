@@ -97,7 +97,7 @@ const FichaVisualizacion = () => {
                 <div className="tituloPeliroja">
                     <h2>
                         VISUALIZA TUS RESULTADOS
-                        <p>Última prueba registrada:</p>
+                        <p className="p1">Última prueba registrada:</p>
                     </h2>
 
                     <br />
@@ -118,48 +118,48 @@ const FichaVisualizacion = () => {
                         data.map((data, index) => (
                             <div className="ficha-visualizacion" key={index}>
                                 <div>
-                                    <p className="top">Institución:</p>{" "}
-                                    <p className="columnaDos">
+                                    <p className="top p1">Institución:</p>{" "}
+                                    <p className="columnaDos p2">
                                         {data.institution}
                                     </p>
                                 </div>
                                 <div>
-                                    <p className="columnaUno">Aula: </p>{" "}
-                                    <p className="columnaDos">{data.aula}</p>
+                                    <p className="columnaUno p1">Aula: </p>{" "}
+                                    <p className="columnaDos p2">{data.aula}</p>
                                 </div>
                                 <div>
-                                    <p className="columnaUno">Fecha:</p>{" "}
-                                    <p className="columnaDos">
+                                    <p className="columnaUno p1">Fecha:</p>{" "}
+                                    <p className="columnaDos p2">
                                         {new Date(data.date).toLocaleDateString(
                                             "es-ES"
                                         )}
                                     </p>
                                 </div>
                                 <div>
-                                    <p className="columnaUno">Localización:</p>{" "}
-                                    <p className="columnaDos">{data.name}</p>
+                                    <p className="columnaUno p1">Localización:</p>{" "}
+                                    <p className="columnaDos p2">{data.name}</p>
                                 </div>
                                 <div>
-                                    <p className="columnaUno">Oxígeno:</p>{" "}
-                                    <p className="columnaDos">
+                                    <p className="columnaUno p1">Oxígeno:</p>{" "}
+                                    <p className="columnaDos p2">
                                         {data.properties.Oxigeno}
                                     </p>
                                 </div>
                                 <div>
-                                    <p className="columnaUno">Conductividad:</p>{" "}
-                                    <p className="columnaDos">
+                                    <p className="columnaUno p2">Conductividad:</p>{" "}
+                                    <p className="columnaDos p2">
                                         {data.properties.Conductividad}
                                     </p>
                                 </div>
                                 <div>
-                                    <p className="columnaUno">Temperatura:</p>{" "}
-                                    <p className="columnaDos">
+                                    <p className="columnaUno p1">Temperatura:</p>{" "}
+                                    <p className="columnaDos p2">
                                         {data.properties.Temperatura}
                                     </p>
                                 </div>
                                 <div>
-                                    <p className="bottom">pH:</p>{" "}
-                                    <p className="columnaDos">
+                                    <p className="bottom p1">pH:</p>{" "}
+                                    <p className="columnaDos p2">
                                         {data.properties.pH}
                                     </p>
                                 </div>

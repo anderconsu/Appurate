@@ -60,7 +60,7 @@ const Landing = () => {
                     <div className="landingBody">
                         <h2 className="bienvenides">¡BIENVENIDES A TODES!</h2>
                         <br />
-                        <p className="bienvenides2">
+                        <p className="bienvenides2 p1">
                             Aquí encontrarás los pasos a seguir para usar
                             nuestra app de registro y análisis de calidad del
                             agua.
@@ -103,7 +103,7 @@ const Landing = () => {
                         </div>
                         <div className="primero">
                             <h3>Lo primero</h3>
-                            <p>
+                            <p className="p2">
                                 que debes hacer es tomar una muestra de agua en
                                 una ubicación de tu interés dentro del mapa
                                 interactivo que puedes encontrar en la parte de
@@ -124,7 +124,7 @@ const Landing = () => {
                     <div className="landingSegundo">
                         <div className="segundo">
                             <h3>Lo segundo...</h3>
-                            <p>
+                            <p className="p2">
                                 que debes hacer es visualizar y analizar los
                                 datos que has introducido, para ello accede a la
                                 página “Visualizar info.” en el menú de la
@@ -156,7 +156,7 @@ const Landing = () => {
                         </div>
                         <div className="tercero">
                             <h3>Lo tercero...</h3>
-                            <p>
+                            <p className="p2">
                                 que debes hacer es explorar los “Recursos
                                 adicionales” que te ofrecemos. Nuestra
                                 plataforma web te proporciona recursos

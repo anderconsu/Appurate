@@ -12,6 +12,7 @@ const Nosotros = () => {
     }, []);
     return (
         <div className="aboutGeneral">
+            <h1 className="h1">SOBRE NOSOTROS</h1>
             <div className="ayudando">
                 <div className="ayudandoText">
                     <h2>AYUDANDO AL MUNDO DE LA MANO DE LOS JOVENES</h2>
@@ -79,6 +80,113 @@ const Nosotros = () => {
                         src="./static/nosotros/aquadata.png"
                         alt="aquadata"
                         className="aquadata"
+                    />
+                </div>
+            </div>
+            <div className="nosotrosPartners">
+                <h3>Partners Redes industriales</h3>
+                <div className="patners1">
+                    <div className="1imgContainer">
+                        <img
+                            src="./static/nosotros/1.png"
+                            alt="1"
+                            className="1"
+                        />
+                    </div>
+                    <div className="2imgContainer">
+                        <img
+                            src="./static/nosotros/2.png"
+                            alt="2"
+                            className="2"
+                        />
+                    </div>
+                    <div className="3imgContainer">
+                        <img
+                            src="./static/nosotros/3.png"
+                            alt="3"
+                            className="3"
+                        />
+                    </div>
+                </div>
+
+                <h3>Partners Redes cientifícos</h3>
+                <div className="patners2">
+                    <div className="4imgContainer">
+                        <img
+                            src="./static/nosotros/4.png"
+                            alt="4"
+                            className="4"
+                        />
+                    </div>
+                    <div className="5imgContainer">
+                        <img
+                            src="./static/nosotros/5.png"
+                            alt="5"
+                            className="5"
+                        />
+                    </div>
+                    <div className="6imgContainer">
+                        <img
+                            src="./static/nosotros/6.png"
+                            alt="6"
+                            className="6"
+                        />
+                    </div>
+                </div>
+
+                <h3>Partners Territorio Bizkaia</h3>
+                <div className="patners3">
+                    <div className="7imgContainer">
+                        <img
+                            src="./static/nosotros/7.png"
+                            alt="7"
+                            className="7"
+                        />
+                    </div>
+                    <div className="8imgContainer">
+                        <img
+                            src="./static/nosotros/8.png"
+                            alt="8"
+                            className="8"
+                        />
+                    </div>
+                    <div className="9imgContainer">
+                        <img
+                            src="./static/nosotros/9.png"
+                            alt="9"
+                            className="9"
+                        />
+                    </div>
+                    <div className="10imgContainer">
+                        <img
+                            src="./static/nosotros/10.png"
+                            alt="10"
+                            className="10"
+                        />
+                    </div>
+                    <div className="11imgContainer">
+                        <img
+                            src="./static/nosotros/11.png"
+                            alt="11"
+                            className="11"
+                        />
+                    </div>
+                </div>
+            </div>
+            <div className="nosotrosEquipo">
+                <h3>Equipo "Bewater's" (Data, UX-UI y FullStack)</h3>
+                <div className="grupo">
+                    <img
+                        src="./static/nosotros/grupo.png"
+                        alt="grupo"
+                        className="grupo"
+                    />
+                </div>
+                <div className="bbkBootcampContainer">
+                    <img
+                        src="./static/nosotros/logoBootcamp.png"
+                        alt="bbkBootcamp"
+                        className="bbkBootcamp"
                     />
                 </div>
             </div>

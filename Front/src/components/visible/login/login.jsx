@@ -59,9 +59,11 @@ const Login = () => {
                     <h2>Entra en tu cuenta</h2>
                     <br />
                     <div className="loginQuiero">
-                        <p>Si todavía no formas parte del proyecto, ¡Únete!</p>
+                        <p className="p1">
+                            Si todavía no formas parte del proyecto, ¡Únete!
+                        </p>
                         <p
-                            className="azul_claro subrayado"
+                            className="azul_claro p1 subrayado"
                             onClick={() => navigate("/unete")}
                         >
                             ¡Quiero formar parte!
@@ -98,11 +100,11 @@ const Login = () => {
                             </button>
 
                             <div className="loginContactanos">
-                                <p className="loginMini">
+                                <p className="loginMini p3">
                                     ¿Has olvidado la clave de acceso?
                                 </p>
                                 <p
-                                    className="azul_claro loginMini subrayado"
+                                    className="azul_claro loginMini p3 subrayado"
                                     onClick={() =>
                                         (window.location.href =
                                             "mailto:appurate@gmail.com")
