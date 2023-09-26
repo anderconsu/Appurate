@@ -122,7 +122,7 @@ const FichaVisualizacion = () => {
                         <div className="ficha-visualizacion" key={index}>
                             <div><p className=" top">Institución:</p> <p className="columnaDos">{data.institution}</p></div>
                             <div><p className="columnaUno">Aula: </p> <p className="columnaDos">{data.aula}</p></div>
-                            <div><p className="columnaUno">Fecha:</p> <p className="columnaDos">{data.date}</p></div>
+                            <div><p className="columnaUno">Fecha:</p> <p className="columnaDos">{new Date(data.date).toLocaleDateString('es-ES')}</p></div>
                             <div><p className="columnaUno">Localización:</p> <p className="columnaDos">{data.name}</p></div>
                             <div><p className="columnaUno">Oxígeno:</p> <p className="columnaDos">{data.properties.Oxigeno}</p></div>
                             <div><p className="columnaUno">Conductividad:</p> <p className="columnaDos">{data.properties.Conductividad}</p></div>
