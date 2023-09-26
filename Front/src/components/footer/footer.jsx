@@ -4,7 +4,7 @@ import PageContext from "../../context/pageContext";
 
 import "./footer.scss";
 
-const noCargues = ["admin", "login"];
+const noCargues = ["admin", "login", "unete" ];
 const Footer = () => {
     const { page, setPage } = useContext(PageContext);
     return (

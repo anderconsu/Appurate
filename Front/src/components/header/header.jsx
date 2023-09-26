@@ -5,7 +5,7 @@ import { Link, useNavigate } from "react-router-dom";
 
 import "./header.scss";
 
-const noCargues = ["admin", "login"];
+const noCargues = ["admin", "login", "ficha", "landing", "recursos", "registro"];
 
 const Header = () => {
     const { page, setPage } = useContext(PageContext);
