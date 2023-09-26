@@ -142,6 +142,14 @@ const Mapa = () => {
                                                         ].institution
                                                     }
                                                 </p>
+                                                <p>
+                                                    Fecha:{" "}
+                                                    {new Date(
+                                                        cleanData[
+                                                            coordenada.name
+                                                        ].date
+                                                    ).toLocaleDateString()}
+                                                </p>
                                             </div>
                                         </div>
                                     ) : (
