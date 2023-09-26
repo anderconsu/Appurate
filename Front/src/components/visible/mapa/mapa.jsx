@@ -66,8 +66,8 @@ const Mapa = () => {
         <>
             <div>
                 <MapContainer
-                    center={[43.294125, -2.974312]}
-                    zoom={13}
+                    center={[43.28633115285832, -2.9494889117518963]}
+                    zoom={12}
                     scrollWheelZoom={true}
                 >
                     <TileLayer

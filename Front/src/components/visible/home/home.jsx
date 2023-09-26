@@ -12,12 +12,12 @@ const Home = () => {
     }, []);
     return (
         <main className="homeMain">
+            <h1 className="home">
+                        SÉ EL CAMBIO QUE QUIERES VER EN EL MUNDO
+            </h1>
             <div className="homeHeader">
                 <div className="homeHeaderText">
-                    <h1 className="home">
-                        SÉ EL CAMBIO QUE QUIERES VER EN EL MUNDO
-                    </h1>
-                    <p>
+                    <p className="p1 atraves">
                         A través de esta webapp, los estudiantes podrán
                         registrar datos de muestras de agua, visualizarlos en un
                         formato fácil de entender y acceder a información
@@ -42,7 +42,7 @@ const Home = () => {
             </div>
 
             <div className="homeMapa">
-                <p>
+                <p className="p3">
                     En este mapa interactivo puedes conocer sobre la calidad del
                     agua en la Ría de Bilbao.
                 </p>
@@ -50,9 +50,9 @@ const Home = () => {
             </div>
 
             <div className="homeHow">
-                <h2>¿CÓMO FUNCIONA?</h2>
+                <h2 className="h2">¿CÓMO FUNCIONA?</h2>
                 <div className="homeHowRegistrar">
-                    <h3>Registrar</h3>
+                    <h3 className="h3">Registrar</h3>
                     <div className="homeHowRegistrarInfo">
                         <div className="ninaimgContainer">
                             <img
@@ -61,7 +61,7 @@ const Home = () => {
                                 className="nina1"
                             />
                         </div>
-                        <p>
+                        <p className="p2">
                             Sál a la Ría y toma una muestra de agua en uno de
                             los puntos indicados en el mapa. Realiza las pruebas
                             para obtener los resultados de tu muestra y
@@ -70,9 +70,9 @@ const Home = () => {
                     </div>
                 </div>
                 <div className="homeHowVisualizar">
-                    <h3 className="visualizar">Visualizar</h3>
+                    <h3 className="visualizar h3">Visualizar</h3>
                     <div className="homeHowVisualizarInfo">
-                        <p>
+                        <p className="p2">
                             Te mostraremos los datos recopilados en un formato
                             fácil de entender, como gráficos y tablas. Así
                             puedes comprender mejor cómo se encuentra la calidad
@@ -87,7 +87,7 @@ const Home = () => {
                         </div>
                     </div>
                     <div className="homeHowAnalizar">
-                        <h3>Analizar</h3>
+                        <h3 className="h3">Analizar</h3>
                         <div className="homeHowAnalizarInfo">
                             <div className="ninaimgContainer">
                                 <img
@@ -96,7 +96,7 @@ const Home = () => {
                                     className="nina2"
                                 />
                             </div>
-                            <p>
+                            <p className="p2">
                                 Analiza los diferentes tipos de contaminantes
                                 que se encuentran comúnmente en el agua y cómo
                                 afectan la salud humana. Con ayuda de estos
@@ -110,7 +110,7 @@ const Home = () => {
             </div>
 
             <div className="homeSpecs">
-                <h2 className="conoceCalidad">
+                <h2 className="conoceCalidad h2">
                     CONOCE LA CALIDAD DEL AGUA EN BILBAO
                 </h2>
                 <div className="caracteristicasImagen">
@@ -124,8 +124,8 @@ const Home = () => {
                                 />
                             </div>
                             <div className="textAndtext">
-                                <h3>Oxigeno</h3>
-                                <p>
+                                <h3 className="h3">Oxigeno</h3>
+                                <p className="p2">
                                     Es un gas soluble en el agua, y su
                                     concentración varía en función de factores
                                     como la temperatura, la agitación del agua,
@@ -144,8 +144,8 @@ const Home = () => {
                                 />
                             </div>
                             <div className="textAndtext">
-                                <h3>pH</h3>
-                                <p>
+                                <h3 className="h3">pH</h3>
+                                <p className="p2">
                                     Es la medida que indica cómo de ácida o
                                     básica es una sustancia. Para conocer el pH
                                     se miden los iones de hidrógeno
@@ -162,7 +162,7 @@ const Home = () => {
                             </div>
                             <div className="textAndtext">
                                 <h3>Temperatura</h3>
-                                <p>
+                                <p className="p2">
                                     La temperatura afecta la química del agua y
                                     las funciones de los organismos acuáticos.{" "}
                                 </p>
@@ -178,7 +178,7 @@ const Home = () => {
                             </div>
                             <div className="textAndtext">
                                 <h3>Conductividad</h3>
-                                <p>
+                                <p className="p2">
                                     La conductividad del agua también es un
                                     factor importante para evaluar su calidad en
                                     términos de salud agua potable segura suele

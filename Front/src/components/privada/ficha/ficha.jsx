@@ -1,6 +1,9 @@
 import { useState, useEffect, useContext } from "react";
 import PageContext from "../../../context/pageContext";
 import { useNavigate } from "react-router-dom";
+import "./ficha.scss";
+
+import Menu from "../menu/menu";
 
 const FichaVisualizacion = () => {
     const [data, setData] = useState({});
@@ -97,32 +100,90 @@ const FichaVisualizacion = () => {
     }
 
     return (
-        <>
-            <h2>VISUALIZA TUS RESULTADOS</h2>
-            <div>
-                <img
-                    src="./static/ficha/peliroja.png"
-                    alt="peliroja"
-                    className="peliroja"
-                />
-            </div>
-            <div>
-                {data.map((data, index) => (
-                    <div className="ficha-visualizacion" key={index}>
-                        <p>Institución: {data.institution}</p>
-                        <p>Aula: {data.aula}</p>
-                        <p>Fecha: {data.date}</p>
-                        <p>Localización: {data.name}</p>
-                        <p>Oxígeno: {data.properties.Oxigeno} mg/l</p>
-                        <p>
-                            Conductividad: {data.properties.Conductividad} µS/cm
-                        </p>
-                        <p>Temperatura: {data.properties.Temperatura} °C</p>
-                        <p>pH: {data.properties.pH}</p>
+        <main className="paginaFicha">
+            <Menu />
+            <div className="resultadosMain">
+                <div className="tituloPeliroja">
+                    <h2>
+                        VISUALIZA TUS RESULTADOS
+                        <p>Última prueba registrada:</p>
+                    </h2>
+
+                    <br />
+                    <div className="pelirojaContainer">
+                        <img
+                            src="./static/ficha/peliroja.png"
+                            alt="peliroja"
+                            className="peliroja"
+                        />
                     </div>
-                ))}
+                </div>
+
+                <div className="fichas">
+                    {data.map((data, index) => (
+                        <div className="ficha-visualizacion" key={index}>
+                            <div>
+                                <p className=" top">Institución:</p>{" "}
+                                <p className="columnaDos">{data.institution}</p>
+                            </div>
+                            <div>
+                                <p className="columnaUno">Aula: </p>{" "}
+                                <p className="columnaDos">{data.aula}</p>
+                            </div>
+                            <div>
+                                <p className="columnaUno">Fecha:</p>{" "}
+                                <p className="columnaDos">{new Date(data.date).toLocaleDateString('es-ES')}</p>
+                            </div>
+                            <div>
+                                <p className="columnaUno">Localización:</p>{" "}
+                                <p className="columnaDos">{data.name}</p>
+                            </div>
+                            <div>
+                                <p className="columnaUno">Oxígeno:</p>{" "}
+                                <p className="columnaDos">
+                                    {data.properties.Oxigeno}
+                                </p>
+                            </div>
+                            <div>
+                                <p className="columnaUno">Conductividad:</p>{" "}
+                                <p className="columnaDos">
+                                    {data.properties.Conductividad}
+                                </p>
+                            </div>
+                            <div>
+                                <p className="columnaUno">Temperatura:</p>{" "}
+                                <p className="columnaDos">
+                                    {data.properties.Temperatura}
+                                </p>
+                            </div>
+                            <div>
+                                <p className=" bottom">pH:</p>{" "}
+                                <p className="columnaDos">
+                                    {data.properties.pH}
+                                </p>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+
+                <h2 className="pruebasVS">
+                    PRUBAS EN CLASE VS. PRUEBAS LABORATORIO
+                </h2>
+                <div className="graficosMain">
+                    <img
+                        className="graficoUno"
+                        src="./static/ficha/image51.png"
+                        alt="gráfico 1"
+                    />
+
+                    <img
+                        className="graficoDos"
+                        src="./static/ficha/image52.png"
+                        alt="gráfico2"
+                    />
+                </div>
             </div>
-        </>
+        </main>
     );
 };
 
