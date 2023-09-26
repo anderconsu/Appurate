@@ -90,15 +90,6 @@ const FichaVisualizacion = () => {
 
         fetchData();
     }, []);
-
-    if (loading) {
-        return <p>Cargando...</p>;
-    }
-
-    if (error) {
-        return <p>Error: {error}</p>;
-    }
-
     return (
         <main className="paginaFicha">
             <Menu />
@@ -120,50 +111,61 @@ const FichaVisualizacion = () => {
                 </div>
 
                 <div className="fichas">
-                    {data.map((data, index) => (
-                        <div className="ficha-visualizacion" key={index}>
-                            <div>
-                                <p className=" top p1">Institución:</p>{" "}
-                                <p className="columnaDos p2">{data.institution}</p>
+                    {error && <p>Error : {error}</p>}
+                    {loading ? (
+                        <p>Cargando...</p>
+                    ) : (
+                        data.map((data, index) => (
+                            <div className="ficha-visualizacion" key={index}>
+                                <div>
+                                    <p className="top p1">Institución:</p>{" "}
+                                    <p className="columnaDos p2">
+                                        {data.institution}
+                                    </p>
+                                </div>
+                                <div>
+                                    <p className="columnaUno p1">Aula: </p>{" "}
+                                    <p className="columnaDos p2">{data.aula}</p>
+                                </div>
+                                <div>
+                                    <p className="columnaUno p1">Fecha:</p>{" "}
+                                    <p className="columnaDos p2">
+                                        {new Date(data.date).toLocaleDateString(
+                                            "es-ES"
+                                        )}
+                                    </p>
+                                </div>
+                                <div>
+                                    <p className="columnaUno p1">Localización:</p>{" "}
+                                    <p className="columnaDos p2">{data.name}</p>
+                                </div>
+                                <div>
+                                    <p className="columnaUno p1">Oxígeno:</p>{" "}
+                                    <p className="columnaDos p2">
+                                        {data.properties.Oxigeno}
+                                    </p>
+                                </div>
+                                <div>
+                                    <p className="columnaUno p2">Conductividad:</p>{" "}
+                                    <p className="columnaDos p2">
+                                        {data.properties.Conductividad}
+                                    </p>
+                                </div>
+                                <div>
+                                    <p className="columnaUno p1">Temperatura:</p>{" "}
+                                    <p className="columnaDos p2">
+                                        {data.properties.Temperatura}
+                                    </p>
+                                </div>
+                                <div>
+                                    <p className="bottom p1">pH:</p>{" "}
+                                    <p className="columnaDos p2">
+                                        {data.properties.pH}
+                                    </p>
+                                </div>
                             </div>
-                            <div>
-                                <p className="columnaUno p1">Aula: </p>{" "}
-                                <p className="columnaDos p2">{data.aula}</p>
-                            </div>
-                            <div>
-                                <p className="columnaUno p1">Fecha:</p>{" "}
-                                <p className="columnaDos p2">{new Date(data.date).toLocaleDateString('es-ES')}</p>
-                            </div>
-                            <div>
-                                <p className="columnaUno p1">Localización:</p>{" "}
-                                <p className="columnaDos p2">{data.name}</p>
-                            </div>
-                            <div>
-                                <p className="columnaUno p1">Oxígeno:</p>{" "}
-                                <p className="columnaDos p2">
-                                    {data.properties.Oxigeno}
-                                </p>
-                            </div>
-                            <div>
-                                <p className="columnaUno p2">Conductividad:</p>{" "}
-                                <p className="columnaDos p2">
-                                    {data.properties.Conductividad}
-                                </p>
-                            </div>
-                            <div>
-                                <p className="columnaUno p1">Temperatura:</p>{" "}
-                                <p className="columnaDos p2">
-                                    {data.properties.Temperatura}
-                                </p>
-                            </div>
-                            <div>
-                                <p className=" bottom p1">pH:</p>{" "}
-                                <p className="columnaDos p2">
-                                    {data.properties.pH}
-                                </p>
-                            </div>
-                        </div>
-                    ))}
+                        ))
+                    )}
                 </div>
 
                 <h2 className="pruebasVS">
