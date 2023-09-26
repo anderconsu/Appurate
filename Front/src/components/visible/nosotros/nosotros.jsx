@@ -15,7 +15,7 @@ const Nosotros = () => {
             <div className="ayudando">
                 <div className="ayudandoText">
                     <h2>AYUDANDO AL MUNDO DE LA MANO DE LOS JOVENES</h2>
-                    <p>
+                    <p className="p1">
                         Nuestra solución educativa tiene como objetivo empoderar
                         a los jóvenes para que aprendan, exploren y tomen
                         conciencia sobre la calidad del agua en su ciudad. Los
@@ -37,7 +37,7 @@ const Nosotros = () => {
             <div className="forma">
                 <div className="formaTexto">
                     <h2>¡FORMA PARTE DEL CAMBIO!</h2>
-                    <p>
+                    <p className="p1">
                         Los datos recopilados por los estudiantes y los
                         profesores se utilizarán para identificar problemas en
                         la calidad del agua, informar a las autoridades locales,
@@ -60,7 +60,7 @@ const Nosotros = () => {
             <div className="tratando">
                 <div className="tratandoText">
                     <h2>TRATANDO EL AGUA DE FORMA INTELIGENTE</h2>
-                    <p>
+                    <p className="p1">
                         Nuestro objetivo es proporcionar información útil para
                         la gestión sostenible del agua por parte de diferentes
                         agentes, tanto públicos como privados y del tercer
