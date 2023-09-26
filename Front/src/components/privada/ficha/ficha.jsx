@@ -137,28 +137,9 @@ const FichaVisualizacion = () => {
                                             <p className="numeroPrueba">
                                                 Prueba Nº: {data.length - index}
                                             </p>
-
                                         </div>
                                         <div>
-                                            <p className="top p1">
-                                                Institución:
-                                            </p>{" "}
-                                            <p className="columnaDos p2">
-                                                {item.institution}
-                                            </p>
-                                        </div>
-                                        <div>
-                                            <p className="columnaUno p1">
-                                                Aula:{" "}
-                                            </p>{" "}
-                                            <p className="columnaDos p2">
-                                                {item.aula}
-                                            </p>
-                                        </div>
-                                        <div>
-                                            <p className="columnaUno p1">
-                                                Fecha:
-                                            </p>{" "}
+                                            <p className="top p1">Fecha:</p>{" "}
                                             <p className="columnaDos p2">
                                                 {new Date(
                                                     item.date
@@ -198,9 +179,19 @@ const FichaVisualizacion = () => {
                                             </p>
                                         </div>
                                         <div>
-                                            <p className="bottom p1">pH:</p>{" "}
+                                            <p className="columnaUno p1">pH:</p>{" "}
                                             <p className="columnaDos p2">
                                                 {item.properties.pH}
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <p className="bottom p1">
+                                                Análisis preeliminar:
+                                            </p>{" "}
+                                            <p className="columnaDos p2">
+                                                {item.prediction === 1
+                                                    ? "Apto para baño"
+                                                    : "No apto para baño"}
                                             </p>
                                         </div>
                                     </div>
