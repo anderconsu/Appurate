@@ -1,4 +1,8 @@
 @media screen and (max-width: 767px) {
+    .error-message,
+    .message {
+        text-align: center;
+    }
     .paginaRegistro {
         display: flex;
         flex-wrap: wrap;
@@ -303,14 +307,13 @@
     }
 
     .pipetaContainer {
-        border: 1px solid var(--azul_celeste);
         display: flex;
         flex-direction: row;
         justify-content: right;
         width: 100%;
         height: 100%;
         align-items: right;
-        padding-right: 5rem;
+        padding-right: 1rem;
     }
 
     .pipeta {
