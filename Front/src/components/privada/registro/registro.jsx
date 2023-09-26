@@ -149,8 +149,6 @@ const Registro = () => {
                 <div className="registroGeneral">
                     <h2>REGISTRA LOS DATOS DE LA MUESTRA</h2>
                     <form onSubmit={handleSubmit} className="formularioMuestra">
-                        {error && <p className="error-message">{error}</p>}
-
                         {/* localización */}
 
                         <div className="localizacion">
@@ -281,6 +279,7 @@ const Registro = () => {
                                     Enviar
                                 </button>
                             </div>
+                            {error && <p className="error-message">{error}</p>}
                             {message && <p className="message">{message}</p>}
                         </div>
                     </form>
