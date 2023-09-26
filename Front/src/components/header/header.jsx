@@ -74,7 +74,7 @@ const Header = () => {
                                 ¡Únete!
                             </button>
                             <button
-                                className="boton1"
+                                className="boton1 bold"
                                 onClick={() => navigate("/login")}
                             >
                                 Entrar

@@ -51,7 +51,7 @@ button {
     border-radius: 10px;
     font-size: 1rem;
     padding: 0.2rem 0.7rem;
-    max-height: 1.5rem;
+    max-height: 2.1rem;
     transition: 0.5s;
     font-family: "Poppins", sans-serif;
 }
@@ -62,20 +62,20 @@ button:hover {
 .boton1 {
     background-color: var(--azul_celeste);
     border-color: var(--azul_celeste);
+}
+.bold {
     font-weight: 600;
 }
 
 .boton2 {
     background-color: var(--blanco);
     border-color: var(--azul_celeste);
-    font-family: "Poppins", sans-serif;
 }
 
 .boton3 {
     background-color: var(--blanco);
-    border-color: var(--blanco);
-    font-family: "Poppins", sans-serif;
-    font-style: underline;
+    border: none;
+    text-decoration: underline;
 }
 
 @media screen and (min-width: 768px) {
