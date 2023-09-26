@@ -1,4 +1,22 @@
 @media screen and (max-width: 767px) {
+    .paginaRegistro {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+    }
+    .trozoRegistro {
+        width: 100%;
+    }
+    .registroGeneral {
+        width: 100%;
+        display: flex;
+        box-sizing: border-box;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
     .formularioMuestra {
         background: #eee;
         border-radius: 20px;
@@ -7,18 +25,10 @@
         color: #022859;
     }
 
-    h2 {
+    .registroGeneral h2 {
         text-align: center;
         color: #022859;
         font-size: 20px;
-    }
-
-    .registroGeneral {
-        display: flex;
-        box-sizing: border-box;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
     }
 
     .localizacion {
@@ -145,7 +155,26 @@
 }
 
 @media screen and (min-width: 768px) {
+    .paginaRegistro {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        gap: 1rem;
+        width: 100%;
+    }
+    .trozoRegistro {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: auto;
+        margin-top: 0;
+        padding-right: 1rem;
+    }
+    .registroGeneral {
+        width: 100%;
+    }
     .formularioMuestra {
+        width: 100%;
         display: flex;
         justify-content: space-between;
         background: #eee;
@@ -281,7 +310,7 @@
         height: 100%;
         align-items: right;
         margin-top: -2rem;
-        padding-right: 580px;
+        padding-right: 8rem;
     }
 
     .pipeta {
