@@ -1,7 +1,9 @@
 import { useState, useEffect, useContext } from "react";
 import PageContext from "../../../context/pageContext";
 import { useNavigate } from "react-router-dom";
-import './ficha.scss';
+import "./ficha.scss";
+
+import Menu from "../menu/menu";
 
 const FichaVisualizacion = () => {
     const [data, setData] = useState({});
@@ -98,11 +100,12 @@ const FichaVisualizacion = () => {
     }
 
     return (
-        <>
-
+        <main className="paginaFicha">
+            <Menu />
             <div className="resultadosMain">
                 <div className="tituloPeliroja">
-                    <h2>VISUALIZA TUS RESULTADOS
+                    <h2>
+                        VISUALIZA TUS RESULTADOS
                         <p>Última prueba registrada:</p>
                     </h2>
 
@@ -113,35 +116,74 @@ const FichaVisualizacion = () => {
                             alt="peliroja"
                             className="peliroja"
                         />
-
                     </div>
                 </div>
 
                 <div className="fichas">
                     {data.map((data, index) => (
                         <div className="ficha-visualizacion" key={index}>
-                            <div><p className=" top">Institución:</p> <p className="columnaDos">{data.institution}</p></div>
-                            <div><p className="columnaUno">Aula: </p> <p className="columnaDos">{data.aula}</p></div>
-                            <div><p className="columnaUno">Fecha:</p> <p className="columnaDos">{data.date}</p></div>
-                            <div><p className="columnaUno">Localización:</p> <p className="columnaDos">{data.name}</p></div>
-                            <div><p className="columnaUno">Oxígeno:</p> <p className="columnaDos">{data.properties.Oxigeno}</p></div>
-                            <div><p className="columnaUno">Conductividad:</p> <p className="columnaDos">{data.properties.Conductividad}</p></div>
-                            <div><p className="columnaUno">Temperatura:</p> <p className="columnaDos">{data.properties.Temperatura}</p></div>
-                            <div><p className=" bottom">pH:</p> <p className="columnaDos">{data.properties.pH}</p></div>
-
+                            <div>
+                                <p className=" top">Institución:</p>{" "}
+                                <p className="columnaDos">{data.institution}</p>
+                            </div>
+                            <div>
+                                <p className="columnaUno">Aula: </p>{" "}
+                                <p className="columnaDos">{data.aula}</p>
+                            </div>
+                            <div>
+                                <p className="columnaUno">Fecha:</p>{" "}
+                                <p className="columnaDos">{data.date}</p>
+                            </div>
+                            <div>
+                                <p className="columnaUno">Localización:</p>{" "}
+                                <p className="columnaDos">{data.name}</p>
+                            </div>
+                            <div>
+                                <p className="columnaUno">Oxígeno:</p>{" "}
+                                <p className="columnaDos">
+                                    {data.properties.Oxigeno}
+                                </p>
+                            </div>
+                            <div>
+                                <p className="columnaUno">Conductividad:</p>{" "}
+                                <p className="columnaDos">
+                                    {data.properties.Conductividad}
+                                </p>
+                            </div>
+                            <div>
+                                <p className="columnaUno">Temperatura:</p>{" "}
+                                <p className="columnaDos">
+                                    {data.properties.Temperatura}
+                                </p>
+                            </div>
+                            <div>
+                                <p className=" bottom">pH:</p>{" "}
+                                <p className="columnaDos">
+                                    {data.properties.pH}
+                                </p>
+                            </div>
                         </div>
                     ))}
                 </div>
 
-
-                <h2 className="pruebasVS">PRUBAS EN CLASE VS. PRUEBAS LABORATORIO</h2>
+                <h2 className="pruebasVS">
+                    PRUBAS EN CLASE VS. PRUEBAS LABORATORIO
+                </h2>
                 <div className="graficosMain">
-                    <img className="graficoUno" src="./static/ficha/image51.png" alt="gráfico 1" />
+                    <img
+                        className="graficoUno"
+                        src="./static/ficha/image51.png"
+                        alt="gráfico 1"
+                    />
 
-                    <img className="graficoDos" src="./static/ficha/image52.png" alt="gráfico2" />
+                    <img
+                        className="graficoDos"
+                        src="./static/ficha/image52.png"
+                        alt="gráfico2"
+                    />
                 </div>
             </div>
-        </>
+        </main>
     );
 };
 
