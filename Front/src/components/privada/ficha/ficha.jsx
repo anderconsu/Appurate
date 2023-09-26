@@ -133,13 +133,11 @@ const FichaVisualizacion = () => {
                                         className="ficha-visualizacion"
                                         key={index}
                                     >
-                                        <div>
-                                            <p className="columnaUno p1">
-                                                Número de prueba:
-                                            </p>{" "}
-                                            <p className="columnaDos p2">
-                                                {data.length - index}
+                                        <div className="numeroPruebaContainer">
+                                            <p className="numeroPrueba">
+                                                Prueba Nº: {data.length - index}
                                             </p>
+
                                         </div>
                                         <div>
                                             <p className="top p1">
