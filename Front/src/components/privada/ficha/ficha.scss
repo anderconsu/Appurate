@@ -51,6 +51,22 @@
             border: 3px solid rgb(0, 213, 255);
             border-radius: 8px;
 
+            & .numeroPruebaContainer {
+                display: flex;
+                flex-direction: row;
+                
+               
+
+                & .numeroPrueba {
+                    padding: 1rem;
+                    background-color: rgb(0, 217, 255);
+                    width: 100%;
+                    text-align: center;
+                    color: #ffffff;
+                    font-size: 1.2rem;
+                }
+            }
+
             & div {
                 display: flex;
                 flex-direction: row;
@@ -141,6 +157,22 @@
                 border-top: 4px solid rgb(0, 213, 255);
                 border-radius: 8px;
                 margin: 1rem;
+
+                & .numeroPruebaContainer {
+                    display: flex;
+                    flex-direction: row;
+                    
+                   
+    
+                    & .numeroPrueba {
+                        padding: 1rem;
+                        background-color: rgb(0, 217, 255);
+                        width: 100%;
+                        text-align: center;
+                        color: #ffffff;
+                        font-size: 1.5rem;
+                    }
+                }
 
                 & div {
                     display: flex;
