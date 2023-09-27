@@ -112,7 +112,7 @@ const Registro = () => {
             if (response.ok) {
                 // console.log("Datos de muestra enviados con éxito");
                 setMessage(
-                    'Los datos de la muestra han sido enviados, puede verlos en la pagina "Visualizar Info."'
+                    'Los datos de la muestra han sido enviados, puede verlos en la página "Visualizar Info."'
                 );
                 setLocation("");
                 setpH("");

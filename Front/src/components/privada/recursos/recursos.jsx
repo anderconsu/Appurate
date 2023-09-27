@@ -58,7 +58,10 @@ const Recursos = () => {
                 <br />
 
                 <div className="recursosUtilizar">
-                    <h2>¿QUÉ VAMOS A UTILIZAR?</h2>
+                    <h2>
+                        ¿Cúales son los equipos que se utilizan para analizar el
+                        agua?
+                    </h2>
                     <br />
                     <div className="recursosAzul">
                         <div className="recursosMedidor">
