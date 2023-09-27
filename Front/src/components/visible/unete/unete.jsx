@@ -23,6 +23,11 @@ const Unete = () => {
             setMessage("Todos los campos son obligatorios.");
             return;
         }
+        setInstitution("");
+        setAula("");
+        setProffesor("");
+        setEmail("");
+        setPhone("");
         setMessage("Información enviada.");
     };
 
