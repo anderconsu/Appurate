@@ -174,7 +174,7 @@ const Nosotros = () => {
                 </div>
             </div>
             <div className="nosotrosEquipo">
-                <h3>Equipo "Bewater's" (Data, UX-UI y FullStack)</h3>
+                <h3>Equipo "Bewaters" (Data, UX-UI y FullStack)</h3>
                 <div className="grupo">
                     <img
                         src="./static/nosotros/grupo.png"
