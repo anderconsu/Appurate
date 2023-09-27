@@ -17,7 +17,7 @@ services:
     container_name: appurate-back
     restart: always
     depends_on:
-      - apurate-mongo
+      - appurate-mongo
     networks:
       - npm_default
       - appurate-local
@@ -35,9 +35,8 @@ services:
       - appurate-local
 
   appurate-datamodel:
-    name: appurate-datamodel
+    container_name: appurate-datamodel
     build: ./Predict
-    container_name: api_data
     ports:
       - 5000:5000
     volumes:
