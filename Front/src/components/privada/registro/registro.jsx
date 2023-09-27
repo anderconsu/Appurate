@@ -168,7 +168,9 @@ const Registro = () => {
 
                             <div className="mapa">
                                 <MapContainer
-                                    center={[43.294125, -2.974312]}
+                                    center={[
+                                        43.28633115285832, -2.9494889117518963,
+                                    ]}
                                     zoom={13}
                                     scrollWheelZoom={true}
                                 >
