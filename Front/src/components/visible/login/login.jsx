@@ -44,7 +44,7 @@ const Login = () => {
                 localStorage.setItem("email", data.email);
                 localStorage.setItem("phone", data.phone);
 
-                console.log("Sesión iniciada");
+                // console.log("Sesión iniciada");
                 navigate("/landing");
             } else {
                 setError("Usuario o contraseña incorrectos");

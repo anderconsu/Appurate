@@ -60,7 +60,7 @@ const Admin = () => {
 
             if (response.ok) {
                 setMessage("Registro completado");
-                console.log("Registro completado");
+                // console.log("Registro completado");
             } else {
                 let data = await response.json();
                 if (data.message === "User already exists") {

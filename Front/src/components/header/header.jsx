@@ -18,7 +18,7 @@ const Header = () => {
     const { page, setPage } = useContext(PageContext);
     const navigate = useNavigate();
     const [professor, setProfessor] = useState("");
-    console.log(page);
+    // console.log(page);
 
     useEffect(() => {
         let localprofe = localStorage.getItem("proffesor");

@@ -10,7 +10,7 @@ const MapaRegister = () => {
     const [selected, setSelected] = useState("");
 
     useEffect(() => {
-        console.log(selected);
+        // console.log(selected);
     }, [selected]);
     return (
         <>

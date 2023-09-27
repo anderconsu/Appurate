@@ -110,7 +110,7 @@ const Registro = () => {
             });
 
             if (response.ok) {
-                console.log("Datos de muestra enviados con éxito");
+                // console.log("Datos de muestra enviados con éxito");
                 setMessage(
                     'Los datos de la muestra han sido enviados, puede verlos en la pagina "Visualizar Info."'
                 );
@@ -122,7 +122,7 @@ const Registro = () => {
             } else {
                 setMessage("");
                 let error = await response.json();
-                console.error(error);
+                // console.error(error);
                 if (response.status === 401) {
                     setError(
                         "Sesión expirada, por favor vuelva a iniciar sesión"
@@ -139,12 +139,12 @@ const Registro = () => {
             setMessage("");
             setError("Error, inténtalo más tarde");
         }
-        console.log("Datos de la muestra enviados:");
-        console.log("Localización:", location);
-        console.log("pH:", pH);
-        console.log("Oxígeno (mg/l):", oxigeno);
-        console.log("Conductividad:", conductividad);
-        console.log("Temperatura:", temperatura);
+        // console.log("Datos de la muestra enviados:");
+        // console.log("Localización:", location);
+        // console.log("pH:", pH);
+        // console.log("Oxígeno (mg/l):", oxigeno);
+        // console.log("Conductividad:", conductividad);
+        // console.log("Temperatura:", temperatura);
     };
 
     return (

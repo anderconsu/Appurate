@@ -73,11 +73,11 @@ const FichaVisualizacion = () => {
                         }),
                     }
                 );
-                console.log(response);
+                // console.log(response);
                 if (response.ok) {
                     const result = await response.json();
                     if (result.length === 0) {
-                        console.log("No hay datos");
+                        // console.log("No hay datos");
                         setData(null);
                         return;
                     }

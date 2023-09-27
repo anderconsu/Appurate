@@ -22,7 +22,7 @@ const Mapa = () => {
                 setData(datos);
             }
         } catch (err) {
-            console.log(err);
+            // console.log(err);
         }
     };
 
@@ -41,16 +41,16 @@ const Mapa = () => {
                 });
                 if (response.status === 200) {
                     let datos = await response.json();
-                    console.log("datos recibidos", datos);
+                    // console.log("datos recibidos", datos);
                     datosLimpios[datos.name] = datos;
                 } else {
-                    console.log("not found");
+                    // console.log("not found");
                 }
             }
-            console.log("datos limpios", datosLimpios);
+            // console.log("datos limpios", datosLimpios);
             setCleanData(datosLimpios);
         } catch (err) {
-            console.log(err);
+            // console.log(err);
         }
     };
 
