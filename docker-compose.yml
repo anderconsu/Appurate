@@ -2,7 +2,7 @@ version: '3'
 services:
   frontend:
       image: nginx:latest
-      container_name: appurate-front
+      container_name: appurate-front-build
       restart: always
       networks:
         - npm_default
@@ -11,11 +11,25 @@ services:
         - 3081:443
       volumes:
         - ./Front/dist:/usr/share/nginx/html:ro
+  
+  app:
+    build: ./Front
+    container_name: appurate-vite
+    ports:
+      - 5173:5173
+    volumes:
+      - ./Front:/app
+      - /app/node_modules
+    networks:
+      - npm_default
+    restart: always
 
   backend:
-    build: ./Backend
+    build: ./Back
     container_name: appurate-back
     restart: always
+    ports:
+      - 3000:3000
     depends_on:
       - appurate-mongo
     networks:
