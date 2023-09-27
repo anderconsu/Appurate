@@ -280,7 +280,7 @@ const Registro = () => {
                                 />
                             </div>
                             <div className="buttonContainer">
-                                <button className="button" type="submit">
+                                <button className="boton1" type="submit">
                                     Enviar
                                 </button>
                             </div>

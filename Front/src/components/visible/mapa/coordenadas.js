@@ -1,7 +1,7 @@
 const coordenadas = [
     {
         coord: [43.25437, -2.922241],
-        name: "Muelle de Ibeni, Colegio Maestro García Rivero",
+        name: "Muelle Ibeni, Colegio Maestro García Rivero",
     },
     {
         coord: [43.27032507921303, -2.9389242456635514],

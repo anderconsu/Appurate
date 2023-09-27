@@ -46,6 +46,10 @@ h3 {
     font-size: 0.7rem;
     color: var(--azul_oscuro);
 }
+.p4 {
+    font-size: 0.8rem;
+    color: var(--azul_oscuro);
+}
 
 button {
     border-radius: 10px;
@@ -106,6 +110,10 @@ button:hover {
 
     .p3 {
         font-size: 0.8rem;
+        color: var(--azul_oscuro);
+    }
+    .p4 {
+        font-size: 1rem;
         color: var(--azul_oscuro);
     }
     .boton1 {

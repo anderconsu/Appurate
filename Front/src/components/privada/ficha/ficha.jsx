@@ -140,7 +140,7 @@ const FichaVisualizacion = () => {
                                         </div>
                                         <div>
                                             <p className="top p1">Fecha:</p>{" "}
-                                            <p className="columnaDos p2">
+                                            <p className="columnaDos p4">
                                                 {new Date(
                                                     item.date
                                                 ).toLocaleDateString("es-ES")}
@@ -150,7 +150,7 @@ const FichaVisualizacion = () => {
                                             <p className="columnaUno p1">
                                                 Localización:
                                             </p>{" "}
-                                            <p className="columnaDos p2">
+                                            <p className="columnaDos p4">
                                                 {item.name}
                                             </p>
                                         </div>
@@ -158,15 +158,15 @@ const FichaVisualizacion = () => {
                                             <p className="columnaUno p1">
                                                 Oxígeno:
                                             </p>{" "}
-                                            <p className="columnaDos p2">
+                                            <p className="columnaDos p4">
                                                 {item.properties.Oxigeno}
                                             </p>
                                         </div>
                                         <div>
-                                            <p className="columnaUno p2">
+                                            <p className="columnaUno p4">
                                                 Conductividad:
                                             </p>{" "}
-                                            <p className="columnaDos p2">
+                                            <p className="columnaDos p4">
                                                 {item.properties.Conductividad}
                                             </p>
                                         </div>
@@ -174,13 +174,13 @@ const FichaVisualizacion = () => {
                                             <p className="columnaUno p1">
                                                 Temperatura:
                                             </p>{" "}
-                                            <p className="columnaDos p2">
+                                            <p className="columnaDos p4">
                                                 {item.properties.Temperatura}
                                             </p>
                                         </div>
                                         <div>
                                             <p className="columnaUno p1">pH:</p>{" "}
-                                            <p className="columnaDos p2">
+                                            <p className="columnaDos p4">
                                                 {item.properties.pH}
                                             </p>
                                         </div>
@@ -188,7 +188,7 @@ const FichaVisualizacion = () => {
                                             <p className="bottom p1">
                                                 Análisis preeliminar:
                                             </p>{" "}
-                                            <p className="columnaDos p2">
+                                            <p className="columnaDos p4">
                                                 {item.prediction === 1
                                                     ? "Apto para baño"
                                                     : "No apto para baño"}
