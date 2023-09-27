@@ -177,7 +177,7 @@ const Nosotros = () => {
                 <h3>Equipo "Bewaters" (Data, UX-UI y FullStack)</h3>
                 <div className="grupo">
                     <img
-                        src="./static/nosotros/grupo.png"
+                        src="./static/nosotros/grupo.jpg"
                         alt="grupo"
                         className="grupo"
                     />
