@@ -44,6 +44,12 @@ const Header = () => {
                     {professor ? (
                         <>
                             <button
+                                className="boton3"
+                                onClick={() => navigate("/nosotros")}
+                            >
+                                Sobre Nosotros
+                            </button>
+                            <button
                                 className="boton1"
                                 onClick={() => navigate("/landing")}
                             >
