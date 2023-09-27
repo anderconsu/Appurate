@@ -25,16 +25,17 @@ services:
       - ./Back:/app
       - /app/node_modules
 
-  apurate-mongo:
+  appurate-mongo:
     image: mongo:latest
-    container_name: apurate-mongo
+    container_name: appurate-mongo
     restart: always
     volumes:
       - ./data:/data/db
     networks:
       - appurate-local
 
-  api:
+  appurate-datamodel:
+    name: appurate-datamodel
     build: ./Predict
     container_name: api_data
     ports:

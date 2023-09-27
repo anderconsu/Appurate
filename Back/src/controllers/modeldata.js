@@ -3,7 +3,7 @@ const getModelData = async (data) => {
     console.log("host de modelo", process.env.MODEL_HOST);
     try {
         let response = await fetch(
-            `${process.env.MODEL_HOST}/prediccion_niños`,
+            `${process.env.MODEL_HOST}:5000/prediccion_niños`,
             {
                 method: "POST",
                 headers: {
