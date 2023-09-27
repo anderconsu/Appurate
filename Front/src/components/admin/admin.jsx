@@ -59,6 +59,13 @@ const Admin = () => {
             });
 
             if (response.ok) {
+                setUsername("");
+                setPassword("");
+                setInstitution("");
+                setAula("");
+                setProffesor("");
+                setEmail("");
+                setPhone("");
                 setMessage("Registro completado");
                 // console.log("Registro completado");
             } else {
