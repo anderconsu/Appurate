@@ -63,7 +63,7 @@ const Login = () => {
                     <br />
                     <div className="loginQuiero">
                         <p className="p1">
-                            Si todavía no formas parte del proyecto, ¡Únete!
+                            Si todavía no formas parte del proyecto, ¡únete!
                         </p>
                         <p
                             className="azul_claro p1 subrayado"

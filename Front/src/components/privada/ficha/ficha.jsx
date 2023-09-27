@@ -124,7 +124,7 @@ const FichaVisualizacion = () => {
                                 </p>
                             ) : (
                                 <p className="p1 entry bad">
-                                    No se encontraron pruebas
+                                    No se encontraron pruebas.
                                 </p>
                             )}
                             {data &&
@@ -163,7 +163,7 @@ const FichaVisualizacion = () => {
                                             </p>
                                         </div>
                                         <div>
-                                            <p className="columnaUno p4">
+                                            <p className="columnaUno p1">
                                                 Conductividad:
                                             </p>{" "}
                                             <p className="columnaDos p4">

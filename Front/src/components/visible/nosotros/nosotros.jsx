@@ -15,7 +15,7 @@ const Nosotros = () => {
             <h1 className="h1">SOBRE NOSOTROS</h1>
             <div className="ayudando">
                 <div className="ayudandoText">
-                    <h2>AYUDANDO AL MUNDO DE LA MANO DE LOS JOVENES</h2>
+                    <h2>AYUDANDO AL MUNDO DE LA MANO DE LOS JÓVENES</h2>
                     <p className="p1">
                         Nuestra solución educativa tiene como objetivo empoderar
                         a los jóvenes para que aprendan, exploren y tomen
@@ -60,7 +60,7 @@ const Nosotros = () => {
 
             <div className="tratando">
                 <div className="tratandoText">
-                    <h2>TRATANDO EL AGUA DE FORMA INTELIGENTE</h2>
+                    <h2>AQUADAT - TRATANDO EL AGUA DE FORMA INTELIGENTE</h2>
                     <p className="p1">
                         Nuestro objetivo es proporcionar información útil para
                         la gestión sostenible del agua por parte de diferentes

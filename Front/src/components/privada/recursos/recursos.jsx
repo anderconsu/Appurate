@@ -52,8 +52,8 @@ const Recursos = () => {
             <div className="recursosMain">
                 <h2 className="recursos">RECURSOS ADICIONALES</h2>
                 <p className="p1">
-                    Aquí encontrareis recursos adicionales que os ayudarán a
-                    aprender más sobre el pro el proyecto.
+                    Aquí encontraréis recursos adicionales que os ayudarán a
+                    aprender más sobre el proyecto.
                 </p>
                 <br />
 
@@ -74,9 +74,9 @@ const Recursos = () => {
                                 <p className="p2">
                                     Este dispositivo mide la concentración de
                                     oxígeno disuelto en el agua. Se sumerge en
-                                    la muestra y muestra la cantidad de oxígeno
-                                    en miligramos por litro (mg/L) o partes por
-                                    millón (ppm).
+                                    la muestra y visualiza la cantidad de
+                                    oxígeno en miligramos por litro (mg/L) o
+                                    partes por millón (ppm).
                                 </p>
                             </div>
                         </div>
@@ -161,7 +161,7 @@ const Recursos = () => {
                 </div>
 
                 <div className="recursosUtilizarYT">
-                    <h2>COMO TOMAR LAS MUESTRAS CON SEGURIDAD </h2>
+                    <h2>CÓMO TOMAR LAS MUESTRAS CON SEGURIDAD </h2>
                     <br />
                     <div className="recursosYoutube">
                         <iframe

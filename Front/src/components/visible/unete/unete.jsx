@@ -20,10 +20,10 @@ const Unete = () => {
         e.preventDefault();
         setMessage("");
         if (!institution || !aula || !proffesor || !email || !phone) {
-            setMessage("Todos los campos son obligatorios");
+            setMessage("Todos los campos son obligatorios.");
             return;
         }
-        setMessage("Información enviada");
+        setMessage("Información enviada.");
     };
 
     return (
