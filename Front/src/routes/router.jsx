@@ -40,7 +40,7 @@ const Router = createBrowserRouter([
                 element: <Login />,
             },
             {
-                path: "/admin",
+                path: "/appurateadminregistry",
                 element: <Admin />,
             },
             {

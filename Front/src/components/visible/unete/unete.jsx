@@ -4,15 +4,11 @@ import "./unete.scss";
 
 const Unete = () => {
     const { page, setPage } = useContext(PageContext);
-    const [username, setUsername] = useState("");
-    const [password, setPassword] = useState("");
     const [institution, setInstitution] = useState("");
     const [aula, setAula] = useState("");
     const [proffesor, setProffesor] = useState("");
     const [email, setEmail] = useState("");
     const [phone, setPhone] = useState("");
-    const [error, setError] = useState(null);
-    const hostUrl = import.meta.env.VITE_BACKEND_URL;
 
     const [message, setMessage] = useState("");
 
@@ -23,43 +19,25 @@ const Unete = () => {
     const handleUnete = async (e) => {
         e.preventDefault();
         setMessage("");
-        setMessage("Información enviada");
+        if (!institution || !aula || !proffesor || !email || !phone) {
+            setMessage("Todos los campos son obligatorios.");
+            return;
+        }
+        setInstitution("");
+        setAula("");
+        setProffesor("");
+        setEmail("");
+        setPhone("");
+        setMessage("Información enviada.");
     };
 
     return (
         <>
             <div className="adminMain">
                 <div className="adminBody">
-                    <h2>¡Únete en este formulario!</h2><br />
-                    {/* <p>
-                        Si todavía no formas parte del proyecto únete al
-                        proyecto.
-                    </p> */}
+                    <h2>¡Únete en este formulario!</h2>
+                    <br />
                     <form className="adminForm" onSubmit={handleUnete}>
-                        {error && <p className="error-message">{error}</p>}
-
-                        {/* <div>
-                            <input
-                                type="text"
-                                className="adminInput"
-                                name="username"
-                                placeholder="Usuario"
-                                onChange={(e) => setUsername(e.target.value)}
-                                value={username}
-                            />
-                        </div> */}
-
-                        {/* <div>
-                            <input
-                                type="password"
-                                className="adminInput"
-                                name="password"
-                                placeholder="Contraseña"
-                                onChange={(e) => setPassword(e.target.value)}
-                                value={password}
-                            />
-                        </div> */}
-
                         <div>
                             <input
                                 type="text"

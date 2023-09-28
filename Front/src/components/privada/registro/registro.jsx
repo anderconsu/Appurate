@@ -87,6 +87,7 @@ const Registro = () => {
             setError("Sesión expirada, por favor vuelva a iniciar sesión");
             return;
         }
+        setMessage("Enviando...");
         try {
             const response = await fetch(`${hostUrl}/api/prediction`, {
                 method: "POST",
@@ -109,16 +110,19 @@ const Registro = () => {
             });
 
             if (response.ok) {
-                console.log("Datos de muestra enviados con éxito");
-                setMessage("Los datos de la muestra han sido enviados");
+                // console.log("Datos de muestra enviados con éxito");
+                setMessage(
+                    'Los datos de la muestra han sido enviados, puede verlos en la página "Visualizar Info."'
+                );
                 setLocation("");
                 setpH("");
                 setOxigeno("");
                 setConductividad("");
                 setTemperatura("");
             } else {
+                setMessage("");
                 let error = await response.json();
-                console.error(error);
+                // console.error(error);
                 if (response.status === 401) {
                     setError(
                         "Sesión expirada, por favor vuelva a iniciar sesión"
@@ -132,14 +136,15 @@ const Registro = () => {
             }
         } catch (error) {
             console.error(error);
+            setMessage("");
             setError("Error, inténtalo más tarde");
         }
-        console.log("Datos de la muestra enviados:");
-        console.log("Localización:", location);
-        console.log("pH:", pH);
-        console.log("Oxígeno (mg/l):", oxigeno);
-        console.log("Conductividad:", conductividad);
-        console.log("Temperatura:", temperatura);
+        // console.log("Datos de la muestra enviados:");
+        // console.log("Localización:", location);
+        // console.log("pH:", pH);
+        // console.log("Oxígeno (mg/l):", oxigeno);
+        // console.log("Conductividad:", conductividad);
+        // console.log("Temperatura:", temperatura);
     };
 
     return (
@@ -163,7 +168,9 @@ const Registro = () => {
 
                             <div className="mapa">
                                 <MapContainer
-                                    center={[43.294125, -2.974312]}
+                                    center={[
+                                        43.28633115285832, -2.9494889117518963,
+                                    ]}
                                     zoom={13}
                                     scrollWheelZoom={true}
                                 >
@@ -268,14 +275,14 @@ const Registro = () => {
                                     id="ph"
                                     name="pH"
                                     value={pH}
-                                    min={1}
+                                    min={0}
                                     max={14}
                                     onChange={(e) => setpH(e.target.value)}
                                     required
                                 />
                             </div>
                             <div className="buttonContainer">
-                                <button className="button" type="submit">
+                                <button className="boton1" type="submit">
                                     Enviar
                                 </button>
                             </div>

@@ -13,6 +13,11 @@
     & a,
     .logoutText {
         text-decoration: none;
+        color: black;
+
+        &:link {
+            color: black;
+        }
 
         &:visited {
             color: black;

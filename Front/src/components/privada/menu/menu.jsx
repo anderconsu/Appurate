@@ -13,7 +13,7 @@ export const Menu = () => {
     const aula = localStorage.getItem("aula");
     const institution = localStorage.getItem("institution");
     useEffect(() => {
-        console.log("pagina en el menu", page);
+        // console.log("pagina en el menu", page);
     }, []);
 
     return (

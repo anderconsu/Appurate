@@ -26,7 +26,10 @@ const Login = () => {
                 headers: {
                     "Content-Type": "application/json",
                 },
-                body: JSON.stringify({ username, password }),
+                body: JSON.stringify({
+                    username: username.trim(),
+                    password: password.trim(),
+                }),
             });
 
             if (response.ok) {
@@ -41,7 +44,7 @@ const Login = () => {
                 localStorage.setItem("email", data.email);
                 localStorage.setItem("phone", data.phone);
 
-                console.log("Sesión iniciada");
+                // console.log("Sesión iniciada");
                 navigate("/landing");
             } else {
                 setError("Usuario o contraseña incorrectos");
@@ -56,19 +59,19 @@ const Login = () => {
         <>
             <div className="loginMain">
                 <div className="loginBody">
-                    <h2>Entra en tu cuenta</h2><br />
+                    <h2>Entra en tu cuenta</h2>
+                    <br />
                     <div className="loginQuiero">
                         <p className="p1">
-                            Si todavía no formas parte del proyecto, ¡Únete!
+                            Si todavía no formas parte del proyecto, ¡únete!
                         </p>
                         <p
-                            className="azul_claro p1"
+                            className="azul_claro p1 subrayado"
                             onClick={() => navigate("/unete")}
                         >
                             ¡Quiero formar parte!
                         </p>
                     </div>
-                 
 
                     <form className="loginForm" onSubmit={handleLogin}>
                         {error && <p className="error-message">{error}</p>}
@@ -79,7 +82,9 @@ const Login = () => {
                                 className="loginInput"
                                 name="username"
                                 placeholder="Usuario"
-                                onChange={(e) => setUsername(e.target.value)}
+                                onChange={(e) =>
+                                    setUsername(e.target.value.trim())
+                                }
                                 value={username}
                             />
                         </div>
@@ -90,7 +95,9 @@ const Login = () => {
                                 className="loginInput"
                                 name="password"
                                 placeholder="Contraseña"
-                                onChange={(e) => setPassword(e.target.value)}
+                                onChange={(e) =>
+                                    setPassword(e.target.value.trim())
+                                }
                                 value={password}
                             />
                         </div>
@@ -104,7 +111,7 @@ const Login = () => {
                                     ¿Has olvidado la clave de acceso?
                                 </p>
                                 <p
-                                    className="azul_claro loginMini p3"
+                                    className="azul_claro loginMini p3 subrayado"
                                     onClick={() =>
                                         (window.location.href =
                                             "mailto:appurate@gmail.com")
@@ -114,7 +121,6 @@ const Login = () => {
                                 </p>
                             </div>
                         </div>
-                        
                     </form>
                 </div>
                 <div className="loginMundo2">

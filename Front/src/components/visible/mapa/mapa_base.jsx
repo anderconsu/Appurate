@@ -20,7 +20,7 @@ const Mapa = () => {
                 setData(datos);
             }
         } catch (err) {
-            console.log(err);
+            // console.log(err);
         }
     };
 
@@ -46,11 +46,11 @@ const Mapa = () => {
                                 {coordenada.name}
                                 {data.map((item) => {
                                     {
-                                        console.log("location", item.location);
-                                        console.log(
-                                            "coordenada",
-                                            coordenada.coord
-                                        );
+                                        // console.log("location", item.location);
+                                        // console.log(
+                                        //     "coordenada",
+                                        //     coordenada.coord
+                                        // );
                                     }
                                     if (
                                         item.location[0] ==
@@ -58,7 +58,7 @@ const Mapa = () => {
                                         item.location[1] == coordenada.coord[1]
                                     ) {
                                         {
-                                            console.log("TRUE");
+                                            // console.log("TRUE");
                                         }
                                         return (
                                             <div key={item.id}>
