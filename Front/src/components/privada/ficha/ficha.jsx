@@ -201,7 +201,7 @@ const FichaVisualizacion = () => {
                 </div>
                 <div className="pruebasData">
                     <h2 className="pruebasVS">
-                        PRUBAS EN CLASE VS. PRUEBAS LABORATORIO
+                        PRUEBAS EN CLASE VS. PRUEBAS LABORATORIO
                     </h2>
                     <div className="graficosMain">
                         <img

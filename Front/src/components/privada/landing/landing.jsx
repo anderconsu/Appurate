@@ -58,7 +58,7 @@ const Landing = () => {
             <div className="landingMain">
                 <div className="landingBienvenides">
                     <div className="landingBody">
-                        <h2 className="bienvenides">¡ONGI ETORRI GUZTIOI!</h2>
+                        <h2 className="bienvenides">ONGI ETORRI GUZTIOI!</h2>
                         <br />
                         <p className="bienvenides2 p1">
                             Aquí encontrarás los pasos a seguir para usar
