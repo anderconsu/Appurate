@@ -114,7 +114,7 @@ const Login = () => {
                                     className="azul_claro loginMini p3 subrayado"
                                     onClick={() =>
                                         (window.location.href =
-                                            "mailto:appurate@gmail.com")
+                                            "mailto:appurate.org@gmail.com")
                                     }
                                 >
                                     Contáctanos
