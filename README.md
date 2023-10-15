@@ -1,4 +1,4 @@
-# APPÚRTE
+# APPÚRATE
 
 ## Plataforma de Educación y Monitoreo de Calidad del Agua de la Ría de Bilbao
 
