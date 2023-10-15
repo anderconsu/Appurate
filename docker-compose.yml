@@ -15,8 +15,6 @@ services:
   app:
     build: ./Front
     container_name: appurate-vite
-    ports:
-      - 5173:5173
     volumes:
       - ./Front:/app
       - /app/node_modules
@@ -28,8 +26,6 @@ services:
     build: ./Back
     container_name: appurate-back
     restart: always
-    ports:
-      - 3000:3000
     depends_on:
       - appurate-mongo
     networks:
