@@ -78,6 +78,7 @@ Además, implementamos **Nginx Proxy Manager** en el servidor para enrutar conex
 -   Leonor Rodriguez
 
     [![LindedIn](https://img.shields.io/badge/LinkedIn-%230e76a8?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/leonor-rodman/)
+    [![Github](https://img.shields.io/badge/Github-grey?logo=github)](https://github.com/Leoorodrii)
 
 **UX/UI:**
 
