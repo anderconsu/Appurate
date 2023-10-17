@@ -55,7 +55,7 @@ Además, implementamos **Nginx Proxy Manager** en el servidor para enrutar conex
 -   Ander Consuegra
 
     [![LindedIn](https://img.shields.io/badge/LinkedIn-%230e76a8?logo=linkedin&logoColor=white&link=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fanderconsu%2F)](https://www.linkedin.com/in/anderconsu/)
-    [![Github](https://img.shields.io/badge/Github-grey?logo=github&link=https%3A%2F%2Fgithub.com%2Fanderconsu)](https://github.com/anderconsu/anderconsu)
+    [![Github](https://img.shields.io/badge/Github-grey?logo=github&link=https%3A%2F%2Fgithub.com%2Fanderconsu)](https://github.com/anderconsu)
     [![Portfolio](https://img.shields.io/badge/Portfolio-black?logo=superuser&logoColor=white&link=https%3A%2F%2Fcloudconsu.com)](https://cloudconsu.com/)
 
 -   Nacho Prado
