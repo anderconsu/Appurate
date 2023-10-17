@@ -90,7 +90,10 @@ Además, implementamos **Nginx Proxy Manager** en el servidor para enrutar conex
 
     [![LindedIn](https://img.shields.io/badge/LinkedIn-%230e76a8?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/oscar-ciencia-86989a28/)
 
--   Sebastian
+-   Sebastian Reina
+
+    [![LindedIn](https://img.shields.io/badge/LinkedIn-%230e76a8?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sebastianrgv/)
+   
 
 **Contacto:**
 
