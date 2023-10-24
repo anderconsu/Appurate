@@ -46,32 +46,204 @@ const Ux = () => {
                     <img
                         src="./static/perfiles/irati.png"
                         alt="Irati"
-                        className="profileImg"
+                        className="profileImg animatedSelect"
+                        onClick={() =>
+                            (window.location.href =
+                                "https://www.linkedin.com/in/irati-lozano-segovia/")
+                        }
                     />
                     <p>Irati Lozano Segovia</p>
                     <h3>UX/UI Product Designer</h3>
-                    <img src="./static/linkedinLogo.png" alt="linkedinLogo" />
+                    <img
+                        src="./static/linkedinLogo.png"
+                        alt="linkedinLogo"
+                        className="animatedSelect"
+                        onClick={() =>
+                            (window.location.href =
+                                "https://www.linkedin.com/in/irati-lozano-segovia/")
+                        }
+                    />
                 </div>
                 <div className="sebas profile">
                     <img
                         src="./static/perfiles/sebastian.png"
                         alt="Sebastian"
-                        className="profileImg"
+                        className="profileImg animatedSelect"
+                        onClick={() =>
+                            (window.location.href =
+                                "https://www.linkedin.com/in/sebastianrgv")
+                        }
                     />
                     <p>Sebastián Reina</p>
                     <h3>UX/UI Product Designer</h3>
-                    <img src="./static/linkedinLogo.png" alt="linkedinLogo" />
+                    <img
+                        src="./static/linkedinLogo.png"
+                        alt="linkedinLogo"
+                        className="animatedSelect"
+                        onClick={() =>
+                            (window.location.href =
+                                "https://www.linkedin.com/in/sebastianrgv")
+                        }
+                    />
                 </div>
                 <div className="oscar profile">
                     <img
                         src="./static/perfiles/oscar.png"
                         alt="Oscar"
-                        className="profileImg"
+                        className="profileImg animatedSelect"
+                        onClick={() =>
+                            (window.location.href =
+                                "https://www.linkedin.com/in/oscar-ciencia/")
+                        }
                     />
                     <p>Oscar Ciencia</p>
                     <h3>UX/UI Product Designer</h3>
-                    <img src="./static/linkedinLogo.png" alt="linkedinLogo" />
+                    <img
+                        src="./static/linkedinLogo.png"
+                        alt="linkedinLogo "
+                        className="animatedSelect"
+                        onClick={() =>
+                            (window.location.href =
+                                "https://www.linkedin.com/in/oscar-ciencia/")
+                        }
+                    />
                 </div>
+            </section>
+
+            <section className="designThinking">
+                <div className="designDescription">
+                    <h2>DESING THINKING</h2>
+                    <p>
+                        Como diseñadores UX/UI decidimos usar el proceso Design
+                        Thinking para resolver el desafío propuesto sobre la
+                        calidad del agua en Bilbao de la siguiente manera:
+                    </p>
+                    <ol>
+                        <li>
+                            Empatizar: Comenzamos por{" "}
+                            <b>entender las necesidades y deseos</b> de los
+                            usuarios, incluyendo estudiantes, profesores y
+                            autoridades locales.
+                        </li>
+                        <li>
+                            Definir: Utilizamos la información recopilada para
+                            <b>
+                                definir el problema y establecer objetivos
+                                claros
+                            </b>
+                            para nuestra solución.
+                        </li>
+                        <li>
+                            Idear: Generamos una amplia{" "}
+                            <b>variedad de ideas creativas</b> para abordar el
+                            problema.
+                        </li>
+                        <li>
+                            Prototipar: Diseñamos <b>prototipos de baja</b>{" "}
+                            fidelidad para probar esas ideas con usuarios
+                            reales.
+                        </li>
+                        <li>
+                            Testear: Probamos los prototipos para evaluar su
+                            eficacia y usabilidad.
+                        </li>
+                    </ol>
+                </div>
+                <div className="designImgContainer">
+                    <img
+                        src="./static/ux-ui/design.png"
+                        alt="Design thinking"
+                    />
+                </div>
+            </section>
+            <section className="problems routeHeader">
+                <section className="maker">
+                    <div>
+                        <p>EQUIPO DE DISEÑO UX/UI PRODUCT DESIGN</p>
+                    </div>
+                </section>
+                <section className="problemsDescription">
+                    <h3>DEFINIR EL PROBLEMA</h3>
+                    <p>
+                        Nuestro principal enfoque en el proyecto fue abordar el
+                        desafío de empoderar a los jóvenes para que se
+                        conviertan en defensores de la calidad del agua en su
+                        comunidad. Comprendimos la necesidad de crear una
+                        solución educativa que permitiera a los estudiantes
+                        aprender, explorar y concienciarse sobre este tema
+                        crítico.
+                    </p>
+                </section>
+            </section>
+            <section className="problemsPoints">
+                <section className="problemsPointsFirst">
+                    <article className="challenge">
+                        <h4>Reto</h4>
+                        <p>
+                            ¿Cómo podemos enseñar e informar sobre la calidad
+                            del agua mediante una plataforma educativa?
+                        </p>
+                    </article>
+                    <article className="proposal">
+                        <h4>Propuesta de valor</h4>
+                        <p>
+                            Nuestra solución educativa empoderamos a jóvenes
+                            para que aprendan y tomen conciencia sobre la
+                            calidad del agua en su ciudad. A través de una
+                            aplicación móvil y sitio web, registran datos de
+                            muestras de agua y acceden a información educativa
+                            sobre contaminantes y su impacto en la salud humana.
+                            Involucrar a los jóvenes en la toma de muestras y
+                            análisis de datos les capacita para proteger la
+                            calidad del agua en su comunidad.
+                        </p>
+                    </article>
+                </section>
+                <article className="responsability">
+                    <h4>Nuestras responsabilidades</h4>
+                    <p>
+                        En conjunto, estas herramientas de investigación nos
+                        proporcionaron una base sólida para definir el problema
+                        de manera efectiva, identificar oportunidades de diseño
+                        y asegurarnos de que nuestra solución estuviera
+                        perfectamente alineada con las necesidades de los
+                        jóvenes y la comunidad en Bilbao.
+                    </p>
+                    <ul>
+                        <li>Investigar al usuario y sus necesidades.</li>
+                        <li>
+                            Diseñar la arquitectura de la información, la
+                            navegación y la estructura de la web app para
+                            garantizar una experiencia de usuario intuitiva y
+                            eficiente.{" "}
+                        </li>
+                        <li>
+                            Crear un diseño de interfaz atractiva y funcional.{" "}
+                        </li>
+                        <li>
+                            Optimizar que el producto sea fácil de usar para
+                            todos los usuarios.
+                        </li>
+                    </ul>
+                </article>
+            </section>
+            <section className="research routeHeader">
+                <section className="maker">
+                    <div>
+                        <p>EQUIPO DE DISEÑO UX/UI PRODUCT DESIGN</p>
+                    </div>
+                </section>
+                <section className="researchDescription routeHeaderDescription">
+                    <h3>INVESTIGACIÓN</h3>
+                    <p>
+                        A través de un enfoque riguroso, diseñamos una solución
+                        que empodera a los jóvenes en Bilbao para abordar la
+                        calidad del agua en su comunidad. A continuación,
+                        destacamos las herramientas de investigación utilizadas
+                        y los valiosos conocimientos obtenidos a través de
+                        ellas.
+                    </p>
+                </section>
             </section>
         </main>
     );

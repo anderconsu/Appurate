@@ -1,0 +1,24 @@
+.animatedSelect {
+    transition: 0.5s;
+    &:hover {
+        scale: 1.1;
+    }
+}
+.maker {
+    & div {
+        margin: 1rem;
+        text-align: center;
+        background-color: var(--azul_celeste);
+        border-radius: 20px;
+        padding: 0.3rem;
+        color: var(--blanco);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .maker {
+        & div {
+            padding: 0.5rem;
+        }
+    }
+}
