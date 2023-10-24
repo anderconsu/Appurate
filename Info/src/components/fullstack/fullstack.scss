@@ -1,0 +1,93 @@
+main {
+    width: 100%;
+    // display: flex;
+    // flex-direction: column;
+    padding-left: 1.5rem;
+
+    & h4 {
+        color: var(--01, #48CAD9);
+    }
+
+    & .tituloFullStack {
+        text-align: center;
+    }
+
+    & .fullStack {
+        display: flex;
+        flex-direction: column;
+        background: var(--gris2, #F5F6F8);
+
+    }
+
+
+    .principalesFs {
+        display: flex;
+        flex-direction: row;
+
+
+        & .equipo {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 100%;
+        }
+
+
+
+        & .rol {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 100%;
+        }
+
+
+    }
+
+
+    & .perfiles {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 5rem;
+        padding: 1rem;
+    }
+
+
+    .disenoSitemaps {
+        display: flex;
+        flex-direction: column;
+        background: var(--gris2, #F5F6F8);
+        gap: 1rem;
+
+
+        & .textoDisenoSitemaps {
+            background-color: white;
+        }
+    }
+}
+
+
+
+
+
+
+@media screen and (min-width: 768px) {
+    .footer {
+        & .footerimg {
+            max-height: 17rem;
+        }
+    }
+
+
+    .perfiles {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        gap: 5rem;
+        padding: 1rem;
+    }
+
+}
