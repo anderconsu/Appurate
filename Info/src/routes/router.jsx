@@ -2,7 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import Root from "./root.jsx";
 import ErrorPage from "./error";
 import Fullstack from "../components/fullstack/fullstack.jsx";
-// import Header from "../components/header/header.jsx";
+import Ux from "../components/ux_ui/ux.jsx";
 
 const Router = createBrowserRouter([
     {
@@ -10,6 +10,11 @@ const Router = createBrowserRouter([
         element: <Root />,
         errorElement: <ErrorPage />,
         children: [
+            {
+                path: "/ux-ui",
+                element: <Ux />,
+            },
+        
             {
                 path: "/fullstack",
                 element: <Fullstack />,
