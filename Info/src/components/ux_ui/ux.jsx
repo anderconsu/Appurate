@@ -310,6 +310,43 @@ const Ux = () => {
                     </article>
                 </article>
             </section>
+            <section className="research routeHeader">
+                <section className="maker">
+                    <div>
+                        <p>EQUIPO DE DISEÑO UX/UI PRODUCT DESIGN</p>
+                    </div>
+                </section>
+                <section className="researchDescription routeHeaderDescription">
+                    <h3>DISEÑO</h3>
+                    <p>
+                        En esta fase nos centramos en crear la apariencia visual
+                        y la disposición de los elementos en una Webapp, con el
+                        objetivo de proporcionar una experiencia de usuario
+                        intuitiva y atractiva.
+                    </p>
+                </section>
+            </section>
+            <section className="prototype">
+                <article className="prototypeDescription">
+                    <h4>Prototipo en baja</h4>
+                    <p>
+                        El prototipo en baja es una representación simplificada
+                        de una interfaz que sirve para explorar ideas, obtener
+                        retroalimentación temprana, comunicar conceptos y
+                        ahorrar recursos. Estos prototipos se enfocan en la
+                        estructura y funcionalidad, lo que permite iterar
+                        rápidamente en el diseño sin preocuparse por detalles
+                        visuales, facilitando la toma de decisiones efectivas en
+                        las etapas iniciales del proceso de diseño.
+                    </p>
+                </article>
+                <div className="prototypeimg">
+                    <img
+                        src="./static/ux-ui/prototipado.png"
+                        alt="prototipado"
+                    />
+                </div>
+            </section>
         </main>
     );
 };
