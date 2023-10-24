@@ -9,15 +9,17 @@ const Footer = () => {
     const { page, setPage } = useContext(PageContext);
     return (
         <div className="footer">
-            {!noCargues.includes(page) ? (
-                <img
-                    src="./static/footer.png"
-                    alt="footer"
-                    className="footerimg"
-                />
-            ) : (
-                <></>
-            )}
+            <div className="Contacto">
+                <div>Escríbenos a:</div>
+                
+                <div className="containerMail">
+                    <p> MAIL: </p>
+                    
+                    <a href="mailto:appurate.org@gmail.com">appurate.org@gmail.com</a>
+                    
+                </div>
+
+            </div>
         </div>
     );
 };
