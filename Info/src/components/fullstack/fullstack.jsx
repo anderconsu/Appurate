@@ -22,29 +22,38 @@ const Fullstack = () => {
                     </div>
                 </div>
 
-                <div className="retratos">
-                    <div className="ander">
-                        <h4>Ander Consuegra</h4>
-                        <p>Desarrollador Full Stack</p>
-                        <a href="">
-                            <img src="" alt="" />
-                        </a>
-                    </div>
-                    <div className="nacho">
-                        <h4>Nacho Prado</h4>
-                        <p>Desarrollador Full Stack</p>
-                        <a href="">
-                            <img src="" alt="" />
-                        </a>
-                    </div>
-                    <div className="endika">
-                        <h4>Endika Acedo</h4>
-                        <p>Desarrollador Full Stack</p>
-                        <a href="">
-                            <img src="" alt="" />
-                        </a>
-                    </div>
+                <section className="perfiles">
+                <div className="ander profile">
+                    <img
+                        src="./static/perfiles/ander.png"
+                        alt="Ander"
+                        className="profileImg"
+                    />
+                    <p>Ander Consuegra</p>
+                    <h3>Full Stack developer</h3>
+                    <img src="./static/linkedinLogo.png" alt="linkedinLogo" />
                 </div>
+                <div className="nacho profile">
+                    <img
+                        src="./static/perfiles/nacho.png"
+                        alt="Nacho"
+                        className="profileImg"
+                    />
+                    <p>Nacho Prado</p>
+                    <h3>Full Stack developer</h3>
+                    <img src="./static/linkedinLogo.png" alt="linkedinLogo" />
+                </div>
+                <div className="endika profile">
+                    <img
+                        src="./static/perfiles/endika.png"
+                        alt="Endika"
+                        className="profileImg"
+                    />
+                    <p>Endika Acedo</p>
+                    <h3>Full Stack developer</h3>
+                    <img src="./static/linkedinLogo.png" alt="linkedinLogo" />
+                </div>
+            </section>
             </div>
 
             <div className="disenoSitemaps">
