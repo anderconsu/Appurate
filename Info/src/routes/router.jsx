@@ -1,14 +1,19 @@
 import { createBrowserRouter } from "react-router-dom";
 import Root from "./root.jsx";
 import ErrorPage from "./error";
-// import Header from "../components/header/header.jsx";
+import Ux from "../components/ux_ui/ux.jsx";
 
 const Router = createBrowserRouter([
     {
         path: "/",
         element: <Root />,
         errorElement: <ErrorPage />,
-        children: [],
+        children: [
+            {
+                path: "/ux-ui",
+                element: <Ux />,
+            },
+        ],
     },
 ]);
 
