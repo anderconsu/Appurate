@@ -17,17 +17,6 @@ const noCargues = [
 const Header = () => {
     const { page, setPage } = useContext(PageContext);
     const navigate = useNavigate();
-    const [professor, setProfessor] = useState("");
-    // console.log(page);
-
-    useEffect(() => {
-        let localprofe = localStorage.getItem("proffesor");
-        if (localprofe) {
-            setProfessor(localprofe);
-        } else {
-            setProfessor("");
-        }
-    }, [page]);
     return (
         <header className="header">
             <picture className="logoContainer">
@@ -35,62 +24,17 @@ const Header = () => {
                     src="./static/logo.png"
                     alt="Mi Logo"
                     className="logo"
-                    onClick={() => navigate("/")}
+                    onClick={() =>
+                        (window.location.href = "https://appurate.org")
+                    }
                 />
             </picture>
-
-            {!noCargues.includes(page) ? (
-                <div className="botonesHeader">
-                    {professor ? (
-                        <>
-                            <button
-                                className="boton3"
-                                onClick={() => navigate("/nosotros")}
-                            >
-                                Sobre Nosotros
-                            </button>
-                            <button
-                                className="boton1"
-                                onClick={() => navigate("/landing")}
-                            >
-                                {professor}
-                            </button>
-                            <button
-                                className="boton2"
-                                onClick={() => {
-                                    localStorage.clear();
-                                    window.location.reload();
-                                }}
-                            >
-                                Cerrar Sesión
-                            </button>
-                        </>
-                    ) : (
-                        <>
-                            <button
-                                className="boton3"
-                                onClick={() => navigate("/nosotros")}
-                            >
-                                Sobre Nosotros
-                            </button>
-                            <button
-                                className="boton2"
-                                onClick={() => navigate("/unete")}
-                            >
-                                ¡Únete!
-                            </button>
-                            <button
-                                className="boton1 bold"
-                                onClick={() => navigate("/login")}
-                            >
-                                Entrar
-                            </button>
-                        </>
-                    )}
-                </div>
-            ) : (
-                <></>
-            )}
+            <button
+                className="boton1 bold"
+                onClick={() => (window.location.href = "https://appurate.org")}
+            >
+                Descubre la web
+            </button>
         </header>
     );
 };

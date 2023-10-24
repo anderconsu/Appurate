@@ -66,6 +66,12 @@ button:hover {
 .boton1 {
     background-color: var(--azul_celeste);
     border-color: var(--azul_celeste);
+    padding: 1.1rem 1rem;
+    align-items: center;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    padding: 1.2rem 1rem;
 }
 .bold {
     font-weight: 600;
@@ -117,18 +123,8 @@ button:hover {
         color: var(--azul_oscuro);
     }
     .boton1 {
-        align-items: center;
-        background-color: var(--azul_celeste);
-        border-radius: 10px;
-        border-color: var(--azul_celeste);
-        display: flex;
-        gap: 10px;
-        width: 15px;
-        height: 12px;
-        justify-content: center;
-        overflow: hidden;
-        padding: 26px 54px;
-        position: relative;
+        width: 11rem;
+        padding: 1.5rem 1rem;
     }
 
     .boton2 {
