@@ -245,6 +245,108 @@ const Ux = () => {
                     </p>
                 </section>
             </section>
+            <section className="researchPoints">
+                <article className="researchPointsFirst">
+                    <article className="idealUser">
+                        <h4>Usuario ideal</h4>
+                        <div className="stats">
+                            <p>
+                                <b>Edad:</b> 35 años
+                            </p>
+                            <p>
+                                <b>Genero:</b> Masculino
+                            </p>
+                            <p>
+                                <b>Profesión</b> Profesor de ciencias, ESO
+                            </p>
+                        </div>
+                        <ul>
+                            <li>
+                                Desea encontrar nuevas formas de enseñar ciencia
+                                que sean más atractivas y prácticas para los
+                                estudiantes.
+                            </li>
+                            <li>
+                                Siente que los estudiantes a veces tienen
+                                dificultades para comprender conceptos
+                                científicos abstractos.
+                            </li>
+                        </ul>
+                    </article>
+                    <article className="interviews researchPointsdescription">
+                        <h4>Entrevistas</h4>
+                        <p>
+                            Esta herramienta nos proporcionó una comprensión
+                            enriquecida de las experiencias de los usuarios y
+                            nos ayudó a definir claramente el desafío que
+                            estábamos abordando. Las entrevistas no solo
+                            generaron datos valiosos, sino que también nos
+                            permitieron captar la voz y las emociones de
+                            nuestros usuarios, lo que influyó significativamente
+                            en el diseño de la solución.
+                        </p>
+                    </article>
+                </article>
+                <article className="researchPointsSecond ">
+                    <article className="actorMap researchPointsdescription">
+                        <h4>Mapa de actores</h4>
+                        <p>
+                            Al identificar a los interesados, desde estudiantes
+                            y profesores hasta expertos en agua, pudimos
+                            comprender cómo interactuaban y qué roles
+                            desempeñaban en la calidad del agua en Bilbao.
+                        </p>
+                    </article>
+                    <article className="journeyMap researchPointsdescription">
+                        <h4>Journey Map</h4>
+                        <p>
+                            Fue esencial para diseñar una interfaz de usuario
+                            que fuera intuitiva, accesible y atractiva. El
+                            journey map también sirvió como una guía constante a
+                            lo largo del proyecto, ayudándonos a mantener el
+                            enfoque en las necesidades y expectativas de
+                            nuestros usuarios.
+                        </p>
+                    </article>
+                </article>
+            </section>
+            <section className="research routeHeader">
+                <section className="maker">
+                    <div>
+                        <p>EQUIPO DE DISEÑO UX/UI PRODUCT DESIGN</p>
+                    </div>
+                </section>
+                <section className="researchDescription routeHeaderDescription">
+                    <h3>DISEÑO</h3>
+                    <p>
+                        En esta fase nos centramos en crear la apariencia visual
+                        y la disposición de los elementos en una Webapp, con el
+                        objetivo de proporcionar una experiencia de usuario
+                        intuitiva y atractiva.
+                    </p>
+                </section>
+            </section>
+            <section className="prototype">
+                <article className="prototypeDescription">
+                    <h4>Prototipo en baja</h4>
+                    <p>
+                        El prototipo en baja es una representación simplificada
+                        de una interfaz que sirve para explorar ideas, obtener
+                        retroalimentación temprana, comunicar conceptos y
+                        ahorrar recursos. Estos prototipos se enfocan en la
+                        estructura y funcionalidad, lo que permite iterar
+                        rápidamente en el diseño sin preocuparse por detalles
+                        visuales, facilitando la toma de decisiones efectivas en
+                        las etapas iniciales del proceso de diseño.
+                    </p>
+                </article>
+                <div className="prototypeimg">
+                    <img
+                        src="./static/ux-ui/prototipado.png"
+                        alt="prototipado"
+                    />
+                </div>
+            </section>
         </main>
     );
 };
