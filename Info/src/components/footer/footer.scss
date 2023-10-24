@@ -1,0 +1,44 @@
+.footer {
+    display: flex;
+
+    & .footerimg {
+        max-height: 6rem;
+        width: 100%;
+        margin: auto;
+    }
+
+    & .Contacto {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        background: #022859;
+        width: 100%;
+        height: 15rem;
+        gap: 2.5rem;
+    }
+
+    & .Contacto {
+        display: flex;
+        flex-direction: column;
+    }
+
+    & .containerMail {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    & a {
+        color: white;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .footer {
+        & .footerimg {
+            max-height: 17rem;
+        }
+    }
+}
