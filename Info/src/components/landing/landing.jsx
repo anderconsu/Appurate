@@ -135,7 +135,71 @@ const Landing = () => {
 
             </div>
             <div className="gris3Landing">
+                <div className="azul">
+                    <h2>A continuación  te mostramos el trabajo hecho por cada parte del equipo:</h2>
+                    <div className="bewaters">
+                        <h3>BEWATERS</h3>
+                        <div>
+                            <img 
+                                src="./static/landing/grupo.png" 
+                                alt="grupo" 
+                                className="grupo"
+                            />
+                        </div>
+                    </div>
+                    <div className="equipo">
+                        <h4>EL EQUIPO</h4>
+                        <p>Somos Bewaters, un equipo compuesto por ocho apasionados individuos que nos unimos con un objetivo común: abordar la problemática del agua en la Ría de Bilbao y llenar los vacíos de datos relacionados con esta importante cuestión.</p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur. Senectus fames duis adipiscing molestie. 
+Urna amet dui rhoncus fringilla facilisis semper aliquam. Magna bibendum magnis sed auctor sed pharetra. Ultrices montes id pellentesque dignissim rhoncus viverra nam magna.
+Urna amet dui rhoncus fringilla facilisis semper aliquam. Magna bibendum magnis sed auctor sed pharetra. Ultrices montes id pellentesque dignissim rhoncus viverra nam magna.
+                        </p>
+                    </div>
+                    <div>
+                        <img 
+                            src="./static/landing/iconos.png" 
+                            alt="iconos" 
+                            className="iconos"
+                        />
+                    </div>
+                </div>
 
+                <div>
+                    <button>
+                        <Link to="/">Pincha aquí:</Link>
+                    </button>
+                </div>
+
+                <div>
+                    <div>
+                        <p>¿Qué rol tuvo Data Science en el proyecto?</p>
+                        <img 
+                            src="./static/landing/data.png" 
+                            alt="data" 
+                            className="data"
+                        />
+                    </div>
+                    <div>
+                        <p>¿Qué rol tuvo UX/UI en el proyecto?</p>
+                        <img 
+                            src="./static/landing/ux.png" 
+                            alt="ux" 
+                            className="ux"
+                        />
+                    </div>
+                    <div>
+                        <p>¿Qué rol tuvo Full Stack en el proyecto?</p>
+                        <img 
+                            src="./static/landing/full.png" 
+                            alt="full" 
+                            className="full"
+                        />
+                    </div>
+                </div>
+            </div>
+            <div className="blanco3Landing">
+                <p>El equipo te da las gracias por haber llegado hasta aquí.</p>
             </div>
 
         </main>
