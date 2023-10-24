@@ -1,0 +1,81 @@
+main {
+    width: 100%;
+    // display: flex;
+    // flex-direction: column;
+
+    & h4 {
+        color: var(--01, #48CAD9); 
+    } 
+
+    & .tituloFullStack {
+        text-align: center;
+    }
+
+    & .fullStack {
+        display: flex;
+        flex-direction: column;
+        background: var(--gris2, #F5F6F8);
+
+    }
+
+
+    .principalesFs {
+        display: flex;
+        flex-direction: row;
+
+
+        & .equipo {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 100%;
+        }
+
+        
+
+        & .rol {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 100%;
+        }
+
+
+    }
+
+
+    & .retratos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-top: 3rem;
+        align-items: center;
+
+        & .ander, .nacho, .endika {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+
+            & h4, p {
+                color: #022859; 
+            }
+
+            
+        }
+
+    }
+}
+
+
+
+
+
+
+@media screen and (min-width: 768px) {
+    .footer {
+        & .footerimg {
+            max-height: 17rem;
+        }
+    }
+}
