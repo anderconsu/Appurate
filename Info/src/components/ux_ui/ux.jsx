@@ -310,7 +310,7 @@ const Ux = () => {
                     </article>
                 </article>
             </section>
-            <section className="research routeHeader">
+            <section className="design routeHeader">
                 <section className="maker">
                     <div>
                         <p>EQUIPO DE DISEÑO UX/UI PRODUCT DESIGN</p>
@@ -345,6 +345,19 @@ const Ux = () => {
                         src="./static/ux-ui/prototipado.png"
                         alt="prototipado"
                     />
+                </div>
+            </section>
+            <section className="prototypeDesign routeHeader">
+                <section className="prototypeDesignDescription routeHeaderDescription">
+                    <h3>Diseño del prototipo</h3>
+                </section>
+            </section>
+            <section className="mobileRepresentation">
+                <div className="mobileImg">
+                    <img src="/static/ux-ui/movil2.png" alt="movil2" />
+                </div>
+                <div className="mobileImg">
+                    <img src="./static/ux-ui/movil1.png" alt="movil1" />
                 </div>
             </section>
         </main>
