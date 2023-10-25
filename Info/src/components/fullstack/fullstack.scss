@@ -1,8 +1,37 @@
 main {
     width: 100%;
-
     // display: flex;
     // flex-direction: column;
+
+    & .contenedorSpan {
+
+        padding-left: 3rem;
+
+        & .spanedfs {
+            display: flex;
+            padding: 0.5rem;
+            justify-content: center;
+            align-items: center;
+            width: 30%;
+            gap: 0.2rem;
+            padding: 0.05rem;
+            border-radius: 1.25rem;
+            background: var(--01, #48CAD9);
+
+            & .equipodfs {
+                display: flex;
+                flex-direction: row;
+                color: white;
+
+            }
+        }
+
+
+    }
+
+
+
+
     & h4 {
         color: var(--01, #48cad9);
     }
@@ -20,6 +49,8 @@ main {
     .principalesFs {
         display: flex;
         flex-direction: row;
+        padding: 3.8125rem;
+        ;
 
         & .equipo {
             display: flex;
@@ -48,13 +79,38 @@ main {
     .disenoSitemaps {
         display: flex;
         flex-direction: column;
+        justify-content: flex-start;
         background: var(--gris2, #f5f6f8);
         gap: 1rem;
         border-top: 1px solid var(--gris1, #e6e7e8);
 
+        & h2 {
+            height: 8rem;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            border-bottom: 1px solid var(--gris1, #e6e7e8);
+            padding: 3.8125rem;
+        }
+
+        & .fYp {
+            display: flex;
+            justify-content: flex-start;
+            padding-left: 3.8125rem;
+
+
+
+        }
+
+
+        & .tituloDiseno {
+            padding: 3.8125rem;
+        }
 
         & .textoDisenoSitemaps {
             background-color: white;
+            width: 100;
+            padding: 3.8125rem;
         }
     }
 
@@ -65,12 +121,14 @@ main {
         gap: 1rem;
         height: 100%;
 
+
         & h2 {
             height: 8rem;
             display: flex;
             justify-content: flex-start;
             align-items: center;
             border-bottom: 1px solid var(--gris1, #e6e7e8);
+            padding: 3.8125rem;
         }
 
 
@@ -79,7 +137,7 @@ main {
             display: flex;
             flex-direction: column;
             gap: 2rem;
-            padding-right: 3rem;
+            padding: 3.8125rem;
 
             & .textoUno {
                 display: flex;
@@ -133,11 +191,13 @@ main {
         gap: 2rem;
         height: 100%;
 
+
         & h2 {
             height: 8rem;
             display: flex;
             justify-content: flex-start;
             align-items: center;
+            padding: 3.8125rem;
 
         }
 
@@ -146,11 +206,12 @@ main {
             display: flex;
             flex-direction: column;
             gap: 2rem;
-            padding-right: 3rem;
+            padding: 3.8125rem;
 
             & .textoUno {
                 display: flex;
                 flex-direction: column;
+
 
 
             }
@@ -187,6 +248,7 @@ main {
             display: flex;
             justify-content: flex-start;
             align-items: center;
+            padding: 3.8125rem;
 
         }
 
@@ -195,7 +257,7 @@ main {
             display: flex;
             flex-direction: column;
             gap: 2rem;
-            padding-right: 3rem;
+            padding: 3.8125rem;
 
             & .textoUno {
                 display: flex;
@@ -231,13 +293,15 @@ main {
         background: var(--01, #48CAD9);
         border-radius: 1.25rem;
         padding: 1.5rem;
-        gap: 1.5rem;
+        gap: 1rem;
+        padding: 3.8125rem;
 
         & .textoGit {
             display: flex;
             flex-direction: column;
-            gap: 1.5rem;
+            gap: 1rem;
             color: var(--02, #022859);
+
         }
 
         & .linksGit {
@@ -257,53 +321,95 @@ main {
     }
 
     .otrosRoles {
-        display: flex;
-        flex-direction: row;
+        display: inline-flex;
         justify-content: center;
-        background: var(--gris2, #f5f6f8);
-        gap: 2rem;
-        height: 100%;
         width: 100%;
+        gap: 9.25rem;
+        background: var(--gris2, #F5F6F8);
+        margin-top: 2rem;
+
+        & h4 {
+            color: var(--02, #022859);
+            text-align: center;
+            font-family: Poppins;
+            font-size: 1.25rem;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 185%;
+            /* 2.3125rem */
+            letter-spacing: 0.00625rem;
+        }
 
         & .data,
         .uxui {
             display: flex;
             flex-direction: column;
             align-items: center;
+            gap: 1.5rem;
+
+
 
             & .dataLink,
             .uxuiLink {
                 display: flex;
                 flex-direction: column;
-                align-items: center;
-                border-radius: 1.5rem;
+                justify-content: center;
                 background: var(--01, #48CAD9);
-                width: auto;
-                height: 100%;
                 padding: 1rem;
+                width: 11.8125rem;
+                height: 10rem;
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+                flex-shrink: 0;
+                width: 15rem;
+                height: 14.74863rem;
+                flex-shrink: 0;
+                border-radius: 1.5rem;
+
 
                 & p {
-                    padding: 1.5rem;
-                    color: var(--02, #022859);
+                    width: 11.8125rem;
+                    height: 1.125rem;
+                    flex-shrink: 0;
+                    color: var(--Color, #FFF);
+                    text-align: center;
+                    font-family: Poppins;
+                    font-size: 1.5rem;
+
+
+
                 }
 
                 & .vectordata {
-                    width: 10rem;
-                    height: auto;
-                    padding: 1rem;
+                    width: 9.9375rem;
+                    height: 7.75rem;
+                    flex-shrink: 0;
 
                 }
 
                 & .vectorux {
-                    width: 10rem;
-                    height: auto;
-                    padding: 1rem;
-                    
+                    width: 8.3125rem;
+                    height: 7.875rem;
+                    flex-shrink: 0;
+
                 }
             }
 
         }
     }
+
+    .agradecimientos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & h4 {
+            color: var(--02, #022859);
+
+        }
+    }
+
 
 
 }

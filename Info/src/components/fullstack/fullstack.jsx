@@ -57,8 +57,18 @@ const Fullstack = () => {
             </div>
 
             <div className="disenoSitemaps">
+
+                <div className="contenedorSpan">
+                    <div className="spanedfs">
+                        <h4 className="equipodfs">EQUIPO DE DESARROLLO FULL STACK</h4>
+                    </div>
+                </div>
                 <h2 className="tituloDiseno">DISEÑO Y SITEMAPS</h2>
-                <h4>Figma y pizarra</h4>
+
+                <div className="fYp">
+
+                    <h4>Figma y pizarra</h4>
+                </div>
 
                 <div className="textoDisenoSitemaps">
                     <p>En colaboración con el equipo de UX/UI, se diseñaron las páginas teniendo en cuenta toda la información que se mostrará en cada una y se planificaron los call to action (llamadas a la acción) que guiarán a los usuarios. Se abordó este proceso con una mentalidad estratégica y viable, siempre teniendo en cuenta el tiempo limitado disponible para completar el proyecto, que en este caso, se estableció en dos semanas.</p>
@@ -67,6 +77,12 @@ const Fullstack = () => {
             </div>
 
             <div className="front">
+                <div className="contenedorSpan">
+
+                    <div className="spanedfs">
+                        <h4 className="equipodfs">EQUIPO DE DESARROLLO FULL STACK</h4>
+                    </div>
+                </div>
                 <h2>FRONT</h2>
 
                 <div className="textoFront">
@@ -102,6 +118,11 @@ const Fullstack = () => {
             </div>
 
             <div className="back">
+            <div className="contenedorSpan">
+                    <div className="spanedfs">
+                        <h4 className="equipodfs">EQUIPO DE DESARROLLO FULL STACK</h4>
+                    </div>
+                </div>
                 <h2>BACK</h2>
 
                 <div className="textoBack">
@@ -130,6 +151,11 @@ const Fullstack = () => {
             </div>
 
             <div className="deploy">
+            <div className="contenedorSpan">
+                    <div className="spanedfs">
+                        <h4 className="equipodfs">EQUIPO DE DESARROLLO FULL STACK</h4>
+                    </div>
+                </div>
                 <h2>DEPLOY</h2>
 
                 <div className="textoDeploy">
@@ -179,13 +205,14 @@ const Fullstack = () => {
                     </div>
                 </div>
             </div>
+
             <div className="otrosRoles">
                 <div className="data">
                     <h4>¿Qué rol tuvo Data Science en el proyecto?</h4>
                     <div className="dataLink">
                         <a href="">
-                            <img 
-                            className="vectordata" src="../../static/fullstack/vectords.png" alt="vector data" />
+                            <img
+                                className="vectordata" src="../../static/fullstack/vectords.png" alt="vector data" />
                             <p>DATA SCIENCE</p>
                         </a>
                     </div>
