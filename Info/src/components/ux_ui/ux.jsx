@@ -360,6 +360,78 @@ const Ux = () => {
                     <img src="./static/ux-ui/movil1.png" alt="movil1" />
                 </div>
             </section>
+            <section className="typography routeHeader">
+                <section className="typographyDescription routeHeaderDescription">
+                    <h3>Tipografía y color</h3>
+                </section>
+            </section>
+            <section className="typographyPoints">
+                <article className="typographyPointsFirst">
+                    <article className="typographyPointsdescription">
+                        <h4>Tipografía</h4>
+                        <p>
+                            La elección de la fuente tipográfica Poppins la
+                            elegimos por legibilidad en pantallas, estilo
+                            moderno y amigable que atrae a un público amplio,
+                            versatilidad en pesos y estilos para una jerarquía
+                            visual efectiva, su capacidad para admitir
+                            caracteres internacionales y su accesibilidad al ser
+                            una fuente de código abierto gratuita, todo lo cual
+                            contribuye a una presentación atractiva y efectiva
+                            del mensaje sobre la importancia del agua.
+                        </p>
+                    </article>
+                    <article className="typographyPointsdescription">
+                        <h4>Color</h4>
+                        <p>
+                            La elección del color fue de la identidad
+                            corporativa. Esta identidad corporativa incluye
+                            elementos como el logotipo, los colores
+                            corporativos, la tipografía, el tono de
+                            comunicación, los valores de la empresa y su
+                            cultura, etc.
+                        </p>
+                    </article>
+                    <article className="typographyPointsImages">
+                        <div className="typographyPointsImages">
+                            <img
+                                src="./static/ux-ui/colores.png"
+                                alt="colors"
+                            />
+                        </div>
+                        <div className="typographyPointsImages logotext">
+                            <p>Logo</p>
+                            <img src="./static/ux-ui/logo-ux.png" alt="logo" />
+                        </div>
+                    </article>
+                </article>
+                <article className="typographyPointsSecond">
+                    <div className="typographyPointsType">
+                        <p>POPPINS</p>
+                    </div>
+                    <div className="typographyPointsTitle">
+                        <p>Titulo 1</p>
+                        <p>Titulo 2</p>
+                    </div>
+                    <div className="typographyPointsSubtitle">
+                        <p>Subtitulo 1</p>
+                        <p>Subtitulo 2</p>
+                    </div>
+                    <div className="typographyPointsBody">
+                        <p>Body 1</p>
+                        <p>Body 2</p>
+                    </div>
+                    <div>
+                        <p>Boton</p>
+                    </div>
+                    <div>
+                        <p>Titulares</p>
+                    </div>
+                    <div>
+                        <p>Overline</p>
+                    </div>
+                </article>
+            </section>
         </main>
     );
 };
