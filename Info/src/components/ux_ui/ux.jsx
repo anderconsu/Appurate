@@ -1,6 +1,14 @@
 import "./ux.scss";
+import PageContext from "../../context/pageContext";
+import { useContext, useEffect } from "react";
 
 const Ux = () => {
+    const { page, setPage } = useContext(PageContext);
+
+    useEffect(() => {
+        setPage("ux");
+    }, [page, setPage]);
+
     return (
         <main>
             <h1>UX/UI CASE STUDY</h1>
