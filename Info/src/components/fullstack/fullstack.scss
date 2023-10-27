@@ -1,69 +1,35 @@
 main {
     width: 100%;
-    // display: flex;
-    // flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0rem;
 
-    & .contenedorSpan {
-
-        padding-left: 3rem;
-
-        & .spanedfs {
-            display: flex;
-            padding: 0.5rem;
-            justify-content: center;
-            align-items: center;
-            width: 30%;
-            gap: 0.2rem;
-            padding: 0.05rem;
-            border-radius: 1.25rem;
-            background: var(--01, #48CAD9);
-
-            & .equipodfs {
-                display: flex;
-                flex-direction: row;
-                color: white;
-
-            }
-        }
-
-
+    &>* {
+        padding: 1rem 0;
     }
 
-
-
-
-    & h4 {
-        color: var(--01, #48cad9);
-    }
-
-    & .tituloFullStack {
+    & h1 {
         text-align: center;
+        padding-top: 2rem;
     }
 
-    & .fullStack {
+    & .intro {
+        width: 100%;
         display: flex;
         flex-direction: column;
-        background: var(--gris2, #f5f6f8);
-    }
+        align-items: center;
+        gap: 1rem;
 
-    .principalesFs {
-        display: flex;
-        flex-direction: row;
-        padding: 3.8125rem;
-        ;
-
-        & .equipo {
+        & article {
             display: flex;
             flex-direction: column;
-            align-items: flex-start;
-            width: 100%;
-        }
+            gap: 1rem;
+            padding: 1rem;
 
-        & .rol {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            width: 100%;
+            & h3 {
+                text-align: center;
+            }
         }
     }
 
@@ -74,242 +40,140 @@ main {
         align-items: center;
         gap: 5rem;
         padding: 1rem;
-    }
+        margin: 0 0 2rem 0;
 
-    .disenoSitemaps {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        background: var(--gris2, #f5f6f8);
-        gap: 1rem;
-        border-top: 1px solid var(--gris1, #e6e7e8);
-
-        & h2 {
-            height: 8rem;
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            border-bottom: 1px solid var(--gris1, #e6e7e8);
-            padding: 3.8125rem;
-        }
-
-        & .fYp {
-            display: flex;
-            justify-content: flex-start;
-            padding-left: 3.8125rem;
-
-
-
-        }
-
-
-        & .tituloDiseno {
-            padding: 3.8125rem;
-        }
-
-        & .textoDisenoSitemaps {
-            background-color: white;
-            width: 100;
-            padding: 3.8125rem;
-        }
-    }
-
-    .front {
-        display: flex;
-        flex-direction: column;
-        background: var(--gris2, #f5f6f8);
-        gap: 1rem;
-        height: 100%;
-
-
-        & h2 {
-            height: 8rem;
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            border-bottom: 1px solid var(--gris1, #e6e7e8);
-            padding: 3.8125rem;
-        }
-
-
-        & .textoFront {
-            background-color: white;
+        & .profile {
             display: flex;
             flex-direction: column;
-            gap: 2rem;
-            padding: 3.8125rem;
-
-            & .textoUno {
-                display: flex;
-                flex-direction: column;
-
-
-            }
-
-
-            & .textosFront {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-
-            }
-
-            & .textoDos {
-                display: flex;
-                flex-direction: column;
-                justify-content: top;
-                padding-right: 9rem;
-
-            }
-
-            & .textoConFoto {
-                display: flex;
-                flex-direction: column;
-                width: 100%;
-                height: 100%;
-                gap: 3rem;
-                padding-right: 3rem;
-
-            }
-
-
-            & .fotoFullstack {
-
-                width: auto;
-                height: 15rem;
-            }
-
-        }
-
-    }
-
-
-    .back {
-        display: flex;
-        flex-direction: column;
-        background: var(--gris2, #f5f6f8);
-        gap: 2rem;
-        height: 100%;
-
-
-        & h2 {
-            height: 8rem;
-            display: flex;
-            justify-content: flex-start;
             align-items: center;
-            padding: 3.8125rem;
-
+            gap: 0.6rem;
         }
-
-        & .textoBack {
-            background-color: white;
-            display: flex;
-            flex-direction: column;
-            gap: 2rem;
-            padding: 3.8125rem;
-
-            & .textoUno {
-                display: flex;
-                flex-direction: column;
-
-
-
-            }
-
-
-            & .textosBack {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-
-            }
-
-            & .textoDos {
-                display: flex;
-                flex-direction: column;
-                justify-content: top;
-                padding-right: 9rem;
-
-            }
-
-        }
-
     }
 
-    .deploy {
+    & .disenoSitemaps {
+        background-color: var(--azul_oscuro);
+        color: var(--blanco);
         display: flex;
         flex-direction: column;
-        background: var(--gris2, #f5f6f8);
-        gap: 2rem;
-        height: 100%;
-
-        & h2 {
-            height: 8rem;
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            padding: 3.8125rem;
-
-        }
-
-        & .textoDeploy {
-            background-color: white;
-            display: flex;
-            flex-direction: column;
-            gap: 2rem;
-            padding: 3.8125rem;
-
-            & .textoUno {
-                display: flex;
-                flex-direction: column;
-
-
-            }
-
-
-            & .textosDeploy {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-
-            }
-
-            & .textoDos {
-                display: flex;
-                flex-direction: column;
-                justify-content: top;
-                padding-right: 9rem;
-
-            }
-
-        }
-
-    }
-
-    .gitHub {
-
-        display: flex;
-        flex-direction: column;
-        background: var(--01, #48CAD9);
-        border-radius: 1.25rem;
-        padding: 1.5rem;
         gap: 1rem;
-        padding: 3.8125rem;
 
-        & .textoGit {
+        & h2 {
+            color: white;
+            padding: 1rem 0;
+        }
+
+        & ol {
+            margin-left: 1rem;
+        }
+
+        & .disenoDescription {
             display: flex;
             flex-direction: column;
             gap: 1rem;
-            color: var(--02, #022859);
+            padding: 1rem 2rem;
+        }
+
+    }
+
+    & .routeHeader {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: var(--gris2);
+
+        & .routeHeaderDescription {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            padding: 1rem 2rem;
+            width: 100%;
+        }
+    }
+
+    & .front {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem 2rem;
+
+        & .frontDescription {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            & .textoUno {
+                display: flex;
+                width: 100%;
+            }
+
+            & .elRow {
+                display: flex;
+                flex-direction: column;
+                gap: 1.5rem;
+
+                & .textoDos {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                }
+
+                & .textoConFoto {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100;
+                    gap: 1.5rem;
+                    margin: auto;
+
+                    & img {
+                        width: 100%;
+                    }
+                }
+
+            }
+
+            &>* {
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+        }
+
+
+    }
+
+    & .back,
+    .deploy {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 2rem;
+        width: 100%;
+
+    }
+
+    & .gitHub {
+        display: flex;
+        flex-direction: column;
+        background: var(--01, #48CAD9);
+        border-radius: 1.2rem;
+        gap: 2rem;
+        padding: 3.8125rem;
+
+
+        & .git {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
 
         }
 
         & .linksGit {
             display: flex;
             flex-direction: row;
-            gap: 1rem;
-            padding-top: 3rem;
             align-items: center;
+            gap: 2rem;
             color: var(--02, #022859);
 
             & img {
@@ -320,113 +184,96 @@ main {
         }
     }
 
-    .otrosRoles {
-        display: inline-flex;
-        justify-content: center;
-        width: 100%;
-        gap: 9.25rem;
-        background: var(--gris2, #F5F6F8);
-        margin-top: 2rem;
-
-        & h4 {
-            color: var(--02, #022859);
-            text-align: center;
-            font-family: Poppins;
-            font-size: 1.25rem;
-            font-style: normal;
-            font-weight: 600;
-            line-height: 185%;
-            /* 2.3125rem */
-            letter-spacing: 0.00625rem;
-        }
-
-        & .data,
-        .uxui {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 1.5rem;
-
-
-
-            & .dataLink,
-            .uxuiLink {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                background: var(--01, #48CAD9);
-                padding: 1rem;
-                width: 11.8125rem;
-                height: 10rem;
-                flex-direction: column;
-                align-items: center;
-                gap: 1rem;
-                flex-shrink: 0;
-                width: 15rem;
-                height: 14.74863rem;
-                flex-shrink: 0;
-                border-radius: 1.5rem;
-
-
-                & p {
-                    width: 11.8125rem;
-                    height: 1.125rem;
-                    flex-shrink: 0;
-                    color: var(--Color, #FFF);
-                    text-align: center;
-                    font-family: Poppins;
-                    font-size: 1.5rem;
-
-
-
-                }
-
-                & .vectordata {
-                    width: 9.9375rem;
-                    height: 7.75rem;
-                    flex-shrink: 0;
-
-                }
-
-                & .vectorux {
-                    width: 8.3125rem;
-                    height: 7.875rem;
-                    flex-shrink: 0;
-
-                }
-            }
-
-        }
-    }
-
-    .agradecimientos {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        & h4 {
-            color: var(--02, #022859);
-
-        }
-    }
-
-
-
 }
 
 @media screen and (min-width: 768px) {
-    .footer {
-        & .footerimg {
-            max-height: 17rem;
+    main {
+        &>* {
+            padding: 2rem 0;
         }
-    }
 
-    .perfiles {
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
-        align-items: center;
-        gap: 5rem;
-        padding: 1rem;
+        & .intro {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 1rem;
+            padding: 2rem 4rem;
+
+            & article {
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                padding: 1rem;
+
+                & h3 {
+                    text-align: left;
+                }
+            }
+        }
+
+        & .perfiles {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            align-items: center;
+            gap: 5rem;
+            padding: 1rem;
+        }
+
+
+
+        & .disenoSiteamps {
+            background-color: var(--azul_oscuro);
+            color: var(--blanco);
+            display: flex;
+            flex-direction: row;
+            gap: 1rem;
+            padding: 5rem;
+            width: 100%;
+
+            & h2 {
+                color: white;
+                padding: 1rem 0;
+            }
+
+
+            & .disenoDescription {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                padding: 1rem 2rem;
+                width: 50%;
+            }
+
+        }
+
+        & .front {
+            display: flex;
+            flex-direction: column;
+
+            & .frontDescription {
+                display: flex;
+                flex-direction: column;
+
+                & .elRow {
+                    display: flex;
+                    flex-direction: row;
+
+                    & .textoConFoto {
+                        display: flex;
+                        flex-direction: column;
+                        // margin: auto;
+
+                        & img {
+                            width: 100%;
+
+                        }
+                    }
+                }
+            }
+        }
+
     }
 }

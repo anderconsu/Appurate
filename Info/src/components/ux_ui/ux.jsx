@@ -32,7 +32,7 @@ const Ux = () => {
                     </p>
                 </article>
                 <article>
-                    <h3>Nuestro roll en el proyecto</h3>
+                    <h3>Nuestro rol en el proyecto</h3>
                     <p>
                         En el proyecto que mencionamos, nuestro equipo de diseño
                         UX/UI desempeñó un papel fundamental. Comenzamos por
