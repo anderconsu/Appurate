@@ -232,6 +232,8 @@ main {
             gap: 1rem;
             padding: 5rem;
             width: 100%;
+            text-align: justify;
+            justify-content: center;
 
             & h2 {
                 color: white;
@@ -245,6 +247,8 @@ main {
                 gap: 1rem;
                 padding: 1rem 2rem;
                 width: 50%;
+                text-align: justify;
+                justify-content: center;
             }
 
         }
@@ -253,21 +257,57 @@ main {
             display: flex;
             flex-direction: column;
 
+
             & .frontDescription {
                 display: flex;
                 flex-direction: column;
+                text-align: justify;
+                justify-content: center;
+                padding: 3rem;
+
+                & .textoUno {
+                    display: flex;
+                    width: 100%;
+                    text-align: justify;
+                    justify-content: center;
+                    
+
+                }
 
                 & .elRow {
                     display: flex;
                     flex-direction: row;
+                    margin: auto;
+                    justify-content: space-between;
+                    align-items: center;
+                    
+
+                    & .textoDos {
+                        width: 50%;
+                        text-align: justify;
+                        justify-content: center;
+
+                        & p {
+                            width: 70%;
+                        }
+                    }
 
                     & .textoConFoto {
                         display: flex;
                         flex-direction: column;
+                        width: 50%;
+                        gap: 3rem;
+                        text-align: justify;
+                        justify-content: center;
                         // margin: auto;
 
+                        & p {
+                            width: 70%;
+                        }
+
                         & img {
-                            width: 100%;
+                            width: 70%;
+                            // height: 80%;
 
                         }
                     }
