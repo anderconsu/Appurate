@@ -71,7 +71,7 @@ const DataScience = () => {
                         className="animatedSelect"
                         onClick={() =>
                             (window.location.href =
-                                "https://www.linkedin.com/in/irati-lozano-segovia/")
+                                "https://www.linkedin.com/in/alejosotillo/")
                         }
                     />
                     <img
@@ -79,8 +79,7 @@ const DataScience = () => {
                         alt="githubLogo"
                         className="animatedSelect"
                         onClick={() =>
-                            (window.location.href =
-                                "https://www.linkedin.com/in/sebastianrgv")
+                            (window.location.href = "https://github.com/socho8")
                         }
                     />
                 </div>
@@ -102,7 +101,7 @@ const DataScience = () => {
                         className="animatedSelect"
                         onClick={() =>
                             (window.location.href =
-                                "https://www.linkedin.com/in/sebastianrgv")
+                                "https://www.linkedin.com/in/leonor-rodman/")
                         }
                     />
                     <img
@@ -111,7 +110,7 @@ const DataScience = () => {
                         className="animatedSelect"
                         onClick={() =>
                             (window.location.href =
-                                "https://www.linkedin.com/in/sebastianrgv")
+                                "https://github.com/Leoorodrii")
                         }
                     />
                 </div>
@@ -164,6 +163,68 @@ const DataScience = () => {
                     <img
                         src="./static/dataScience/dataRecolection.png"
                         alt="Data recolection"
+                    />
+                </div>
+            </section>
+            <section className="routeHeader">
+                <section className="maker">
+                    <div>
+                        <p>EQUIPO DE DATA SCIENCE</p>
+                    </div>
+                </section>
+                <section className="routeHeaderDescription">
+                    <h3>CREACION DE DATA SINTETICA</h3>
+                </section>
+            </section>
+            <section className="dataCreation">
+                <p>
+                    Ya que en el anterior punto pudimos determinar que los datos
+                    no eran los suficientes ni tampoco eran muy seguidos en el
+                    tiempo, optamos por la creación de data sintetica. En este
+                    proceso utilizamos el lenguaje de programación Python para
+                    crear un bucle donde nos devuelva un dataset con la cantidad
+                    de datos suficientes, utilizando las variables necesarias y
+                    sus valores normales para no tener errores en el
+                    entrenamiento del modelo. Tambien logramos balancear nuestra
+                    data asi el 50 por ciento de la misma sea no apta para el
+                    baño y el 50 por ciento restantes si para que a la hora de
+                    entrenar nuestro modelo este no sufra de overfitting o
+                    underfitting.
+                </p>
+                <div className="recImgContainer">
+                    <img
+                        src="./static/dataScience/dataCreation.png"
+                        alt="Data creation"
+                    />
+                </div>
+            </section>
+            <section className="routeHeader">
+                <section className="maker">
+                    <div>
+                        <p>EQUIPO DE DATA SCIENCE</p>
+                    </div>
+                </section>
+                <section className="routeHeaderDescription">
+                    <h3>ENTRENAMIENTO DEL MODELO</h3>
+                </section>
+            </section>
+            <section className="dataTraining">
+                <p>
+                    Ya con nuestro dataset creado y balanceado procedimos al
+                    entrenamiento del modelo de machine learning. Probamos y
+                    entrenamos nuestra data con varios modelos de clasificación
+                    donde mediante la obtención de la precisión de cada uno
+                    pudimos determinar que el mas fiable era el modelo de Random
+                    Forest Classifier. Asi guardamos el modelo entrenado y junto
+                    con el equipo de Full Stack y el equipo de UX/UI logramos
+                    enlazarlo con todo el proyecto para que a la hora de que los
+                    alumnos introduzcan los datos de cada variable puedan
+                    predecir o determinar si un agua es viable o no par el baño
+                </p>
+                <div className="recImgContainer">
+                    <img
+                        src="./static/dataScience/dataTraining.png"
+                        alt="Data training"
                     />
                 </div>
             </section>

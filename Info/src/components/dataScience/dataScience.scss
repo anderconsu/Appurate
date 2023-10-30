@@ -66,7 +66,9 @@
         padding: 2rem;
         text-align: justify;
     }
-    & .dataRecolection {
+    & .dataRecolection,
+    .dataCreation,
+    .dataTraining {
         width: 100%;
         margin: auto;
         padding: 2rem;
@@ -134,7 +136,9 @@
         & .problemStudy {
             padding: 4rem;
         }
-        & .dataRecolection {
+        & .dataRecolection,
+        .dataCreation,
+        .dataTraining {
             width: 100%;
             margin: auto;
             padding: 4rem;
