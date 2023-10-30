@@ -70,10 +70,13 @@ const Fullstack = () => {
                         src="./static/linkedinLogo.png"
                         alt="linkedinLogo"
                     />
-                    <img
-                        src="../../static/fullstack/githublogo1.png"
-                        alt="logo Git Hub"
-                    />
+                    <a href="https://github.com/anderconsu">
+
+                        <img
+                            src="../../static/githubLogo.png"
+                            alt="logo Git Hub"
+                        />
+                    </a>
                 </div>
                 <div className="nacho profile">
                     <img
@@ -87,10 +90,13 @@ const Fullstack = () => {
                         src="./static/linkedinLogo.png"
                         alt="linkedinLogo"
                     />
-                    <img
-                        src="../../static/fullstack/githublogo1.png"
-                        alt="logo Git Hub"
-                    />
+                    <a href="https://github.com/nachoprado86">
+
+                        <img
+                            src="../../static/githubLogo.png"
+                            alt="logo Git Hub"
+                        />
+                    </a>
                 </div>
                 <div className="endika profile">
                     <img
@@ -104,10 +110,14 @@ const Fullstack = () => {
                         src="./static/linkedinLogo.png"
                         alt="linkedinLogo"
                     />
-                    <img
-                        src="../../static/fullstack/githublogo1.png"
-                        alt="logo Git Hub"
-                    />
+                    <a href="https://github.com/Endika7593">
+
+                        <img
+                            src="../../static/githubLogo.png"
+                            alt="logo Git Hub"
+
+                        />
+                    </a>
                 </div>
             </section>
             <section className="diseno">
