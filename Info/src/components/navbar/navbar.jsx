@@ -5,7 +5,7 @@ import PageContext from "../../context/pageContext";
 const team = ["data", "fs", "ux"];
 const urldict = {
     fs: "/fullstack",
-    data: "/datascience",
+    data: "/data-science",
     ux: "/ux-ui",
 };
 
