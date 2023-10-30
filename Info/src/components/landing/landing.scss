@@ -1,0 +1,79 @@
+main { 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0rem;
+    & > * {
+        padding: 1rem 0;
+    }
+    & .grisLanding {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--gris2);
+
+        & h1 {
+            padding-top: 2rem;
+           
+        }
+        & p {
+            gap: 1rem;
+            padding: 1rem;
+        };
+    }
+    & .blancoLanding {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--blanco);
+
+        & .columna1Landing {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: var(--blanco);
+            & .estrategia {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+                margin: 2rem auto;
+                padding: 1rem;
+                background-color: var(--blanco);
+                border-radius: 0.5rem;
+                box-shadow: -5px 10px 13px 5px rgba(0, 0, 0, 0.5);
+            }
+            & .fotoClase1 {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+                margin: 0.5rem auto;
+                padding: 0.5rem;
+                background-color: var(--blanco);
+            }
+            & .alfinal {
+                margin: auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 2rem;
+                border: 0.2rem solid var(--azul_celeste);
+                border-radius: 1rem;
+                padding: 2rem;
+                width: auto;
+            }
+        }
+        & .columna2Landing {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: var(--blanco)
+        }
+    }
+}
