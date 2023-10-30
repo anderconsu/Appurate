@@ -39,6 +39,7 @@ const Navbar = () => {
                             <img
                                 src={`./static/nav/${item}.png`}
                                 alt={item}
+                                className="animatedSelect"
                                 onClick={() => {
                                     navigate(urldict[item]);
                                     window.scrollTo({
