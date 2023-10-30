@@ -1,12 +1,15 @@
-main { 
+main {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: justify;
     gap: 0rem;
-    & > * {
+
+    &>* {
         padding: 1rem 0;
     }
+
     & .grisLanding {
         width: 100%;
         display: flex;
@@ -16,13 +19,19 @@ main {
 
         & h1 {
             padding-top: 2rem;
-           
+
         }
+
         & p {
             gap: 1rem;
-            padding: 1rem;
-        };
+            padding: 2rem;
+
+        }
+
+
     }
+
+
     & .blancoLanding {
         width: 100%;
         display: flex;
@@ -36,6 +45,7 @@ main {
             flex-direction: column;
             align-items: center;
             background-color: var(--blanco);
+
             & .estrategia {
                 width: 100%;
                 display: flex;
@@ -46,7 +56,13 @@ main {
                 background-color: var(--blanco);
                 border-radius: 0.5rem;
                 box-shadow: -5px 10px 13px 5px rgba(0, 0, 0, 0.5);
+
+                & p {
+                    padding: 2rem;
+                }
+
             }
+
             & .fotoClase1 {
                 width: 100%;
                 display: flex;
@@ -56,6 +72,7 @@ main {
                 padding: 0.5rem;
                 background-color: var(--blanco);
             }
+
             & .alfinal {
                 margin: auto;
                 display: flex;
@@ -65,9 +82,19 @@ main {
                 border: 0.2rem solid var(--azul_celeste);
                 border-radius: 1rem;
                 padding: 2rem;
-                width: auto;
+                width: 100%;
+
+                & p {
+                    color: var(--02, #022859);
+                }
+
+                & .iconos {
+                    width: 100%;
+
+                }
             }
         }
+
         & .columna2Landing {
             width: 100%;
             display: flex;
@@ -75,5 +102,296 @@ main {
             align-items: center;
             background-color: var(--blanco)
         }
+
+        & img {
+            width: 100%;
+            margin-top: 1rem;
+        }
+
+        & .investigaciones {
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+            border: 0.2rem solid var(--azul_celeste);
+            border-radius: 1rem;
+            padding: 2rem;
+            margin-left: 2rem;
+            margin-right: 2rem;
+            width: 100%;
+
+            & p {
+                color: var(--02, #022859);
+            }
+        }
+
+    }
+
+    & .gris2Landing {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--gris2);
+
+        & h1 {
+            padding-top: 2rem;
+
+        }
+
+        & p {
+            gap: 1rem;
+            padding: 2rem;
+            color: var(--02, #022859);
+
+        }
+
+
+    }
+
+    & .blanco2landing {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--blanco);
+
+        & div {
+            width: 100%;
+
+            & p {
+                color: var(--02, #022859);
+                gap: 1rem;
+                padding: 2rem;
+            }
+
+            & img {
+                width: 100%;
+                padding: 1rem;
+            }
+
+        }
+
+        & .disenoSitemap {
+            display: flex;
+            width: 100%;
+
+
+
+            & h4 {
+                display: flex;
+                text-align: flex-start;
+                color: var(--01, #48CAD9);
+                font-family: Poppins;
+                padding: 2rem;
+                font-weight: 400;
+
+
+            }
+        }
+
+        & .orden {
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+
+            & .unoDos {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                align-items: center;
+
+                & .uno,
+                .dos {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    align-items: center;
+
+                    & .imagenNumero {
+                        display: flex;
+                        width: 30%;
+                    }
+
+
+                }
+            }
+
+            & .tres {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                align-items: center;
+
+                & .tresTres {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    align-items: center;
+                }
+
+                & .imagenNumero {
+                    display: flex;
+                    width: 30%;
+                }
+
+                & .imagenMapa {
+                    display: flex;
+                    width: 100%;
+
+                }
+
+
+            }
+
+
+        }
+
+        & .buttonWeb {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+
+            & button {
+                display: flex;
+                border-radius: 1.25rem;
+                background: var(--01, #48CAD9);
+                font-weight: bold;
+                color: white;
+                width: 50%;
+                padding: 1.5rem;
+                justify-content: center;
+                align-items: center;
+
+            }
+
+        }
+    }
+
+    & .gris3landing {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 1.25rem;
+        background: var(--02, #022859);
+
+        & .azul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            padding: 2rem;
+            gap: 2rem;
+
+            & h2 {
+                display: flex;
+                width: 100%;
+                color: white;
+            }
+
+            & .bewaters {
+
+                & h3 {
+                    display: flex;
+                    width: 100%;
+                    color: white;
+                }
+
+                & img {
+                    width: 100%;
+                }
+            }
+
+            & .equipo {
+                display: flex;
+                flex-direction: column;
+                width: 80%;
+                border-radius: 1.25rem;
+                background: var(--Color, #FFF);
+                padding: 1.5rem;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1rem;
+                margin-top: -3rem;
+                margin-left: 3rem;
+                box-shadow: -5px 10px 13px 5px rgba(0, 0, 0, 0.5);
+
+
+                & h4 {
+                    color: var(--02, #022859);
+                    font-weight: 400;
+
+                }
+
+                & p,
+                ul {
+                    color: var(--02, #022859);
+
+                    & li {
+                        padding: 2rem;
+                    }
+                }
+            }
+
+        }
+
+        & .containerIconos {
+            display: flex;
+            flex-direction: column;
+            margin-left: 3rem;
+            margin-top: -4rem;
+            width: 90%;
+        }
+
+
+    }
+
+    & .buttonPa {
+        display: flex;
+        flex-direction: column;
+
+
+        & button {
+            border-radius: 0.15rem;
+            background: var(--Color, #FFF);
+            box-shadow: 0px 6px 6px 0px rgba(2, 40, 89, 0.20);
+            width: 100%;
+            flex-shrink: 0;
+            margin-top: -2rem;
+        }
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    main {
+
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        text-align: justify;
+
+
+        &>* {
+            padding: 1rem 0;
+            background: var(--gris2, #F5F6F8);
+        }
+
+        & .estrategia {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: var(--gris2);
+        }
+
+
+
     }
 }
