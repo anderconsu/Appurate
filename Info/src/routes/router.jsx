@@ -5,6 +5,7 @@ import Landing from "../components/landing/landing.jsx";
 
 import Fullstack from "../components/fullstack/fullstack.jsx";
 import Ux from "../components/ux_ui/ux.jsx";
+import DataScience from "../components/dataScience/dataScience.jsx";
 
 const Router = createBrowserRouter([
     {
@@ -16,7 +17,7 @@ const Router = createBrowserRouter([
                 path: "/ux-ui",
                 element: <Ux />,
             },
-        
+
             {
                 path: "/fullstack",
                 element: <Fullstack />,
@@ -25,7 +26,11 @@ const Router = createBrowserRouter([
             {
                 path: "/",
                 element: <Landing />,
-            }
+            },
+            {
+                path: "/data-science",
+                element: <DataScience />,
+            },
         ],
     },
 ]);
