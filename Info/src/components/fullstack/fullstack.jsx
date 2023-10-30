@@ -10,45 +10,51 @@ const Fullstack = () => {
 
     return (
         <main>
-            <h1>FULL STACK</h1>
             <section className="intro">
+                <h1>FULL STACK</h1>
                 <article>
-                    <h3>Equipo Desarrollo Full Stack</h3>
-                    <p>
-                        ¡Buenas! Somos el equipo de desarrollo de Full Stack.
-                        Aunque nuestra procedencia profesional sea tan diferente,
-                        somos un equipo con muchas cosas en común. La pasión por la programación,
-                        la creatividad, la curiosidad, la música y todo lo que tenga que ver con
-                        el mundo de la tecnología y la red.
+                    <div className="textoIntroUno">
+                        <h3>Equipo Desarrollo Full Stack</h3>
 
-                        Tenemos conocimientos varios y experiencias diversas en el mundo
-                        laboral; la logística, el márketing, la gestión de proyectos...
-                        Hemos disfrutado mucho durante este reto, el cuál nos ha servido también
-                        para aprender más sobre el agua y nos ha dejado con unas ganas
-                        tremendas de adentrarnos más aún en él.
+                        <p>
+                            ¡Buenas! Somos el equipo de desarrollo de Full Stack.
+                            Aunque nuestra procedencia profesional sea tan diferente,
+                            somos un equipo con muchas cosas en común. La pasión por la programación,
+                            la creatividad, la curiosidad, la música y todo lo que tenga que ver con
+                            el mundo de la tecnología y la red.
+
+                            Tenemos conocimientos varios y experiencias diversas en el mundo
+                            laboral; la logística, el márketing, la gestión de proyectos...
+                            Hemos disfrutado mucho durante este reto, el cuál nos ha servido también
+                            para aprender más sobre el agua y nos ha dejado con unas ganas
+                            tremendas de adentrarnos más aún en él.
 
 
 
-                    </p>
+                        </p>
+                    </div>
 
                 </article>
                 <article>
-                    <h3>Nuestro rol en el proyecto</h3>
-                    <p>
-                        Nuestro rol como desarrolladores en este proyecto ha
-                        abarcado tanto el desarrollo del frontend como del
-                        backend, incluyendo la implementación de componentes
-                        dinámicos, la gestión de la base de datos, la
-                        seguridad de las credenciales de usuario y el
-                        despliegue de la aplicación. Nuestra labor es
-                        esencial para garantizar que la plataforma sea
-                        segura, eficiente y cumpla con los objetivos de
-                        educación y concienciación sobre el agua en la
-                        comunidad. Además, colaboramos en un entorno de
-                        control de versiones utilizando GitHub para mantener
-                        un registro detallado de los cambios y garantizar la
-                        calidad del código.
-                    </p>
+                    <div className="textoIntroDos">
+
+                        <h3>Nuestro rol en el proyecto</h3>
+                        <p>
+                            Nuestro rol como desarrolladores en este proyecto ha
+                            abarcado tanto el desarrollo del frontend como del
+                            backend, incluyendo la implementación de componentes
+                            dinámicos, la gestión de la base de datos, la
+                            seguridad de las credenciales de usuario y el
+                            despliegue de la aplicación. Nuestra labor es
+                            esencial para garantizar que la plataforma sea
+                            segura, eficiente y cumpla con los objetivos de
+                            educación y concienciación sobre el agua en la
+                            comunidad. Además, colaboramos en un entorno de
+                            control de versiones utilizando GitHub para mantener
+                            un registro detallado de los cambios y garantizar la
+                            calidad del código.
+                        </p>
+                    </div>
                 </article>
             </section>
             <section className="perfiles">
@@ -64,6 +70,10 @@ const Fullstack = () => {
                         src="./static/linkedinLogo.png"
                         alt="linkedinLogo"
                     />
+                    <img
+                        src="../../static/fullstack/githublogo1.png"
+                        alt="logo Git Hub"
+                    />
                 </div>
                 <div className="nacho profile">
                     <img
@@ -76,6 +86,10 @@ const Fullstack = () => {
                     <img
                         src="./static/linkedinLogo.png"
                         alt="linkedinLogo"
+                    />
+                    <img
+                        src="../../static/fullstack/githublogo1.png"
+                        alt="logo Git Hub"
                     />
                 </div>
                 <div className="endika profile">
@@ -90,33 +104,56 @@ const Fullstack = () => {
                         src="./static/linkedinLogo.png"
                         alt="linkedinLogo"
                     />
+                    <img
+                        src="../../static/fullstack/githublogo1.png"
+                        alt="logo Git Hub"
+                    />
                 </div>
             </section>
-            <section className="disenoSitemaps">
-                <div className="disenoDescription">
-                    <h2>DISEÑO Y SITEMAPS</h2>
-                    <p>
-                        En colaboración con el equipo de UX/UI, se diseñaron las
-                        páginas teniendo en cuenta toda la información que se
-                        mostrará en cada una y se planificaron los call to
-                        action (llamadas a la acción) que guiarán a los
-                        usuarios. Se abordó este proceso con una mentalidad
-                        estratégica y viable, siempre teniendo en cuenta el
-                        tiempo limitado disponible para completar el proyecto,
-                        que en este caso, se estableció en dos semanas.
-                    </p>
-
-                </div>
-
-            </section>
-            <section className="front routeHeader">
+            <section className="diseno">
                 <section className="maker">
                     <div>
                         <p>EQUIPO DE DESARROLLO FULL STACK</p>
                     </div>
                 </section>
+                <div className="disenoDescription">
+                    <div className="tituloDiseno">
+
+                        <h1>DISEÑO Y SITEMAPS JUNTO A UX/UI</h1>
+                        <span className="fyS">Figma y pizarra</span>
+                    </div>
+
+
+
+                    <div className="disenoTexto">
+
+                        <p>
+                            En colaboración con el equipo de UX/UI, se diseñaron las
+                            páginas teniendo en cuenta toda la información que se
+                            mostrará en cada una y se planificaron los call to
+                            action (llamadas a la acción) que guiarán a los
+                            usuarios. Se abordó este proceso con una mentalidad
+                            estratégica y viable, siempre teniendo en cuenta el
+                            tiempo limitado disponible para completar el proyecto,
+                            que en este caso, se estableció en dos semanas.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+            <section className="front RouteHeader">
+                <section className="maker">
+                    <div>
+                        <p>EQUIPO DE DESARROLLO FULL STACK</p>
+                    </div>
+                </section>
+                <div className="tituloFront">
+
+                    <h1>FRONT</h1>
+                </div>
                 <section className="frontDescription">
-                    <h3>FRONT</h3>
                     <div className="textoUno">
 
                         <p>
@@ -200,14 +237,18 @@ const Fullstack = () => {
                 </section>
             </section>
 
-            <section className="research routeHeader">
+            <section className="back RouteHeader">
                 <section className="maker">
                     <div>
                         <p>EQUIPO DE DESARROLLO FULL STACK</p>
                     </div>
                 </section>
-                <section className="back">
-                    <h3>BACK</h3>
+                <div className="tituloBack">
+
+                    <h1>BACK</h1>
+                </div>
+                <section className="backDescription">
+
                     <p>
                         En lo que respecta al desarrollo del backend, hemos
                         optado por Node.js y el framework Express para crear una
@@ -279,14 +320,17 @@ const Fullstack = () => {
                 </section>
             </section>
 
-            <section className="deploy routeHeader">
+            <section className="deploy RouteHeader">
                 <section className="maker">
                     <div>
                         <p>EQUIPO DE DESARROLLO FULL STACK</p>
                     </div>
                 </section>
-                <section className="deploy">
-                    <h3>DEPLOY</h3>
+                <div className="tituloDeploy">
+
+                    <h1>DEPLOY</h1>
+                </div>
+                <section className="deployDescription">
                     <p>
                         Para llevar a cabo el despliegue de nuestra aplicación,
                         recurrimos a varias herramientas clave, siendo Docker la
@@ -340,38 +384,44 @@ const Fullstack = () => {
             </section>
             <section className="gitHub">
                 <article className="git">
-                    <h3>GITHUB</h3>
 
-                    <p>
-                        También hemos aprovechado GitHub como una parte
-                        fundamental de nuestro flujo de trabajo para mostrar
-                        y gestionar el proceso de desarrollo de la
-                        plataforma. A través de GitHub, hemos implementado
-                        un sistema de control de versiones que nos permite
-                        mantener un registro detallado de todos los cambios
-                        realizados en el código de la aplicación.
-                    </p>
+                    <div className="tituloGit">
 
-                    <p>
-                        Cada miembro del equipo puede crear ramas de
-                        desarrollo para trabajar en características o
-                        correcciones específicas de la aplicación. Después
-                        de finalizar el trabajo en una rama, se crea una
-                        solicitud de extracción (pull request) en GitHub
-                        para que otros miembros del equipo revisen y
-                        aprueben los cambios propuestos. Esto garantiza una
-                        colaboración eficiente y un proceso de revisión de
-                        código sólido.
-                    </p>
+                        <h1>GITHUB</h1>
+                    </div>
+                    <div className="textosGit">
 
-                    <p>
-                        En resumen, GitHub desempeña un papel esencial en la
-                        colaboración y gestión de nuestro proceso de
-                        desarrollo, permitiéndonos llevar un registro
-                        detallado de los cambios, garantizar la calidad del
-                        código y mantener una documentación actualizada para
-                        el equipo.
-                    </p>
+                        <p>
+                            También hemos aprovechado GitHub como una parte
+                            fundamental de nuestro flujo de trabajo para mostrar
+                            y gestionar el proceso de desarrollo de la
+                            plataforma. A través de GitHub, hemos implementado
+                            un sistema de control de versiones que nos permite
+                            mantener un registro detallado de todos los cambios
+                            realizados en el código de la aplicación.
+                        </p>
+
+                        <p>
+                            Cada miembro del equipo puede crear ramas de
+                            desarrollo para trabajar en características o
+                            correcciones específicas de la aplicación. Después
+                            de finalizar el trabajo en una rama, se crea una
+                            solicitud de extracción (pull request) en GitHub
+                            para que otros miembros del equipo revisen y
+                            aprueben los cambios propuestos. Esto garantiza una
+                            colaboración eficiente y un proceso de revisión de
+                            código sólido.
+                        </p>
+
+                        <p>
+                            En resumen, GitHub desempeña un papel esencial en la
+                            colaboración y gestión de nuestro proceso de
+                            desarrollo, permitiéndonos llevar un registro
+                            detallado de los cambios, garantizar la calidad del
+                            código y mantener una documentación actualizada para
+                            el equipo.
+                        </p>
+                    </div>
 
                 </article>
                 <div className="linksGit">

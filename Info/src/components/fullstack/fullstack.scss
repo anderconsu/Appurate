@@ -3,15 +3,20 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0rem;
+    gap: 1rem;
+    text-align: justify;
+
+
 
     &>* {
         padding: 1rem 0;
+        background: var(--gris2, #F5F6F8);
     }
 
     & h1 {
         text-align: center;
         padding-top: 2rem;
+        background: var(--gris2, #F5F6F8);
     }
 
     & .intro {
@@ -19,18 +24,48 @@ main {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 1rem;
+        background: var(--gris2, #F5F6F8);
+        color: var(--02, #022859);
+
+
+
 
         & article {
             display: flex;
-            flex-direction: column;
-            gap: 1rem;
-            padding: 1rem;
+            flex-direction: row;
+            align-items: center;
+
+
+            & div {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                align-items: flex-start;
+
+            }
 
             & h3 {
-                text-align: center;
+                text-align: flex-start;
+                color: var(--01, #48CAD9);
+                font-family: Poppins;
+                font-size: 1.5rem;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 2.71875rem;
+                /* 155.357% */
+                letter-spacing: -0.0175rem;
+
+            }
+
+            & p {
+                text-align: justify;
+                width: 100%;
+                align-self: stretch;
+
             }
         }
+
     }
 
     & .perfiles {
@@ -38,9 +73,11 @@ main {
         justify-content: center;
         flex-direction: column;
         align-items: center;
+        width: 100%;
         gap: 5rem;
         padding: 1rem;
-        margin: 0 0 2rem 0;
+        margin: 2rem;
+        background: var(--gris2, #F5F6F8);
 
         & .profile {
             display: flex;
@@ -50,144 +87,151 @@ main {
         }
     }
 
-    & .disenoSitemaps {
-        background-color: var(--azul_oscuro);
-        color: var(--blanco);
+    & .diseno {
         display: flex;
         flex-direction: column;
-        gap: 1rem;
+        border-top: 1px solid #C3C9D5;
+        background: var(--gris2, #F5F6F8);
+        margin-top: -2rem;
 
-        & h2 {
-            color: white;
-            padding: 1rem 0;
-        }
 
-        & ol {
-            margin-left: 1rem;
-        }
 
-        & .disenoDescription {
+
+        & .tituloDiseno {
             display: flex;
             flex-direction: column;
+            align-items: center;
             gap: 1rem;
-            padding: 1rem 2rem;
-        }
+            padding-left: 1rem;
+            padding-right: 1rem;
 
-    }
 
-    & .routeHeader {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        background-color: var(--gris2);
 
-        & .routeHeaderDescription {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-            padding: 1rem 2rem;
-            width: 100%;
-        }
-    }
+            & span {
+                color: var(--LETRA-GRIS-USAR-ESTA, #687F9C);
+                font-family: Poppins;
+                align-self: center;
+                margin-bottom: 1.5rem;
 
-    & .front {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-        padding: 1rem 2rem;
-
-        & .frontDescription {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-
-            & .textoUno {
-                display: flex;
-                width: 100%;
             }
+
+
+        }
+
+
+        & .disenoTexto {
+            width: 100%;
+            background-color: white;
+            padding: 1rem;
+            color: var(--02, #022859);
+
+
+
+        }
+
+    }
+
+    & .front,
+    .back,
+    .deploy {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+        & .tituloFront,
+        .tituloBack,
+        .tituloDeploy {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            width: 100%;
+
+
+        }
+
+        & .frontDescription,
+        .backDescription,
+        .deployDescription {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            background-color: white;
+            color: var(--02, #022859);
+            padding: 1rem;
+            gap: 1rem;
 
             & .elRow {
                 display: flex;
                 flex-direction: column;
-                gap: 1.5rem;
-
-                & .textoDos {
-                    display: flex;
-                    flex-direction: column;
-                    width: 100%;
-                }
-
-                & .textoConFoto {
-                    display: flex;
-                    flex-direction: column;
-                    width: 100;
-                    gap: 1.5rem;
-                    margin: auto;
-
-                    & img {
-                        width: 100%;
-                    }
-                }
-
+                align-items: center;
+                gap: 1rem;
             }
 
-            &>* {
+
+            & .textoConFoto {
                 display: flex;
                 flex-direction: column;
-                gap: 0.5rem;
-            }
+                width: 100%;
+                gap: 1.5rem;
 
+                & p {
+                    width: 100%;
+                    gap: 1rem;
+                }
+
+                & img {
+                    width: 100%;
+
+                }
+            }
+        }
+    }
+
+    .gitHub {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 1rem;
+        gap: 2rem;
+        border-radius: 1.25rem;
+        background: var(--01, #48CAD9);
+
+        & .tituloGit {
+            background: var(--01, #48CAD9);
+
+            & h1 {
+
+                background: var(--01, #48CAD9);
+            }
         }
 
-
-    }
-
-    & .back,
-    .deploy {
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-        padding: 2rem;
-        width: 100%;
-
-    }
-
-    & .gitHub {
-        display: flex;
-        flex-direction: column;
-        background: var(--01, #48CAD9);
-        border-radius: 1.2rem;
-        gap: 2rem;
-        padding: 3.8125rem;
-
-
-        & .git {
+        & .textosGit {
             display: flex;
             flex-direction: column;
             gap: 1rem;
-
-        }
-
-        & .linksGit {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            gap: 2rem;
             color: var(--02, #022859);
 
-            & img {
-                width: 3rem;
-
-            }
-
         }
-    }
 
+
+
+    }
 }
 
 @media screen and (min-width: 768px) {
     main {
+
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        text-align: justify;
+
         &>* {
             padding: 2rem 0;
         }
@@ -195,20 +239,46 @@ main {
         & .intro {
             width: 100%;
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             align-items: center;
             gap: 1rem;
             padding: 2rem 4rem;
 
             & article {
-                width: 50%;
                 display: flex;
                 flex-direction: column;
-                gap: 1rem;
-                padding: 1rem;
+                align-items: center;
+                background-color: red;
+
+                & div {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.5rem;
+                    align-items: center;
+                    background: purple;
+                    align-items: flex-start;
+
+                }
 
                 & h3 {
-                    text-align: left;
+                    text-align: flex-start;
+                    color: var(--01, #48CAD9);
+                    font-family: Poppins;
+                    font-size: 1.5rem;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 2.71875rem;
+                    /* 155.357% */
+                    letter-spacing: -0.0175rem;
+
+                }
+
+                & p {
+                    text-align: justify;
+                    width: 100%;
+                    align-self: stretch;
+
                 }
             }
         }
@@ -221,99 +291,5 @@ main {
             gap: 5rem;
             padding: 1rem;
         }
-
-
-
-        & .disenoSiteamps {
-            background-color: var(--azul_oscuro);
-            color: var(--blanco);
-            display: flex;
-            flex-direction: row;
-            gap: 1rem;
-            padding: 5rem;
-            width: 100%;
-            text-align: justify;
-            justify-content: center;
-
-            & h2 {
-                color: white;
-                padding: 1rem 0;
-            }
-
-
-            & .disenoDescription {
-                display: flex;
-                flex-direction: column;
-                gap: 1rem;
-                padding: 1rem 2rem;
-                width: 50%;
-                text-align: justify;
-                justify-content: center;
-            }
-
-        }
-
-        & .front {
-            display: flex;
-            flex-direction: column;
-
-
-            & .frontDescription {
-                display: flex;
-                flex-direction: column;
-                text-align: justify;
-                justify-content: center;
-                padding: 2rem;
-
-                & .textoUno {
-                    display: flex;
-                    width: 100%;
-                    text-align: justify;
-                    justify-content: center;
-                    
-
-                }
-
-                & .elRow {
-                    display: flex;
-                    flex-direction: row;
-                    margin: auto;
-                    justify-content: space-between;
-                    align-items: center;
-                    
-
-                    & .textoDos {
-                        width: 50%;
-                        text-align: justify;
-                        justify-content: center;
-
-                        & p {
-                            width: 70%;
-                        }
-                    }
-
-                    & .textoConFoto {
-                        display: flex;
-                        flex-direction: column;
-                        width: 50%;
-                        gap: 3rem;
-                        text-align: justify;
-                        justify-content: center;
-                        // margin: auto;
-
-                        & p {
-                            width: 70%;
-                        }
-
-                        & img {
-                            width: 70%;
-                            // height: 80%;
-
-                        }
-                    }
-                }
-            }
-        }
-
     }
 }
