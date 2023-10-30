@@ -10,7 +10,7 @@ const Ux = () => {
     }, [page, setPage]);
 
     return (
-        <main>
+        <main className="uxMain">
             <h1>UX/UI CASE STUDY</h1>
             <section className="intro">
                 <article>
