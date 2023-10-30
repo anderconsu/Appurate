@@ -116,6 +116,16 @@ const DataScience = () => {
                     />
                 </div>
             </section>
+            <section className="routeHeader">
+                <section className="maker">
+                    <div>
+                        <p>EQUIPO DE DATA SCIENCE</p>
+                    </div>
+                </section>
+                <section className="routeHeaderDescription">
+                    <h3>ESTUDIO DEL PROBLEMA A TRATAR</h3>
+                </section>
+            </section>
         </main>
     );
 };
