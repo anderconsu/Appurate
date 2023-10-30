@@ -1,20 +1,28 @@
 import "./landing.scss";
+import PageContext from "../../context/pageContext";
+import { useContext, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 
 const Landing = () => {
+    const { page, setPage } = useContext(PageContext);
+
+    useEffect(() => {
+        setPage("landing");
+    }, [page, setPage]);
+
     return (
-        <main className="paginaLanding">
-            <div className="grisLanding">
+        <main>
+            <section className="grisLanding">
                 <h1>APPÚRATE.ORG</h1>
-                <p>El viernes 15 de septiembre, tuvo lugar la reunión y presentación del desafío en colaboración con AQUADAT. Durante este encuentro, se nos brindó una detallada exposición del desafío en cuestión, así como se delinearon los objetivos a alcanzar.</p>
-            </div>
-            <div className="blancoLanding">
-                <div className="columna1Landing">
-                    <div className="estrategia">
+                <p>El viernes 15 de septiembre, tuvo lugar la reunión y presentación del desafío en colaboración con <strong>AQUADAT</strong>. Durante este <br />encuentro, se nos brindó una detallada exposición del desafío en cuestión, así como se delinearon los objetivos a alcanzar.</p>
+            </section>
+            <section className="blancoLanding">
+                <section className="columna1Landing">
+                    <article className="estrategia">
                         <h2>ESTRATEGIA, CREATIVIDAD Y VIABILIDAD DEL PROYECTO</h2>
                         <p>Después de un fin de semana de intensa investigación por parte de los tres equipos (FullStack, UX/UI y Data), el lunes 18 de septiembre, se llevaron a cabo las exposiciones que abordaron las investigaciones realizadas y las posibles soluciones creativas y tecnológicas relacionadas con el desafío planteado por Aquadat.</p>
-                    </div>
+                    </article>
                     <div>
                         <img 
                             src="./static/landing/fotoClase1.png" 
@@ -33,8 +41,8 @@ const Landing = () => {
                             />
                         </div>
                     </div>
-                </div>
-                <div className="columna2Landing">
+                </section>
+                <section className="columna2Landing">
                     <div>
                         <img 
                             src="./static/landing/briefing.png" 
@@ -54,8 +62,8 @@ const Landing = () => {
                             Estas conclusiones son fundamentales para orientar nuestras acciones y estrategias futuras en el contexto de este desafío crucial propuesto por Aquadat
                         </p>
                     </div>
-                </div>
-            </div>
+                </section>
+            </section>
             <div className="gris2Landing">
                 <h2>A partir de ese punto.</h2>
                 <p>Nuestro objetivo principal fue desarrollar una solución dinámica y educativa. Tras haber definido claramente el problema, fuimos capaces de identificar rápidamente una solución que involucraría a las generaciones más jóvenes, proporcionando un feedback valioso y necesario.</p>
