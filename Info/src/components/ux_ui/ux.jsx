@@ -170,7 +170,7 @@ const Ux = () => {
                         <p>EQUIPO DE DISEÑO UX/UI PRODUCT DESIGN</p>
                     </div>
                 </section>
-                <section className="problemsDescription">
+                <section className="problemsDescription routeHeaderDescription">
                     <h3>DEFINIR EL PROBLEMA</h3>
                     <p>
                         Nuestro principal enfoque en el proyecto fue abordar el
