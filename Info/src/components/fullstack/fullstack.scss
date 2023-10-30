@@ -1,9 +1,8 @@
-main {
+.fsMain {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
     text-align: justify;
 
 
@@ -26,6 +25,8 @@ main {
         align-items: center;
         background: var(--gris2, #F5F6F8);
         color: var(--02, #022859);
+        padding: 1rem;
+        gap: 1rem;
 
 
 
@@ -223,8 +224,7 @@ main {
 }
 
 @media screen and (min-width: 768px) {
-    main {
-
+    .fsMain {
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -232,8 +232,16 @@ main {
         gap: 1rem;
         text-align: justify;
 
+
         &>* {
-            padding: 2rem 0;
+            padding: 1rem 0;
+            background: var(--gris2, #F5F6F8);
+        }
+
+        & h1 {
+            text-align: center;
+            padding-top: 2rem;
+            background: var(--gris2, #F5F6F8);
         }
 
         & .intro {
@@ -241,22 +249,23 @@ main {
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 1rem;
-            padding: 2rem 4rem;
+            background: var(--gris2, #F5F6F8);
+            color: var(--02, #022859);
+
+
+
 
             & article {
                 display: flex;
-                flex-direction: column;
+                flex-direction: row;
                 align-items: center;
-                background-color: red;
+
 
                 & div {
                     width: 100%;
                     display: flex;
                     flex-direction: column;
-                    gap: 0.5rem;
                     align-items: center;
-                    background: purple;
                     align-items: flex-start;
 
                 }
@@ -280,16 +289,8 @@ main {
                     align-self: stretch;
 
                 }
+            } 
+
             }
         }
-
-        & .perfiles {
-            display: flex;
-            justify-content: center;
-            flex-direction: row;
-            align-items: center;
-            gap: 5rem;
-            padding: 1rem;
-        }
     }
-}

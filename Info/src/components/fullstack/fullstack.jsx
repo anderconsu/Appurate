@@ -9,7 +9,7 @@ const Fullstack = () => {
     }, [page, setPage]);
 
     return (
-        <main>
+        <main className="fsMain">
             <section className="intro">
                 <h1>FULL STACK</h1>
                 <article>
