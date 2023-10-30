@@ -22,7 +22,8 @@
             display: flex;
             flex-direction: column;
             gap: 1rem;
-            padding: 1rem;
+            padding: 2rem;
+            text-align: justify;
             & h3 {
                 text-align: center;
             }
@@ -59,6 +60,27 @@
             width: 100%;
         }
     }
+    & .problemStudy {
+        width: 100%;
+        margin: auto;
+        padding: 2rem;
+        text-align: justify;
+    }
+    & .dataRecolection {
+        width: 100%;
+        margin: auto;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        text-align: justify;
+        & .recImgContainer {
+            & img {
+                width: 100%;
+            }
+        }
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -72,7 +94,7 @@
             flex-direction: row;
             align-items: flex-start;
             justify-content: center;
-            gap: 1rem;
+            gap: 4rem;
             padding: 2rem 4rem;
             & article {
                 width: 50%;
@@ -95,7 +117,7 @@
         }
         & .routeHeader {
             width: 100%;
-            padding: 2rem;
+            padding: 2rem 2rem;
             display: flex;
             flex-direction: column;
             align-items: flex-start;
@@ -107,6 +129,24 @@
                 gap: 1rem;
                 padding: 1rem 2rem;
                 width: 50%;
+            }
+        }
+        & .problemStudy {
+            padding: 4rem;
+        }
+        & .dataRecolection {
+            width: 100%;
+            margin: auto;
+            padding: 4rem;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            gap: 5rem;
+            & .recImgContainer {
+                min-width: 40%;
+                & img {
+                    width: 100%;
+                }
             }
         }
     }

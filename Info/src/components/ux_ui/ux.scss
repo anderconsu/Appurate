@@ -22,7 +22,8 @@
             display: flex;
             flex-direction: column;
             gap: 1rem;
-            padding: 1rem;
+            padding: 2rem;
+            text-align: justify;
             & h3 {
                 text-align: center;
             }
@@ -237,7 +238,7 @@
             flex-direction: row;
             align-items: flex-start;
             justify-content: center;
-            gap: 1rem;
+            gap: 4rem;
             padding: 2rem 4rem;
             & article {
                 width: 50%;

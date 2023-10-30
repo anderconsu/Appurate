@@ -126,6 +126,47 @@ const DataScience = () => {
                     <h3>ESTUDIO DEL PROBLEMA A TRATAR</h3>
                 </section>
             </section>
+            <section className="problemStudy">
+                <p>
+                    Con el equipo de data lo primero que hicimos fue informarnos
+                    bien sobre la problemática, aprender cuales son las
+                    variables necesarias para determinar si un agua es viable o
+                    no para el baño y entre que parámetros se mueven cada uno.
+                    Para ello buscamos información en línea, hablamos con
+                    biólogos, profesores y diferentes empresas para obtener los
+                    conocimientos necesarios antes de empezar con el proceso de
+                    búsqueda de datos.
+                </p>
+            </section>
+            <section className="routeHeader">
+                <section className="maker">
+                    <div>
+                        <p>EQUIPO DE DATA SCIENCE</p>
+                    </div>
+                </section>
+                <section className="routeHeaderDescription">
+                    <h3>RECOLECCION DE LA DATA</h3>
+                </section>
+            </section>
+            <section className="dataRecolection">
+                <p>
+                    En este proceso hicimos una intensa busqueda de data en
+                    diferentes website de del Gobierno Vasco y de institutos.
+                    Intentamos hacer webscrapping como también buscamos data en
+                    kaggle. Nos informamos con diferentes profesionales para ver
+                    de donde podíamos sacar data completa y fiable. Al finalizar
+                    este proceso llegamos a la conclusión de que no había la
+                    data necesaria, suficiente y de calidad para ser estudiada,
+                    sumado a que la poca que había o no era publica o era muy
+                    escasa.
+                </p>
+                <div className="recImgContainer">
+                    <img
+                        src="./static/dataScience/dataRecolection.png"
+                        alt="Data recolection"
+                    />
+                </div>
+            </section>
         </main>
     );
 };
