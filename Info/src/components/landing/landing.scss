@@ -1,4 +1,4 @@
-main {
+.landingMain {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -6,7 +6,7 @@ main {
     text-align: justify;
     gap: 0rem;
 
-    &>* {
+    & > * {
         padding: 1rem 0;
     }
 
@@ -19,18 +19,13 @@ main {
 
         & h1 {
             padding-top: 2rem;
-
         }
 
         & p {
             gap: 1rem;
             padding: 2rem;
-
         }
-
-
     }
-
 
     & .blancoLanding {
         width: 100%;
@@ -60,7 +55,6 @@ main {
                 & p {
                     padding: 2rem;
                 }
-
             }
 
             & .fotoClase1 {
@@ -90,7 +84,6 @@ main {
 
                 & .iconos {
                     width: 100%;
-
                 }
             }
         }
@@ -100,7 +93,7 @@ main {
             display: flex;
             flex-direction: column;
             align-items: center;
-            background-color: var(--blanco)
+            background-color: var(--blanco);
         }
 
         & img {
@@ -125,7 +118,6 @@ main {
                 color: var(--02, #022859);
             }
         }
-
     }
 
     & .gris2Landing {
@@ -137,17 +129,13 @@ main {
 
         & h1 {
             padding-top: 2rem;
-
         }
 
         & p {
             gap: 1rem;
             padding: 2rem;
             color: var(--02, #022859);
-
         }
-
-
     }
 
     & .blanco2landing {
@@ -170,24 +158,19 @@ main {
                 width: 100%;
                 padding: 1rem;
             }
-
         }
 
         & .disenoSitemap {
             display: flex;
             width: 100%;
 
-
-
             & h4 {
                 display: flex;
                 text-align: flex-start;
-                color: var(--01, #48CAD9);
+                color: var(--01, #48cad9);
                 font-family: Poppins;
                 padding: 2rem;
                 font-weight: 400;
-
-
             }
         }
 
@@ -214,8 +197,6 @@ main {
                         display: flex;
                         width: 30%;
                     }
-
-
                 }
             }
 
@@ -240,13 +221,8 @@ main {
                 & .imagenMapa {
                     display: flex;
                     width: 100%;
-
                 }
-
-
             }
-
-
         }
 
         & .buttonWeb {
@@ -258,16 +234,14 @@ main {
             & button {
                 display: flex;
                 border-radius: 1.25rem;
-                background: var(--01, #48CAD9);
+                background: var(--01, #48cad9);
                 font-weight: bold;
                 color: white;
                 width: 50%;
                 padding: 1.5rem;
                 justify-content: center;
                 align-items: center;
-
             }
-
         }
     }
 
@@ -294,7 +268,6 @@ main {
             }
 
             & .bewaters {
-
                 & h3 {
                     display: flex;
                     width: 100%;
@@ -311,7 +284,7 @@ main {
                 flex-direction: column;
                 width: 80%;
                 border-radius: 1.25rem;
-                background: var(--Color, #FFF);
+                background: var(--Color, #fff);
                 padding: 1.5rem;
                 flex-direction: column;
                 align-items: flex-start;
@@ -320,11 +293,9 @@ main {
                 margin-left: 3rem;
                 box-shadow: -5px 10px 13px 5px rgba(0, 0, 0, 0.5);
 
-
                 & h4 {
                     color: var(--02, #022859);
                     font-weight: 400;
-
                 }
 
                 & p,
@@ -336,7 +307,6 @@ main {
                     }
                 }
             }
-
         }
 
         & .containerIconos {
@@ -346,30 +316,25 @@ main {
             margin-top: -4rem;
             width: 90%;
         }
-
-
     }
 
     & .buttonPa {
         display: flex;
         flex-direction: column;
 
-
         & button {
             border-radius: 0.15rem;
-            background: var(--Color, #FFF);
-            box-shadow: 0px 6px 6px 0px rgba(2, 40, 89, 0.20);
+            background: var(--Color, #fff);
+            box-shadow: 0px 6px 6px 0px rgba(2, 40, 89, 0.2);
             width: 100%;
             flex-shrink: 0;
             margin-top: -2rem;
         }
     }
-
 }
 
 @media screen and (min-width: 768px) {
-    main {
-
+    .landingMain {
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -377,10 +342,9 @@ main {
         gap: 1rem;
         text-align: justify;
 
-
-        &>* {
+        & > * {
             padding: 1rem 0;
-            background: var(--gris2, #F5F6F8);
+            background: var(--gris2, #f5f6f8);
         }
 
         & .estrategia {
@@ -390,8 +354,5 @@ main {
             align-items: center;
             background-color: var(--gris2);
         }
-
-
-
     }
 }
