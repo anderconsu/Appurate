@@ -109,7 +109,7 @@ const Landing = () => {
                     </div>
                 </section>
             </section>
-            <div className="gris2Landing">
+            <section className="gris2Landing">
                 <h2>A partir de ese punto.</h2>
                 <p>
                     Nuestro objetivo principal fue desarrollar una <strong>solución
@@ -118,42 +118,43 @@ const Landing = () => {
                     solución que <strong>involucraría a las generaciones más jóvenes</strong>,
                     proporcionando un feedback valioso y necesario.
                 </p>
-            </div>
+            </section>
             <div className="blanco2landing">
-                <div>
+                <div className="columnaTexto">
                     <p>
                         Cuando se planteó la creación de una plataforma
                         educativa en la que los estudiantes no solo formarían
                         parte activa del proceso de aprendizaje, sino que
-                        también serían actores fundamentales en la toma y
-                        análisis de muestras, se consideró la necesidad de
+                        también serían <strong>actores fundamentales en la toma y
+                        análisis de muestras</strong>, se consideró la necesidad de
                         diseñar una aplicación web que permitiera su uso tanto
                         en versiones web y tablet, especialmente para el
                         aprendizaje en el aula mediante proyectores o pantallas.
-                    </p>
-                    <p>
                         No obstante, también se reconoció la importancia de
-                        contar con una versión móvil, que permitiera la
+                        contar con una <strong>versión móvil</strong>, que permitiera la
                         introducción de datos en el lugar de recogida y la
-                        rápida visualización de los resultados. Esta versión
-                        móvil se concibió para garantizar que cualquier persona
+                        rápida visualización de los resultados.
+                    <br /><br />
+                        Esta versión
+                        móvil se concibió para <strong>garantizar que cualquier persona
                         interesada en conocer la calidad del agua de la Ría de
                         Bilbao pudiera acceder de manera sencilla y práctica a
-                        la información relevante, sin importar su ubicación o
+                        la información relevante</strong>, sin importar su ubicación o
                         dispositivo de preferencia. De esta manera, se buscó
                         hacer que la plataforma fuera accesible y efectiva para
                         todos los usuarios interesados en el estado del agua en
                         la Ría.
                     </p>
-                    <div>
-                        <img
-                            src="./static/landing/app.png"
-                            alt="app"
-                            className="app"
-                        />
-                    </div>
                 </div>
-
+                <div>
+                    <img
+                        src="./static/landing/app.png"
+                        alt="app"
+                        className="app"
+                    />
+                </div>
+                
+            </div>
                 <div className="disenoSitemap">
                     <h4>
                         Luego de estas consideraciones, nos adentramos en el
@@ -234,7 +235,7 @@ const Landing = () => {
                         <Link to="/">Descubre la web</Link>
                     </button>
                 </div>
-            </div>
+            
             <div className="gris3landing">
                 <div className="azul">
                     <h2>

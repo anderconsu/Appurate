@@ -146,20 +146,18 @@
         align-items: center;
         background-color: var(--blanco);
 
-        & div {
+        & .columnaTexto {
             width: 100%;
-
-            & p {
-                color: var(--02, #022859);
-                gap: 1rem;
-                padding: 2rem;
-            }
-
-            & img {
-                width: 100%;
-                padding: 1rem;
-            }
+            color: var(--02, #022859);
+            padding: 2rem;
+            
+        } 
+        & .app {
+            width: 100%;
+           padding: 1rem;
+           
         }
+    }
 
         & .disenoSitemap {
             display: flex;
@@ -244,7 +242,7 @@
                 align-items: center;
             }
         }
-    }
+    
 
     & .gris3landing {
         display: flex;
@@ -504,194 +502,20 @@
         & .blanco2landing {
             width: 100%;
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             align-items: center;
             background-color: var(--blanco);
-    
-            & div {
+            gap: 1rem;
+            & .columnaTexto {
+                width: 50%;
+                color: var(--02, #022859);
+                padding-left: 3rem;
+                padding-top: 1rem;
+            } 
+            & .app {
                 width: 100%;
-    
-                & p {
-                    color: var(--02, #022859);
-                    gap: 1rem;
-                    padding: 2rem;
-                }
-    
-                & img {
-                    width: 100%;
-                    padding: 1rem;
-                }
-            }
-    
-            & .disenoSitemap {
-                display: flex;
-                width: 100%;
-    
-                & h4 {
-                    display: flex;
-                    text-align: flex-start;
-                    color: var(--01, #48cad9);
-                    font-family: Poppins;
-                    padding: 2rem;
-                    font-weight: 400;
-                }
-            }
-    
-            & .orden {
-                display: flex;
-                width: 100%;
-                flex-direction: column;
-                align-items: center;
-    
-                & .unoDos {
-                    display: flex;
-                    flex-direction: column;
-                    width: 100%;
-                    align-items: center;
-    
-                    & .uno,
-                    .dos {
-                        display: flex;
-                        flex-direction: column;
-                        width: 100%;
-                        align-items: center;
-    
-                        & .imagenNumero {
-                            display: flex;
-                            width: 30%;
-                        }
-                    }
-                }
-    
-                & .tres {
-                    display: flex;
-                    flex-direction: column;
-                    width: 100%;
-                    align-items: center;
-    
-                    & .tresTres {
-                        display: flex;
-                        flex-direction: column;
-                        width: 100%;
-                        align-items: center;
-                    }
-    
-                    & .imagenNumero {
-                        display: flex;
-                        width: 30%;
-                    }
-    
-                    & .imagenMapa {
-                        display: flex;
-                        width: 100%;
-                    }
-                }
-            }
-    
-            & .buttonWeb {
-                display: flex;
-                flex-direction: column;
-                width: 100%;
-                align-items: center;
-    
-                & button {
-                    display: flex;
-                    border-radius: 1.25rem;
-                    background: var(--01, #48cad9);
-                    font-weight: bold;
-                    color: white;
-                    width: 50%;
-                    padding: 1.5rem;
-                    justify-content: center;
-                    align-items: center;
-                }
-            }
-        }
-    
-        & .gris3landing {
-            display: flex;
-            width: 100%;
-            flex-direction: column;
-            align-items: center;
-            border-radius: 1.25rem;
-            background: var(--02, #022859);
-    
-            & .azul {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                width: 100%;
-                padding: 2rem;
-                gap: 2rem;
-    
-                & h2 {
-                    display: flex;
-                    width: 100%;
-                    color: white;
-                }
-    
-                & .bewaters {
-                    & h3 {
-                        display: flex;
-                        width: 100%;
-                        color: white;
-                    }
-    
-                    & img {
-                        width: 100%;
-                    }
-                }
-    
-                & .equipo {
-                    display: flex;
-                    flex-direction: column;
-                    width: 80%;
-                    border-radius: 1.25rem;
-                    background: var(--Color, #fff);
-                    padding: 1.5rem;
-                    flex-direction: column;
-                    align-items: flex-start;
-                    gap: 1rem;
-                    margin-top: -3rem;
-                    margin-left: 3rem;
-                    box-shadow: -5px 10px 13px 5px rgba(0, 0, 0, 0.5);
-    
-                    & h4 {
-                        color: var(--02, #022859);
-                        font-weight: 400;
-                    }
-    
-                    & p,
-                    ul {
-                        color: var(--02, #022859);
-    
-                        & li {
-                            padding: 2rem;
-                        }
-                    }
-                }
-            }
-    
-            & .containerIconos {
-                display: flex;
-                flex-direction: column;
-                margin-left: 3rem;
-                margin-top: -4rem;
-                width: 90%;
-            }
-        }
-    
-        & .buttonPa {
-            display: flex;
-            flex-direction: column;
-    
-            & button {
-                border-radius: 0.15rem;
-                background: var(--Color, #fff);
-                box-shadow: 0px 6px 6px 0px rgba(2, 40, 89, 0.2);
-                width: 100%;
-                flex-shrink: 0;
-                margin-top: -2rem;
+               padding-right: 2rem;
+               padding-top: 1rem;
             }
         }
     }
