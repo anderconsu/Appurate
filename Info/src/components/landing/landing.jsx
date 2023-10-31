@@ -155,13 +155,13 @@ const Landing = () => {
                 </div>
                 
             </div>
-                <div className="disenoSitemap">
-                    <h4>
-                        Luego de estas consideraciones, nos adentramos en el
-                        diseño del sitemap, donde identificamos tres componentes
-                        fundamentales o bloques clave para la webapp.
-                    </h4>
-                </div>
+            <div className="disenoSitemap">
+                <h2>
+                    Luego de estas consideraciones, nos adentramos en el
+                    diseño del sitemap, donde identificamos tres componentes
+                    fundamentales o bloques clave para la webapp.
+                </h2>
+            </div>
 
                 <div className="orden">
                     <div className="unoDos">

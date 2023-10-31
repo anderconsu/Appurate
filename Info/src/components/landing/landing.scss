@@ -159,19 +159,22 @@
         }
     }
 
-        & .disenoSitemap {
+    & .disenoSitemap {
             display: flex;
             width: 100%;
+            background-color: var(--blanco);
 
-            & h4 {
-                display: flex;
-                text-align: flex-start;
-                color: var(--01, #48cad9);
-                font-family: Poppins;
-                padding: 2rem;
-                font-weight: 400;
-            }
+        & h2 {
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: row;
+            align-content: flex-start;
+            color: var(--01, #48cad9);
+            margin: 2rem;
+            
         }
+    }
 
         & .orden {
             display: flex;
@@ -516,6 +519,22 @@
                 width: 100%;
                padding-right: 2rem;
                padding-top: 1rem;
+            }
+        }
+        & .disenoSitemap {
+            display: flex;
+            width: 100%;
+            background-color: var(--blanco);
+
+            & h2 {
+                margin-top: -8rem;
+                width: 70%;
+                display: flex;
+                text-align: flex-start;
+                color: var(--01, #48cad9);
+                font-family: Poppins;
+                padding: 1rem;
+                
             }
         }
     }
