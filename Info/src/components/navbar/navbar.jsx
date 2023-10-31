@@ -5,7 +5,7 @@ import PageContext from "../../context/pageContext";
 const team = ["data", "fs", "ux"];
 const urldict = {
     fs: "/fullstack",
-    data: "/datascience",
+    data: "/data-science",
     ux: "/ux-ui",
 };
 
@@ -39,6 +39,7 @@ const Navbar = () => {
                             <img
                                 src={`./static/nav/${item}.png`}
                                 alt={item}
+                                className="animatedSelect"
                                 onClick={() => {
                                     navigate(urldict[item]);
                                     window.scrollTo({

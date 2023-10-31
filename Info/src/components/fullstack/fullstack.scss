@@ -5,6 +5,25 @@
     align-items: center;
     text-align: justify;
 
+    & .maker {
+
+        padding-right: 1rem;
+        padding-left: 2rem;
+
+        & div {
+
+            text-align: center;
+            background-color: var(--azul_celeste);
+            border-radius: 20px;
+            padding-top: 0.01rem;
+            padding-bottom: 0.01rem;
+            color: var(--blanco);
+            font-weight: bold;
+            ;
+
+        }
+    }
+
 
 
     &>* {
@@ -16,6 +35,7 @@
         text-align: center;
         padding-top: 2rem;
         background: var(--gris2, #F5F6F8);
+        width: 100%;
     }
 
     & .intro {
@@ -27,6 +47,7 @@
         color: var(--02, #022859);
         padding: 1rem;
         gap: 1rem;
+        margin-top: -1rem;
 
 
 
@@ -78,6 +99,7 @@
         gap: 5rem;
         padding: 1rem;
         margin: 2rem;
+        margin-top: -0.3rem;
         background: var(--gris2, #F5F6F8);
 
         & .profile {
@@ -198,6 +220,7 @@
         width: 100%;
         padding: 1rem;
         gap: 2rem;
+        margin-top: -1rem;
         border-radius: 1.25rem;
         background: var(--01, #48CAD9);
 
@@ -247,50 +270,297 @@
         & .intro {
             width: 100%;
             display: flex;
-            flex-direction: column;
-            align-items: center;
-            background: var(--gris2, #F5F6F8);
-            color: var(--02, #022859);
-
-
-
+            flex-direction: row;
+            align-items: flex-start;
+            gap: 1rem;
+            padding: 2rem 4rem;
 
             & article {
+                width: 50%;
                 display: flex;
-                flex-direction: row;
-                align-items: center;
-
-
-                & div {
-                    width: 100%;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    align-items: flex-start;
-
-                }
+                flex-direction: column;
+                gap: 1rem;
+                padding: 1rem;
 
                 & h3 {
-                    text-align: flex-start;
-                    color: var(--01, #48CAD9);
+                    text-align: left;
+                }
+            }
+        }
+
+
+        & .perfiles {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            align-items: center;
+            gap: 5rem;
+            padding: 1rem;
+            margin-top: -1rem;
+        }
+
+
+        & .diseno {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            border-top: 1px solid #C3C9D5;
+            background: var(--gris2, #F5F6F8);
+            margin-top: -3rem;
+
+
+            & .maker {
+                & div {
+
+                    text-align: center;
+                    background-color: var(--azul_celeste);
+                    border-radius: 20px;
+                    padding-top: 0.01rem;
+                    padding-bottom: 0.01rem;
+                    color: var(--blanco);
+                    font-weight: bold;
+                    ;
+
+                }
+            }
+
+
+
+            & .tituloDiseno {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1rem;
+                padding-left: 3rem;
+                padding-right: 3rem;
+
+                & h1 {
+                    display: flex;
+                    align-self: flex-start;
+                }
+
+
+
+                & span {
+                    color: var(--LETRA-GRIS-USAR-ESTA, #687F9C);
                     font-family: Poppins;
-                    font-size: 1.5rem;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 2.71875rem;
-                    /* 155.357% */
-                    letter-spacing: -0.0175rem;
+                    align-self: flex-start;
+                    margin-bottom: 1.5rem;
 
                 }
 
-                & p {
-                    text-align: justify;
+
+            }
+
+
+            & .disenoTexto {
+                width: 100%;
+                background-color: white;
+                padding: 5rem;
+                color: var(--02, #022859);
+                margin-bottom: -2rem;
+
+            }
+
+        }
+
+        & .front,
+        .back,
+        .deploy {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 100%;
+            margin-top: -1rem;
+
+
+
+
+
+
+            & .tituloFront,
+            .tituloBack,
+            .tituloDeploy {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                width: 100%;
+                margin: auto;
+                padding-right: 3rem;
+                padding-left: 3rem;
+
+
+
+                & h1 {
+                    display: flex;
+                    align-self: flex-start;
+                }
+            }
+
+
+
+            & .frontDescription,
+            .backDescription,
+            .deployDescription {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                background-color: white;
+                color: var(--02, #022859);
+                padding: 0.5rem;
+                padding-top: 3rem;
+                gap: 5rem;
+                margin-top: 3rem;
+
+                & .textoUno {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    padding-right: 3rem;
+                    padding-left: 3rem;
+                }
+
+                & .elRow {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-around;
+                    gap: 8rem;
                     width: 100%;
-                    align-self: stretch;
+                    padding-left: 3rem;
+                    padding-right: 3rem;
 
+                    & .textoDos {
+                        display: flex;
+                        flex-direction: column;
+                        width: 50%;
+                        align-items: flex-start;
+                        gap: 1.5rem;
+                        align-self: flex-start; // Añade esta línea para alinear con el inicio de textoConFoto
+                    }
+
+                    & .textoConFoto {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        width: 50%;
+                        gap: 1.5rem;
+
+                        & p {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            width: 100%;
+                            gap: 1rem;
+                        }
+
+                        & img {
+                            width: 80%;
+                            align-self: flex-end;
+                            border-radius: 0.5rem;
+                        }
+                    }
                 }
-            } 
+
+
 
             }
         }
+
+        & .back,
+        .deploy {
+            display: flex;
+
+            & .backDescription,
+            .deployDescription {
+
+                margin-bottom: -1rem;
+
+                & .textoUno {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    padding-right: 3rem;
+                    padding-left: 3rem;
+                }
+
+                & .elRow {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-around;
+                    gap: 8rem;
+                    width: 100%;
+                    padding-left: 3rem;
+                    padding-right: 3rem;
+
+                    & .textoDos {
+                        display: flex;
+                        flex-direction: column;
+                        width: 50%;
+                        align-items: flex-start;
+                        gap: 1.5rem;
+                        align-self: flex-start;
+                    }
+
+                    & .textoTres {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        width: 50%;
+                        gap: 1.5rem;
+                        align-self: flex-start;
+
+                        & p {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            width: 100%;
+                            gap: 1rem;
+                            
+                        }
+                    }
+                }
+
+
+
+            }
+        }
+
+        & .gitHub {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1rem;
+            width: 90%;
+            padding: 1.5rem;
+            margin-top: 1rem;
+            
+
+            & .git {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1rem;
+                padding-left: 3rem;
+                padding-right: 3rem;
+
+                
+                
+            }
+            & .linksGit {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 3rem;
+                padding-left: 3rem;
+                margin-top: 1.5rem;
+            }
+        }
+
+
+
+
     }
+
+}
