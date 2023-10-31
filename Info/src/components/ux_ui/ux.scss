@@ -141,15 +141,28 @@
                 display: flex;
                 flex-direction: column;
                 gap: 1rem;
-                padding: 1rem;
+                padding: 1rem 0 0 1rem;
                 background-color: var(--azul_celeste);
                 border-radius: 5px;
                 box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.5);
                 & h4 {
                     color: var(--azul_oscuro);
                 }
+                & .idealUserPoints {
+                    display: flex;
+                    align-items: flex-end;
+                    justify-content: space-between;
+                    & .idealImgContainer {
+                        display: flex;
+                        width: 100%;
+                        & img {
+                            width: 100%;
+                        }
+                    }
+                }
                 & ul {
                     margin-left: 1rem;
+                    padding-bottom: 1rem;
                 }
             }
         }
@@ -157,6 +170,12 @@
             display: flex;
             flex-direction: column;
             gap: 2rem;
+        }
+        & .pagesImgContainer {
+            visibility: hidden;
+            display: flex;
+            width: 0;
+            height: 0;
         }
         & .researchPointsdescription {
             display: flex;
@@ -337,7 +356,7 @@
             display: flex;
             flex-direction: row;
             gap: 2rem;
-            padding: 2rem;
+            padding: 2rem 0 2rem 2rem;
             width: 100%;
             & .researchPointsFirst {
                 display: flex;
@@ -350,15 +369,29 @@
                     display: flex;
                     flex-direction: column;
                     gap: 1rem;
-                    padding: 2rem;
+                    padding: 2rem 0 0 2rem;
                     background-color: var(--azul_celeste);
                     border-radius: 5px;
                     box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.5);
                     & h4 {
                         color: var(--azul_oscuro);
                     }
+                    & .idealUserPoints {
+                        display: flex;
+                        align-items: flex-end;
+                        justify-content: space-between;
+                        & .idealImgContainer {
+                            display: flex;
+                            width: auto;
+                            & img {
+                                width: 100%;
+                            }
+                        }
+                    }
                     & ul {
+                        width: 70%;
                         margin-left: 1rem;
+                        padding-bottom: 2rem;
                     }
                 }
             }
@@ -366,13 +399,20 @@
                 display: flex;
                 flex-direction: column;
                 gap: 2rem;
-                width: 30%;
+                width: 50%;
                 padding: 2rem;
             }
             & .researchPointsdescription {
                 display: flex;
                 flex-direction: column;
                 gap: 1rem;
+            }
+            & .pagesImgContainer {
+                visibility: visible;
+                width: auto;
+                height: auto;
+                display: flex;
+                justify-content: end;
             }
         }
         & .prototype {

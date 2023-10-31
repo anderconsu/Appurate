@@ -272,18 +272,26 @@ const Ux = () => {
                                 <b>Profesión</b> Profesor de ciencias, ESO
                             </p>
                         </div>
-                        <ul>
-                            <li>
-                                Desea encontrar nuevas formas de enseñar ciencia
-                                que sean más atractivas y prácticas para los
-                                estudiantes.
-                            </li>
-                            <li>
-                                Siente que los estudiantes a veces tienen
-                                dificultades para comprender conceptos
-                                científicos abstractos.
-                            </li>
-                        </ul>
+                        <div className="idealUserPoints">
+                            <ul>
+                                <li>
+                                    Desea encontrar nuevas formas de enseñar
+                                    ciencia que sean más atractivas y prácticas
+                                    para los estudiantes.
+                                </li>
+                                <li>
+                                    Siente que los estudiantes a veces tienen
+                                    dificultades para comprender conceptos
+                                    científicos abstractos.
+                                </li>
+                            </ul>
+                            <div className="idealImgContainer">
+                                <img
+                                    src="./static/ux-ui/ideal.png"
+                                    alt="ideal user"
+                                />
+                            </div>
+                        </div>
                     </article>
                     <article className="interviews researchPointsdescription">
                         <h4>Entrevistas</h4>
@@ -321,6 +329,9 @@ const Ux = () => {
                         </p>
                     </article>
                 </article>
+                <div className="pagesImgContainer">
+                    <img src="./static/ux-ui/pages.png" alt="pages" />
+                </div>
             </section>
             <section className="design routeHeader">
                 <section className="maker">
