@@ -13,9 +13,18 @@ const Current = () => {
     const { page } = useContext(PageContext);
     return (
         <section className="current">
-            <Link to="/">Home</Link>
-            <p>{page ? (teamName[page] ? ` > ${teamName[page]}` : "") : ""}</p>
+            {page && teamName[page] ? (
+                <>
+                    <Link to="/">Home</Link>
+                    <p>{` > ${teamName[page]}`}</p>
+                </>
+            ) : null}
         </section>
+
+        // <section className="current">
+        //     <Link to="/">Home</Link>
+        //     <p>{page ? (teamName[page] ? ` > ${teamName[page]}` : "") : ""}</p>
+        // </section>
     );
 };
 
