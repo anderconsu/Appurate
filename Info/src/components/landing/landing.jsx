@@ -73,36 +73,49 @@ const Landing = () => {
                             Estas investigaciones y presentaciones llevaron a la
                             siguiente serie de conclusiones:
                         </h2>
-                        <p>
-                            Falta de Data: Se identificó una carencia
-                            significativa de datos, lo que representa un
-                            obstáculo importante para comprender y abordar de
-                            manera efectiva la problemática del agua. Necesidad
-                            de Implicación de la Sociedad: Se destacó la
-                            necesidad de involucrar a la sociedad en la
-                            problemática del agua, reconociendo que la
-                            participación y la concienciación de la comunidad
-                            son esenciales para abordar este desafío de manera
-                            integral. Concienciación de las Nuevas Generaciones:
-                            Se subrayó la importancia de sensibilizar a las
-                            generaciones más jóvenes sobre esta problemática, ya
-                            que representan el futuro y pueden desempeñar un
-                            papel fundamental en la promoción de soluciones
-                            sostenibles. Estas conclusiones son fundamentales
+                        <ol>
+                            <li>
+                                <strong>Falta de Data:</strong> Se identificó una carencia
+                                significativa de datos, lo que representa un
+                                obstáculo importante para comprender y abordar de
+                                manera efectiva la problemática del agua.
+                            </li> 
+                            <li>
+                                <strong>Necesidad
+                                de Implicación de la Sociedad:</strong> Se destacó la
+                                necesidad de involucrar a la sociedad en la
+                                problemática del agua, reconociendo que la
+                                participación y la concienciación de la comunidad
+                                son esenciales para abordar este desafío de manera
+                                integral.
+                            </li>
+                            <li>
+                                <strong>Concienciación de las Nuevas Generaciones: </strong>
+                                Se subrayó la importancia de sensibilizar a las
+                                generaciones más jóvenes sobre esta problemática, ya
+                                que representan el futuro y pueden desempeñar un
+                                papel fundamental en la promoción de soluciones
+                                sostenibles.
+                            </li>
+                            
+                             
+                         </ol>
+                         <p>
+                            Estas conclusiones son fundamentales
                             para orientar nuestras acciones y estrategias
                             futuras en el contexto de este desafío crucial
-                            propuesto por Aquadat
-                        </p>
+                            propuesto por Aquadat.
+                         </p>
                     </div>
                 </section>
             </section>
             <div className="gris2Landing">
-                <h2>A partir de ese punto</h2>
+                <h2>A partir de ese punto.</h2>
                 <p>
-                    Nuestro objetivo principal fue desarrollar una solución
-                    dinámica y educativa. Tras haber definido claramente el
+                    Nuestro objetivo principal fue desarrollar una <strong>solución
+                    dinámica y educativa</strong>. Tras haber definido claramente el
                     problema, fuimos capaces de identificar rápidamente una
-                    solución que involucraría a las generaciones más jóvenes,
+                    solución que <strong>involucraría a las generaciones más jóvenes</strong>,
                     proporcionando un feedback valioso y necesario.
                 </p>
             </div>
