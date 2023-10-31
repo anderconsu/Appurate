@@ -1,0 +1,24 @@
+.current {
+    width: 100%;
+    background-color: var(--gris2);
+    padding: 2rem 0rem 0rem 2rem;
+    & a {
+        display: inline-block;
+        text-decoration: none;
+        &:visited {
+            color: inherit;
+        }
+        &:hover {
+            color: inherit;
+            text-decoration: underline;
+        }
+    }
+    & p {
+        display: inline;
+    }
+}
+@media screen and (min-width: 768px) {
+    .current {
+        padding: 2rem 0rem 0rem 4rem;
+    }
+}
