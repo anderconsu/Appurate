@@ -243,57 +243,64 @@ const Landing = () => {
                         A continuación te mostramos el trabajo hecho por cada
                         parte del equipo:
                     </h2>
-                    <div className="bewaters">
-                        <h3>BEWATERS</h3>
-                        <div>
-                            <img
-                                src="./static/landing/grupo.png"
-                                alt="grupo"
-                                className="grupo"
-                            />
+                    <div className="bewaters2">
+                        
+                        <div className="bewaters">
+                            <h3>BEWATERS</h3>
+                            <div>
+                                <img
+                                    src="./static/landing/grupo.png"
+                                    alt="grupo"
+                                    className="grupo"
+                                />
+                            </div>
+                        </div>
+                        <div className="equipo2">
+                            <div className="equipo">
+                                <h4>EL EQUIPO</h4>
+                                <p>
+                                    Somos Bewaters, un equipo compuesto por ocho
+                                    apasionados individuos que nos unimos con un
+                                    objetivo común: abordar la problemática del agua en
+                                    la Ría de Bilbao y llenar los vacíos de datos
+                                    relacionados con esta importante cuestión.
+                                </p>
+                                <ul>
+                                    <li>
+                                        Lorem ipsum dolor, sit amet consectetur
+                                        adipisicing elit. Sapiente ab ipsa perferendis
+                                        iure ad corrupti sequi quo corporis.
+                                        Repellendus, cumque.
+                                    </li>
+
+                                    <li>
+                                        Laborum delectus repudiandae facilis commodi
+                                        veniam repellat. Quisquam, voluptas debitis.
+                                    </li>
+                                    <li>
+                                        Laboriosam, quis magnam? Quosque tandem abutere
+                                        patientiam nostram, Catilina?
+                                    </li>
+                                </ul>
+                            </div>
+                            <div className="containerIconos">
+                                <img
+                                    src="./static/landing/iconos.png"
+                                    alt="iconos"
+                                    className="iconos"
+                                />
+                            </div>
                         </div>
                     </div>
-                    <div className="equipo">
-                        <h4>EL EQUIPO</h4>
-                        <p>
-                            Somos Bewaters, un equipo compuesto por ocho
-                            apasionados individuos que nos unimos con un
-                            objetivo común: abordar la problemática del agua en
-                            la Ría de Bilbao y llenar los vacíos de datos
-                            relacionados con esta importante cuestión.
-                        </p>
-                        <ul>
-                            <li>
-                                Lorem ipsum dolor, sit amet consectetur
-                                adipisicing elit. Sapiente ab ipsa perferendis
-                                iure ad corrupti sequi quo corporis.
-                                Repellendus, cumque.
-                            </li>
-
-                            <li>
-                                Laborum delectus repudiandae facilis commodi
-                                veniam repellat. Quisquam, voluptas debitis.
-                            </li>
-                            <li>
-                                Laboriosam, quis magnam? Quosque tandem abutere
-                                patientiam nostram, Catilina?
-                            </li>
-                        </ul>
-                    </div>
-                    <div className="containerIconos">
-                        <img
-                            src="./static/landing/iconos.png"
-                            alt="iconos"
-                            className="iconos"
-                        />
-                    </div>
+                   
+                </div>
+                <div className="buttonPa">
+                    <button>
+                        <Link to="/">Pincha aquí:</Link>
+                    </button>
                 </div>
             </div>
-            <div className="buttonPa">
-                <button>
-                    <Link to="/">Pincha aquí:</Link>
-                </button>
-            </div>
+           
         </main>
     );
 };

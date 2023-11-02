@@ -253,90 +253,115 @@
         }
     
 
-    & .gris3landing {
-        display: flex;
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-        border-radius: 1.25rem;
-        background: var(--02, #022859);
-
-        & .azul {
+        & .gris3landing {
             display: flex;
+            width: 100%;
             flex-direction: column;
             align-items: center;
-            width: 100%;
-            padding: 2rem;
-            gap: 2rem;
-
-            & h2 {
+            background-color: var(--gris2);
+            
+    
+            & .azul {
                 display: flex;
-                width: 100%;
-                color: white;
-            }
-
-            & .bewaters {
-                & h3 {
+                flex-direction: column;
+                align-items: center;
+                width: 95%;
+                border-radius: 1.25rem;
+                padding: 2rem;
+                gap: 2rem;
+                background: var(--02, #022859);
+    
+                & h2 {
                     display: flex;
+                    justify-content: center;
                     width: 100%;
                     color: white;
                 }
 
-                & img {
+                & .bewaters2 {
+                    display: flex;
+                    flex-direction: column;
                     width: 100%;
-                }
-            }
+                    
 
-            & .equipo {
-                display: flex;
-                flex-direction: column;
-                width: 80%;
-                border-radius: 1.25rem;
-                background: var(--Color, #fff);
-                padding: 1.5rem;
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 1rem;
-                margin-top: -3rem;
-                margin-left: 3rem;
-                box-shadow: -5px 10px 13px 5px rgba(0, 0, 0, 0.5);
-
-                & h4 {
-                    color: var(--02, #022859);
-                    font-weight: 400;
-                }
-
-                & p,
-                ul {
-                    color: var(--02, #022859);
-
-                    & li {
-                        padding: 2rem;
+                    & .bewaters {
+                        display: flex;
+                        flex-direction: column;
+                        width: 100%;
+                        margin-right: -4rem;
+                        
+                        
+                        & h3 {
+                            display: flex;
+                            width: 100%;
+                            color: white;
+                        }
+        
+                        & img {
+                            width: 100%;
+                        }
                     }
+                    & .equipo2 {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        width: 100%;
+                        & .equipo {
+                            display: flex;
+                            flex-direction: column;
+                            width: 100%;
+                            border-radius: 1.25rem;
+                            background: var(--Color, #fff);
+                            padding: 1.5rem;
+                            height: 100%;
+                            flex-direction: column;
+                            align-items: flex-start;
+                            
+                            box-shadow: -5px 10px 13px 5px rgba(0, 0, 0, 0.5);
+            
+                            & h4 {
+                                color: var(--02, #022859);
+                                
+                            }
+            
+                            & p,
+                            ul {
+                                color: var(--02, #022859);
+            
+                                & li {
+                                   
+                                }
+                            }
+                        }
+                        & .containerIconos {
+                            display: flex;
+                            flex-direction: column;
+                            margin-top: -1rem;
+                            
+                            width: 70%;
+                        }
+                      
+                    }
+                    
                 }
+                
             }
+    
+            
         }
-
-        & .containerIconos {
-            display: flex;
-            flex-direction: column;
-            margin-left: 3rem;
-            margin-top: -4rem;
-            width: 90%;
-        }
-    }
 
     & .buttonPa {
         display: flex;
         flex-direction: column;
 
         & button {
-            border-radius: 0.15rem;
+            border-radius: 0.30rem;
+            color: var(--02, #022859);
             background: var(--Color, #fff);
             box-shadow: 0px 6px 6px 0px rgba(2, 40, 89, 0.2);
             width: 100%;
             flex-shrink: 0;
-            margin-top: -2rem;
+            margin-top: -1rem;
         }
     }
 }
@@ -620,6 +645,121 @@
                 justify-content: center;
                 align-items: center;
                 
+            }
+        }
+        & .gris3landing {
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+            background-color: var(--gris2);
+            
+    
+            & .azul {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 95%;
+                border-radius: 1.25rem;
+                padding: 2rem;
+                background: var(--02, #022859);
+    
+                & h2 {
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
+                    color: white;
+                }
+
+                & .bewaters2 {
+                    display: flex;
+                    flex-direction: row;
+                    width: 100%;
+                    padding-top: 1rem;
+
+                    & .bewaters {
+                        display: flex;
+                        flex-direction: column;
+                        width: 90%;
+                        margin-right: -2rem;
+                        
+                        
+                        & h3 {
+                            display: flex;
+                            width: 100%;
+                            color: white;
+                        }
+        
+                        & img {
+                            width: 100%;
+                        }
+                    }
+                    & .equipo2 {
+                        display: flex;
+                        flex-direction: column;
+                        width: 50%;
+                        margin-top: 4.5rem;
+                        & .equipo {
+                            display: flex;
+                            flex-direction: column;
+                            width: 100%;
+                            border-radius: 1.25rem;
+                            background: var(--Color, #fff);
+                            padding: 2rem;
+                            height: 80%;
+                            flex-direction: column;
+                            align-items: flex-start;
+                            margin-left: -1rem;
+                            box-shadow: -5px 10px 13px 5px rgba(0, 0, 0, 0.5);
+                            gap: 0.5rem;
+            
+                            & h4 {
+                                color: var(--02, #022859);
+                                
+                            }
+            
+                            & p,
+                            ul {
+                                color: var(--02, #022859);
+                                margin-top: 1rem;
+            
+                                & li {
+                                    
+                                }
+                            }
+                        }
+                        & .containerIconos {
+                            display: flex;
+                            flex-direction: column;
+                            margin-top: -1.2rem;
+                            margin-left: 8rem;
+                            width: 70%;
+                        }
+                      
+                    }
+                    
+                }
+                
+            }
+    
+            
+        }
+    
+        & .buttonPa {
+            display: flex;
+            width: 30%;
+            flex-direction: column;
+            justify-content: center;
+            
+            
+    
+            & button {
+                border-radius: 0.7rem;
+                background: var(--Color, #fff);
+                box-shadow: 0px 6px 6px 0px rgb(255, 255, 255);
+                flex-shrink: 0;
+                margin-top: -2rem;
+                padding: 2rem;
             }
         }
     }
