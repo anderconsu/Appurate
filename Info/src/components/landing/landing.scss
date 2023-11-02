@@ -176,56 +176,62 @@
         }
     }
 
-        & .orden {
+    & .orden {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--blanco);
+
+        & .unoDos {
             display: flex;
-            width: 100%;
             flex-direction: column;
+            width: 100%;
             align-items: center;
+            padding: 2rem;
+            gap: 2rem;
 
-            & .unoDos {
+            & .uno {
                 display: flex;
                 flex-direction: column;
                 width: 100%;
                 align-items: center;
-
-                & .uno,
-                .dos {
-                    display: flex;
-                    flex-direction: column;
-                    width: 100%;
-                    align-items: center;
-
-                    & .imagenNumero {
-                        display: flex;
-                        width: 30%;
-                    }
-                }
+                gap: 2rem;
             }
-
-            & .tres {
+            & .dos {
                 display: flex;
                 flex-direction: column;
                 width: 100%;
                 align-items: center;
-
-                & .tresTres {
-                    display: flex;
-                    flex-direction: column;
-                    width: 100%;
-                    align-items: center;
-                }
-
-                & .imagenNumero {
-                    display: flex;
-                    width: 30%;
-                }
-
-                & .imagenMapa {
-                    display: flex;
-                    width: 100%;
-                }
+                gap: 2rem;
             }
         }
+
+        & .tres {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+            padding: 2rem;
+            gap: 2rem;
+
+            & .tresTres {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                align-items: center;
+                gap: 2rem;
+            }
+            & .mapa {
+                display: flex;
+                width: 100%;
+                align-items: center;
+                
+            }
+
+           
+        }
+    }
 
         & .buttonWeb {
             display: flex;
@@ -388,7 +394,7 @@
                     flex-direction: column;
                     gap: 0.5rem;
                     margin: 2rem auto;
-                    padding: 1rem;
+                    padding: rem;
                     background-color: var(--blanco);
                     border-radius: 0.5rem;
                     box-shadow: -5px 10px 13px 5px rgba(0, 0, 0, 0.5);
@@ -534,6 +540,85 @@
                 color: var(--01, #48cad9);
                 font-family: Poppins;
                 padding: 1rem;
+                
+            }
+        }
+        & .orden {
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+            align-items: center;
+            background-color: var(--blanco);
+
+            & .unoDos {
+                display: flex;
+                flex-direction: column;
+                width: 50%;
+                align-items: center;
+                padding: 2rem;
+                gap: 2rem;
+
+                & .uno {
+                    display: flex;
+                    flex-direction: row;
+                    width: 100%;
+                    align-items: center;
+                    gap: 2rem;
+                }
+                & .dos {
+                    display: flex;
+                    flex-direction: row;
+                    width: 100%;
+                    align-items: center;
+                    gap: 2rem;
+                }
+            }
+
+            & .tres {
+                display: flex;
+                flex-direction: column;
+                width: 50%;
+                align-items: center;
+                padding: 2rem;
+                gap: 2rem;
+
+                & .tresTres {
+                    display: flex;
+                    flex-direction: row;
+                    width: 100%;
+                    align-items: center;
+                    gap: 2rem;
+                }
+                & .mapa {
+                    display: flex;
+                    width: 100%;
+                    align-items: center;
+                    
+                }
+
+               
+            }
+        }
+        & .buttonWeb {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            align-items:flex-end;
+            background-color: var(--blanco);
+            padding-right: 2rem;
+            margin-top: -4rem;
+            
+
+            & button {
+                display: flex;
+                border-radius: 1.25rem;
+                background: var(--01, #48cad9);
+                font-weight: bold;
+                color: white;
+                width: 15%;
+                padding: 1.5rem;
+                justify-content: center;
+                align-items: center;
                 
             }
         }

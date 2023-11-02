@@ -166,11 +166,11 @@ const Landing = () => {
                 <div className="orden">
                     <div className="unoDos">
                         <div className="uno">
-                            <div className="imagenNumero">
+                            <div>
                                 <img
                                     src="./static/landing/uno.png"
                                     alt="uno"
-                                    className="uno"
+                                    className="unoImage"
                                 />
                             </div>
                             <p>
@@ -187,11 +187,11 @@ const Landing = () => {
                             </p>
                         </div>
                         <div className="dos">
-                            <div className="imagenNumero">
+                            <div>
                                 <img
                                     src="./static/landing/dos.png"
                                     alt="dos"
-                                    className="dos"
+                                    className="dosImage"
                                 />
                             </div>
                             <p>
@@ -206,35 +206,36 @@ const Landing = () => {
                     </div>
 
                     <div className="tres">
-                        <div className="tresTres">
-                            <div className="imagenNumero">
-                                <img
-                                    src="./static/landing/tres.png"
-                                    alt="tres"
-                                    className="tresTresTres"
-                                />
-                            </div>
-                            <div className="imagenMapa">
+                            <div>
                                 <img
                                     src="./static/landing/mapa.png"
                                     alt="mapa"
                                     className="mapa"
                                 />
                             </div>
-                            <p>
-                                El tercer bloque aborda el espacio privado
-                                destinado a los técnicos de la aplicación. Su
-                                función será dar de alta a los profesores y
-                                tutores de los colegios en el sistema.
-                            </p>
-                        </div>
+                            <div className="tresTres">
+                                <div>
+                                    <img
+                                        src="./static/landing/tres.png"
+                                        alt="tres"
+                                        className="tresImage"
+                                    />
+                                </div>
+                                <p>
+                                    El tercer bloque aborda el espacio privado
+                                    destinado a los técnicos de la aplicación. Su
+                                    función será dar de alta a los profesores y
+                                    tutores de los colegios en el sistema.
+                                </p>
+                            </div>
+                        
                     </div>
                 </div>
-                <div className="buttonWeb">
-                    <button>
-                        <Link to="/">Descubre la web</Link>
-                    </button>
-                </div>
+            <div className="buttonWeb">
+                <button>
+                    <Link to="/">Descubre la web</Link>
+                </button>
+            </div>
             
             <div className="gris3landing">
                 <div className="azul">
