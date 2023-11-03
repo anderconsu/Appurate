@@ -66,10 +66,14 @@ const Fullstack = () => {
                     />
                     <p>Ander Consuegra</p>
                     <h3>Full Stack developer</h3>
-                    <img
-                        src="./static/linkedinLogo.png"
-                        alt="linkedinLogo"
-                    />
+                    <a href="https://www.linkedin.com/in/anderconsu">
+
+
+                        <img
+                            src="./static/linkedinLogo.png"
+                            alt="linkedinLogo"
+                        />
+                    </a>
                     <a href="https://github.com/anderconsu">
 
                         <img
@@ -86,10 +90,15 @@ const Fullstack = () => {
                     />
                     <p>Nacho Prado</p>
                     <h3>Full Stack developer</h3>
-                    <img
-                        src="./static/linkedinLogo.png"
-                        alt="linkedinLogo"
-                    />
+
+                    <a href="https://www.linkedin.com/in/nachoprado">
+
+
+                        <img
+                            src="./static/linkedinLogo.png"
+                            alt="linkedinLogo"
+                        />
+                    </a>
                     <a href="https://github.com/nachoprado86">
 
                         <img
@@ -106,10 +115,15 @@ const Fullstack = () => {
                     />
                     <p>Endika Acedo</p>
                     <h3>Full Stack developer</h3>
-                    <img
-                        src="./static/linkedinLogo.png"
-                        alt="linkedinLogo"
-                    />
+
+                    <a href="https://www.linkedin.com/in/endika-acedo-gonz%C3%A1lez-432a1828b">
+
+
+                        <img
+                            src="./static/linkedinLogo.png"
+                            alt="linkedinLogo"
+                        />
+                    </a>
                     <a href="https://github.com/Endika7593">
 
                         <img
@@ -456,18 +470,16 @@ const Fullstack = () => {
                     </div>
 
                 </article>
-                <div className="linksGit">
-                    <img
-                        src="../../static/fullstack/githublogo1.png"
-                        alt="logo Git Hub"
-                    />
-                    <span className="links">
-                        {" "}
-                        links:
-                        <a href=""></a>
-                        <a href=""></a>
-                        <a href=""></a>
-                    </span>
+                <div className="linksGit">Enlace al proyecto:
+
+                    <a href="https://github.com/anderconsu/Appurate">
+
+
+                        <img
+                            src="../../static/fullstack/githublogo1.png"
+                            alt="logo Git Hub"
+                        />
+                    </a>
                 </div>
             </section>
         </main >
