@@ -1,22 +1,6 @@
-import React, { useEffect } from "react";
-import { useContext, useState } from "react";
-import PageContext from "../../context/pageContext";
-import { Link, redirect, useNavigate } from "react-router-dom";
-
 import "./header.scss";
 
-const noCargues = [
-    "admin",
-    "login",
-    "ficha",
-    "landing",
-    "recursos",
-    "registro",
-];
-
 const Header = () => {
-    const { page, setPage } = useContext(PageContext);
-    const navigate = useNavigate();
     return (
         <header className="header">
             <picture className="logoContainer">
