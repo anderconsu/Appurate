@@ -82,6 +82,17 @@
 
                 & .iconos {
                     width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 1rem;
+                    & .item {
+                        margin: auto;
+                        & img {
+                            width: 9rem;
+                            margin: auto;
+                        }
+                    }
                 }
             }
         }
@@ -442,7 +453,7 @@
                     }
 
                     & .iconos {
-                        width: 100%;
+                        flex-direction: row;
                     }
                 }
             }

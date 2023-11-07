@@ -1,9 +1,11 @@
 import "./landing.scss";
 import PageContext from "../../context/pageContext";
 import { useContext, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Landing = () => {
     const { page, setPage } = useContext(PageContext);
+    const navigate = useNavigate();
 
     useEffect(() => {
         setPage("landing");
@@ -51,11 +53,48 @@ const Landing = () => {
                         </h3>
                         <p>Si deseas verlo ya, pincha en estos iconos.</p>
                         <div className="iconos">
-                            <img
-                                src="./static/landing/iconos.png"
-                                alt="iconos"
-                                className="iconos"
-                            />
+                            <div className="item teamImg">
+                                <img
+                                    src="./static/nav/data.png"
+                                    alt="data"
+                                    className="animatedSelect"
+                                    onClick={() => {
+                                        navigate("/data-science");
+                                        window.scrollTo({
+                                            top: 0,
+                                            behavior: "smooth",
+                                        });
+                                    }}
+                                />
+                            </div>
+                            <div className="item teamImg">
+                                <img
+                                    src="./static/nav/fs.png"
+                                    alt="Fullstack"
+                                    className="animatedSelect"
+                                    onClick={() => {
+                                        navigate("/fullstack");
+                                        window.scrollTo({
+                                            top: 0,
+                                            behavior: "smooth",
+                                        });
+                                    }}
+                                />
+                            </div>
+                            <div className="item teamImg">
+                                <img
+                                    src="./static/nav/ux.png"
+                                    alt="UX/UI"
+                                    className="animatedSelect"
+                                    onClick={() => {
+                                        navigate("/ux-ui");
+                                        window.scrollTo({
+                                            top: 0,
+                                            behavior: "smooth",
+                                        });
+                                    }}
+                                />
+                            </div>
                         </div>
                     </div>
                 </section>
