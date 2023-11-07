@@ -1,7 +1,6 @@
 import "./landing.scss";
 import PageContext from "../../context/pageContext";
 import { useContext, useEffect } from "react";
-import { Link } from "react-router-dom";
 
 const Landing = () => {
     const { page, setPage } = useContext(PageContext);
@@ -239,8 +238,13 @@ const Landing = () => {
                 </div>
             </div>
             <div className="buttonWeb">
-                <button>
-                    <Link to="/">Descubre la web</Link>
+                <button
+                    className="boton1 bold"
+                    onClick={() =>
+                        (window.location.href = "https://appurate.org")
+                    }
+                >
+                    Descubre la web
                 </button>
             </div>
 

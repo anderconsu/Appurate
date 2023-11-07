@@ -228,17 +228,17 @@
         width: 100%;
         align-items: center;
 
-        & button {
-            display: flex;
-            border-radius: 1.25rem;
-            background: var(--01, #48cad9);
-            font-weight: bold;
-            color: white;
-            width: 50%;
-            padding: 1.5rem;
-            justify-content: center;
-            align-items: center;
-        }
+        // & button {
+        //     display: flex;
+        //     border-radius: 1.25rem;
+        //     background: var(--01, #48cad9);
+        //     font-weight: bold;
+        //     color: white;
+        //     width: 50%;
+        //     padding: 1.5rem;
+        //     justify-content: center;
+        //     align-items: center;
+        // }
     }
 
     & .gris3landing {
@@ -599,17 +599,17 @@
             padding-right: 2rem;
             margin-top: -4rem;
 
-            & button {
-                display: flex;
-                border-radius: 1.25rem;
-                background: var(--01, #48cad9);
-                font-weight: bold;
-                color: white;
-                width: 15%;
-                padding: 1.5rem;
-                justify-content: center;
-                align-items: center;
-            }
+            // & button {
+            //     display: flex;
+            //     border-radius: 1.25rem;
+            //     background: var(--01, #48cad9);
+            //     font-weight: bold;
+            //     color: white;
+            //     width: 15%;
+            //     padding: 1.5rem;
+            //     justify-content: center;
+            //     align-items: center;
+            // }
         }
         & .gris3landing {
             display: flex;
