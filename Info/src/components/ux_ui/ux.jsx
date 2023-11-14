@@ -16,7 +16,7 @@ const Ux = () => {
                 <section className="intro">
                     <article>
                         <h3 className="titulosCeleste">Equipo UX/UI Product Designer</h3>
-                        <p>
+                        <p className ="parrafoNormal black">
                             ¡Hola! somos el equipo de diseño UX/UI. Venimos de
                             diferentes universidades, profesiones y lugares pero
                             tenemos algo en común, el buen rollo y una pasión
@@ -24,7 +24,7 @@ const Ux = () => {
                             trabajado en este proyecto con compromiso y mucho
                             esfuerzo.
                         </p>
-                        <p>
+                        <p className ="parrafoNormal black">
                             A pesar de tener un plazo de tiempo limitado de dos
                             semanas, durante las cuales experimentamos un
                             período de mayor intensidad de trabajo de alrededor
@@ -35,7 +35,7 @@ const Ux = () => {
                     </article>
                     <article>
                         <h3 className="titulosCeleste">Nuestro rol en el proyecto</h3>
-                        <p>
+                        <p className ="parrafoNormal black">
                             En el proyecto que mencionamos, nuestro equipo de
                             diseño UX/UI desempeñó un papel fundamental.
                             Comenzamos por entender las necesidades de los
@@ -64,8 +64,8 @@ const Ux = () => {
                                     "https://www.linkedin.com/in/irati-lozano-segovia/")
                             }
                         />
-                        <p>Irati Lozano Segovia</p>
-                        <h3>UX/UI Product Designer</h3>
+                        <p className ="parrafosOscuros bold">Irati Lozano Segovia</p>
+                        <h3 className="parrafoNormal">UX/UI Product Designer</h3>
                         <img
                             src="./static/linkedinLogo.png"
                             alt="linkedinLogo"
@@ -86,8 +86,8 @@ const Ux = () => {
                                     "https://www.linkedin.com/in/sebastianrgv")
                             }
                         />
-                        <p>Sebastián Reina</p>
-                        <h3>UX/UI Product Designer</h3>
+                        <p className="parrafosOscuros bold">Sebastián Reina</p>
+                        <h3 className="parrafoNormal">UX/UI Product Designer</h3>
                         <img
                             src="./static/linkedinLogo.png"
                             alt="linkedinLogo"
@@ -108,8 +108,8 @@ const Ux = () => {
                                     "https://www.linkedin.com/in/oscar-ciencia/")
                             }
                         />
-                        <p>Oscar Ciencia</p>
-                        <h3>UX/UI Product Designer</h3>
+                        <p className="parrafosOscuros bold">Oscar Ciencia</p>
+                        <h3 className="parrafoNormal">UX/UI Product Designer</h3>
                         <img
                             src="./static/linkedinLogo.png"
                             alt="linkedinLogo "
@@ -125,12 +125,12 @@ const Ux = () => {
             <section className="designThinking">
                 <div className="designDescription">
                     <h2 className="cabeceraSeccion">DESING THINKING</h2>
-                    <p>
+                    <p className="parrafoNormal white">
                         Como diseñadores UX/UI decidimos usar el proceso Design
                         Thinking para resolver el desafío propuesto sobre la
                         calidad del agua en Bilbao de la siguiente manera:
                     </p>
-                    <ol>
+                    <ol className="parrafoNormal white">
                         <li>
                             Empatizar: Comenzamos por{" "}
                             <b>entender las necesidades y deseos</b> de los
@@ -176,7 +176,7 @@ const Ux = () => {
                 </section>
                 <section className="problemsDescription routeHeaderDescription">
                     <h3 className="cabeceraSeccion">DEFINIR EL PROBLEMA</h3>
-                    <p>
+                    <p className="parrafoNormal gray">
                         Nuestro principal enfoque en el proyecto fue abordar el
                         desafío de empoderar a los jóvenes para que se
                         conviertan en defensores de la calidad del agua en su
@@ -190,15 +190,15 @@ const Ux = () => {
             <section className="problemsPoints">
                 <section className="problemsPointsFirst">
                     <article className="challenge">
-                        <h4>Reto</h4>
-                        <p>
+                        <h4 className="parrafosOscuros">Reto</h4>
+                        <p className="parrafoNormal">
                             ¿Cómo podemos enseñar e informar sobre la calidad
                             del agua mediante una plataforma educativa?
                         </p>
                     </article>
                     <article className="proposal">
-                        <h4>Propuesta de valor</h4>
-                        <p>
+                        <h4 className="parrafosOscuros">Propuesta de valor</h4>
+                        <p className="parrafoNormal">
                             Nuestra solución educativa empoderamos a jóvenes
                             para que aprendan y tomen conciencia sobre la
                             calidad del agua en su ciudad. A través de una
@@ -213,7 +213,7 @@ const Ux = () => {
                 </section>
                 <article className="responsability">
                     <h4>Nuestras responsabilidades</h4>
-                    <p>
+                    <p className="parrafoNormal">
                         En conjunto, estas herramientas de investigación nos
                         proporcionaron una base sólida para definir el problema
                         de manera efectiva, identificar oportunidades de diseño
@@ -221,7 +221,7 @@ const Ux = () => {
                         perfectamente alineada con las necesidades de los
                         jóvenes y la comunidad en Bilbao.
                     </p>
-                    <ul>
+                    <ul className="parrafoNormal">
                         <li>Investigar al usuario y sus necesidades.</li>
                         <li>
                             Diseñar la arquitectura de la información, la
@@ -247,7 +247,7 @@ const Ux = () => {
                 </section>
                 <section className="researchDescription routeHeaderDescription">
                     <h3 className="cabeceraSeccion">INVESTIGACIÓN</h3>
-                    <p>
+                    <p className="parrafoNormal gray">
                         A través de un enfoque riguroso, diseñamos una solución
                         que empodera a los jóvenes en Bilbao para abordar la
                         calidad del agua en su comunidad. A continuación,
@@ -261,7 +261,7 @@ const Ux = () => {
                 <article className="researchPointsFirst">
                     <article className="idealUser">
                         <h4 className="parrafosOscuros bold">Usuario ideal</h4>
-                        <div className="stats">
+                        <div className="stats parrafoNormal">
                             <p>
                                 <b>Edad:</b> 35 años
                             </p>
@@ -273,7 +273,7 @@ const Ux = () => {
                             </p>
                         </div>
                         <div className="idealUserPoints">
-                            <ul>
+                            <ul className="parrafoNormal">
                                 <li>
                                     Desea encontrar nuevas formas de enseñar
                                     ciencia que sean más atractivas y prácticas
@@ -295,7 +295,7 @@ const Ux = () => {
                     </article>
                     <article className="interviews researchPointsdescription">
                         <h4>Entrevistas</h4>
-                        <p>
+                        <p className="parrafoNormal">
                             Esta herramienta nos proporcionó una comprensión
                             enriquecida de las experiencias de los usuarios y
                             nos ayudó a definir claramente el desafío que
@@ -310,7 +310,7 @@ const Ux = () => {
                 <article className="researchPointsSecond ">
                     <article className="actorMap researchPointsdescription">
                         <h4>Mapa de actores</h4>
-                        <p>
+                        <p className="parrafoNormal">
                             Al identificar a los interesados, desde estudiantes
                             y profesores hasta expertos en agua, pudimos
                             comprender cómo interactuaban y qué roles
@@ -319,7 +319,7 @@ const Ux = () => {
                     </article>
                     <article className="journeyMap researchPointsdescription">
                         <h4>Journey Map</h4>
-                        <p>
+                        <p className="parrafoNormal">
                             Fue esencial para diseñar una interfaz de usuario
                             que fuera intuitiva, accesible y atractiva. El
                             journey map también sirvió como una guía constante a
@@ -341,7 +341,7 @@ const Ux = () => {
                 </section>
                 <section className="researchDescription routeHeaderDescription">
                     <h3 className="cabeceraSeccion">DISEÑO</h3>
-                    <p>
+                    <p className="parrafoNormal gray">
                         En esta fase nos centramos en crear la apariencia visual
                         y la disposición de los elementos en una Webapp, con el
                         objetivo de proporcionar una experiencia de usuario
@@ -352,7 +352,7 @@ const Ux = () => {
             <section className="prototype">
                 <article className="prototypeDescription">
                     <h4>Prototipo en baja</h4>
-                    <p>
+                    <p className="parrafoNormal white">
                         El prototipo en baja es una representación simplificada
                         de una interfaz que sirve para explorar ideas, obtener
                         retroalimentación temprana, comunicar conceptos y
@@ -392,7 +392,7 @@ const Ux = () => {
                 <article className="typographyPointsFirst">
                     <article className="typographyPointsdescription">
                         <h4>Tipografía</h4>
-                        <p>
+                        <p className="parrafoNormal">
                             La elección de la fuente tipográfica Poppins la
                             elegimos por legibilidad en pantallas, estilo
                             moderno y amigable que atrae a un público amplio,
@@ -406,7 +406,7 @@ const Ux = () => {
                     </article>
                     <article className="typographyPointsdescription">
                         <h4>Color</h4>
-                        <p>
+                        <p className="parrafoNormal">
                             La elección del color fue de la identidad
                             corporativa. Esta identidad corporativa incluye
                             elementos como el logotipo, los colores

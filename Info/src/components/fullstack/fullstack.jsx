@@ -16,7 +16,7 @@ const Fullstack = () => {
                     <div className="textoIntroUno">
                         <h3 className="titulosCeleste">Equipo Desarrollo Full Stack</h3>
 
-                        <p>
+                        <p className="parrafoNormal black">
                             ¡Buenas! Somos el equipo de desarrollo de Full
                             Stack. Aunque nuestra procedencia profesional sea
                             tan diferente, somos un equipo con muchas cosas en
@@ -36,7 +36,7 @@ const Fullstack = () => {
                 <article>
                     <div className="textoIntroDos">
                         <h3 className="titulosCeleste">Nuestro rol en el proyecto</h3>
-                        <p>
+                        <p className="parrafoNormal">
                             Nuestro rol como desarrolladores en este proyecto ha
                             abarcado tanto el desarrollo del frontend como del
                             backend, incluyendo la implementación de componentes
@@ -152,7 +152,7 @@ const Fullstack = () => {
                     </div>
 
                     <div className="disenoTexto">
-                        <p>
+                        <p className="parrafoNormal">
                             En colaboración con el equipo de UX/UI, se diseñaron
                             las páginas teniendo en cuenta toda la información
                             que se mostrará en cada una y se planificaron los
@@ -176,7 +176,7 @@ const Fullstack = () => {
                     <h2 className="cabeceraSeccion">FRONT</h2>
                 </div>
                 <section className="frontDescription">
-                    <div className="textoUno">
+                    <div className="textoUno parrafoNormal">
                         <p>
                             En cuanto al aspecto visual y el estilizado, optamos
                             por SASS y CSS. Esto nos permitió dotar a la webapp
@@ -195,7 +195,7 @@ const Fullstack = () => {
                     </div>
 
                     <div className="elRow">
-                        <div className="textoDos">
+                        <div className="textoDos parrafoNormal">
                             <p>
                                 Para facilitar el proceso de registro de
                                 usuarios, hemos implementado un portal de acceso
@@ -235,7 +235,7 @@ const Fullstack = () => {
                             </p>
                         </div>
 
-                        <div className="textoConFoto">
+                        <div className="textoConFoto parrafoNormal">
                             <p>
                                 Decidimos no guardar ningún tipo de contraseña
                                 en el almacenamiento local del navegador por
@@ -274,7 +274,7 @@ const Fullstack = () => {
                 <div className="tituloBack">
                     <h2 className="cabeceraSeccion">BACK</h2>
                 </div>
-                <section className="backDescription">
+                <section className="backDescription parrafoNormal">
                     <div className="textoUno">
                         <p>
                             En lo que respecta al desarrollo del backend, hemos
@@ -360,7 +360,7 @@ const Fullstack = () => {
                 <div className="tituloDeploy">
                     <h2 className="cabeceraSeccion">DEPLOY</h2>
                 </div>
-                <section className="deployDescription">
+                <section className="deployDescription parrafoNormal">
                     <div className="textoUno">
                         <p>
                             Para llevar a cabo el despliegue de nuestra
@@ -429,7 +429,7 @@ const Fullstack = () => {
                     <div className="tituloGit">
                         <h2 className="cabeceraSeccion">GITHUB</h2>
                     </div>
-                    <div className="textosGit">
+                    <div className="textosGit parrafoNormal">
                         <p>
                             También hemos aprovechado GitHub como una parte
                             fundamental de nuestro flujo de trabajo para mostrar

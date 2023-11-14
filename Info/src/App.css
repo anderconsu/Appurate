@@ -33,6 +33,23 @@ body {
     font-size: 1.25rem;
     color: var(--azul_oscuro);
 }
+
+.parrafoNormal {
+    font-size: 0.875rem;
+    color: var(--azul_oscuro);
+}
+
+.black {
+    color: black;
+}
+
+.white {
+    color: white;
+}
+
+.gray {
+    color: #687f9c;
+}
 /* h1 {
     font-size: 1.7rem;
     color: var(--azul_oscuro);

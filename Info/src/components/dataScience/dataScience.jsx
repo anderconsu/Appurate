@@ -16,23 +16,16 @@ const DataScience = () => {
                 <section className="intro">
                     <article>
                         <h3 className="titulosCeleste">Equipo Data Science</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur. Senectus
-                            fames duis adipiscing molestie. Urna amet dui
-                            rhoncus fringilla facilisis semper aliquam. Magna
-                            bibendum magnis sed auctor sed pharetra. Ultrices
-                            montes id pellentesque dignissim rhoncus viverra nam
-                            magna. Arcu tellus viverra tempor mauris. Quam
-                            tristique venenatis lorem donec senectus nisi nec
-                            nunc. Quis interdum id nunc laoreet ut turpis.
-                            Tristique tellus nibh ut et enim augue. Suspendisse
-                            dolor at massa lobortis nisi dictum consectetur
-                            posuere phasellus.
+                        <p className="parrafoNormal black">
+                            ¡Hola! Somos el equipo de Data Science.
+                            Venimos de contextos diferentes, con diversas formaciones académicas y experiencias profesionales. Sin embargo, compartimos una pasión sólida por el mundo de la ciencia de datos.
+                            Hemos trabajado incansablemente en este proyecto a pesar de tener un plazo de tiempo limitado de dos semanas. Durante este período, hemos desarrollado un modelo de clustering para determinar la calidad del agua en función de una serie de parámetros. Este proyecto representa un logro significativo en el campo de la ciencia de datos.
+                            Nuestro equipo está comprometido con la excelencia y la entrega de resultados excepcionales en el ámbito de la ciencia de datos. Estamos emocionados de compartir con vosotros nuestro trabajo y los logros alcanzados. ¡Gracias por vuestra atención!
                         </p>
                     </article>
                     <article>
                         <h3 className="titulosCeleste">Nuestro rol en el proyecto</h3>
-                        <p>
+                        <p className="parrafoNormal black">
                             En el proyecto, nosotros, el equipo de datos,
                             desempeñamos un papel crucial al investigar y
                             abordar la problemática de determinar la viabilidad
@@ -63,19 +56,19 @@ const DataScience = () => {
                             alt="Alejo"
                             className="profileImg animatedSelect"
                             onClick={() =>
-                                (window.location.href =
-                                    "https://www.linkedin.com/in/alejosotillo/")
+                            (window.location.href =
+                                "https://www.linkedin.com/in/alejosotillo/")
                             }
                         />
-                        <p>Alejandro Sotillo</p>
-                        <h3>Científico de Datos</h3>
+                        <p className="parrafosOscuros">Alejandro Sotillo</p>
+                        <h3 className="parrafoNormal bold">Científico de Datos</h3>
                         <img
                             src="./static/linkedinLogo.png"
                             alt="linkedinLogo"
                             className="animatedSelect"
                             onClick={() =>
-                                (window.location.href =
-                                    "https://www.linkedin.com/in/alejosotillo/")
+                            (window.location.href =
+                                "https://www.linkedin.com/in/alejosotillo/")
                             }
                         />
                         <img
@@ -83,8 +76,8 @@ const DataScience = () => {
                             alt="githubLogo"
                             className="animatedSelect"
                             onClick={() =>
-                                (window.location.href =
-                                    "https://github.com/socho8")
+                            (window.location.href =
+                                "https://github.com/socho8")
                             }
                         />
                     </div>
@@ -94,19 +87,19 @@ const DataScience = () => {
                             alt="Leonor"
                             className="profileImg animatedSelect"
                             onClick={() =>
-                                (window.location.href =
-                                    "https://www.linkedin.com/in/leonor-rodman/")
+                            (window.location.href =
+                                "https://www.linkedin.com/in/leonor-rodman/")
                             }
                         />
-                        <p>Leonor Rodriguez</p>
-                        <h3>Científico de Datos</h3>
+                        <p className="parrafosOscuros">Leonor Rodriguez</p>
+                        <h3 className ="parrafoNormal bold">Científico de Datos</h3>
                         <img
                             src="./static/linkedinLogo.png"
                             alt="linkedinLogo"
                             className="animatedSelect"
                             onClick={() =>
-                                (window.location.href =
-                                    "https://www.linkedin.com/in/leonor-rodman/")
+                            (window.location.href =
+                                "https://www.linkedin.com/in/leonor-rodman/")
                             }
                         />
                         <img
@@ -114,8 +107,8 @@ const DataScience = () => {
                             alt="githubLogo"
                             className="animatedSelect"
                             onClick={() =>
-                                (window.location.href =
-                                    "https://github.com/Leoorodrii")
+                            (window.location.href =
+                                "https://github.com/Leoorodrii")
                             }
                         />
                     </div>
@@ -132,7 +125,7 @@ const DataScience = () => {
                 </section>
             </section>
             <section className="problemStudy">
-                <p>
+                <p className="parrafoNormal">
                     Con el equipo de data lo primero que hicimos fue informarnos
                     bien sobre la problemática, aprender cuales son las
                     variables necesarias para determinar si un agua es viable o
@@ -154,7 +147,7 @@ const DataScience = () => {
                 </section>
             </section>
             <section className="dataRecolection">
-                <p>
+                <p className="parrafoNormal">
                     En este proceso hicimos una intensa busqueda de data en
                     diferentes website de del Gobierno Vasco y de institutos.
                     Intentamos hacer webscrapping como también buscamos data en
@@ -183,7 +176,7 @@ const DataScience = () => {
                 </section>
             </section>
             <section className="dataCreation">
-                <p>
+                <p className="parrafoNormal">
                     Ya que en el anterior punto pudimos determinar que los datos
                     no eran los suficientes ni tampoco eran muy seguidos en el
                     tiempo, optamos por la creación de data sintetica. En este
@@ -215,7 +208,7 @@ const DataScience = () => {
                 </section>
             </section>
             <section className="dataTraining">
-                <p>
+                <p className="parrafoNormal">
                     Ya con nuestro dataset creado y balanceado procedimos al
                     entrenamiento del modelo de machine learning. Probamos y
                     entrenamos nuestra data con varios modelos de clasificación

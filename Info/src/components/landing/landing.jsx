@@ -29,7 +29,7 @@ const Landing = () => {
                         <h3 className="titulosCeleste">
                             ESTRATEGIA, CREATIVIDAD Y VIABILIDAD DEL PROYECTO
                         </h3>
-                        <p>
+                        <p className="parrafoNormal">
                             Después de un fin de semana de intensa investigación
                             por parte de los tres equipos (FullStack, UX/UI y
                             Data), el lunes 18 de septiembre, se llevaron a cabo
@@ -51,7 +51,7 @@ const Landing = () => {
                             AL FINAL DEL ARTÍCULO PUEDES VER QUÉ ROL LE TOCÓ A
                             CADA EQUIPO Y QUÉ IMPACTO TUVO ESTO EN EL PROYECTO:
                         </h3>
-                        <p>Si deseas verlo ya, pincha en estos iconos.</p>
+                        <p className="parrafoNormal">Si deseas verlo ya, pincha en estos iconos.</p>
                         <div className="iconos">
                             <div className="item teamImg">
                                 <img
@@ -111,7 +111,7 @@ const Landing = () => {
                             Estas investigaciones y presentaciones llevaron a la
                             siguiente serie de conclusiones:
                         </h3>
-                        <ol>
+                        <ol  className="parrafoNormal">
                             <li>
                                 <strong>Falta de Data:</strong> Se identificó
                                 una carencia significativa de datos, lo que
@@ -140,7 +140,7 @@ const Landing = () => {
                                 promoción de soluciones sostenibles.
                             </li>
                         </ol>
-                        <p>
+                        <p  className="parrafoNormal">
                             Estas conclusiones son fundamentales para orientar
                             nuestras acciones y estrategias futuras en el
                             contexto de este desafío crucial propuesto por
@@ -161,7 +161,7 @@ const Landing = () => {
                 </p>
             </section>
             <div className="blanco2landing">
-                <div className="columnaTexto">
+                <div className="columnaTexto parrafoNormal">
                     <p>
                         Cuando se planteó la creación de una plataforma
                         educativa en la que los estudiantes no solo formarían
@@ -220,7 +220,7 @@ const Landing = () => {
                                 className="unoImage"
                             />
                         </div>
-                        <p>
+                        <p className="parrafoNormal">
                             El primer bloque se enfoca en la parte pública y
                             visible de la plataforma. Aquí se incluirá un mapa
                             accesible para todos los usuarios, que les permitirá
@@ -240,7 +240,7 @@ const Landing = () => {
                                 className="dosImage"
                             />
                         </div>
-                        <p>
+                        <p className="parrafoNormal">
                             El segundo bloque principal se centra en la
                             aplicación privada, diseñada específicamente para
                             tutores y alumnos. Esta área servirá como un espacio
@@ -267,7 +267,7 @@ const Landing = () => {
                                 className="tresImage"
                             />
                         </div>
-                        <p>
+                        <p className="parrafoNormal">
                             El tercer bloque aborda el espacio privado destinado
                             a los técnicos de la aplicación. Su función será dar
                             de alta a los profesores y tutores de los colegios
@@ -307,7 +307,7 @@ const Landing = () => {
                         <div className="equipo2">
                             <div className="equipo">
                                 <h4>EL EQUIPO</h4>
-                                <p>
+                                <p className="parrafoNormal">
                                     Somos Bewaters, un equipo compuesto por ocho
                                     apasionados individuos que nos unimos con un
                                     objetivo común: abordar la problemática del
@@ -315,7 +315,7 @@ const Landing = () => {
                                     de datos relacionados con esta importante
                                     cuestión.
                                 </p>
-                                <ul>
+                                <ul className="parrafoNormal">
                                     <li>
                                         Lorem ipsum dolor, sit amet consectetur
                                         adipisicing elit. Sapiente ab ipsa
