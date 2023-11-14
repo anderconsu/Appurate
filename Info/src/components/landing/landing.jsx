@@ -14,7 +14,7 @@ const Landing = () => {
     return (
         <main className="landingMain">
             <section className="grisLanding">
-                <h1>APPÚRATE.ORG</h1>
+                <h1 className="cabeceraSeccion">APPÚRATE.ORG</h1>
                 <p>
                     El viernes 15 de septiembre, tuvo lugar la reunión y
                     presentación del desafío en colaboración con{" "}

@@ -12,7 +12,7 @@ const DataScience = () => {
     return (
         <main className="dataMain">
             <div className="profileSection">
-                <h1>DATA SCIENCE</h1>
+                <h1 className="cabeceraSeccion">DATA SCIENCE</h1>
                 <section className="intro">
                     <article>
                         <h3>Equipo Data Science</h3>
@@ -128,7 +128,7 @@ const DataScience = () => {
                     </div>
                 </section>
                 <section className="routeHeaderDescription">
-                    <h3>ESTUDIO DEL PROBLEMA A TRATAR</h3>
+                    <h3 className="cabeceraSeccion">ESTUDIO DEL PROBLEMA A TRATAR</h3>
                 </section>
             </section>
             <section className="problemStudy">
@@ -150,7 +150,7 @@ const DataScience = () => {
                     </div>
                 </section>
                 <section className="routeHeaderDescription">
-                    <h3>RECOLECCION DE LA DATA</h3>
+                    <h3 className="cabeceraSeccion">RECOLECCION DE LA DATA</h3>
                 </section>
             </section>
             <section className="dataRecolection">
@@ -179,7 +179,7 @@ const DataScience = () => {
                     </div>
                 </section>
                 <section className="routeHeaderDescription">
-                    <h3>CREACION DE DATA SINTETICA</h3>
+                    <h3 className="cabeceraSeccion">CREACION DE DATA SINTETICA</h3>
                 </section>
             </section>
             <section className="dataCreation">
@@ -211,7 +211,7 @@ const DataScience = () => {
                     </div>
                 </section>
                 <section className="routeHeaderDescription">
-                    <h3>ENTRENAMIENTO DEL MODELO</h3>
+                    <h3 className="cabeceraSeccion">ENTRENAMIENTO DEL MODELO</h3>
                 </section>
             </section>
             <section className="dataTraining">

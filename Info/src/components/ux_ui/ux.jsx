@@ -12,7 +12,7 @@ const Ux = () => {
     return (
         <main className="uxMain">
             <div className="profileSection">
-                <h1>UX/UI CASE STUDY</h1>
+                <h1 className="cabeceraSeccion">UX/UI CASE STUDY</h1>
                 <section className="intro">
                     <article>
                         <h3>Equipo UX/UI Product Designer</h3>
@@ -124,7 +124,7 @@ const Ux = () => {
             </div>
             <section className="designThinking">
                 <div className="designDescription">
-                    <h2>DESING THINKING</h2>
+                    <h2 className="cabeceraSeccion">DESING THINKING</h2>
                     <p>
                         Como diseñadores UX/UI decidimos usar el proceso Design
                         Thinking para resolver el desafío propuesto sobre la
@@ -175,7 +175,7 @@ const Ux = () => {
                     </div>
                 </section>
                 <section className="problemsDescription routeHeaderDescription">
-                    <h3>DEFINIR EL PROBLEMA</h3>
+                    <h3 className="cabeceraSeccion">DEFINIR EL PROBLEMA</h3>
                     <p>
                         Nuestro principal enfoque en el proyecto fue abordar el
                         desafío de empoderar a los jóvenes para que se
@@ -246,7 +246,7 @@ const Ux = () => {
                     </div>
                 </section>
                 <section className="researchDescription routeHeaderDescription">
-                    <h3>INVESTIGACIÓN</h3>
+                    <h3 className="cabeceraSeccion">INVESTIGACIÓN</h3>
                     <p>
                         A través de un enfoque riguroso, diseñamos una solución
                         que empodera a los jóvenes en Bilbao para abordar la
@@ -340,7 +340,7 @@ const Ux = () => {
                     </div>
                 </section>
                 <section className="researchDescription routeHeaderDescription">
-                    <h3>DISEÑO</h3>
+                    <h3 className="cabeceraSeccion">DISEÑO</h3>
                     <p>
                         En esta fase nos centramos en crear la apariencia visual
                         y la disposición de los elementos en una Webapp, con el

@@ -10,7 +10,7 @@ const Fullstack = () => {
 
     return (
         <main className="fsMain">
-            <h1>FULL STACK</h1>
+            <h1 className="cabeceraSeccion">FULL STACK</h1>
             <section className="intro">
                 <article>
                     <div className="textoIntroUno">
@@ -147,7 +147,7 @@ const Fullstack = () => {
                 </section>
                 <div className="disenoDescription">
                     <div className="tituloDiseno">
-                        <h1>DISEÑO Y SITEMAPS JUNTO A UX/UI</h1>
+                        <h2 className="cabeceraSeccion">DISEÑO Y SITEMAPS JUNTO A UX/UI</h2>
                         <span className="fyS">Figma y pizarra</span>
                     </div>
 
@@ -173,7 +173,7 @@ const Fullstack = () => {
                     </div>
                 </section>
                 <div className="tituloFront">
-                    <h1>FRONT</h1>
+                    <h2 className="cabeceraSeccion">FRONT</h2>
                 </div>
                 <section className="frontDescription">
                     <div className="textoUno">
@@ -272,7 +272,7 @@ const Fullstack = () => {
                     </div>
                 </section>
                 <div className="tituloBack">
-                    <h1>BACK</h1>
+                    <h2 className="cabeceraSeccion">BACK</h2>
                 </div>
                 <section className="backDescription">
                     <div className="textoUno">
@@ -358,7 +358,7 @@ const Fullstack = () => {
                     </div>
                 </section>
                 <div className="tituloDeploy">
-                    <h1>DEPLOY</h1>
+                    <h2 className="cabeceraSeccion">DEPLOY</h2>
                 </div>
                 <section className="deployDescription">
                     <div className="textoUno">
@@ -427,7 +427,7 @@ const Fullstack = () => {
             <section className="gitHub">
                 <article className="git">
                     <div className="tituloGit">
-                        <h1>GITHUB</h1>
+                        <h2 className="cabeceraSeccion">GITHUB</h2>
                     </div>
                     <div className="textosGit">
                         <p>
