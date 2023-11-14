@@ -1,16 +1,14 @@
 version: '3'
 services:
-  # frontend:
-  #     image: nginx:latest
-  #     container_name: appurate-front-build
-  #     restart: always
-  #     networks:
-  #       - npm_default
-  #     ports:
-  #       - 3080:80
-  #       - 3081:443
-  #     volumes:
-  #       - ./Front/dist:/usr/share/nginx/html:ro
+  info:
+      image: nginx:latest
+      container_name: appurate-info
+      restart: always
+      networks:
+        - npm_default
+      volumes:
+        - ./Info/dist:/usr/share/nginx/html:ro
+      
   
   app:
     build: ./Front
