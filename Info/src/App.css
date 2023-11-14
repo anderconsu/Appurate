@@ -50,6 +50,12 @@ body {
 .gray {
     color: #687f9c;
 }
+
+.tituloMediano {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: var(--azul_oscuro);
+}
 /* h1 {
     font-size: 1.7rem;
     color: var(--azul_oscuro);

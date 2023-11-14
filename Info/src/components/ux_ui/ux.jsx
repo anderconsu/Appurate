@@ -212,7 +212,7 @@ const Ux = () => {
                     </article>
                 </section>
                 <article className="responsability">
-                    <h4>Nuestras responsabilidades</h4>
+                    <h4 className="tituloMediano">Nuestras responsabilidades</h4>
                     <p className="parrafoNormal">
                         En conjunto, estas herramientas de investigación nos
                         proporcionaron una base sólida para definir el problema
@@ -294,7 +294,7 @@ const Ux = () => {
                         </div>
                     </article>
                     <article className="interviews researchPointsdescription">
-                        <h4>Entrevistas</h4>
+                        <h4 className="tituloMediano">Entrevistas</h4>
                         <p className="parrafoNormal">
                             Esta herramienta nos proporcionó una comprensión
                             enriquecida de las experiencias de los usuarios y
@@ -309,7 +309,7 @@ const Ux = () => {
                 </article>
                 <article className="researchPointsSecond ">
                     <article className="actorMap researchPointsdescription">
-                        <h4>Mapa de actores</h4>
+                        <h4 className="tituloMediano">Mapa de actores</h4>
                         <p className="parrafoNormal">
                             Al identificar a los interesados, desde estudiantes
                             y profesores hasta expertos en agua, pudimos
@@ -318,7 +318,7 @@ const Ux = () => {
                         </p>
                     </article>
                     <article className="journeyMap researchPointsdescription">
-                        <h4>Journey Map</h4>
+                        <h4 className="tituloMediano">Journey Map</h4>
                         <p className="parrafoNormal">
                             Fue esencial para diseñar una interfaz de usuario
                             que fuera intuitiva, accesible y atractiva. El

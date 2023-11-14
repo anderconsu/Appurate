@@ -150,7 +150,7 @@ const Landing = () => {
                 </section>
             </section>
             <section className="gris2Landing">
-                <h2>A partir de ese punto.</h2>
+                <h2 className="tituloMediano">A partir de este punto</h2>
                 <p className="parrafosOscuros">
                     Nuestro objetivo principal fue desarrollar una{" "}
                     <strong>solución dinámica y educativa</strong>. Tras haber
@@ -295,7 +295,7 @@ const Landing = () => {
                     </h2>
                     <div className="bewaters2">
                         <div className="bewaters">
-                            <h3>BEWATERS</h3>
+                            <h3 className="tituloMediano white">BEWATERS</h3>
                             <div>
                                 <img
                                     src="./static/landing/grupo.png"
@@ -306,7 +306,7 @@ const Landing = () => {
                         </div>
                         <div className="equipo2">
                             <div className="equipo">
-                                <h4>EL EQUIPO</h4>
+                                <h4 className="titulosCeleste" style={{color: "var(--azul_oscuro)"}}>EL EQUIPO</h4>
                                 <p className="parrafoNormal">
                                     Somos Bewaters, un equipo compuesto por ocho
                                     apasionados individuos que nos unimos con un
