@@ -40,17 +40,21 @@ body {
     font-size: 0.875rem;
     color: var(--azul_oscuro);
 }
+.ux-title {
+    font-size: 1.875rem;
+    color: var(--azul_oscuro);
+}
 
 .black {
-    color: black;
+    color: black !important;
 }
 
 .white {
-    color: white;
+    color: white !important;
 }
 
 .gray {
-    color: #687f9c;
+    color: #687f9c !important;
 }
 
 .tituloMediano {
@@ -111,6 +115,10 @@ button:hover {
         color: var(--azul_celeste);
         font-size: 1.75rem;
         font-weight: normal;
+    }
+    .ux-title {
+        font-size: 1.875rem;
+        color: var(--azul_oscuro);
     }
     .boton1 {
         width: 11rem;

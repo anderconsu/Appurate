@@ -246,6 +246,34 @@
             border-radius: 1rem;
             padding: 2rem;
             width: auto;
+            text-align: center;
+        }
+        & .typographyPointsType {
+            font-size: 1.75rem;
+        }
+        & .t1 {
+            font-size: 2.5rem;
+        }
+        & .t2 {
+            font-size: 1.75rem;
+        }
+        & .s1 {
+            font-size: 1.875rem;
+        }
+        & .s2 {
+            font-size: 0.9375rem;
+        }
+        & .b1 {
+            font-size: 1.25rem;
+        }
+        & .b2 {
+            font-size: 0.875rem;
+        }
+        & .ti {
+            font-size: 0.75rem;
+        }
+        & .ov {
+            font-size: 0.625rem;
         }
     }
 }

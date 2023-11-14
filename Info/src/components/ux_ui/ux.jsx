@@ -15,8 +15,10 @@ const Ux = () => {
                 <h1 className="cabeceraSeccion">UX/UI CASE STUDY</h1>
                 <section className="intro">
                     <article>
-                        <h3 className="titulosCeleste">Equipo UX/UI Product Designer</h3>
-                        <p className ="parrafoNormal black">
+                        <h3 className="titulosCeleste">
+                            Equipo UX/UI Product Designer
+                        </h3>
+                        <p className="parrafoNormal black">
                             ¡Hola! somos el equipo de diseño UX/UI. Venimos de
                             diferentes universidades, profesiones y lugares pero
                             tenemos algo en común, el buen rollo y una pasión
@@ -24,7 +26,7 @@ const Ux = () => {
                             trabajado en este proyecto con compromiso y mucho
                             esfuerzo.
                         </p>
-                        <p className ="parrafoNormal black">
+                        <p className="parrafoNormal black">
                             A pesar de tener un plazo de tiempo limitado de dos
                             semanas, durante las cuales experimentamos un
                             período de mayor intensidad de trabajo de alrededor
@@ -34,8 +36,10 @@ const Ux = () => {
                         </p>
                     </article>
                     <article>
-                        <h3 className="titulosCeleste">Nuestro rol en el proyecto</h3>
-                        <p className ="parrafoNormal black">
+                        <h3 className="titulosCeleste">
+                            Nuestro rol en el proyecto
+                        </h3>
+                        <p className="parrafoNormal black">
                             En el proyecto que mencionamos, nuestro equipo de
                             diseño UX/UI desempeñó un papel fundamental.
                             Comenzamos por entender las necesidades de los
@@ -64,8 +68,12 @@ const Ux = () => {
                                     "https://www.linkedin.com/in/irati-lozano-segovia/")
                             }
                         />
-                        <p className ="parrafosOscuros bold">Irati Lozano Segovia</p>
-                        <h3 className="parrafoNormal">UX/UI Product Designer</h3>
+                        <p className="parrafosOscuros bold">
+                            Irati Lozano Segovia
+                        </p>
+                        <h3 className="parrafoNormal">
+                            UX/UI Product Designer
+                        </h3>
                         <img
                             src="./static/linkedinLogo.png"
                             alt="linkedinLogo"
@@ -87,7 +95,9 @@ const Ux = () => {
                             }
                         />
                         <p className="parrafosOscuros bold">Sebastián Reina</p>
-                        <h3 className="parrafoNormal">UX/UI Product Designer</h3>
+                        <h3 className="parrafoNormal">
+                            UX/UI Product Designer
+                        </h3>
                         <img
                             src="./static/linkedinLogo.png"
                             alt="linkedinLogo"
@@ -109,7 +119,9 @@ const Ux = () => {
                             }
                         />
                         <p className="parrafosOscuros bold">Oscar Ciencia</p>
-                        <h3 className="parrafoNormal">UX/UI Product Designer</h3>
+                        <h3 className="parrafoNormal">
+                            UX/UI Product Designer
+                        </h3>
                         <img
                             src="./static/linkedinLogo.png"
                             alt="linkedinLogo "
@@ -212,7 +224,9 @@ const Ux = () => {
                     </article>
                 </section>
                 <article className="responsability">
-                    <h4 className="tituloMediano">Nuestras responsabilidades</h4>
+                    <h4 className="tituloMediano">
+                        Nuestras responsabilidades
+                    </h4>
                     <p className="parrafoNormal">
                         En conjunto, estas herramientas de investigación nos
                         proporcionaron una base sólida para definir el problema
@@ -351,7 +365,7 @@ const Ux = () => {
             </section>
             <section className="prototype">
                 <article className="prototypeDescription">
-                    <h4>Prototipo en baja</h4>
+                    <h4 className="ux-title white">Prototipo en baja</h4>
                     <p className="parrafoNormal white">
                         El prototipo en baja es una representación simplificada
                         de una interfaz que sirve para explorar ideas, obtener
@@ -372,7 +386,7 @@ const Ux = () => {
             </section>
             <section className="prototypeDesign routeHeader">
                 <section className="prototypeDesignDescription routeHeaderDescription">
-                    <h3>Diseño del prototipo</h3>
+                    <h3 className="ux-title">Diseño del prototipo</h3>
                 </section>
             </section>
             <section className="mobileRepresentation">
@@ -385,13 +399,13 @@ const Ux = () => {
             </section>
             <section className="typography routeHeader">
                 <section className="typographyDescription routeHeaderDescription">
-                    <h3>Tipografía y color</h3>
+                    <h3 className="ux-title">Tipografía y color</h3>
                 </section>
             </section>
             <section className="typographyPoints">
                 <article className="typographyPointsFirst">
                     <article className="typographyPointsdescription">
-                        <h4>Tipografía</h4>
+                        <h4 className="titulosCeleste">Tipografía</h4>
                         <p className="parrafoNormal">
                             La elección de la fuente tipográfica Poppins la
                             elegimos por legibilidad en pantallas, estilo
@@ -405,7 +419,7 @@ const Ux = () => {
                         </p>
                     </article>
                     <article className="typographyPointsdescription">
-                        <h4>Color</h4>
+                        <h4 className="titulosCeleste">Color</h4>
                         <p className="parrafoNormal">
                             La elección del color fue de la identidad
                             corporativa. Esta identidad corporativa incluye
@@ -423,7 +437,7 @@ const Ux = () => {
                             />
                         </div>
                         <div className="typographyPointsImages logotext">
-                            <p>Logo</p>
+                            <p className="titulosCeleste">Logo</p>
                             <img src="./static/ux-ui/logo-ux.png" alt="logo" />
                         </div>
                     </article>
@@ -433,25 +447,25 @@ const Ux = () => {
                         <p>POPPINS</p>
                     </div>
                     <div className="typographyPointsTitle">
-                        <p>Titulo 1</p>
-                        <p>Titulo 2</p>
+                        <p className="t1 bold">Titulo 1</p>
+                        <p className="t2">Titulo 2</p>
                     </div>
                     <div className="typographyPointsSubtitle">
-                        <p>Subtitulo 1</p>
-                        <p>Subtitulo 2</p>
+                        <p className="s1 bold">Subtitulo 1</p>
+                        <p className="s2">Subtitulo 2</p>
                     </div>
                     <div className="typographyPointsBody">
-                        <p>Body 1</p>
-                        <p>Body 2</p>
+                        <p className="b1">Body 1</p>
+                        <p className="b2">Body 2</p>
                     </div>
                     <div>
-                        <p>Boton</p>
+                        <p className="b2 bold">Boton</p>
                     </div>
                     <div>
-                        <p>Titulares</p>
+                        <p className="ti">Titulares</p>
                     </div>
                     <div>
-                        <p>Overline</p>
+                        <p className="ov">Overline</p>
                     </div>
                 </article>
             </section>
