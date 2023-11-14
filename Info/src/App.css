@@ -25,7 +25,7 @@ body {
 
 .titulosCeleste {
     color: var(--azul_celeste);
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     font-weight: normal;
 }
 
@@ -104,6 +104,11 @@ button:hover {
     .cabeceraSeccion {
         font-size: 3.375rem;
         color: var(--azul_oscuro);
+    }
+    .titulosCeleste {
+        color: var(--azul_celeste);
+        font-size: 1.75rem;
+        font-weight: normal;
     }
     .boton1 {
         width: 11rem;
