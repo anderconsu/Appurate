@@ -26,7 +26,7 @@ body {
 .titulosCeleste {
     color: var(--azul_celeste);
     font-size: 1.75rem;
-    line-height: 2.72rem;
+    font-weight: normal;
 }
 
 .parrafosOscuros {

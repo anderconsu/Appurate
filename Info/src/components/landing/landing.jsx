@@ -47,7 +47,7 @@ const Landing = () => {
                         />
                     </div>
                     <div className="alfinal">
-                        <h3>
+                        <h3 className="parrafosOscuros">
                             AL FINAL DEL ARTÍCULO PUEDES VER QUÉ ROL LE TOCÓ A
                             CADA EQUIPO Y QUÉ IMPACTO TUVO ESTO EN EL PROYECTO:
                         </h3>
