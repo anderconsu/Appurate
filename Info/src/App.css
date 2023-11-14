@@ -19,7 +19,7 @@ body {
 }
 
 .cabeceraSeccion {
-    font-size: 3.375rem;
+    font-size: 2.5rem;
     color: var(--azul_oscuro);
 }
 
@@ -62,39 +62,6 @@ body {
     font-size: 2.5rem;
     font-weight: bold;
 }
-/* h1 {
-    font-size: 1.7rem;
-    color: var(--azul_oscuro);
-}
-
-h2 {
-    font-size: 1.6rem;
-    color: var(--azul_oscuro);
-}
-
-h3 {
-    font-size: 1.4rem;
-    color: var(--azul_oscuro);
-}
-
-.p1 {
-    font-size: 1rem;
-    color: var(--azul_oscuro);
-}
-
-.p2 {
-    font-size: 0.8rem;
-    color: var(--azul_oscuro);
-}
-
-.p3 {
-    font-size: 0.7rem;
-    color: var(--azul_oscuro);
-}
-.p4 {
-    font-size: 0.8rem;
-    color: var(--azul_oscuro);
-} */
 
 button {
     border-radius: 10px;
@@ -134,39 +101,10 @@ button:hover {
 }
 
 @media screen and (min-width: 768px) {
-    /* h1 {
-        font-size: 2.8rem;
+    .cabeceraSeccion {
+        font-size: 3.375rem;
         color: var(--azul_oscuro);
     }
-
-    h2 {
-        font-size: 1.8rem;
-        color: var(--azul_oscuro);
-    }
-
-    h3 {
-        font-size: 1.3rem;
-        color: var(--azul_oscuro);
-    }
-
-    .p1 {
-        font-size: 1.2rem;
-        color: var(--azul_oscuro);
-    }
-
-    .p2 {
-        font-size: 1.25rem;
-        color: var(--azul_oscuro);
-    }
-
-    .p3 {
-        font-size: 1rem;
-        color: var(--azul_oscuro);
-    }
-    .p4 {
-        font-size: 1rem;
-        color: var(--azul_oscuro);
-    } */
     .boton1 {
         width: 11rem;
         padding: 1.5rem 1rem;
