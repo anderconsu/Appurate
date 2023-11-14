@@ -1,0 +1,25 @@
+.current {
+    width: 100%;
+    background-color: var(--gris2);
+    padding: 2rem 0rem 0rem 2rem;
+    & a {
+        display: inline-block;
+        text-decoration: none;
+        color: var(--azul_oscuro);
+        &:visited {
+            color: var(--azul_oscuro);
+        }
+        &:hover {
+            color: var(--azul_oscuro);
+            text-decoration: underline;
+        }
+    }
+    & p {
+        display: inline;
+    }
+}
+@media screen and (min-width: 768px) {
+    .current {
+        padding: 2rem 0rem 0rem 4rem;
+    }
+}
