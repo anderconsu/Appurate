@@ -36,7 +36,7 @@ const Fullstack = () => {
                 <article>
                     <div className="textoIntroDos">
                         <h3 className="titulosCeleste">Nuestro rol en el proyecto</h3>
-                        <p className="parrafoNormal">
+                        <p className="parrafoNormal black">
                             Nuestro rol como desarrolladores en este proyecto ha
                             abarcado tanto el desarrollo del frontend como del
                             backend, incluyendo la implementación de componentes
@@ -60,9 +60,11 @@ const Fullstack = () => {
                         src="./static/perfiles/ander.png"
                         alt="Ander"
                         className="profileImg animatedSelect"
+                        onClick={() => {window.open("https://cloudconsu.com/")}}
+
                     />
-                    <p>Ander Consuegra</p>
-                    <h3>Full Stack developer</h3>
+                    <p className ="parrafosOscuros bold">Ander Consuegra</p>
+                    <h3 className="parrafoNormal">Full Stack developer</h3>
                     <a
                         href="https://www.linkedin.com/in/anderconsu"
                         className="animatedSelect"
@@ -87,9 +89,10 @@ const Fullstack = () => {
                         src="./static/perfiles/nacho.png"
                         alt="Nacho"
                         className="profileImg animatedSelect"
+                        onClick={() => {window.open("https://www.linkedin.com/in/nachoprado/")}}
                     />
-                    <p>Nacho Prado</p>
-                    <h3>Full Stack developer</h3>
+                    <p className ="parrafosOscuros bold">Nacho Prado</p>
+                    <h3 className="parrafoNormal">Full Stack developer</h3>
 
                     <a
                         href="https://www.linkedin.com/in/nachoprado"
@@ -115,9 +118,10 @@ const Fullstack = () => {
                         src="./static/perfiles/endika.png"
                         alt="Endika"
                         className="profileImg animatedSelect"
+                        onClick={() => {window.open("https://portfolio-endika.vercel.app/")}}
                     />
-                    <p>Endika Acedo</p>
-                    <h3>Full Stack developer</h3>
+                    <p className ="parrafosOscuros bold">Endika Acedo</p>
+                    <h3 className="parrafoNormal">Full Stack developer</h3>
 
                     <a
                         href="https://www.linkedin.com/in/endika-acedo-gonz%C3%A1lez-432a1828b"
@@ -148,7 +152,7 @@ const Fullstack = () => {
                 <div className="disenoDescription">
                     <div className="tituloDiseno">
                         <h2 className="cabeceraSeccion">DISEÑO Y SITEMAPS JUNTO A UX/UI</h2>
-                        <span className="fyS">Figma y pizarra</span>
+                        <span className="fyS parrafoNormal gray">Figma y pizarra</span>
                     </div>
 
                     <div className="disenoTexto">

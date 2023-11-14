@@ -289,7 +289,7 @@ const Landing = () => {
 
             <div className="gris3landing">
                 <div className="azul">
-                    <h2>
+                    <h2 className="tituloSemiMediano white">
                         A continuación te mostramos el trabajo hecho por cada
                         parte del equipo:
                     </h2>
@@ -344,7 +344,7 @@ const Landing = () => {
                         </div>
                     </div>
                 </div>
-                <div className="buttonPa">
+                <div className="buttonPa tituloSemiMediano">
                     <p>Pincha aquí:</p>
                 </div>
             </div>
