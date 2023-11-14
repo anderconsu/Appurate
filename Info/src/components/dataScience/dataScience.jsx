@@ -15,7 +15,7 @@ const DataScience = () => {
                 <h1 className="cabeceraSeccion">DATA SCIENCE</h1>
                 <section className="intro">
                     <article>
-                        <h3>Equipo Data Science</h3>
+                        <h3 className="titulosCeleste">Equipo Data Science</h3>
                         <p>
                             Lorem ipsum dolor sit amet consectetur. Senectus
                             fames duis adipiscing molestie. Urna amet dui
@@ -31,7 +31,7 @@ const DataScience = () => {
                         </p>
                     </article>
                     <article>
-                        <h3>Nuestro rol en el proyecto</h3>
+                        <h3 className="titulosCeleste">Nuestro rol en el proyecto</h3>
                         <p>
                             En el proyecto, nosotros, el equipo de datos,
                             desempeñamos un papel crucial al investigar y

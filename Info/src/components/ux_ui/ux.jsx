@@ -15,7 +15,7 @@ const Ux = () => {
                 <h1 className="cabeceraSeccion">UX/UI CASE STUDY</h1>
                 <section className="intro">
                     <article>
-                        <h3>Equipo UX/UI Product Designer</h3>
+                        <h3 className="titulosCeleste">Equipo UX/UI Product Designer</h3>
                         <p>
                             ¡Hola! somos el equipo de diseño UX/UI. Venimos de
                             diferentes universidades, profesiones y lugares pero
@@ -34,7 +34,7 @@ const Ux = () => {
                         </p>
                     </article>
                     <article>
-                        <h3>Nuestro rol en el proyecto</h3>
+                        <h3 className="titulosCeleste">Nuestro rol en el proyecto</h3>
                         <p>
                             En el proyecto que mencionamos, nuestro equipo de
                             diseño UX/UI desempeñó un papel fundamental.
@@ -260,7 +260,7 @@ const Ux = () => {
             <section className="researchPoints">
                 <article className="researchPointsFirst">
                     <article className="idealUser">
-                        <h4>Usuario ideal</h4>
+                        <h4 className="parrafosOscuros bold">Usuario ideal</h4>
                         <div className="stats">
                             <p>
                                 <b>Edad:</b> 35 años

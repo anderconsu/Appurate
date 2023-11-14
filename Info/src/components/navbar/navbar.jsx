@@ -33,7 +33,7 @@ const Navbar = () => {
                 {teamlist.map((item) => {
                     return (
                         <div className="item teamImg" key={item}>
-                            <p className="teamText">
+                            <p className="teamText parrafosOscuros bold">
                                 {`¿Qué rol tuvo ${teamName[item]} en el proyecto?`}
                             </p>
                             <img
@@ -53,7 +53,7 @@ const Navbar = () => {
                 })}
             </nav>
             <div className="thanks">
-                <p>El equipo te da las gracias por haber llegado hasta aquí.</p>
+                <p className="parrafosOscuros bold">El equipo te da las gracias por haber llegado hasta aquí.</p>
             </div>
         </>
     );

@@ -15,8 +15,8 @@ const Current = () => {
         <section className="current">
             {page && teamName[page] ? (
                 <>
-                    <Link to="/">Home</Link>
-                    <p>{` > ${teamName[page]}`}</p>
+                    <Link className="parrafosOscuros" to="/">Home</Link>
+                    <p className="parrafosOscuros">{` > ${teamName[page]}`}</p>
                 </>
             ) : null}
         </section>

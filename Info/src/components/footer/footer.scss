@@ -22,16 +22,22 @@
     & .Contacto {
         display: flex;
         flex-direction: column;
+
+        & .escribenos {
+            font-size: 1.875rem;
+        }
     }
 
     & .containerMail {
         display: flex;
         flex-direction: row;
         gap: 2rem;
+        font-size: 1.25rem;
     }
 
     & a {
         color: white;
+        font-size: 1.25rem;
     }
 }
 

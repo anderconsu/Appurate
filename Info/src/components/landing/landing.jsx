@@ -15,8 +15,8 @@ const Landing = () => {
         <main className="landingMain">
             <section className="grisLanding">
                 <h1 className="cabeceraSeccion">APPÚRATE.ORG</h1>
-                <p>
-                    El viernes 15 de septiembre, tuvo lugar la reunión y
+                <p className="parrafosOscuros">
+                    Después de la reunión y
                     presentación del desafío en colaboración con{" "}
                     <strong>AQUADAT</strong>. Durante este encuentro, se nos
                     brindó una detallada exposición del desafío en cuestión, así
@@ -26,7 +26,7 @@ const Landing = () => {
             <section className="blancoLanding">
                 <section className="columna1Landing">
                     <article className="estrategia">
-                        <h3>
+                        <h3 className="titulosCeleste">
                             ESTRATEGIA, CREATIVIDAD Y VIABILIDAD DEL PROYECTO
                         </h3>
                         <p>
@@ -107,10 +107,10 @@ const Landing = () => {
                         />
                     </div>
                     <div className="investigaciones">
-                        <h2>
+                        <h3 className="titulosCeleste">
                             Estas investigaciones y presentaciones llevaron a la
                             siguiente serie de conclusiones:
-                        </h2>
+                        </h3>
                         <ol>
                             <li>
                                 <strong>Falta de Data:</strong> Se identificó
@@ -151,7 +151,7 @@ const Landing = () => {
             </section>
             <section className="gris2Landing">
                 <h2>A partir de ese punto.</h2>
-                <p>
+                <p className="parrafosOscuros">
                     Nuestro objetivo principal fue desarrollar una{" "}
                     <strong>solución dinámica y educativa</strong>. Tras haber
                     definido claramente el problema, fuimos capaces de
@@ -203,8 +203,8 @@ const Landing = () => {
                 </div>
             </div>
             <div className="disenoSitemap">
-                <h2>
-                    Luego de estas consideraciones, nos adentramos en el diseño
+                <h2 className="titulosCeleste">
+                    Tras estas consideraciones, nos adentramos en el diseño
                     del sitemap, donde identificamos tres componentes
                     fundamentales o bloques clave para la webapp.
                 </h2>

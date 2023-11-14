@@ -14,7 +14,7 @@ const Fullstack = () => {
             <section className="intro">
                 <article>
                     <div className="textoIntroUno">
-                        <h3>Equipo Desarrollo Full Stack</h3>
+                        <h3 className="titulosCeleste">Equipo Desarrollo Full Stack</h3>
 
                         <p>
                             ¡Buenas! Somos el equipo de desarrollo de Full
@@ -35,7 +35,7 @@ const Fullstack = () => {
                 </article>
                 <article>
                     <div className="textoIntroDos">
-                        <h3>Nuestro rol en el proyecto</h3>
+                        <h3 className="titulosCeleste">Nuestro rol en el proyecto</h3>
                         <p>
                             Nuestro rol como desarrolladores en este proyecto ha
                             abarcado tanto el desarrollo del frontend como del

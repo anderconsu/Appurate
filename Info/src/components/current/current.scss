@@ -5,12 +5,12 @@
     & a {
         display: inline-block;
         text-decoration: none;
-        color: inherit;
+        color: var(--azul_oscuro);
         &:visited {
-            color: inherit;
+            color: var(--azul_oscuro);
         }
         &:hover {
-            color: inherit;
+            color: var(--azul_oscuro);
             text-decoration: underline;
         }
     }

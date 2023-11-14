@@ -22,6 +22,17 @@ body {
     font-size: 3.375rem;
     color: var(--azul_oscuro);
 }
+
+.titulosCeleste {
+    color: var(--azul_celeste);
+    font-size: 1.75rem;
+    line-height: 2.72rem;
+}
+
+.parrafosOscuros {
+    font-size: 1.25rem;
+    color: var(--azul_oscuro);
+}
 /* h1 {
     font-size: 1.7rem;
     color: var(--azul_oscuro);

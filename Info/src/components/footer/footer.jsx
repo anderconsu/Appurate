@@ -10,7 +10,7 @@ const Footer = () => {
     return (
         <div className="footer">
             <div className="Contacto">
-                <div>Escríbenos a:</div>
+                <p className="escribenos bold">Escríbenos a:</p>
                 
                 <div className="containerMail">
                     <p> MAIL: </p>
