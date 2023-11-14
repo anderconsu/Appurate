@@ -16,9 +16,6 @@
         align-items: center;
         background-color: var(--gris2);
 
-        & h1 {
-        }
-
         & p {
             padding: 1.5rem;
         }
@@ -119,9 +116,6 @@
                 margin-left: 2rem;
                 margin-right: 2rem;
                 width: 100%;
-
-                & p {
-                }
             }
         }
     }
@@ -321,9 +315,6 @@
                         & p,
                         ul {
                             color: var(--02, #022859);
-
-                            & li {
-                            }
                         }
                     }
                     & .containerIconos {
@@ -444,8 +435,6 @@
                     border: 0.2rem solid var(--azul_celeste);
                     border-radius: 1rem;
                     padding: 2rem;
-                    & h3 {
-                    }
 
                     & p {
                         color: var(--02, #022859);
@@ -482,12 +471,6 @@
                     margin-left: 2rem;
                     margin-right: 2rem;
                     width: 100%;
-
-                    & h2 {
-                    }
-
-                    & p {
-                    }
                 }
             }
         }
@@ -695,9 +678,6 @@
                             ul {
                                 color: var(--02, #022859);
                                 margin-top: 1rem;
-
-                                & li {
-                                }
                             }
                         }
                         & .containerIconos {
