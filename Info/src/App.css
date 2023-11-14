@@ -21,7 +21,7 @@ body {
 .cabeceraSeccion {
     font-size: 2.5rem;
     color: var(--azul_oscuro);
-    text-align: center;
+    text-align: left;
 }
 
 .titulosCeleste {
