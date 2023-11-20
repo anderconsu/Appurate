@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createHashRouter } from "react-router-dom";
 import Root from "./root.jsx";
 import ErrorPage from "./error";
 import Landing from "../components/landing/landing.jsx";
@@ -7,7 +7,7 @@ import Fullstack from "../components/fullstack/fullstack.jsx";
 import Ux from "../components/ux_ui/ux.jsx";
 import DataScience from "../components/dataScience/dataScience.jsx";
 
-const Router = createBrowserRouter([
+const Router = createHashRouter([
     {
         path: "/",
         element: <Root />,
