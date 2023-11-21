@@ -1,0 +1,35 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 0rem;
+    padding: 1rem;
+    background-color: var(--gris2);
+
+    & .teamImg {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem;
+        text-align: center;
+    }
+}
+.thanks {
+    text-align: center;
+    padding: 4rem;
+}
+
+@media screen and (min-width: 768px) {
+    .navbar {
+        gap: 10rem;
+
+        & .teamImg {
+            width: calc(33% - 10rem);
+        }
+    }
+}

@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --azul_celeste: #48cad9;
+    --azul_oscuro: #022859;
+    --negro: #020305;
+    --gris: #d9d9d9;
+    --gris2: #f5f6f8;
+    --blanco: #ffffff;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+}
+
+.cabeceraSeccion {
+    font-size: 2.5rem;
+    color: var(--azul_oscuro);
+    text-align: left;
+}
+
+.titulosCeleste {
+    color: var(--azul_celeste);
+    font-size: 1.5rem;
+    font-weight: normal;
+    text-align: left;
+}
+
+.parrafosOscuros {
+    font-size: 1.25rem;
+    color: var(--azul_oscuro);
+}
+
+.parrafoNormal {
+    font-size: 0.875rem;
+    color: var(--azul_oscuro);
+}
+.ux-title {
+    font-size: 1.875rem;
+    color: var(--azul_oscuro);
+}
+
+.black {
+    color: black !important;
+}
+
+.white {
+    color: white !important;
+}
+
+.gray {
+    color: #687f9c !important;
+}
+
+.tituloMediano {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: var(--azul_oscuro);
+}
+
+.tituloSemiMediano {
+    color: var(--azul_oscuro);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+button {
+    border-radius: 10px;
+    font-size: 1rem;
+    padding: 0.2rem 0.7rem;
+    max-height: 2.1rem;
+    transition: 0.5s;
+    font-family: "Poppins", sans-serif;
+}
+button:hover {
+    scale: 1.1;
+}
+
+.boton1 {
+    background-color: var(--azul_celeste);
+    border-color: var(--azul_celeste);
+    padding: 1.1rem 1rem;
+    align-items: center;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    padding: 1.2rem 1rem;
+}
+.bold {
+    font-weight: 600;
+}
+
+.boton2 {
+    background-color: var(--blanco);
+    border-color: var(--azul_celeste);
+}
+
+.boton3 {
+    background-color: var(--blanco);
+    border: none;
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) {
+    .cabeceraSeccion {
+        font-size: 3.375rem;
+        color: var(--azul_oscuro);
+    }
+    .titulosCeleste {
+        color: var(--azul_celeste);
+        font-size: 1.75rem;
+        font-weight: normal;
+    }
+    .ux-title {
+        font-size: 1.875rem;
+        color: var(--azul_oscuro);
+    }
+    .boton1 {
+        width: 11rem;
+        padding: 1.5rem 1rem;
+    }
+
+    .boton2 {
+        align-items: center;
+        background-color: var(--blanco);
+        border-radius: 10px;
+        border-color: var(--azul_celeste);
+        display: flex;
+        gap: 10px;
+        width: 15px;
+        height: 55px;
+        justify-content: center;
+        overflow: hidden;
+        padding: 26px 54px;
+        position: relative;
+    }
+
+    .boton3 {
+        align-items: center;
+        background-color: var(--blanco);
+        border-radius: 2px;
+        border-color: var(--blanco);
+        display: flex;
+        gap: 10px;
+        width: 15px;
+        height: 55px;
+        justify-content: center;
+        overflow: hidden;
+        padding: 26px 54px;
+        position: relative;
+    }
+}

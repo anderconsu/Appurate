@@ -159,7 +159,7 @@ const FichaVisualizacion = () => {
                                                 Oxígeno:
                                             </p>{" "}
                                             <p className="columnaDos p4">
-                                                {item.properties.Oxigeno}
+                                                {item.properties.Oxigeno} mg/l
                                             </p>
                                         </div>
                                         <div>
@@ -167,7 +167,8 @@ const FichaVisualizacion = () => {
                                                 Conductividad:
                                             </p>{" "}
                                             <p className="columnaDos p4">
-                                                {item.properties.Conductividad}
+                                                {item.properties.Conductividad}{" "}
+                                                µS/cm
                                             </p>
                                         </div>
                                         <div>
@@ -175,7 +176,7 @@ const FichaVisualizacion = () => {
                                                 Temperatura:
                                             </p>{" "}
                                             <p className="columnaDos p4">
-                                                {item.properties.Temperatura}
+                                                {item.properties.Temperatura} °C
                                             </p>
                                         </div>
                                         <div>
