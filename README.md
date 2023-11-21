@@ -67,6 +67,7 @@ Además, implementamos **Nginx Proxy Manager** en el servidor para enrutar conex
 
     [![LindedIn](https://img.shields.io/badge/LinkedIn-%230e76a8?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/endika-acedo-gonz%C3%A1lez-432a1828b/)
     [![Github](https://img.shields.io/badge/Github-grey?logo=github)](https://github.com/Endika7593)
+    [![Portfolio](https://img.shields.io/badge/Portfolio-black?logo=superuser&logoColor=white)](https://portfolio-endika.vercel.app/)
 
 **Data Science:**
 
@@ -74,6 +75,7 @@ Además, implementamos **Nginx Proxy Manager** en el servidor para enrutar conex
 
     [![LindedIn](https://img.shields.io/badge/LinkedIn-%230e76a8?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/alejosotillo/)
     [![Github](https://img.shields.io/badge/Github-grey?logo=github)](https://github.com/socho8)
+    [![Portfolio](https://img.shields.io/badge/Portfolio-black?logo=superuser&logoColor=white)](https://alejosotillo.notion.site/Hi-I-m-Alejo-Sotillo-a-Data-Scientist-4f804783693a45a581deac71a13a6a45)
 
 -   Leonor Rodriguez
 
