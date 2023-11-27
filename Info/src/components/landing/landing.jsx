@@ -16,11 +16,11 @@ const Landing = () => {
             <section className="grisLanding">
                 <h1 className="cabeceraSeccion">APPÚRATE.ORG</h1>
                 <p className="parrafosOscuros">
-                    Después de la reunión y
-                    presentación del desafío en colaboración con{" "}
-                    <strong>AQUADAT</strong>. Durante este encuentro, se nos
-                    brindó una detallada exposición del desafío en cuestión, así
-                    como se delinearon los objetivos a alcanzar.
+                    Después de la reunión y presentación del desafío en
+                    colaboración con <strong>AQUADAT</strong>. Durante este
+                    encuentro, se nos brindó una detallada exposición del
+                    desafío en cuestión, así como se delinearon los objetivos a
+                    alcanzar.
                 </p>
             </section>
             <section className="blancoLanding">
@@ -51,7 +51,9 @@ const Landing = () => {
                             AL FINAL DEL ARTÍCULO PUEDES VER QUÉ ROL LE TOCÓ A
                             CADA EQUIPO Y QUÉ IMPACTO TUVO ESTO EN EL PROYECTO:
                         </h3>
-                        <p className="parrafoNormal">Si deseas verlo ya, pincha en estos iconos.</p>
+                        <p className="parrafoNormal">
+                            Si deseas verlo ya, pincha en estos iconos.
+                        </p>
                         <div className="iconos">
                             <div className="item teamImg">
                                 <img
@@ -111,7 +113,7 @@ const Landing = () => {
                             Estas investigaciones y presentaciones llevaron a la
                             siguiente serie de conclusiones:
                         </h3>
-                        <ol  className="parrafoNormal">
+                        <ol className="parrafoNormal">
                             <li>
                                 <strong>Falta de Data:</strong> Se identificó
                                 una carencia significativa de datos, lo que
@@ -140,7 +142,7 @@ const Landing = () => {
                                 promoción de soluciones sostenibles.
                             </li>
                         </ol>
-                        <p  className="parrafoNormal">
+                        <p className="parrafoNormal">
                             Estas conclusiones son fundamentales para orientar
                             nuestras acciones y estrategias futuras en el
                             contexto de este desafío crucial propuesto por
@@ -204,9 +206,9 @@ const Landing = () => {
             </div>
             <div className="disenoSitemap">
                 <h2 className="titulosCeleste">
-                    Tras estas consideraciones, nos adentramos en el diseño
-                    del sitemap, donde identificamos tres componentes
-                    fundamentales o bloques clave para la webapp.
+                    Tras estas consideraciones, nos adentramos en el diseño del
+                    sitemap, donde identificamos tres componentes fundamentales
+                    o bloques clave para la webapp.
                 </h2>
             </div>
 
@@ -306,7 +308,12 @@ const Landing = () => {
                         </div>
                         <div className="equipo2">
                             <div className="equipo">
-                                <h4 className="titulosCeleste" style={{color: "var(--azul_oscuro)"}}>EL EQUIPO</h4>
+                                <h4
+                                    className="titulosCeleste"
+                                    style={{ color: "var(--azul_oscuro)" }}
+                                >
+                                    EL EQUIPO
+                                </h4>
                                 <p className="parrafoNormal">
                                     Somos Bewaters, un equipo compuesto por ocho
                                     apasionados individuos que nos unimos con un
@@ -317,20 +324,21 @@ const Landing = () => {
                                 </p>
                                 <ul className="parrafoNormal">
                                     <li>
-                                        Lorem ipsum dolor, sit amet consectetur
-                                        adipisicing elit. Sapiente ab ipsa
-                                        perferendis iure ad corrupti sequi quo
-                                        corporis. Repellendus, cumque.
+                                        UX/UI se han dedicado a la experiencia
+                                        de usuario y diseño de aplicación.
                                     </li>
 
                                     <li>
-                                        Laborum delectus repudiandae facilis
-                                        commodi veniam repellat. Quisquam,
-                                        voluptas debitis.
+                                        Data Science han desarrollado el modelo
+                                        que predice si el agua es apta o no para
+                                        el baño.
                                     </li>
                                     <li>
-                                        Laboriosam, quis magnam? Quosque tandem
-                                        abutere patientiam nostram, Catilina?
+                                        Full Stack ha desarrollado la plataforma
+                                        siguiendo el diseño de UX/UI y el modelo
+                                        de Data Science, desarrollado los
+                                        endpoints, la base de datos y el deploy
+                                        para que todo sea funcional.
                                     </li>
                                 </ul>
                             </div>
