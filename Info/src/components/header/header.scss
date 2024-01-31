@@ -3,20 +3,82 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    margin: 1rem;
-    & .logoContainer {
-        width: calc(40% - 1rem);
-        max-width: 15rem;
-        & img {
-            width: 100%;
+    background-color: var(--azul_oscuro);
+
+    .cabeceraContainer {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 60rem;
+        align-items: center;
+        margin-right: 2.2rem;
+        width: 100%;
+
+        & .logoContainer {
+            width: calc(40% - 1rem);
+            max-width: 15rem;
+            margin: 1rem;
+            margin-left: 2rem;
+
+            & img {
+                width: 80%;
+            }
         }
+
+
+        .botoneraContainer {
+            display: flex;
+            flex-direction: row;
+            align-items: baseline;
+
+
+            & .home,
+            .comoHicimos,
+            .contacto {
+                display: flex;
+                border: none;
+                background: none;
+                color: var(--blanco);
+                font-size: 1rem;
+                font-weight: 700;
+                text-decoration: underline;
+                padding: 0.5rem;
+                margin: 0.5rem;
+                border-radius: 0.5rem;
+                transition: all 0.3s ease-in-out;
+
+                &:hover {
+                    background-color: var(--azul_claro);
+                    color: var(--azul_oscuro);
+                }
+
+            }
+
+            & .boton1 {
+                display: flex;
+                color: white;
+                white-space: nowrap;
+                padding: 1rem;
+                font-weight: 700rem;
+                font-size: 1rem;
+                border-radius: 0.5rem;
+                background: var(--01, #48CAD9);
+                width: auto;
+                
+            }
+
+        }
+
     }
 
-    & .botonesHeader {
-        width: calc(60% - 1rem);
-        flex-wrap: wrap;
-        display: flex;
-        justify-content: flex-end;
-        gap: 1rem;
-    }
+
+
+    // & .botonesHeader {
+    //     width: calc(60% - 1rem);
+    //     flex-wrap: wrap;
+    //     display: flex;
+    //     justify-content: flex-end;
+    //     gap: 1rem;
+    // }
 }
